@@ -1,0 +1,61 @@
+{
+  "schema": "starlink-legacy-import/v1",
+  "utc": "2026-11-20T15:10:35.157399+00:00",
+  "files": [
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\57_ku_header2.py",
+      "snapshot": "references/legacy_research/second_header/analysis/57_ku_header2.py",
+      "bytes": 5770,
+      "sha256": "968aca045e03e94427b570f8e80ef752fbdaa45dde7104a87a0fc3a1f1a2c37b"
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\58_ku_header2_positions.py",
+      "snapshot": "references/legacy_research/second_header/analysis/58_ku_header2_positions.py",
+      "bytes": 7694,
+      "sha256": "8f7ed91d68ffcabf69b26e99103a5c2546785bb4761985a41ed8e667f19c1192"
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\59_ku_header_fields.py",
+      "snapshot": "references/legacy_research/second_header/analysis/59_ku_header_fields.py",
+      "bytes": 7331,
+      "sha256": "a4c70f69df73057cd9a8017e442c390a8ea1b95e390ac7050095ad2922b3c5b3"
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\60_ku_header_semantics.py",
+      "snapshot": "references/legacy_research/second_header/analysis/60_ku_header_semantics.py",
+      "bytes": 7584,
+      "sha256": "c4de5d7ed72853305192af09f9bad89f64d4f83e30f7b5b8766516b66317b213"
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\65_ku_header2_judge.py",
+      "snapshot": "references/legacy_research/second_header/analysis/65_ku_header2_judge.py",
+      "bytes": 8513,
+      "sha256": "c2c3c8d330355b1567514114c89238730c721fc78027f2dcb97c271f3c411ccd"
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\66_ku_header2_final.py",
+      "snapshot": "references/legacy_research/second_header/analysis/66_ku_header2_final.py",
+      "bytes": 11075,
+      "sha256": "b14d8d4b692d52377380b7b2bb509a83375901be2f9e5a3a73b3b4e2e07cde72"
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\starangle_out\\ku_header2_positions.txt",
+      "snapshot": "references/legacy_research/second_header/analysis/starangle_out/ku_header2_positions.txt",
+      "bytes": 3167,
+      "sha256": "7b233dc2c2d432774e60b438b62ffa533bc6d311968cbb8a5fe0ce71bc881e60"
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\starangle_out\\ku_header_fields.csv",
+      "snapshot": "references/legacy_research/second_header/analysis/starangle_out/ku_header_fields.csv",
+      "bytes": 941,
+      "sha256": "87d2872d863bb536a1168d6540d0433f0a3404d248a4bffee2b713425df83bd6"
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\reports\\52_ku_header2_semantics.md",
+      "snapshot": "references/legacy_research/second_header/docs/reports/52_ku_header2_semantics.md",
+      "bytes": 4668,
+      "sha256": "17133e2f1224f70b63f3fc7afc4ffd12eafaf91ee9aa67c28670c136f7b7dc4a"
+    }
+  ],
+  "scope": "Historical sources only; their CRC-guided searches are not used as current branch selectors."
+}

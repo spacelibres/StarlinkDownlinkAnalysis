@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E030",
+  "title": "交叉 32QAM 资源、PN15 与标号",
+  "input": "data/raw/ut_250msps/Starlink_Downlink_IQ_250MSps.bin",
+  "scripts": ["extract_ut_cross32.py", "audit_ut_cross32_labels.py"],
+  "seed": 2026112128
+}

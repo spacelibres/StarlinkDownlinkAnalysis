@@ -1,0 +1,34 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E004",
+  "title": "全局分量和频漂关联",
+  "status": "imported historical evidence; organization only",
+  "question": "共享频漂能否排除共轭副本或全通道增益变化？",
+  "inputs": "原 WAV、E001 轨迹与频谱。",
+  "methods": "正反频漂补偿、谱轴、五参考轴相位对照、分带终止比较。",
+  "controls_and_limits": "历史每参考轴 400 组相位对照；共享演化仍不足以区分发射共源与接收共模。",
+  "dependencies": "依赖 E001；坐标约定以各脚本/结果为准。",
+  "scripts": [
+    "check_global_spectral_axis.py",
+    "global_signal_audit.py",
+    "present_global_hypothesis_tests.py",
+    "test_sideband_phase_coupling.py",
+    "test_wideband_drift_link.py"
+  ],
+  "artifacts": [
+    "experiments/E004/results/global_component_power.csv",
+    "experiments/E004/figures/global_hypothesis_tests.png",
+    "experiments/E004/figures/global_hypothesis_tests.svg",
+    "experiments/E004/results/global_signal_audit.json",
+    "experiments/E004/results/global_signal_audit_arrays.npz",
+    "experiments/E004/results/global_spectral_axis_validation.json",
+    "experiments/E004/results/sideband_phase_coupling.json",
+    "experiments/E004/results/sideband_phase_coupling_arrays.npz",
+    "experiments/E004/results/wideband_drift_link.json",
+    "experiments/E004/results/wideband_drift_link_arrays.npz"
+  ],
+  "parameters_and_seeds": "Retained in source/results; missing historical settings are not invented.",
+  "baseline_tag": "v0.0.1",
+  "provenance_manifest": "../../provenance/layout_manifest.json",
+  "reproducibility_limits": "Some historical results were produced interactively without standalone scripts. Classification is not a full independent rerun."
+}

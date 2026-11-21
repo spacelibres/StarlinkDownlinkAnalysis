@@ -1,0 +1,23 @@
+{
+  "data_kind": "synthetic re-encoding of already-published example words; not raw IQ",
+  "external_reference_words": [
+    "0x3048A020",
+    "0x000000AD"
+  ],
+  "coded_bits": 228,
+  "deliberately_corrupted_positions": [
+    17,
+    73,
+    155,
+    199
+  ],
+  "viterbi_hamming_path_costs": [
+    2.0,
+    2.0
+  ],
+  "retained_bits_recovered": 64,
+  "computed_crc": "0xAD",
+  "known_public_crc": "0xAD",
+  "exact_reencoding_matches_synthetic_transmission": true,
+  "locally_captured_header_decoded": false
+}

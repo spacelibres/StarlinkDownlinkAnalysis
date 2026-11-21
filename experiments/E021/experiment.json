@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E021",
+  "title": "Code 28 接收修正与完整缩短关系复现",
+  "inputs": ["data/raw/legacy_wideband/Starlink_Downlink_IQ.npy", "runs/v017-code28-hard", "runs/v018-code28-weighted-bank"],
+  "scripts": ["code28_receiver_core.py", "reproduce_code28.py", "audit_code28_reencoding.py"],
+  "seeds": [2026112021, 2026112022]
+}

@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E046",
+  "title": "偏移帧 Code 5 留出校验位",
+  "input": "E044 B-grid soft vectors, E045 allocation and PN15 support, E012/E013 frozen Code 5 and E014 measured controls",
+  "scripts": ["audit_ut_offset_code5_parity.py"],
+  "seed": 2026112146
+}

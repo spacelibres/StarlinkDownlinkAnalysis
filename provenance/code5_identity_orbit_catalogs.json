@@ -1,0 +1,57 @@
+{
+  "schema": "starlink-code5-orbit-catalogs/v1",
+  "retrieved_utc": "2026-11-21T07:31:24.327674+00:00",
+  "snapshots": {
+    "480MSps": {
+      "url": "https://satchecker.cps.iau.org/tools/tles-at-epoch/?epoch=2459835.046386313&format=zip",
+      "sha256": "c8e2f1fba1a0f9362a7998f9dcbc4ff52e8cea9ac0c8405fb10472f4d0cd0554",
+      "bytes": 1620699,
+      "records": 22942,
+      "path": "references/orbit_catalogs/satchecker_2022-09-12.zip"
+    },
+    "qin_2025": {
+      "url": "https://satchecker.cps.iau.org/tools/tles-at-epoch/?epoch=2460697.59&format=zip&before_only=true",
+      "sha256": "52e67e10757ab584f89c39314fea8ad3954350922222611983529daf6aa6b660",
+      "bytes": 1880801,
+      "records": 26329,
+      "path": "references/orbit_catalogs/satchecker_2025-01-22.zip"
+    }
+  },
+  "legacy_nearest_receipts": [
+    {
+      "query": "https://satchecker.cps.iau.org/tools/get-nearest-tle/?id=48127&id_type=catalog&epoch=2459835.046386313",
+      "sha256": "2593b0d04d0d76b5869097a9929e0499090a4863d555c07f9dea9326486fcab5",
+      "response_utf8": "[{\"orbital_data\":[{\"data_source\":\"spacetrack\",\"date_collected\":\"2024-06-06 23:41:03 UTC\",\"epoch\":\"2022-09-12 16:21:37 UTC\",\"satellite_id\":48127,\"satellite_name\":\"STARLINK-2468\",\"tle_line1\":\"1 48127U 21027AM  22255.68168068  .00000126  00000-0  27382-4 0  9998\",\"tle_line2\":\"2 48127  53.0549 130.8780 0001591  70.4675 289.6485 15.06395835 79993\"}],\"source\":\"IAU CPS SatChecker\",\"version\":\"1.9.0\"}]\n"
+    },
+    {
+      "query": "https://satchecker.cps.iau.org/tools/get-nearest-tle/?id=48128&id_type=catalog&epoch=2459835.046386313",
+      "sha256": "e79e5a489d245249bb82a7642d486ba97d31dc65c8706f32c8c2feffd7609b82",
+      "response_utf8": "[{\"orbital_data\":[{\"data_source\":\"spacetrack\",\"date_collected\":\"2024-06-06 23:40:52 UTC\",\"epoch\":\"2022-09-12 11:07:09 UTC\",\"satellite_id\":48128,\"satellite_name\":\"STARLINK-2469\",\"tle_line1\":\"1 48128U 21027AN  22255.46330341  .00000128  00000-0  27494-4 0  9996\",\"tle_line2\":\"2 48128  53.0562  61.9393 0001288  82.8807 277.2328 15.06396556 81331\"}],\"source\":\"IAU CPS SatChecker\",\"version\":\"1.9.0\"}]\n"
+    },
+    {
+      "query": "https://satchecker.cps.iau.org/tools/get-nearest-tle/?id=48129&id_type=catalog&epoch=2459835.046386313",
+      "sha256": "d69fcf670a0440d361171bb29546d668a2a030fab7e84a42944edf16decaecbb",
+      "response_utf8": "[{\"orbital_data\":[{\"data_source\":\"spacetrack\",\"date_collected\":\"2024-06-06 23:41:04 UTC\",\"epoch\":\"2022-09-12 17:46:32 UTC\",\"satellite_id\":48129,\"satellite_name\":\"STARLINK-2471\",\"tle_line1\":\"1 48129U 21027AP  22255.74065515  .00000278  00000-0  37580-4 0  9999\",\"tle_line2\":\"2 48129  53.0564 130.6103 0001491  72.6263 287.4889 15.06395600 80003\"}],\"source\":\"IAU CPS SatChecker\",\"version\":\"1.9.0\"}]\n"
+    },
+    {
+      "query": "https://satchecker.cps.iau.org/tools/get-nearest-tle/?id=48130&id_type=catalog&epoch=2459835.046386313",
+      "sha256": "9a5152a0b0ec3195929f7d1e33da9fdc2f65ba25d8789a1d0fb91e57b99aa7e1",
+      "response_utf8": "[{\"orbital_data\":[{\"data_source\":\"spacetrack\",\"date_collected\":\"2024-06-06 23:41:03 UTC\",\"epoch\":\"2022-09-12 15:55:42 UTC\",\"satellite_id\":48130,\"satellite_name\":\"STARLINK-2472\",\"tle_line1\":\"1 48130U 21027AQ  22255.66368594  .00001931  00000-0  14845-3 0  9990\",\"tle_line2\":\"2 48130  53.0546 135.9553 0001303  81.6511 278.4625 15.06402954 79928\"}],\"source\":\"IAU CPS SatChecker\",\"version\":\"1.9.0\"}]\n"
+    },
+    {
+      "query": "https://satchecker.cps.iau.org/tools/get-nearest-tle/?id=48131&id_type=catalog&epoch=2459835.046386313",
+      "sha256": "c87e0808b16d676884d110856f140793684487a96157bc48e97272aaf47c21d3",
+      "response_utf8": "[{\"orbital_data\":[{\"data_source\":\"spacetrack\",\"date_collected\":\"2024-06-06 23:41:05 UTC\",\"epoch\":\"2022-09-12 17:59:49 UTC\",\"satellite_id\":48131,\"satellite_name\":\"STARLINK-2473\",\"tle_line1\":\"1 48131U 21027AR  22255.74987380 -.00000459  00000-0 -11953-4 0  9994\",\"tle_line2\":\"2 48131  53.0521 110.5474 0001471  79.4574 280.6581 15.06392646 80286\"}],\"source\":\"IAU CPS SatChecker\",\"version\":\"1.9.0\"}]\n"
+    },
+    {
+      "query": "https://satchecker.cps.iau.org/tools/get-nearest-tle/?id=48132&id_type=catalog&epoch=2459835.046386313",
+      "sha256": "8c9ee0104c913a9727b761694ef0c140a118bc5804ff1fd370dfcba7d5633beb",
+      "response_utf8": "[{\"orbital_data\":[{\"data_source\":\"spacetrack\",\"date_collected\":\"2024-06-06 23:41:03 UTC\",\"epoch\":\"2022-09-12 15:55:04 UTC\",\"satellite_id\":48132,\"satellite_name\":\"STARLINK-2474\",\"tle_line1\":\"1 48132U 21027AS  22255.66325084  .00000251  00000-0  35744-4 0  9995\",\"tle_line2\":\"2 48132  53.0533 130.9539 0001479  72.6766 287.4384 15.06395209 79994\"}],\"source\":\"IAU CPS SatChecker\",\"version\":\"1.9.0\"}]\n"
+    },
+    {
+      "query": "https://satchecker.cps.iau.org/tools/get-nearest-tle/?id=48133&id_type=catalog&epoch=2459835.046386313",
+      "sha256": "7b9c6f87ea0f197cd23be9308c1d3465a42ffe79bf74c7d59c46cbb297c986fc",
+      "response_utf8": "[{\"orbital_data\":[{\"data_source\":\"spacetrack\",\"date_collected\":\"2024-06-06 23:40:52 UTC\",\"epoch\":\"2022-09-12 11:03:09 UTC\",\"satellite_id\":48133,\"satellite_name\":\"STARLINK-2475\",\"tle_line1\":\"1 48133U 21027AT  22255.46052653 -.00000150  00000-0  88556-5 0  9992\",\"tle_line2\":\"2 48133  53.0528 131.8638 0001478  87.1000 273.0158 15.06398259 80361\"}],\"source\":\"IAU CPS SatChecker\",\"version\":\"1.9.0\"}]\n"
+    }
+  ]
+}

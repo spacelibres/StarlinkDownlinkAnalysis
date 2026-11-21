@@ -1,0 +1,17 @@
+{
+  "publication_projection": "Selected original fields. Hashes refer to source evidence. The referenced artifacts and inputs may be absent in this edition.",
+  "schema": "starlink-governance-verification/v1",
+  "project_version": "0.0.3",
+  "git_head": "42ac7d6defbe25f72fe53845b83d51412e01e392",
+  "code_sha256": {
+    "tools/install_hooks.py": "1afe34183b7f611f4cc37e6eab7fad25340e7bbd4c29f8a66f2ea856ad1a1d5f",
+    "tools/organize_legacy_workspace.py": "4c7966235edfaf7896831098711a46f5ac6fa7932a89c4a0ca6e1e5b190b084c",
+    "tools/release.py": "4a3a878ecd772fc7a075f8e77f134790b481a7c391a1777b97f2a760af3c5a20",
+    "tools/release_guard.py": "5a817610c6b91d89160d56a70b11604092694e0af0a1857cb87f35bb51601e4b",
+    "tools/run_experiment.py": "8210b669565a269e706e71827d08881e9158811305491c8f0b06a49348fb4f45",
+    "tools/verify_project.py": "41b0b33750e018c2ff8d853fb076ae8e5f8638adc26cb8aa2c1bc56e8e8a9923",
+    "tests/test_project_layout.py": "30984b5ac217665f71f9aa6c7d198e918ffa0529a268110623616b7b7841b58c",
+    "tests/test_release_guard.py": "dbbff4fec7fde22d5734d7eb3ee69cd4089c8c7167d1d3201f57e2ca4e3c5666",
+    "project_paths.py": "5d50d67daa013dd3c651b32d5c4735d8422a3e0f6fbb0bb61a14b45d31e77cfc"
+  }
+}

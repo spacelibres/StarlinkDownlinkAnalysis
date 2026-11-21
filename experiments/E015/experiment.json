@@ -1,0 +1,10 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E015",
+  "title": "Code 9 系统编码与整帧保留组验证",
+  "input": "data/raw/legacy_wideband/Starlink_Downlink_IQ.npy",
+  "scripts": ["code9_core.py", "validate_code9.py"],
+  "plan": "docs/plans/2026-11-20-code9-parity.md",
+  "group_seed": 2026112015,
+  "limitations": "Both assignments belong to one measured capture. Dense systematic checks do not establish a sparse check basis."
+}

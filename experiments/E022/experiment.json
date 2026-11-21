@@ -1,0 +1,9 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E022",
+  "title": "Code 28/37 未知中段的序列检验",
+  "inputs": ["runs/v019-code28-reproduction", "runs/v015-code37-verified"],
+  "scripts": ["gap_hypotheses_core.py", "audit_shortening_gaps.py"],
+  "seed": 2026112022,
+  "limitations": "One legacy capture. Finite tests of public waveform PN and short affine recurrences."
+}

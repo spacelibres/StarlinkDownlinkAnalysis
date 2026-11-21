@@ -1,0 +1,859 @@
+{
+  "schema": "starlink-research-register/v1",
+  "checked_on": "2026-11-20",
+  "scope": "Incremental primary-source and inherited-code register; not an exhaustive collection of all worldwide publications.",
+  "local_inventory": {
+    "manifest": "provenance/legacy_research_import.json",
+    "pdf_files_indexed": 17,
+    "inherited_code_package_directories": 10,
+    "exact_snapshot_files": 47,
+    "second_header_snapshot_files": 9,
+    "second_header_manifest": "provenance/legacy_second_header_import.json",
+    "payload_snapshot_files": 4,
+    "payload_manifest": "provenance/legacy_payload_import.json",
+    "existing_formula_library": "learning/formula_library.json",
+    "formula_cards": 50,
+    "formula_source_entries": 20,
+    "deduplication_note": "PDF variants, arXiv/journal versions, package copies and formulas do not count as independent experiments."
+  },
+  "sources": [
+    {
+      "id": "MCS66_85_FULL_CODE_E128",
+      "kind": "primary_sparse_qc_method_and_full_measured_reencoder",
+      "url": "https://arxiv.org/html/2610.29387v2#S5.SS2",
+      "data_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/",
+      "role": "Recover missing parity-check families after accounting for active systematic-prefix differences and verify a full-rank equivalent code.",
+      "current_evidence": "Independent GF(2) systematic re-encoding reproduces all 326 reserved words, with identical results after hiding parity symbols and strong remodulation separation.",
+      "boundary": "One capture session and a bounded strong-frame cohort. The result identifies an equivalent code, not the transmitter's physical graph or higher-layer protocol."
+    },
+    {
+      "id": "CROSS_RATE_QC_TRANSFER_E127",
+      "kind": "primary_qc_recovery_and_measured_cross_rate_transfer",
+      "url": "https://arxiv.org/html/2610.29387v2#S5.SS2",
+      "sparse_checks_url": "https://www-roc.inria.fr/secret/Jean-Pierre.Tillich/publications/CRE.pdf",
+      "role": "Test a systematic-coordinate translation fixed by comparing one pair of known lifted row families, then score another translated family on measured middle words.",
+      "current_evidence": "The added family increases MCS 66/85 matrix rank to 3072 and improves fixed MCS 85 PN and record witnesses with the old receiver settings.",
+      "boundary": "Some frozen families do not transfer. MCS 81 and 92 have weaker observation coverage. A complete parent or target code is not identified."
+    },
+    {
+      "id": "MCS85_INDEPENDENT_RECORD_BOUNDARY_E126",
+      "kind": "primary_record_framing_comparators",
+      "url": "https://patents.google.com/patent/US12074683B1/en",
+      "ipv4_url": "https://www.rfc-editor.org/rfc/rfc791",
+      "ipv6_url": "https://www.rfc-editor.org/rfc/rfc8200",
+      "role": "Test the fixed-to-variable boundary without using the later bytes for record location and replay fixed IP and FCS controls.",
+      "current_evidence": "A four-byte anchor localizes candidates whose held byte-state agreement changes at offset 20 in both observed receiver paths. Exact bounded protocol checks give no qualifying match.",
+      "boundary": "Records still use partial decoder decisions. The inferred variable region is an observed scope and carries no confirmed application semantics."
+    },
+    {
+      "id": "CROSS32_SOFT_DECODE_E125",
+      "kind": "primary_message_passing_and_open_source_reference",
+      "url": "https://www.josephboutros.org/ldpc_vs_turbo/ldpc_Richardson_Urbanke_ITfeb01.pdf",
+      "code_url": "https://github.com/quantumgizmos/ldpc/blob/main/src_cpp/bp.hpp",
+      "role": "Compare channel-only decisions, normalized min-sum and sum-product using frozen cross-modulation check matrices.",
+      "current_evidence": "Five-family soft decoding reduces reserved MCS 85 PN and record-reference disagreements. Both decoders recover one held high counter byte after masking its direct LLRs.",
+      "boundary": "Same-capture receiver branches share observations. The carry mask is a targeted post-result diagnostic. The matrices and record semantics remain partial."
+    },
+    {
+      "id": "MCS85_FULL_ARCHIVE_RECORDS_E124",
+      "kind": "primary_measured_archive_and_body_layer_context",
+      "url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/",
+      "patent_url": "https://patents.google.com/patent/US12074683B1/en",
+      "role": "Retest the three frozen MCS 85 tag-spacing associations on all measured archive allocations and bound a new same-length tag candidate.",
+      "current_evidence": "Held disjoint groups reproduce all three spacing associations. A fourth observed tag follows a 1512-byte lattice in three frames belonging to one exploratory group.",
+      "boundary": "Hard decisions can contain errors even at exact lattice points. The prototype new tag and one observed counter carry retain their discovery and calibration qualification."
+    },
+    {
+      "id": "CROSS32_SPARE_LANE_E123",
+      "kind": "primary_word_rounding_model_and_measured_iq",
+      "url": "https://arxiv.org/html/2610.29387v2#S4.SS2",
+      "role": "Use the independent codeword rounding hypothesis as a comparator for the last cross-32QAM lane and qualify its counterexamples using measured overlap.",
+      "current_evidence": "The last lane is zero on 691/723 disjoint reserved Qin observations and 128/135 raw reserved observations. Matched continuous positions have much weaker zero preference.",
+      "boundary": "An apparent high-margin one is erased in the paired archival waveform. Known PN zero also produces high-margin apparent ones. An invariant zero and its protocol meaning remain unresolved."
+    },
+    {
+      "id": "CROSS_MODULATION_CHECKS_E122",
+      "kind": "primary_cross_modulation_method_and_measured_iq",
+      "url": "https://arxiv.org/html/2610.29387v2#S6",
+      "data_url": "https://doi.org/10.5281/zenodo.21404931",
+      "role": "Test fixed MCS 66 and 70 checks on measured MCS 85 and 88 with nonterminal words, wrong matrices and serial block-boundary controls.",
+      "current_evidence": "Five MCS 66 families transfer to MCS 85, and two MCS 70 families transfer to MCS 88. Observed block-boundary rows favor the first 16384 serialized bits.",
+      "boundary": "Partial matrices and partly overlapping wideband sources. No complete FEC, BER or unknown application payload is established. LEO visibility is a projection."
+    },
+    {
+      "id": "LEO_DS9_WORD_TRANSFER_E121",
+      "kind": "external_research_code_and_dual_receiver_bit_exports",
+      "url": "https://github.com/misko/leo-tracker-reduxredux/blob/main/reports/2026_09_28_sequence_semantics/README.md",
+      "code_url": "https://github.com/misko/leo-tracker-reduxredux/blob/main/reports/2026_09_28_sequence_semantics/ds9_word_audit.py",
+      "role": "Check LEO DS9 fixed-window bit exports against the E025 frozen wideband codebook after aligning the two published phase origins.",
+      "current_evidence": "Both visits contribute 45 matching frames. All 699 accepted windows match the word and state index. All 999 shuffled dictionaries miss the 28 observed rotation/sign classes.",
+      "boundary": "Derived observations from two visits, with shared UT reference ancestry. The exported receiver scores were checked as gates, while the source soft samples and raw IQ were unavailable."
+    },
+    {
+      "id": "HUMPHREYS_STRUCTURE",
+      "kind": "primary_paper",
+      "url": "https://arxiv.org/abs/2210.11578",
+      "local_file": "2210.11578v3.pdf",
+      "role": "OFDM grid, synchronization and interpretation of leakage tones",
+      "current_evidence": "Local PDF hash indexed; waveform geometry exercised in E006-E009",
+      "boundary": "A leakage line is not a decoded beacon message or spacecraft identifier"
+    },
+    {
+      "id": "QIN_PILOTS",
+      "kind": "primary_paper_and_supplement",
+      "url": "https://arxiv.org/abs/2602.02627",
+      "doi": "10.1038/s44459-026-00075-6",
+      "local_versions": ["qin_pilots_starlink_dl.pdf", "s44459-026-00075-6.pdf"],
+      "role": "Known edge-pilot symbols and predictable structure",
+      "current_evidence": "Exact published pilot constants used and tested; same-paper PDF variants retained separately",
+      "boundary": "Known-symbol agreement is not unknown-payload decoding"
+    },
+    {
+      "id": "LIU_PDU_V2",
+      "kind": "primary_paper",
+      "url": "https://arxiv.org/abs/2610.29387v2",
+      "user_supplied_pdf": {
+        "filename": "2610.29387v2.pdf",
+        "sha256": "f4ebd27e22951577a16c73c7ec0ffae54532c6c1d326c5884e88fb8897db0e1f",
+        "bytes": 7142536,
+        "pages": 30,
+        "crosscheck": "Sections III-IV specify the header and resource rules. Section VI-H, PDF page 18, confirms the seven candidates and explicitly leaves Code 68 coding unresolved."
+      },
+      "role": "Terminated rate-1/3 header code, CRC and conditional resource mapping",
+      "current_evidence": "Explicit v2 HTML sections II-VI checked live. E009-E012 recompute receiver/headers/endpoints/code5 generator. E013 searches exact low-weight dual checks, verifies full sparse rank/equivalence and tests normalized min-sum with retained failures.",
+      "header_formula_url": "https://arxiv.org/html/2610.29387v2#S4",
+      "e010_source_manifest": "provenance/legacy_second_header_import.json",
+      "field_model": "LSB weights for bits 8..10 (block count) and 12..15 (entry count), zero-based retained-bit indexing. E010 tests conditional 19/20-bit descriptors; both fit zero padding in this capture.",
+      "boundary": "Current replay inherits historical same-capture parameter selection; arbitrary application plaintext not recovered"
+    },
+    {
+      "id": "UT_SIMULATOR",
+      "kind": "author_code_and_paper",
+      "url": "https://gitlab.com/radionavlab/public/ut-starlink-signal-simulator",
+      "paper_doi": "10.33012/2023.19308",
+      "local_snapshot": "references/legacy_research/starlink_simulator",
+      "license": "Original MIT notice retained",
+      "role": "Known-truth waveform and controlled channel/receiver experiments",
+      "boundary": "A simulator cannot establish that a real capture has the modeled transmitter format"
+    },
+    {
+      "id": "QIN_TIMING",
+      "kind": "primary_paper",
+      "url": "https://arxiv.org/abs/2501.05302",
+      "doi": "10.1109/TAES.2025.3627180",
+      "role": "Frame-clock stability and timing discontinuities",
+      "current_evidence": "Official abstract checked; further full-method replication remains pending",
+      "boundary": "Publication timing results are not calibration of the user's receiver clock"
+    },
+    {
+      "id": "QIN_SHORT_TERM_CLOCK",
+      "kind": "primary_paper",
+      "url": "https://radionavlab.ae.utexas.edu/wp-content/uploads/Qin_analysis_of_short_term_time_stability_starlink_frame_clock.pdf",
+      "role": "Section II distinguishes satellite frame time, receiver time and GPS time. Figures 1 and 2 provide the 750 Hz receive lattice and 15-second interval context.",
+      "current_evidence": "E107 uses the published timing conventions to keep receive ordinals distinct from the recovered protocol clock. The erasure constraint itself comes from the Code 5 fields verified in E097.",
+      "boundary": "The paper's timing observations do not furnish the Code 5 bit layout, prove the 0181 beam carries it, or supply a receiver UTC calibration."
+    },
+    {
+      "id": "LEO_0181_NATIVE_GLRT",
+      "kind": "author_code_and_recording_receipt",
+      "url": "https://github.com/misko/leo-tracker-reduxredux/blob/main/reports/2026_09_03_0181_native25_fractional_glrt.md",
+      "code_url": "https://github.com/misko/leo-tracker-reduxredux/blob/main/tools/analyze_0181_native25_fractional_glrt.py",
+      "receipt_sha256": "5cddebaf8a77f2b4f9ca990e44c00293a79668c438e1d69ae1ae853d964b1cc9",
+      "role": "Apply measured native high-rate pilot acquisition and tracking frequency references to the earlier nominal LEO clock-field coverage model.",
+      "current_evidence": "E107 reads 89 retained native entries and tests the resulting two-bit erasure model in a separate recorded wideband waveform rendered at 25 MS/s.",
+      "boundary": "The published receipt retains low-rate fit summaries and hashes, not low-rate epoch arrays or either stream's time-domain samples. No payload is reported for this capture."
+    },
+    {
+      "id": "LEO_DSX01_PROFILED_WORD_E108",
+      "kind": "primary_method_paper_and_author_tool",
+      "url": "https://doi.org/10.1137/0710036",
+      "code_url": "https://github.com/misko/leo-tracker-reduxredux/blob/main/tools/dsx01_pilot_clock.py",
+      "waveform_formula_url": "https://arxiv.org/html/2602.02627#S8.SS2",
+      "role": "Eliminate linear complex channel gains by least squares while searching discrete code signs and cyclic phase, using the original LEO FrameClock for the raw sample index.",
+      "current_evidence": "E108 fits and freezes the blind candidate on the genuine paired raw IQ, scores received samples in separate frame groups and OFDM blocks, then loads the independently frozen wideband word in a separate program.",
+      "boundary": "This is discrete local search with a known resource model. Lane signs, cyclic origin, conflicting positions and complete payload semantics remain ambiguous."
+    },
+    {
+      "id": "VITERBI_CONSTRAINED_WEAK_H2_E109",
+      "kind": "primary_coding_paper_and_author_recording",
+      "url": "https://doi.org/10.1109/TIT.1967.1054010",
+      "code_url": "https://github.com/misaka666/Starlink-Downlink-Analysis",
+      "format_url": "https://arxiv.org/html/2610.29387v2#S4",
+      "role": "Constrain the terminated header trellis with published prefix/capacity structure and test CRC only after choosing the decoder path. Predict body allocations, then test the exact modulation-specific PN15 tails on disjoint resources of the author's recorded IQ.",
+      "current_evidence": "E109 finds one weak offset-grid H2 candidate with two downstream raw-body witnesses and compares wrong positions, other observed ticks, and PN block permutations. The positive control separately uses the older 480 MS/s capture.",
+      "boundary": "Two clock fits and erasures reuse one weak capture. The CRC-only yield does not establish a field without the body tests, and the data do not establish transmitter identity or application content."
+    },
+    {
+      "id": "MATCHED_PADDING_BODY_FIRST_E110",
+      "kind": "primary_matched_filter_and_author_recording",
+      "url": "https://doi.org/10.1109/TIT.1960.1057571",
+      "code_url": "https://github.com/misaka666/Starlink-Downlink-Analysis",
+      "format_url": "https://arxiv.org/html/2610.29387v2#S4",
+      "role": "Use matched-filter projections of known PN15 symbols to find candidate systematic-to-parity boundaries and evaluate H2 allocation lengths with the CRC-bearing resources held out of ranking.",
+      "current_evidence": "E110 archives body marker and decode stages independently. Three offset-grid H2 headers agree under both pilot fits and pass their retained CRC checks, including two new headers and seven new allocation descriptors.",
+      "boundary": "The body search covers eight known formats and needs observable padding. The two fits and checks reuse one acquisition. This is structure-assisted header recovery, not decoding the unknown body codewords."
+    },
+    {
+      "id": "SYMBOL_MARGINAL_PADDING_AND_PARITY_E111",
+      "kind": "primary_coding_and_factor_graph_papers",
+      "url": "https://doi.org/10.1109/18.669123",
+      "factor_graph_url": "https://www.isiweb.ee.ethz.ch/papers/arch/aloe-2001-1.pdf",
+      "input_code": "https://github.com/misaka666/Starlink-Downlink-Analysis",
+      "role": "Marginalize over actual QAM labels with a partial known PN suffix. For frozen binary check rows, combine only across symbol observations after forming joint XOR moments within a symbol.",
+      "current_evidence": "E111 finds held earlier-padding evidence in seven of nine weak final words. Frozen MCS 66 check predictions do not exceed the shift-control range on weak observations, while the existing strong-waveform comparator passes.",
+      "boundary": "The interference model uses a Gaussian proxy and the non-padding symbols are modeled as uniform. The change-point candidates are not exact byte-length fields. Weak codeword content remains unknown."
+    },
+    {
+      "id": "WAV_ROTATED_WORD_REACQUISITION_E112",
+      "kind": "primary_waveform_paper_and_user_reference_code",
+      "url": "https://arxiv.org/html/2602.02627#S8.SS2",
+      "published_analysis_code": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/",
+      "waterfall_code": "https://github.com/lixb123/starlink_beacon_iq",
+      "role": "Compare the four-carrier restriction of the measured 60-position family against the localized waterfall event with independent harmonic fitting and scoring partitions.",
+      "current_evidence": "Four pre-event windows recover phase 8 and predict held frequencies. Ten post-event windows fail to predict either band after a renewed phase and lag search. Synthetic phase-shifted waveforms injected into measured post-event windows quantify sensitivity.",
+      "boundary": "This is a single measured event and model-conditional search. The waterfall repository supplies IQ display context, while the waveform paper supplies the reference family. The data do not establish a physical switch location or unknown transmitted message."
+    },
+    {
+      "id": "WAV_ERASURE_CASE34_E113",
+      "kind": "primary_waveform_and_separable_regression_papers",
+      "url": "https://arxiv.org/html/2602.02627#S8.SS2",
+      "separable_regression_url": "https://doi.org/10.1137/0710036",
+      "code_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/",
+      "role": "Use the other carriers for timing and compare equal-parameter reference, polarity inversion, and zero-contribution models for the ambiguous class on carrier +2.",
+      "current_evidence": "E113 retests resource class 34 on raw WAV windows with harmonic holdouts, frequency-dependent channel response and software waveform controls.",
+      "boundary": "The coefficient is a coherent contribution in one measured waveform. Its attenuation does not establish the transmitted binary sign or explain the physical mechanism."
+    },
+    {
+      "id": "WAV_FRAME_SIGNS_E114",
+      "kind": "primary_measurement_method_and_inherited_code",
+      "url": "https://arxiv.org/abs/1003.0113",
+      "waveform_url": "https://arxiv.org/html/2602.02627#S8.SS2",
+      "leo_reference_code": "https://github.com/misko/leo-tracker-reduxredux/blob/main/tools/dsx01_pilot_clock.py",
+      "role": "Use cross-products to measure centered framewise variation in disjoint harmonic sets; keep paired-receiver leave-out as the transfer criterion for the LEO corpus.",
+      "current_evidence": "E114 measures the original WAV and predicts slot 5 from slots 4 and 12 in withheld harmonics. E108 separately used the LEO FrameClock, paired raw IQ and held-out samples to investigate the repeat family.",
+      "boundary": "Disjoint harmonic sets share one recording and receiver. The cross-spectrum source describes separate instruments. E115 records the subsequent LEO comparison and its limited carrier support."
+    },
+    {
+      "id": "LEO_WAV_WORD_COORDINATES_E115",
+      "kind": "primary_waveform_paper_and_source_data_code",
+      "url": "https://arxiv.org/html/2602.02627#S8.SS2",
+      "code_url": "https://github.com/misko/leo-tracker-reduxredux/blob/main/tools/dsx01_pilot_clock.py",
+      "source_data_url": "https://github.com/misko/leo-tracker-reduxredux/tree/main/reports/2026_10_18_dsx01_pilot_clock",
+      "role": "Map the WAV positions onto the repeated non-pilot sequence and replay the LEO paired raw samples as a separate receiver check.",
+      "current_evidence": "Original selection records label both paired windows as lower edge. E115 maps the three template positions onto two jointly visible frames of the better aligned pair. One direction improves with constant positive polarity and the reverse does not improve.",
+      "boundary": "Reference and phase-search conditional. Neither LEO recording covers the literal center carrier, and the available matched frames do not validate a switching state across receivers."
+    },
+    {
+      "id": "WAV_WORD_SHIFT_STATE_E116",
+      "kind": "primary_waveform_and_separable_regression_papers",
+      "url": "https://arxiv.org/html/2602.02627#S8.SS2",
+      "alternating_reference": "https://arxiv.org/html/2602.02627#S9.SS1",
+      "code_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/",
+      "leo_reference_code": "https://github.com/misko/leo-tracker-reduxredux/blob/main/tools/dsx01_pilot_clock.py",
+      "regression_url": "https://doi.org/10.1137/0710036",
+      "role": "Use published 60-position geometry and separable carrier gains to contrast whole-word phase with a fixed word and local three-position polarity.",
+      "current_evidence": "Whole-word phase beats the local flip on held IQ in every tested window. Phase acquired on the negative side alone predicts 1147 of 1258 previously decided positive-side triples. All frequency partitions are from the original WAV.",
+      "boundary": "The comparison is conditional on the E025 word, E113 timing and E114 decision coverage. Measured post-event background shows limited phase recovery for half-strength arbitrary shifts. No transmitter-state or payload semantics inferred."
+    },
+    {
+      "id": "WAV_TAIL_ALLOCATION_AMBIGUITY_E117",
+      "kind": "primary_allocation_paper_and_source_release",
+      "url": "https://arxiv.org/html/2610.29387v2#S4.SS3",
+      "waveform_url": "https://arxiv.org/html/2602.02627#S8.SS2",
+      "release_code_url": "https://github.com/misaka666/Starlink-Downlink-Analysis",
+      "role": "Invert the measured phase modulo the allocation boundary and test which end classes can be discriminated with two observed carriers.",
+      "current_evidence": "Three common WAV phases have 7, 8 and 11 different exact allocation endpoints in the Qin archive. Grouped clock predictors do not beat the constant. Target harmonics support earlier-onset waveforms in 12 reciprocal branches.",
+      "boundary": "The archived Qin overlap counts once. The early/late partition is a follow-up to the first onset replay. Measured background controls do not validate exact narrowband endpoints."
+    },
+    {
+      "id": "WEAK_SECOND_GRID_TAIL_PHASE_E118",
+      "kind": "primary_waveform_and_pdu_papers",
+      "url": "https://arxiv.org/html/2602.02627#S8.SS2",
+      "allocation_url": "https://arxiv.org/html/2610.29387v2#S4.SS3",
+      "source_release": "https://github.com/misaka666/Starlink-Downlink-Analysis/releases/tag/v2.0.0",
+      "role": "Freeze the weak-grid terminal waveform phase on raw IQ before restricting the independent H2 candidate search.",
+      "current_evidence": "Nineteen complete weak frames transfer the fitted tail phase across reciprocal held frequencies and receiver fits. The three prior CRC-valid endpoints match modulo 60. Virtual terminal allocations add no new valid H2.",
+      "boundary": "Single recording. Equal-width formats remain phase-equivalent. An archived pathname mismatch affected the initial receipts only and is preserved."
+    },
+    {
+      "id": "WEAK_RESOURCE_EDGE_TWO_DESCRIPTORS_E119",
+      "kind": "primary_changepoint_and_pdu_papers",
+      "url": "https://doi.org/10.1093/biomet/57.1.1",
+      "allocation_url": "https://arxiv.org/html/2610.29387v2#S4",
+      "source_code_url": "https://github.com/misaka666/Starlink-Downlink-Analysis",
+      "role": "Estimate the weak-grid tail change point on held resource groups and use frozen endpoint closure to propose H2 descriptors without padding markers.",
+      "current_evidence": "Eight weak frames produce retained intervals. Tick 14 yields a joint CRC-valid H2 candidate at endpoint 188053, and frozen MCS 78 PN15 termination ranks first at resource 187080 in both receive fits.",
+      "boundary": "Reference-conditioned exact point. Prefix-first flags and grouped MCS 70 support remain incomplete. No independent RF capture or decoded application content."
+    },
+    {
+      "id": "MCS70_DISTINCT_BLOCK_CHECKS_E120",
+      "kind": "primary_pdu_and_qc_inference_papers",
+      "url": "https://arxiv.org/html/2610.29387v2#S5",
+      "qc_reference": "https://doi.org/10.1109/LCOMM.2013.123113.132241",
+      "archive_and_code": "https://doi.org/10.5281/zenodo.21404931",
+      "role": "Use packed pair signatures within candidate circulant blocks to discover sparse parity projections and infer system taps from variable PN15 onsets.",
+      "current_evidence": "Two MCS 70 base checks, each with ten system and four parity terms, expand to rank 1024. Group-held nonterminal and raw-IQ decisions support the full checks, while wrong-format and one-coordinate controls are near chance.",
+      "boundary": "The archived and raw IQ paths partially overlap. The weak-grid tail candidate has no successful transfer under the tested pilot-conditioned rule. The partial check space does not certify arbitrary payload content."
+    },
+    {
+      "id": "MISAKA_DATA_VERSION",
+      "kind": "author_repository",
+      "url": "https://github.com/misaka666/Starlink-Downlink-Analysis",
+      "readme_modified_at": "2026-11-20T05:02:52Z",
+      "local_data_version": "Historical v1.0.0 CSV, 480 MS/s, 24.000375 ms",
+      "live_readme_data_version": "v2.0.0, UT-origin 250 MS/s, 50 ms",
+      "role": "Versioned dataset provenance and worked protocol examples",
+      "boundary": "Live repository README was checked directly; search snippets still describe the old dataset and must not override it"
+    },
+    {
+      "id": "PASSIVE_DETECTION_CANDIDATE",
+      "kind": "candidate_author_code",
+      "url": "https://github.com/lukepwilson/starlink-passive-detection",
+      "branch": "main",
+      "pushed_at": "2026-03-20T17:55:06Z",
+      "license_metadata": null,
+      "role": "Envelope/750-Hz detection comparator",
+      "current_evidence": "Repository existence/metadata checked; implementation not run or validated here",
+      "boundary": "Detection and claimed pass associations are not a Ku payload decoder"
+    },
+    {
+      "id": "LFDEMOD_CANDIDATE",
+      "kind": "candidate_author_code",
+      "url": "https://github.com/JinYi1108/LFdemod",
+      "branch": "main",
+      "pushed_at": "2026-10-13T02:02:18Z",
+      "license_metadata": "NOASSERTION",
+      "role": "Separate VHF/LoRa protocol study and reference controls",
+      "current_evidence": "Repository metadata and stated scope checked; not installed or executed",
+      "boundary": "VHF LoRa methods do not directly decode Ku OFDM IQ"
+    },
+    {
+      "id": "TRUONG_CHANGEPOINT",
+      "kind": "author_paper_and_implementation",
+      "url": "https://arxiv.org/abs/1801.00718v3",
+      "doi": "10.1016/j.sigpro.2019.107299",
+      "author_code": "https://github.com/deepcharles/ruptures",
+      "reviewed_file": "https://github.com/deepcharles/ruptures/blob/master/src/ruptures/costs/costl2.py",
+      "reviewed_file_modified_at": "2026-05-26T07:15:09Z",
+      "documentation": "https://centre-borelli.github.io/ruptures-docs/user-guide/costs/costl2/",
+      "role": "L2 segment cost and explicit cost/search/constraint decomposition",
+      "current_evidence": "Author source and official cost definition read live. E011 implements cumulative-sum single-change SSE with synthetic truth checks; package not installed or executed.",
+      "boundary": "Single-change mean fitting is a diagnostic; it cannot certify an RF semantic boundary or handle all multi-region profiles"
+    },
+    {
+      "id": "MCS_EXAMPLE_PATENT",
+      "kind": "primary_patent",
+      "url": "https://patents.google.com/patent/US11792832B1/en",
+      "role": "Published example MCS table, coded bits and bits-per-symbol terminology",
+      "current_evidence": "Original patent description of Fig.4 and its illustrative scope checked live",
+      "boundary": "Illustrative configurations are not measurements or proof that this capture uses those encoders; no patent row is substituted for a recovered code"
+    },
+    {
+      "id": "PAGE_INSPECTION",
+      "kind": "primary_paper_candidate",
+      "url": "https://doi.org/10.1093/biomet/41.1-2.100",
+      "title": "E. S. Page, Continuous Inspection Schemes (1954)",
+      "role": "Sequential change-detection reading branch",
+      "current_evidence": "Publisher bibliographic record checked; full text requires access. CUSUM not implemented or claimed validated in E011.",
+      "boundary": "Bibliographic discovery is not formula reproduction or an executed signal experiment"
+    },
+    {
+      "id": "GALOIS_LINEAR_ALGEBRA",
+      "kind": "author_implementation",
+      "url": "https://github.com/mhostetter/galois",
+      "reviewed_file": "https://github.com/mhostetter/galois/blob/main/src/galois/_domains/_linalg.py",
+      "reviewed_file_modified_at": "2025-12-17T13:24:14Z",
+      "role": "Finite-field pivot/rank and linear-system semantics",
+      "current_evidence": "Author row_reduce_jit source read through GitHub connector; package not installed/executed. E012 uses independently implemented GF2 integer row operations with known-truth tests.",
+      "boundary": "A finite-field solver is not a Starlink decoder; real-valued matrix rank cannot replace GF2 rank"
+    },
+    {
+      "id": "VALEMBOIS_RECOGNITION",
+      "kind": "primary_paper_candidate",
+      "url": "https://doi.org/10.1016/S0166-218X(00)00353-X",
+      "institutional_record": "https://www.rocq.inria.fr/secret/PUBLICATIONS/",
+      "title": "A. Valembois, Detection and recognition of a binary linear code (2001)",
+      "role": "Linear-code detection and sparse-dual recognition reading branch",
+      "current_evidence": "Author-team publication record checked; direct DOI page unavailable through browsing. Full algorithm not reproduced or claimed validated.",
+      "boundary": "Bibliographic evidence is distinct from executed code recognition"
+    },
+    {
+      "id": "GALLAGER_LDPC_FOUNDATION",
+      "kind": "primary_thesis_record",
+      "url": "https://dspace.mit.edu/entities/publication/6efcd810-4862-40aa-b4e7-88dc677a413c",
+      "persistent_handle": "https://hdl.handle.net/1721.1/11804",
+      "role": "Historical sparse parity-check and iterative-decoding foundation",
+      "current_evidence": "MIT author/title/year and full-thesis availability checked. Thesis not downloaded/reproduced or claimed fully replicated.",
+      "boundary": "Original regular ensembles do not by themselves identify this irregular weight2/3/4 code or transmitter implementation"
+    },
+    {
+      "id": "CHEN_NORMALIZED_DECODING",
+      "kind": "primary_author_abstract",
+      "url": "https://research.ibm.com/publications/near-optimal-reduced-complexity-decoding-algorithms-for-ldpc-codes",
+      "title": "Near optimal reduced-complexity decoding algorithms for LDPC codes (2002)",
+      "authors": ["J. Chen","Alfred O. Hero","E. Eleftheriou","M. Fossorier","X.-Y. Hu"],
+      "role": "Normalization/correction families of reduced-complexity BP",
+      "current_evidence": "Author research page and abstract checked; E013 eta0.8 is fixed from the Starlink paper, not inferred from this abstract",
+      "boundary": "Abstract availability is not a full comparative performance replication or a new optimum-decoding claim"
+    },
+    {
+      "id": "LDPC_CPP_BP_REFERENCE",
+      "kind": "author_implementation",
+      "url": "https://github.com/quantumgizmos/ldpc",
+      "reviewed_file": "https://github.com/quantumgizmos/ldpc/blob/main/src_cpp/bp.hpp",
+      "reviewed_file_modified_at": "2025-06-03T04:30:40Z",
+      "role": "Check-to-bit sign/minimum messages and fixed min-sum scaling",
+      "current_evidence": "Author C++ minimum-sum branch read via GitHub connector. Not installed/executed or copied; E013 independently implements synchronous normalized min-sum with known-truth tests.",
+      "boundary": "Generic classical/quantum decoder, not a Starlink protocol implementation; source default scaling is not a calibration of our RF data"
+    },
+    {
+      "id": "UT_CAPTURE_RELEASE_V2",
+      "kind": "author_release",
+      "url": "https://github.com/misaka666/Starlink-Downlink-Analysis/releases/tag/v2.0.0",
+      "metadata_url": "https://github.com/misaka666/Starlink-Downlink-Analysis/blob/main/data/metadata.json",
+      "metadata_git_blob": "a134b8aacc34d41b4e523d0bc43aad178a91d9b0",
+      "primary_study": "https://doi.org/10.1038/s44459-026-00075-6",
+      "role": "Second wideband capture for code relation transfer",
+      "current_evidence": "Published asset digest and local 50 MB CI16 match. Author reports 35 verified Code 5 words on nine full frames. E014 locally reproduces those totals and checks three more words fully observed in a partial frame.",
+      "boundary": "UT Austin attribution follows the release. Original archive equivalence and RF center are unverified. Published aggregate results were available before the experiment."
+    },
+    {
+      "id": "NUMPY_UNWRAP_246",
+      "kind": "author_implementation",
+      "url": "https://github.com/numpy/numpy/blob/v2.4.6/numpy/lib/_function_base_impl.py",
+      "git_blob": "6d77cf32cd18000a823616a445997dbb1927ae93",
+      "role": "E015 phase unwrapping across successive OFDM slots",
+      "current_evidence": "Source inspected at the installed NumPy version. The default discontinuity is a half-period. Wrapped increments are corrected by cumulative multiples of the period.",
+      "boundary": "Continuity assumes successive changes within half a period. Source semantics do not establish an absolute phase branch or a physical origin for the slope."
+    },
+    {
+      "id": "SMARANDACHE_VONTOBEL_QC_RING",
+      "kind": "primary_paper",
+      "url": "https://arxiv.org/abs/0901.4129",
+      "role": "Circulant-matrix and quotient-polynomial representations in E016",
+      "current_evidence": "Checked definitions and ring equivalence in the author manuscript. E016 tests the equivalence on a small known model and selected measured words.",
+      "boundary": "Distance bounds or LDPC graph properties from the reference are not inferred for Code 21."
+    },
+    {
+      "id": "NTL_GF2X_API",
+      "kind": "author_implementation",
+      "url": "https://github.com/libntl/ntl/blob/main/include/NTL/GF2X.h",
+      "git_blob": "cb3db5b03fc8478853bef813b42de7ba03d8bb79",
+      "role": "Reference for modular multiplication, inversion and extended GCD operations over GF(2) polynomials",
+      "current_evidence": "Maintainer header declarations MulMod, InvMod, InvModStatus and XGCD inspected.",
+      "boundary": "E016 uses local Python integer arithmetic. NTL was not installed or executed."
+    },
+    {
+      "id": "CHASE_DECODING",
+      "kind": "primary_paper",
+      "url": "https://ieeexplore.ieee.org/document/1054746/",
+      "role": "Use channel measurements to choose candidate changes for code validation",
+      "current_evidence": "Checked publisher abstract for the observation reliability principle.",
+      "boundary": "E017 searches bounded symbol alternatives with exact syndromes. It does not reproduce Chase's binary code decoder or performance bounds."
+    },
+    {
+      "id": "AFF3CT_CHASE_SOURCE",
+      "kind": "author_implementation",
+      "url": "https://github.com/aff3ct/aff3ct/blob/develop/src/Module/Decoder/Generic/Chase/Decoder_chase_std.cpp",
+      "git_blob": "5b684abd9604293d037ca806e722b0249e5de73e",
+      "role": "Reference implementation of least-reliable positions and candidate masks",
+      "current_evidence": "Inspected maintained C++ source for reliability partial sort and candidate-mask application.",
+      "boundary": "No AFF3CT code executed or copied. E017 uses eight-point symbol moves and a different coordinate-aware syndrome search."
+    },
+    {
+      "id": "LIU_QC_FIGURE12",
+      "kind": "primary_paper_numeric_figure",
+      "url": "https://arxiv.org/pdf/2610.29387v2#page=17",
+      "role": "Numeric QC shifts, Z=128, 512 and 1024",
+      "current_evidence": "The figure values were transcribed. The Z128 row set equals the E013 recovered row set. E018 checks the other tables on 16 measured codewords.",
+      "boundary": "Fixed matrices come from the published figure and the measured capture is already studied in the same paper."
+    },
+    {
+      "id": "GNURADIO_CONSTELLATION_SOFT_DECISION",
+      "kind": "author_implementation",
+      "url": "https://github.com/gnuradio/gnuradio/blob/main/gr-digital/lib/constellation.cc",
+      "git_blob": "df40f08763d2d88e1402541c4abfeb0d6a5d3d08",
+      "role": "Reference implementation of soft decisions based on bit-labelled constellation distances",
+      "current_evidence": "Reviewed calc_soft_dec distance and likelihood accumulation.",
+      "boundary": "GNU Radio accumulates full symbol likelihoods. E018 uses fixed-scale max-log distance differences and local min-sum. GNU Radio was not executed or copied."
+    },
+    {
+      "id": "FISCHLER_BOLLES_RANDOM_CONSENSUS",
+      "kind": "primary_paper_record",
+      "url": "https://www.sri.com/publication/artificial-intelligence-pubs/random-sample-consensus-a-paradigm-for-model-fitting-with-applications-to-image-analysis-and-automated-cartography/",
+      "doi": "10.1145/358669.358692",
+      "role": "Calibration-only subset consensus diagnostic for Code 28",
+      "current_evidence": "Original author abstract checked at SRI.",
+      "boundary": "E019 uses a fixed finite trial count with exact binary agreement in a quotient ring. No higher-dimensional model was recovered."
+    },
+    {
+      "id": "SKIMAGE_RANSAC_FIT",
+      "kind": "author_implementation",
+      "url": "https://github.com/scikit-image/scikit-image/blob/main/src/_skimage2/measure/fit.py",
+      "git_blob": "595a6ca5410e1c225373be9a1c3ee2b255761a0f",
+      "role": "Reference API and sample-fit-score procedure for robust inference",
+      "current_evidence": "Maintainer ransac source and documentation checked.",
+      "boundary": "No library installation or execution. E019 implements its finite GF(2) consensus test locally."
+    },
+    {
+      "id": "CASTAGNOLI_MASSEY_REPEATED_ROOTS",
+      "kind": "primary_paper",
+      "url": "https://www.isiweb.ee.ethz.ch/papers/arch/gcasta-mass-inspec-1991-1.pdf",
+      "role": "Hasse coefficients for repeated roots in characteristic two",
+      "current_evidence": "Author archive paper checked for the repeated-root parity-check framework. E020 evaluates local quotient coefficients at x=1.",
+      "boundary": "The source gives cyclic-code theory. It does not contain the measured Starlink coefficient values."
+    },
+    {
+      "id": "USER_LIU_V2_PDF",
+      "kind": "user_supplied_primary_paper",
+      "url": "https://arxiv.org/abs/2610.29387v2",
+      "sha256": "f4ebd27e22951577a16c73c7ec0ffae54532c6c1d326c5884e88fb8897db0e1f",
+      "role": "Code 28 reference parameters and reported validation targets",
+      "current_evidence": "Local PDF checked, 30 pages, no attachments. Section VI-G explicitly reports 189 re-encoded words after soft decoding.",
+      "boundary": "Paper results and local reproduction results are attributed separately. No PDF copied into the repository."
+    },
+    {
+      "id": "GNURADIO_OFDM_SIMPLEDFE",
+      "kind": "author_implementation",
+      "url": "https://github.com/gnuradio/gnuradio/blob/main/gr-digital/lib/ofdm_equalizer_simpledfe.cc",
+      "git_blob": "32f601113d10e7e42a3e97898631811c0fe5be4e",
+      "role": "Decision-directed OFDM channel correction reference",
+      "current_evidence": "Maintainer source checked for nearest-constellation decision and channel update. E021 uses local crossed estimation over carriers and slots.",
+      "boundary": "GNU Radio code was not executed or copied. The crossed estimator and original publication receiver differ."
+    },
+    {
+      "id": "ODONNELL_BOOLEAN_PARITY_BASIS",
+      "kind": "author_book",
+      "url": "https://www.cs.cmu.edu/~odonnell/papers/Analysis-of-Boolean-Functions-by-Ryan-ODonnell.pdf",
+      "role": "Parity basis for exhaustive finite affine recurrence fits",
+      "current_evidence": "Author chapter 1 checked. E022 uses a fast Walsh transform of signed target counts.",
+      "boundary": "A finite fit and its negative controls only concern common low-order affine models."
+    },
+    {
+      "id": "GALOIS_LFSR_REFERENCE",
+      "kind": "author_implementation",
+      "url": "https://github.com/mhostetter/galois/blob/main/src/galois/_lfsr.py",
+      "git_blob": "34d81ed1b29608f4871792fcc6c9973ffd66aadb",
+      "role": "LFSR polynomial conventions and noiseless Berlekamp–Massey reference",
+      "current_evidence": "Reviewed source entry points and feedback/characteristic polynomial conventions.",
+      "boundary": "No copied or executed library code. E022 compares held-out predictive agreement with noisy-alignment controls."
+    },
+    {
+      "id": "GALOIS_NULLSPACE",
+      "kind": "author_implementation",
+      "url": "https://github.com/mhostetter/galois/blob/main/src/galois/_fields/_array.py",
+      "git_blob": "2ab5130633c28b01a6bbaa74d546ea2341f3dcac",
+      "role": "Finite field homogeneous-system null space convention",
+      "current_evidence": "Author null_space interface and mathematical contract checked. E023 derives an independent packed-row basis.",
+      "boundary": "A null space of exact hard-symbol constraints cannot account for undecided or erroneous symbols without further modeling."
+    },
+    {
+      "id": "FRANK_ERASURE_RANK",
+      "kind": "primary_thesis",
+      "url": "https://mediatum.ub.tum.de/doc/1660458/hxz6uj6ehurlqio67u1cxbldk.Thesis.pdf",
+      "role": "Anna Frank, Finite Blocklength Codes for Secure Communication, Proposition 4.1",
+      "current_evidence": "Primary text checked for the rank criterion on retained coordinates. E024 applies it after fixing the header CRC and side information.",
+      "boundary": "An ideal resource-erasure model assumes reliable coordinate values and does not measure receiver leakage or noise."
+    },
+    {
+      "id": "SAGE_PUNCTURED_CODE",
+      "kind": "author_implementation",
+      "url": "https://github.com/sagemath/sage/blob/develop/src/sage/coding/punctured_code.py#L2260",
+      "role": "User-selected puncture coordinates and generator restriction",
+      "current_evidence": "Maintainer generator_matrix implementation inspected for complementary coordinate deletion and rank. E024 reuses local GF(2) primitives.",
+      "boundary": "Sage source was read as a reference. No vendored files or new runtime dependency."
+    },
+    {
+      "id": "TRUONG_CHANGE_POINT",
+      "kind": "author_paper_and_implementation",
+      "url": "https://doi.org/10.1016/j.sigpro.2019.107299",
+      "code_url": "https://github.com/deepcharles/ruptures/blob/master/src/ruptures/detection/dynp.py",
+      "role": "Cost-based offline change-point framework and optimum segment partition",
+      "current_evidence": "Paper and maintainer Dynp reference consulted. E025 implements a single-change cumulative cost specialized to the binary tail.",
+      "boundary": "No external implementation executed or vendored. The finite model and local modulation gate remain conditional."
+    },
+    {
+      "id": "QIN_TESSELLATION_E025",
+      "kind": "primary_paper",
+      "url": "https://arxiv.org/html/2602.02627#S8.SS2",
+      "role": "60-bit BPSK deviations and 16-carrier OFDM circular shift, equations 39–40",
+      "current_evidence": "E025 validates the finite stride on the binary suffix of the 250 MS/s exemplar. The decimal resource stride is 1004, equivalent to -16 in template indexing.",
+      "boundary": "The tests do not compare the full public codebook or identify application semantics."
+    },
+    {
+      "id": "QIN_EMPIRICAL_TEMPLATE_E026",
+      "kind": "author_dataset_and_implementation",
+      "url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/reference-template/",
+      "local_data": "references/qin/referenceTemplate.mat",
+      "local_code": "references/qin/genReferenceTemplate.m",
+      "role": "Author consensus rotation table and indexing convention",
+      "current_evidence": "E026 verifies that the empirical-to-analytic ratio equals the complement of the E025 word at absolute phase zero in slots 9–301. The wideband suffix instead starts the word at its measured edge.",
+      "boundary": "A table equality is not a narrowband demodulation or an independent RF replication."
+    },
+    {
+      "id": "SCHARF_MATCHED_SUBSPACE",
+      "kind": "primary_paper",
+      "url": "https://www.mssc.mu.edu/~daniel/mscs6960/spring2010/ScharfFriedlanderTSP94.pdf",
+      "code_reference": "https://github.com/scipy/scipy/blob/main/scipy/signal/_signaltools.py",
+      "role": "Interference subspace rejection before matched projection and complex cross correlation",
+      "current_evidence": "E026 projects away per-carrier constants and the empirical/analytic reference ratio. Its finite matched-template scores are calibrated descriptively against lane-preserving shuffles.",
+      "boundary": "The published Gaussian optimality conditions were not asserted for the measured IQ."
+    },
+    {
+      "id": "LOMB_LEAST_SQUARES_E027",
+      "kind": "author_paper_and_implementation_reference",
+      "url": "https://doi.org/10.1007/BF00648343",
+      "code_url": "https://github.com/numpy/numpy/blob/main/numpy/linalg/_linalg.py",
+      "role": "Least-squares sinusoidal analysis of sample times and SVD pseudoinverse",
+      "current_evidence": "E027 jointly fits a frozen complex multi-tone design with NumPy pinv, per native OFDM sample stencil.",
+      "boundary": "Single-tone Gaussian-noise calibration was not applied to the short, correlated WAV windows."
+    },
+    {
+      "id": "HUANG_CIRCULANT_RANK_E028",
+      "kind": "author_paper_and_implementation_reference",
+      "url": "https://arxiv.org/abs/1202.0702",
+      "code_url": "https://github.com/aff3ct/aff3ct",
+      "implementation_documentation": "https://aff3ct.readthedocs.io/en/latest/user/simulation/parameters/codec/ldpc/decoder.html",
+      "role": "Circulant rank and public QC parity-check representation",
+      "current_evidence": "E028 uses retained parity-check tables, lane-wise syndrome counts and block parity projections. Aff3ct documents the QC matrix input convention.",
+      "boundary": "The literature does not identify the two target encoders. Neither external source code nor new packages were executed."
+    },
+    {
+      "id": "LIU_PN15_BYTES_E029",
+      "kind": "primary_papers_and_author_implementation",
+      "url": "https://arxiv.org/html/2610.29387v2#S2.SS3",
+      "scope_paper": "https://arxiv.org/html/2610.29387v2#S6.SS7",
+      "code_url": "https://github.com/mhostetter/galois/blob/main/src/galois/_lfsr.py",
+      "role": "PN15 source recurrence, LFSR phase convention and possible padding as different evidence",
+      "current_evidence": "E029 uses the existing PN15 generator but establishes a separate within-byte reversed coordinate and phase in eight measured UT final words.",
+      "boundary": "The matched positions do not settle encoder order or the function of all unrecognized data bits."
+    },
+    {
+      "id": "KUHN_AND_SCIPY_ASSIGNMENT_E030",
+      "kind": "primary_paper_and_library_implementation",
+      "url": "https://doi.org/10.1002/nav.3800020109",
+      "code_url": "https://github.com/scipy/scipy/blob/main/scipy/optimize/rectangular_lsap/rectangular_lsap.cpp",
+      "role": "Exact one-to-one assignment on point and known PN label occurrence counts",
+      "current_evidence": "E030 uses the installed SciPy linear assignment and reports the aggregate optimum and nearest alternative separation. The mapping is checked in other frames and formats.",
+      "boundary": "The fitted bijection describes receiver-relative constellation labels and does not prove a coding matrix or protocol field meaning."
+    },
+    {
+      "id": "QIN_AND_GNURADIO_ADDITIVE_E031",
+      "kind": "primary_paper_and_library_implementation",
+      "url": "https://radionavlab.ae.utexas.edu/wp-content/uploads/qin_pilots_starlink_dl.pdf",
+      "code_url": "https://github.com/gnuradio/gnuradio/blob/main/gr-digital/lib/additive_scrambler_impl.cc",
+      "role": "Distinguish a byte-packed additive LFSR reference from the symbol-level rotation and tessellation studied by Qin et al.",
+      "current_evidence": "E031 reuses the local frozen LFSR model and compares raw, shifted, and PN-only predictions with measured IQ. GNU Radio is inspected as reference source without execution.",
+      "boundary": "The recovered 12-bit period does not establish a connection with the 60-bit template or a transmitter implementation."
+    },
+    {
+      "id": "CLUZEAU_FINIASZ_DUAL_SYNC_E031",
+      "kind": "author_paper",
+      "url": "https://finiasz.net/research/2009/cluzeau-finiasz-isit09.pdf",
+      "role": "Low-weight dual checks for identifying candidate code and synchronization in noise",
+      "current_evidence": "Candidate K boundaries and repeated information-region positions guide follow-up tests. No dual check is promoted by E031.",
+      "boundary": "Error independence in the theoretical model must not be assumed for co-captured QAM words."
+    },
+    {
+      "id": "LIU_QIN_AND_SYNCHRONOUS_SCRAMBLER_E032",
+      "kind": "primary_papers_and_author_implementation",
+      "url": "https://arxiv.org/html/2610.29387v2#S6.SS8",
+      "method_url": "https://doi.org/10.1049/cmu2.12537",
+      "code_url": "https://github.com/mhostetter/galois/blob/main/src/galois/_lfsr.py",
+      "author_supplement": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/",
+      "role": "Provide prior unresolved Code 68 coding scope, synchronous scrambler recurrence methods, and the separate QPSK T-code convention.",
+      "current_evidence": "E032 uses frozen UT PN ordering in legacy observations. The local lag-24 recurrence and frame transfer identify two legacy nonzero motifs and a Code 68 candidate edge.",
+      "boundary": "The supplementary raw IQ zip is the upstream source of the existing UT recording and is not counted as a third capture. The Code 68 generator remains unresolved."
+    },
+    {
+      "id": "QC_RANK_AND_SAGE_E033",
+      "kind": "primary_paper_and_library_implementation",
+      "url": "https://ieeexplore.ieee.org/document/11168913/",
+      "code_url": "https://github.com/sagemath/sage/tree/develop/src/sage/matrix",
+      "implementation_documentation": "https://doc.sagemath.org/html/en/reference/matrices/sage/matrix/matrix_polynomial_dense.html",
+      "role": "Circulant-rank analysis and polynomial matrix normal forms as references for the repeated-root quotient.",
+      "current_evidence": "E033 computes local-ring pivot valuations, exact compatibility and the common predicted prefix using local code, checked against enumeration and the existing x-domain solver.",
+      "boundary": "The systematic generator remains unresolved. No external implementation was executed."
+    },
+    {
+      "id": "QIN_EXEMPLAR_ARCHIVE_H5PY_E034",
+      "kind": "primary_paper_dataset_and_library_implementation",
+      "url": "https://doi.org/10.1038/s44459-026-00075-6",
+      "author_archive": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/",
+      "mirror": "https://zenodo.org/records/21404931",
+      "code_url": "https://github.com/h5py/h5py",
+      "implementation_documentation": "https://docs.h5py.org/en/stable/high/file.html",
+      "role": "Author-processed wideband FFT symbols for controlled decoder transfer. Header and clock alignment identify overlap with the raw exemplar file.",
+      "current_evidence": "E034 processes nine 13-frame windows, recovers both CRC-checked headers in 117 frames, resolves eight overlaps, and verifies frozen Code 21 parity on reserved soft observations.",
+      "boundary": "Archive windows are a subset of one recorded session and the source TLS trust limitation is recorded. No authored MATLAB code was executed."
+    },
+    {
+      "id": "PAGE_LIU_AND_QIN_ENDPOINT_E035",
+      "kind": "primary_papers_and_author_repository",
+      "url": "https://doi.org/10.1093/biomet/41.1-2.100",
+      "scope_paper": "https://arxiv.org/html/2610.29387v2#S4.SS3",
+      "code_url": "https://github.com/misaka666/Starlink-Downlink-Analysis",
+      "author_archive": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/",
+      "role": "Cumulative evidence, independently measured allocation endpoints, and per-codeword resource rounding.",
+      "current_evidence": "E035 uses a frozen empirical 60-position template for absolute endpoint phase and confirms widths in reserved archive groups. The archived 32QAM mapping transfers to MCS 75 and 81.",
+      "boundary": "Reference-dependent endpoint phase and receiver-relative candidate systematic boundaries do not establish transmitting encoder parameters."
+    },
+    {
+      "id": "QIN_CENSUS_AND_MYUNG_LIFT_E036",
+      "kind": "primary_paper_dataset_and_author_repository",
+      "url": "https://doi.org/10.1109/LCOMM.2006.06031",
+      "author_archive": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/",
+      "code_url": "https://github.com/misaka666/Starlink-Downlink-Analysis",
+      "role": "Public processed capture for the full header census and exponent-lift reference for qualified encoder transfer tests.",
+      "current_evidence": "E036 records the entire 1009-frame author population and checks four new receiver-relative information edges.",
+      "boundary": "The exact or exponent-scaled legacy generator tests do not exclude other lifted codes or label conventions."
+    },
+    {
+      "id": "US12074683B1_QIN_BYTE_STRUCTURE_E037",
+      "kind": "primary_patent_dataset_and_author_repository",
+      "url": "https://patents.google.com/patent/US12074683B1/en",
+      "author_archive": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/",
+      "code_url": "https://github.com/misaka666/Starlink-Downlink-Analysis",
+      "role": "Distinguish additive per-word whitening from frequency-domain symbol rotation, and ground the word resource boundaries.",
+      "current_evidence": "E037 checks a new byte segmentation in reserved MCS 6 decisions and isolates the dominant edge-carrier disagreement using known PN15 padding.",
+      "boundary": "Public source descriptions do not specify these byte records. E037 has no independent same-format capture and establishes neither byte semantics nor FEC."
+    },
+    {
+      "id": "US20250358839_QIN_PHASE_TRANSFER_E038",
+      "kind": "primary_patent_paper_and_author_code",
+      "url": "https://patents.google.com/patent/US20250358839A1/en",
+      "fec_paper": "https://arxiv.org/html/2610.29387v2#S6.SS1",
+      "code_url": "https://github.com/misaka666/Starlink-Downlink-Analysis",
+      "role": "SpaceX scheduler describes a multiplexing extended header and per-user grants as hypotheses. The paper and code support Code 5 geometry and the receiver validation conventions.",
+      "current_evidence": "Leading Code 5 erasure completions calibrate k=511 for reserved MCS 6 padding and a single masked bit in a recurring nonfill anchor. The E-prefix and 12-byte anchor transfer to reserved records.",
+      "boundary": "The patent does not map observed labels to known fields. One masked template bit is a conditional witness, not unknown-message integrity or FEC recovery."
+    },
+    {
+      "id": "WANG_QC_FOLD_AND_ANCHOR_E039",
+      "kind": "primary_methods_and_public_code",
+      "url": "https://arxiv.org/html/2305.04190",
+      "algebra_url": "https://doi.org/10.1016/j.jffa.2015.02.003",
+      "code_url": "https://github.com/blueSparrow2000/LDPC",
+      "role": "Polynomial representation of circulants and recovery in the presence of decision errors. Repository reviewed as a related LDPC workflow and was not executed.",
+      "current_evidence": "E039 enumerates observable projections with explicit erasures and checks the reference-assisted degree-zero scores with exhaustive matched-size group permutations. The next coefficient does not transfer as a whole. Local byte constraints precede repeated anchors.",
+      "boundary": "These are low-dimensional projections of a hypothesized encoder on one archive. Small holdout counts and known-fill assistance constrain the inference."
+    },
+    {
+      "id": "JARDAK_HUMPHREYS_WAV_LINE_GRID_E040",
+      "kind": "primary_measurement_papers_and_public_code",
+      "url": "https://www.mdpi.com/1424-8220/23/6/3234",
+      "ofdm_paper": "https://arxiv.org/html/2210.11578#S7",
+      "code_url": "https://github.com/lixb123/starlink_beacon_iq",
+      "role": "Published 44 kHz downlink tone spacing, mid-channel/guard-band distinction and the independently documented 750 Hz OFDM cadence.",
+      "current_evidence": "E040 finds a shifted 750 Hz line family shared by both spectral lobes of the user's original WAV and validates its complex folded waveform. The finite moving-line-centered 44 kHz companion test does not transfer.",
+      "boundary": "The inherited frame and CW references are conditional, not an independent acquisition. RF origin, bit mapping and payload fields are unverified."
+    },
+    {
+      "id": "KOZHAYA_QIN_WAV_TIMING_E041",
+      "kind": "primary_measurement_papers_and_reference_code",
+      "url": "https://people.engineering.osu.edu/media/document/2025-08-06/kassas_unveiling_starlink_for_pnt.pdf",
+      "qin_paper": "https://arxiv.org/html/2602.02627#S8",
+      "timing_paper": "https://arxiv.org/html/2501.05302",
+      "code_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/reference-template/",
+      "role": "Provide competing frame-wide repeat and variable T-code observations, and executable reference definitions for finite matched comparisons.",
+      "current_evidence": "A quadratic relative delay from either calibration band transfers phase across both bands of the user's WAV. Public frame templates in the declared receive model do not exceed the matched-search null gates.",
+      "boundary": "This is a single narrowband observation. The phase and delay results do not establish physical origin, exact sync, or payload."
+    },
+    {
+      "id": "QIN_WAV_TESSELLATION_RECOVERY_E042",
+      "kind": "primary_waveform_papers_and_reference_code",
+      "url": "https://arxiv.org/html/2602.02627#S8",
+      "cyclic_ofdm_paper": "https://link.springer.com/article/10.1186/1687-1499-2013-117",
+      "code_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/",
+      "role": "Published OFDM and tessellation coordinates plus cyclic diagnostics support a four-carrier, 15-slot counterfactual fit.",
+      "current_evidence": "The user's WAV yields 50 decided reserved relative positions matching the frozen E025 word. Forward prediction works on reserved time and frequency groups. A modal carrier alias fails the binary-axis check.",
+      "boundary": "The four polarities remain reference-relative, ten averaged positions are erased, and a single flip improves the constrained remodulation. No new payload meanings or satellite identity established."
+    },
+    {
+      "id": "UT_250MSPS_DUAL_TIMING_E043",
+      "kind": "primary_waveform_papers_and_capture_release",
+      "url": "https://arxiv.org/html/2210.11578#S7",
+      "code_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/",
+      "capture_url": "https://github.com/misaka666/Starlink-Downlink-Analysis/releases/tag/v2.0.0",
+      "role": "Published PSS and SSS, frame spacing and pilot timing supply independent sync/body tests on the exact author release IQ.",
+      "current_evidence": "Thirteen weak events on the original grid and twenty-five held detections on a second timing grid have sync and CP support. One first-grid weak frame reproduces both header CRCs and words in two grouped-erasure redecodes.",
+      "boundary": "Same RF as E014. Second grid lacks validated pilots and headers under the tested receive model. Frame timing does not identify a transmitter."
+    },
+    {
+      "id": "UT_OFFSET_GRID_PILOT_HEADER_E044",
+      "kind": "primary_signal_model_and_reproduction_code",
+      "url": "https://arxiv.org/html/2602.02627#S6.SS3",
+      "code_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/",
+      "header_url": "https://arxiv.org/html/2610.29387v2#S4",
+      "role": "Known edge pilots isolate residual time/frequency slope from the common first-header check on separate groups of offset-grid frames.",
+      "current_evidence": "Two held groups reproduce the known pilots and a common first header after known-prefix rotation. Nonprefix soft decisions independently support the modeled header.",
+      "boundary": "Single 250 MS/s RF recording. One frozen-phase direction does not decode and the second header and individual payload codewords are unresolved."
+    },
+    {
+      "id": "UT_OFFSET_H2_AND_SYSTEMATICS_E045",
+      "kind": "primary_header_model_and_pn_reference_implementation",
+      "url": "https://arxiv.org/html/2610.29387v2#S4",
+      "code_url": "https://github.com/mhostetter/galois/blob/main/src/galois/_lfsr.py",
+      "role": "The convolutional prefix and H1 allocation model predict the B-grid H2 resource. Frozen PN15 and whole-phase FFT correlations test candidate systematic halves.",
+      "current_evidence": "Both disjoint groups select byte 0x34 and transfer it to the predicted H2 origin. PN phase 21465 transfers between groups for three systematic halves. The other systematic half still exhibits repetition.",
+      "boundary": "The capture and exploratory data are shared. The complete H2 and individual payload codewords remain unverified."
+    },
+    {
+      "id": "UT_OFFSET_CODE5_PARITY_E046",
+      "kind": "primary_message_passing_and_fixed_channel_code",
+      "url": "https://www.isiweb.ee.ethz.ch/papers/arch/aloe-2001-1.pdf",
+      "code_model_url": "https://arxiv.org/html/2610.29387v2#S6.SS1",
+      "role": "The frozen sparse check rows predict withheld parity positions with factor-graph extrinsic messages and cross-group systematic priors.",
+      "current_evidence": "Three held-frame groups exceed all parity-rotation controls. Larger column shifts transfer worse, while a one-column ambiguity persists and whole-word decoding yields zero successes.",
+      "boundary": "Single capture and shared parity checks. Synthetic decoder controls do not measure RF BER. No verified weak-frame Code 5 codeword."
+    },
+    {
+      "id": "CROSS_CAPTURE_DECODE_AUDIT_E047",
+      "kind": "primary_numerology_and_header_models",
+      "url": "https://arxiv.org/html/2210.11578#S7",
+      "pilot_url": "https://arxiv.org/html/2602.02627#S7",
+      "header_url": "https://arxiv.org/html/2610.29387v2#S4",
+      "role": "Compare a common lag statistic on actual narrow views and compute ideal H1, H2 and Code 5 observability at measured wideband timings.",
+      "current_evidence": "The WAV and ten unique NPZ windows reproduce the one-frame lag peak. Matched passband projections differ by capture. The ideal narrow views have zero H1 descriptor rank.",
+      "boundary": "Common cadence is waveform evidence. Passband projections and ideal ranks do not identify a transmitter or recover unknown narrowband messages."
+    },
+    {
+      "id": "CROSS_CAPTURE_RESIDUAL_PHASE_E048",
+      "kind": "primary_tessellation_and_matched_subspace_models",
+      "url": "https://www.nature.com/articles/s44459-026-00075-6",
+      "code_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/",
+      "detector_url": "https://mountainscholar.org/bitstream/10217/740/1/ECElls00006.pdf",
+      "role": "Remove fixed directions and distinguish per-frame phase transfer from an across-frame fixed phase.",
+      "current_evidence": "The WAV cross-band residual predicts held blocks. One NPZ window yields 12 unique phase candidates stable across receiver guards and independent cycle halves, with a measured wideband comparator.",
+      "boundary": "Conditional on a frozen wideband word and the receive conventions. No full unknown narrowband word or new field identified."
+    },
+    {
+      "id": "REFERENCE_DEPENDENCE_OF_TESSELLATION_E049",
+      "kind": "primary_paper_reproduction_code_and_archive",
+      "url": "https://arxiv.org/html/2602.02627#S8",
+      "code_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/loadAndPlotExemplarFrames.m",
+      "role": "Compare the empirical reference convention with analytic PN and transfer a learned family to reserved spectrum and two narrow observations.",
+      "current_evidence": "8,068 screened BPSK slots in the 117-frame subset have one analytic cyclic family and 30 empirical families. The transformed model predicts the retained tones. WAV bands choose the same phase and one NPZ window passes all leave-one-carrier controls.",
+      "boundary": "The slots are almost entirely in previously measured binary tails. This is not a census of the full publication's T-code variants or a source identification."
+    },
+    {
+      "id": "INTERNAL_ALLOCATION_ORDER_E050",
+      "kind": "primary_header_publication_and_recording",
+      "url": "https://arxiv.org/html/2610.29387v2#S4",
+      "code_url": "https://github.com/misaka666/Starlink-Downlink-Analysis",
+      "role": "Compare the header's internal allocation order to independently scanned constellation changes.",
+      "current_evidence": "21 of 22 cross-alphabet internal boundaries match blind candidates; all 70 distinguishable equal-length swaps fit worse in the full corrected grid.",
+      "boundary": "Known constellations, receiver and header models, same captures. Same-alphabet reorderings remain equivalent to the detector."
+    }
+  ],
+  "search_log": {
+    "queries": [
+      "Starlink downlink signal simulator open source code GitHub GitLab Komodromos",
+      "Starlink signal demodulation receiver PSS SSS github open source",
+      "Starlink Ku band downlink blind decoding github"
+    ],
+    "primary_domains": ["github.com", "gitlab.com", "arxiv.org", "radionavlab.ae.utexas.edu", "ion.org"],
+    "exclusions": "Network/router simulators and lists without waveform implementations were not treated as radio decoder evidence.",
+    "next_gates": ["Test other-format codeword spacing and cross-format encoder transfers", "Investigate source-byte semantics without equating code membership with authentication", "Return calibrated soft-observation tests to the user's narrowband data"]
+  }
+}

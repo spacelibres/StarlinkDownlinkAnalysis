@@ -1,0 +1,21 @@
+{
+  "authoritative_source": "https://github.com/spacelibres/vi",
+  "scope": "Exact copies of assets used by the existing plots; no logo geometry changes.",
+  "files": [
+    {
+      "source": "LOCAL_USER_DIRECTORY\\.codex\\skills\\spacelibre-vi\\assets\\palette-tokens.json",
+      "snapshot": "references/visual_identity/assets/palette-tokens.json",
+      "sha256": "84fd3783077719b9a7cc1975ecefdbbac5f7b665475a29254ae072f26bb6e6c1"
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\.codex\\skills\\spacelibre-vi\\assets\\horizontal-primary.svg",
+      "snapshot": "references/visual_identity/assets/horizontal-primary.svg",
+      "sha256": "ab3639275a32d4240f3d1744e212368a99b0b803f1f98576ebd61a3774cf9a5d"
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\.codex\\skills\\spacelibre-vi\\references\\visual-standard.md",
+      "snapshot": "references/visual_identity/references/visual-standard.md",
+      "sha256": "7af5f43443984f325109327b2e47437a2799cc306d82f9b8c3a344beb2dbcdfd"
+    }
+  ]
+}

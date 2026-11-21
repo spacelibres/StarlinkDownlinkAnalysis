@@ -1,0 +1,10 @@
+{
+  "schema": "starlink-local-intake-check/v1",
+  "checked_on": "2026-11-21",
+  "user_drop": "data/Starlink_Downlink_IQ_250MSps.bin",
+  "canonical_snapshot": "data/raw/ut_250msps/Starlink_Downlink_IQ_250MSps.bin",
+  "sha256_of_each": "c69e82022d45173cdcaf1a5fdc8a2b864e2d61e85ae819af54b16002044adae3",
+  "bytes_of_each": 50000000,
+  "check": "Get-FileHash -Algorithm SHA256 and Get-Item Length on both paths",
+  "classification": "Same recorded IQ as the author v2.0.0 supplement previously imported by E014. Use the tracked Git LFS canonical path. Leave the user drop in place."
+}

@@ -1,0 +1,153 @@
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+VERSION text eol=lf
+.githooks/* text eol=lf
+experiments/**/results/** -text -whitespace
+experiments/**/figures/** -text -whitespace
+reports/** -text -whitespace
+references/** -text -whitespace
+data/** -text -whitespace
+runs/** -text -whitespace
+learning/*.json -text
+learning/*.txt -text
+learning/educational_fec_demo.py -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.npz filter=lfs diff=lfs merge=lfs -text
+*.npy filter=lfs diff=lfs merge=lfs -text
+*.ci16 filter=lfs diff=lfs merge=lfs -text
+data/raw/ut_250msps/*.bin filter=lfs diff=lfs merge=lfs -text
+data/raw/starloc_obs0/*.bin filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E026/results/narrowband_cycle_transfer.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E027/results/wav_cycle_transfer.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E029/results/qam_pn15_audit.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E030/results/ut_cross32_labels.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E031/results/ut_repeated_data.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E032/results/legacy_pn_transfer.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E033/results/code68_qc_rank.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E034/results/qin_exemplar_audit.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E035/results/qin_lengths.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E036/results/qin_header_survey.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E036/results/qin_low_mcs_audit.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E037/results/qin_mcs6_structure.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E038/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E039/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E040/results/wav_shifted_lines.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E041/results/wav_joint_phase.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E042/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E043/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E044/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E045/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E046/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E047/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E048/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E049/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E050/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E051/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E052/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E053/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E054/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E055/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E056/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E057/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E058/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E059/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E060/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E061/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E062/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E063/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E064/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E065/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E066/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E067/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E068/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E069/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E070/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E071/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E072/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E073/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E074/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E075/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E076/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E077/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E078/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E079/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E080/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E081/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E082/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E082/results/*.json.gz filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E083/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E084/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E085/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E086/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E087/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E088/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E089/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E090/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E091/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E092/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E093/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E094/results/*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E095/results/code5_gps_epoch.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E096/results/code5_fleet_identity.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E097/results/code5_clock_correction.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E098/results/code5_narrow_waveform_clock.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E099/results/leo_pilot_archive.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E100/results/code5_directory_records.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E101/results/code5_later_records.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E102/results/code5_narrow_record_search.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E103/results/mcs6_directory_crc.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E104/results/mcs6_body_spans.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E105/results/mcs6_cross_allocation.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E106/results/leo_upper_pilot_residuals.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E107/results/leo_native_clock_coverage.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E108/results/leo_profiled_word*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E109/results/ut_offset_*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E110/results/ut_offset_body_*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E111/results/ut_weak_padding_and_parity.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E112/results/wav_cycle_reacquisition.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E113/results/wav_slot_case34.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E114/results/wav_slot_*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E115/results/leo_common_state.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E116/results/wav_word_*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E117/results/wav_tail_support.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E118/results/ut_weak_tail_*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E119/results/ut_weak_tail_*.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E120/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E121/results/leo_ds9_word_transfer.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E122/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E123/results/cross32_spare_lane.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E124/results/mcs85_archive_records.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E125/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E126/results/mcs85_record_boundary.json filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E127/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E128/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E130/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E131/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E132/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E133/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E134/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E135/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E136/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E137/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E138/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E139/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E140/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E141/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E142/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E143/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E144/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E145/results/* filter=lfs diff=lfs merge=lfs -text
+runs/**/artifacts/experiments/E146/results/* filter=lfs diff=lfs merge=lfs -text
+reports/interim-paper/*.pdf filter=lfs diff=lfs merge=lfs -text
+references/orbit_catalogs/*.zip filter=lfs diff=lfs merge=lfs -text
+*.mat filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+**/npz_inventory.json filter=lfs diff=lfs merge=lfs -text
+**/npz_inventory.csv filter=lfs diff=lfs merge=lfs -text
+
+# Preserve archived snapshot bytes across checkout platforms.
+*.ipynb -text
+provenance/*.json -text
+/project.json -text
+/requirements.txt -text

@@ -1,0 +1,41 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E001",
+  "title": "基础录波、频谱与事件",
+  "status": "imported historical evidence; organization only",
+  "question": "录波中哪些频谱分量随时间演化，终止事件是否跨分带一致？",
+  "inputs": "原始 WAV；频谱、轨迹与事件数组。",
+  "methods": "STFT、谱峰/轨迹、事件分频带功率。",
+  "controls_and_limits": "窗口与频带影响分辨率；谱形本身不足以确认协议字段。",
+  "dependencies": "E004–E007 使用本组轨迹或频谱。",
+  "scripts": [
+    "analyze_iq.py",
+    "deeper_checks.py",
+    "focus_event.py",
+    "inspect_waterfall.py"
+  ],
+  "artifacts": [
+    "experiments/E001/results/candidate_track.npz",
+    "experiments/E001/results/deeper_metrics.json",
+    "experiments/E001/results/drift_scan.npz",
+    "experiments/E001/results/event_metrics.json",
+    "experiments/E001/results/frequency_interpretation.json",
+    "experiments/E001/results/metrics.json",
+    "experiments/E001/figures/overview.png",
+    "experiments/E001/figures/overview.svg",
+    "experiments/E001/figures/reference_waterfall.png",
+    "experiments/E001/results/refined_track.npz",
+    "experiments/E001/figures/signal_event.png",
+    "experiments/E001/figures/signal_event.svg",
+    "experiments/E001/results/spectrum_data.npz",
+    "experiments/E001/results/transition_metrics.json",
+    "experiments/E001/figures/waterfall_detail.png",
+    "experiments/E001/figures/waterfall_detail.svg",
+    "experiments/E001/results/waterfall_detail_data.npz",
+    "experiments/E001/results/waterfall_peaks.json"
+  ],
+  "parameters_and_seeds": "Retained in source/results; missing historical settings are not invented.",
+  "baseline_tag": "v0.0.1",
+  "provenance_manifest": "../../provenance/layout_manifest.json",
+  "reproducibility_limits": "Some historical results were produced interactively without standalone scripts. Classification is not a full independent rerun."
+}

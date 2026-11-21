@@ -1,0 +1,46 @@
+{
+  "scope": "Read-only source snapshot for retained IQ and numerical constants; not the full external dataset. Missing license is explicitly recorded; no new license is asserted.",
+  "files": [
+    {
+      "source": "../leo-tracker-reduxredux-main\\reports\\2026_10_18_dsx01_pilot_clock\\DSX01-S05\\selected_iq.npz",
+      "snapshot": "data/raw/leo_tracker_snapshot/reports/2026_10_18_dsx01_pilot_clock/DSX01-S05/selected_iq.npz",
+      "sha256": "3b286ddf5feb1a5599b10ad3543cd72d3add15819a9d03389c98242a95ecae07",
+      "bytes": 1380620
+    },
+    {
+      "source": "../leo-tracker-reduxredux-main\\reports\\2026_10_18_dsx01_pilot_clock\\DSX01-S05\\selection.json",
+      "snapshot": "data/raw/leo_tracker_snapshot/reports/2026_10_18_dsx01_pilot_clock/DSX01-S05/selection.json",
+      "sha256": "50831708b90f2aeb7d3f670e276543f52227517fa94b435004f43be00c17e133",
+      "bytes": 33522
+    },
+    {
+      "source": "../leo-tracker-reduxredux-main\\reports\\2026_10_18_dsx01_pilot_clock\\paired_RX\\selected_iq.npz",
+      "snapshot": "data/raw/leo_tracker_snapshot/reports/2026_10_18_dsx01_pilot_clock/paired_RX/selected_iq.npz",
+      "sha256": "928f5bb5309fcbc3fe83c91a28ad1d8535b66e35a81ea01060ea14a7f66909a3",
+      "bytes": 670280
+    },
+    {
+      "source": "../leo-tracker-reduxredux-main\\reports\\2026_10_18_dsx01_pilot_clock\\paired_RX\\selection.json",
+      "snapshot": "data/raw/leo_tracker_snapshot/reports/2026_10_18_dsx01_pilot_clock/paired_RX/selection.json",
+      "sha256": "637dd489947f3ab47dbd28234a38e964c7cb8b4a6c0d11306827a950e4d0c43a",
+      "bytes": 18042
+    },
+    {
+      "source": "../leo-tracker-reduxredux-main\\src\\leo\\analysis\\starlink\\templates.py",
+      "snapshot": "data/raw/leo_tracker_snapshot/src/leo/analysis/starlink/templates.py",
+      "sha256": "7ea6575d681d28796d74ebbd912e423082f7fd792bfc5aa6c42b1bb194788b51",
+      "bytes": 7095
+    },
+    {
+      "source": "../leo-tracker-reduxredux-main\\src\\leo\\analysis\\qam\\pilot.py",
+      "snapshot": "data/raw/leo_tracker_snapshot/src/leo/analysis/qam/pilot.py",
+      "sha256": "886d2eed420e2d08a3f178cff8fc04afc461858e5fcf5c834b8f0da6ffdfd18e",
+      "bytes": 65797
+    },
+    {
+      "source": "../leo-tracker-reduxredux-main\\LICENSE",
+      "status": "not_found",
+      "note": "No license or data content is invented."
+    }
+  ]
+}

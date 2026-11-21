@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E029",
+  "title": "MCS 66 和 70 末字的 PN15 预测",
+  "input": "runs/v026-ut-qam-extract-repeat/artifacts/experiments/E028/results/ut_qam_symbols.npz",
+  "scripts": ["audit_qam_pn15.py"],
+  "seed": null
+}

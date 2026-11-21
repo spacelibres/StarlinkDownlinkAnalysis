@@ -1,0 +1,567 @@
+{
+  "schema": "starlink-legacy-import/v1",
+  "recorded_utc": "2026-11-20T14:56:23.195155+00:00",
+  "files": [
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\PROJECT_MAP.md",
+      "snapshot": "references/legacy_research/old_project/PROJECT_MAP.md",
+      "sha256": "03e66cdab7b7df6618d2ce8ce3005c98b2ba2459c133ebed003d106f6da103b3",
+      "bytes": 7312
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\notes\\status_and_gaps.md",
+      "snapshot": "references/legacy_research/old_project/docs/notes/status_and_gaps.md",
+      "sha256": "0ed5707635f16e5f515864f3f6cc1f87d2124b4781f9163e311872036a1ace02",
+      "bytes": 17006
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\notes\\proven_facts.md",
+      "snapshot": "references/legacy_research/old_project/docs/notes/proven_facts.md",
+      "sha256": "182725fd624b28d8a0656da0a4142805a951b6eff150f74231467934c0ca5d7f",
+      "bytes": 34842
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\notes\\literature_crosscheck.md",
+      "snapshot": "references/legacy_research/old_project/docs/notes/literature_crosscheck.md",
+      "sha256": "da136f3afa443479b6c0cc6a5f2e58367c02484528608f2a8b772bc5c85abd21",
+      "bytes": 12138
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\README.md",
+      "snapshot": "references/legacy_research/old_project/docs/papers/README.md",
+      "sha256": "9df67901e51fe1ff3367232da87902c23322810f05dc6626326272a3ea9026d7",
+      "bytes": 5811
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\paper\\references.bib",
+      "snapshot": "references/legacy_research/old_project/paper/references.bib",
+      "sha256": "cd6186fae2d02f755fdd70bacc8a012b90517a74103b4503c5a774759129e4e3",
+      "bytes": 12228
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\paper\\refs_status.md",
+      "snapshot": "references/legacy_research/old_project/paper/refs_status.md",
+      "sha256": "0cfd9c98303b093c4bbacb9ef5174185a0f02a8852220551db20fe92a4a4da8d",
+      "bytes": 8728
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\kulib.py",
+      "snapshot": "references/legacy_research/old_project/analysis/kulib.py",
+      "sha256": "9da25b4a0ca8be8196cc56d7db33f6cb357da0207b9c03f8e23666138943d80d",
+      "bytes": 10765
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\52_ku_header_decode.py",
+      "snapshot": "references/legacy_research/old_project/analysis/52_ku_header_decode.py",
+      "sha256": "f0bdb0e8cb7ea310248787ece27bb3af04514b815416d9a09d9d1b01ecb3f884",
+      "bytes": 16443
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\54_ku_cp_aligned_decode.py",
+      "snapshot": "references/legacy_research/old_project/analysis/54_ku_cp_aligned_decode.py",
+      "sha256": "c4eaaf02ff78ff99d4894918170c1ea48730ee7bf23e1a88440508d6a3501192",
+      "bytes": 6178
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\55_ku_header_alt_estimator.py",
+      "snapshot": "references/legacy_research/old_project/analysis/55_ku_header_alt_estimator.py",
+      "sha256": "20d3403fc4cccd62edc887ba21d791f29bf9284cefb1643719cb6d130d681f7d",
+      "bytes": 6057
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\reports\\48_ku_pn_and_header_decode.md",
+      "snapshot": "references/legacy_research/old_project/docs/reports/48_ku_pn_and_header_decode.md",
+      "sha256": "37ac0bd3762f3f3e65f152bb5d50ed2c9dc9f6243a8ceb7922fc12ba05e4ba22",
+      "bytes": 11640
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\reports\\49_ku_frame_layout_and_headers.md",
+      "snapshot": "references/legacy_research/old_project/docs/reports/49_ku_frame_layout_and_headers.md",
+      "sha256": "0c7e2f3d5a7699b43c18347740ea273619c724bebad53d3b14342f0d9f1715ed",
+      "bytes": 7117
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\reports\\62_ku_grid_test.md",
+      "snapshot": "references/legacy_research/old_project/docs/reports/62_ku_grid_test.md",
+      "sha256": "6521bd9f5cc46cc6e2529890d5ad837cd6864c0e4cad4ccaa9b444bc0936f2eb",
+      "bytes": 6481
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\reports\\76_edge_only_vs_full_iq.md",
+      "snapshot": "references/legacy_research/old_project/docs/reports/76_edge_only_vs_full_iq.md",
+      "sha256": "398dd61189b6b34fd45e3ad20a1e3361b3b417c6f1ac2547b55110364873d2d5",
+      "bytes": 8044
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\data\\downlink_analysis\\metadata.json",
+      "snapshot": "references/legacy_research/old_project/data/downlink_analysis/metadata.json",
+      "sha256": "8d94d5d29208c1a4be11e6866e0c512e4c634f59260e9b1d3a7078352df85e68",
+      "bytes": 480
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\data\\downlink_analysis\\README.md",
+      "snapshot": "references/legacy_research/old_project/data/downlink_analysis/README.md",
+      "sha256": "3c24b0ce8c7e3502764bdfb2819a6e08a16ffa4d1ac92ed9eabe54d98db27eec",
+      "bytes": 3630
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\data\\downlink_analysis\\SHA256SUMS",
+      "snapshot": "references/legacy_research/old_project/data/downlink_analysis/SHA256SUMS",
+      "sha256": "1b01fa122a5779d4b5c3de1f8a9d203166e0dcf9d11fc5516d7a9a0531cf5f75",
+      "bytes": 92
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\starangle_out\\ku_header_alt.npz",
+      "snapshot": "references/legacy_research/old_project/analysis/starangle_out/ku_header_alt.npz",
+      "sha256": "ff95b60f3b59ce177934b1cde54663a5a63ef66e432a442e468c53562c7b5baa",
+      "bytes": 536
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\starangle_out\\ku_header_alt.txt",
+      "snapshot": "references/legacy_research/old_project/analysis/starangle_out/ku_header_alt.txt",
+      "sha256": "1c8a65bd248c5bb644a39b128c71014f25e9c1cf369caf1d0c3b99ce3203160e",
+      "bytes": 1684
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\starangle_out\\ku_header2_final.csv",
+      "snapshot": "references/legacy_research/old_project/analysis/starangle_out/ku_header2_final.csv",
+      "sha256": "30e76c59d937fdc693af9648e1955f1af8cb69cbfa3bbce189aa5417cf8effa6",
+      "bytes": 549
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\starangle_out\\ku_pn_full.npz",
+      "snapshot": "references/legacy_research/old_project/analysis/starangle_out/ku_pn_full.npz",
+      "sha256": "c5dce3047e4b2068c47e6798afb1249e19f3ed233d6d0ccffee8f9818185d9ae",
+      "bytes": 34265
+    },
+    {
+      "source": "../leo-tracker-reduxredux-main\\AGENTS.md",
+      "snapshot": "references/legacy_research/leo_tracker/AGENTS.md",
+      "sha256": "108f96faedd9ed02bed7634c9283c1425345f93c8016dfd11530f6f9048606f7",
+      "bytes": 1864
+    },
+    {
+      "source": "../leo-tracker-reduxredux-main\\docs\\concepts\\starlink-transmissions.md",
+      "snapshot": "references/legacy_research/leo_tracker/docs/concepts/starlink-transmissions.md",
+      "sha256": "a7649315747a4d50267a215b6cbbdc3c722b49bde0f7eb1b268793a7c4d7340b",
+      "bytes": 18438
+    },
+    {
+      "source": "../leo-tracker-reduxredux-main\\docs\\research\\evidence-ledger.md",
+      "snapshot": "references/legacy_research/leo_tracker/docs/research/evidence-ledger.md",
+      "sha256": "edda57282912358cc0891ae69fd95233be5d0940a6c5657153777a4887bdbcd8",
+      "bytes": 61377
+    },
+    {
+      "source": "../leo-tracker-reduxredux-main\\docs\\pipelines\\research-analysis.md",
+      "snapshot": "references/legacy_research/leo_tracker/docs/pipelines/research-analysis.md",
+      "sha256": "b171e4e811939e292abc5121ff6dfc5c2307604d38722bd09f211399b016620c",
+      "bytes": 14026
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\data\\downlink_analysis\\Starlink_Downlink_IQ.npy",
+      "snapshot": "data/raw/legacy_wideband/Starlink_Downlink_IQ.npy",
+      "sha256": "a218fc9d307b7c0f3acb8263529ab5a690618119604adbcc4847ea87e6272abf",
+      "bytes": 92161568
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\LICENSE",
+      "snapshot": "references/legacy_research/starlink_simulator/LICENSE",
+      "sha256": "11787c2430d4537fe8a94840c749c30d61a5f9b2b6a30ff1599846276f2f9fd0",
+      "bytes": 1098
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\README.md",
+      "snapshot": "references/legacy_research/starlink_simulator/README.md",
+      "sha256": "786e6793e83f889cfb336d5a4e6ee03cf5a3e207395fc386421fa1c1e275e776",
+      "bytes": 2179
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\fftAcqStrlk.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/fftAcqStrlk.m",
+      "sha256": "ac46533e553c5139110d6f5fe2ddf7c8edc346b3568a2fee6583650ff23a27dd",
+      "bytes": 5850
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\genDopHist.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/genDopHist.m",
+      "sha256": "f5f127ad7c68dacbd9476b3528b953eb7387feb82eb180290715fecc7b6c6a3e",
+      "bytes": 3151
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\genOFDM.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/genOFDM.m",
+      "sha256": "db34ed2977f6dbe3319cd173e159009b465cbfedc1099fc366c7e24e5f2c4f47",
+      "bytes": 5945
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\genPLHist.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/genPLHist.m",
+      "sha256": "fe58a8e8051a420dee51753f1f5d0e602ec6341d2a5c6e4210c55e21ad1937d7",
+      "bytes": 1470
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\genPss.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/genPss.m",
+      "sha256": "ea629246790a20e4122eac30cc7c66bb6e221e277b3a30f441cef7835bc0ce35",
+      "bytes": 1028
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\genSss.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/genSss.m",
+      "sha256": "c2803079013aafc5d5ee1225b0d97dfb03e51619e4350e416e8cdbd0a4f2cb70",
+      "bytes": 1664
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\genStrlkFrame.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/genStrlkFrame.m",
+      "sha256": "f38301b409248c8cfc3bd6c81200cc9365a675ac0a9d80c69e845e42965a956a",
+      "bytes": 6517
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\genStrlkOFDM.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/genStrlkOFDM.m",
+      "sha256": "64aee56a874705985ff1df02c86100444771361b2629e801e88ed3567082fb34",
+      "bytes": 3406
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\genStrlkStream.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/genStrlkStream.m",
+      "sha256": "438a747f23ee1d55edd32330bedaede27643b55a3c9e71bbd167884dcf3adb3d",
+      "bytes": 6344
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\getClosestFch.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/getClosestFch.m",
+      "sha256": "af76117b195aa323dc2781dafba6d40beadba5bad812fb6b36419bdc9c31e2dc",
+      "bytes": 326
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\getDiffEnc.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/getDiffEnc.m",
+      "sha256": "34b9982c3400077af6879aee115cd3c97721bc3f9abd28a88d9ce8883b851dbe",
+      "bytes": 896
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\getEphSpaceTrackZip.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/getEphSpaceTrackZip.m",
+      "sha256": "6572d4fcb92d19686b91ec1b8e5afc85a3b6855607593c674419c439c45be8b3",
+      "bytes": 7358
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\getValidSC.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/getValidSC.m",
+      "sha256": "c453bf9ec4eb8c3033b64d59689ae25b66f86ddcd1bee1115401da49f39646d7",
+      "bytes": 1713
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\ofdmSnrEstimator.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/ofdmSnrEstimator.m",
+      "sha256": "0cecf5d7641f4cf864bb90dca8c037609ca066f989784da8b6d1ff925dfb97d4",
+      "bytes": 2542
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\plotEarth.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/plotEarth.m",
+      "sha256": "fccf0cedbb25b5eb622c2aba48b15dde57d200ce897053814171eaa5e84e5e14",
+      "bytes": 2198
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\plotPwr.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/plotPwr.m",
+      "sha256": "96235e80c28b740b5c468a383b8153803ce61de5678ea8e4637c23aa89620dfd",
+      "bytes": 1567
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\plotSpec.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/plotSpec.m",
+      "sha256": "526a54e8aa549355c92a012af22da477f0902989e22fe237b1ce0ebbfe96c4c7",
+      "bytes": 1881
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\utils\\readFromBin.m",
+      "snapshot": "references/legacy_research/starlink_simulator/utils/readFromBin.m",
+      "sha256": "627b2418048fb71e3264680bcaf277d634a6f8e76da37b8ce71f01f5361c3b4a",
+      "bytes": 881
+    }
+  ],
+  "legacy_root": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master",
+  "tracker_root": "../leo-tracker-reduxredux-main",
+  "csv_verification": {
+    "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\data\\downlink_analysis\\Starlink_Downlink_IQ.csv",
+    "sha256": "797e13e5788f1a54269cc77a8232e259b61933e4bef4d89cd08854c80649f115",
+    "columns": "I_data,Q_data",
+    "sample_count": 11520180,
+    "complex_dtype": "complex64",
+    "max_absolute_difference": 0.0
+  },
+  "papers": [
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\2021_A&A_Tregloan-Reed_Starlink-Darksat-Optical-to-NIR.pdf",
+      "sha256": "306e798b6e53deada4262b4383b62d710587a7d33fd5a3cc1cba860662b02c11",
+      "bytes": 1315976,
+      "pages": 9,
+      "metadata_title": "Optical-to-NIR magnitude measurements of the Starlink LEO Darksat satellite and effectiveness of the darkening treatment",
+      "first_page_text": "A&A 647, A54 (2021)\nhttps://doi.org/10.1051/0004-6361/202039364\nc© ESO 2021\nAstronomy&Astrophysics\nOptical-to-NIR magnitude measurements of the Starlink LEO\nDarksat satellite and effectiveness of the darkening treatment\nJ. Tregloan-Reed1, A. Otarola2,3, E. Unda-Sanzana4, B. Haeussler3, F. Gaete3, J. P. Colque4,\nC. González-Fernández5, J. Anais4, V . Molina4, R. González4, E. Ortiz6, S. Mieske3, S. Brillant3, and J. P. Anderson3\n1 Instituto de Investigación en Astronomia y Ciencias Planetarias, Universidad de Atacama, Copiapó, Atacama, Chile\ne-mail: jeremy.tregloan-reed@uda.cl\n2 TMT International Observatory, 100 West Walnut Street, Pasadena, CA 91124, USA\n3 European Southern Observatory, Alonso de Córdova 3107, Vitacura, Región Metropolitana, Chile\n4 Centro de Astronomía (CITEV A), Universidad de Antofagasta, Avenida U. de Antofagasta, 02800 Antofagasta, Chile\n5 Institute of Astronomy, University of Cambridge, Madingley Road, Cambridge CB3 0HA, UK\n6 Departamento de Física, Universidad de Antofagasta, Avenida Angamos 601, Antofagasta, Chile\nReceived 8 September 2020 / Accepted 4 January 2021\nABSTRACT\nAims. We aim to measure the Sloanr′, Sloan i′, J, and Ks magnitudes of Starlink’s STARLINK-1130 (Darksat) and STARLINK-1113\nlow Earth orbit (LEO) communication satellites and determine the e ﬀectiveness of the Darksat darkening treatment from the optical\nto the near-infrared (NIR).\nMethods. Four observations of Starlink’s LEO communication satellites, Darksat and STARLINK-1113, were conducted on two\nnights with two telescopes. The Chakana 0.6 m telescope at the Ckoirama observat",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\2023 Characterization of Mega-Constellation Links for LEO Missions With Applications to EO and ISS Use Cases.pdf",
+      "sha256": "f6148ed56041156103ef62a0898e1915486e1b28d06e4b6df67ce23be3ffd744",
+      "bytes": 6538492,
+      "pages": 14,
+      "metadata_title": "",
+      "first_page_text": "Characterization of Mega-Constellation Links for LEO Missions With Applications to EO and ISS \nUse Cases \nG. Maiolini Capez, M. A. Caceres, C. P . Bridges, S. Frey , R. Armellin, R. Garello, P . Bargellini \n \nIEEE Access 2023 \nDOI: 10.1109/ACCESS.2023.3254917\n \n© 2025 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all \nother uses, in any current or future media, including reprinting/republishing this material for \nadvertising or promotional purposes, creating new collective works, for resale or redistribution to \nservers or lists, or reuse of any copyrighted component of this work in other works. \n \nThis is the Accepted Author Manuscript (AAM). \nThe final version of record is available on IEEE Xplore at the DOI link above. \n \nCitation in Bibtex \n@ARTICLE{10064291, \nauthor={Maiolini Capez, Gabriel and Cáceres, Mauricio A. and Armellin, Roberto and Bridges, Chris P . \nand Frey, Stefan and Garello, Roberto and Bargellini, Pier}, \njournal={IEEE Access},  \ntitle={Characterization of Mega-Constellation Links for LEO Missions With Applications to EO and ISS \nUse Cases},  \nyear={2023}, \nvolume={11}, \nnumber={}, \npages={25616-25628}, \nkeywords={Space vehicles;Low earth orbit satellites;Satellites;Earth;Satellite broadcasting;Planetary \norbits;Radio frequency;Mega-constellations;low-earth orbit satellites;inter-satellite links;international \nspace station;earth observation}, \ndoi={10.1109/ACCESS.2023.3254917}} \nCitation in plain text \nG. Maiolini. Capez et al., \"Characterization of Mega-Constellation Links for LEO Missions With \nApplicatio",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\2024_arXiv2408.16728_Joint-9D-Localization-and-Ephemeris-Correction.pdf",
+      "sha256": "0e701ca1af9162065b5ae998fa9b414791c324a428f66bc22b5f7a5734b1ec8b",
+      "bytes": 1313514,
+      "pages": 47,
+      "metadata_title": "",
+      "first_page_text": "1\nJoint 9D Receiver Localization and Ephemeris\nCorrection using LEO and 5G Base Stations\nDon-Roberts Emenonye, Wasif J. Hussain, Harpreet S. Dhillon, and R. Michael Buehrer\nAbstract\nThis paper leverages Fisher information to examine the interaction between low-Earth orbit (LEO) satellites\nand 5G base stations (BSs) in enabling 9D receiver localization and refining LEO ephemeris. First, we propose a\nchannel model that incorporates all relevant links: LEO-receiver, LEO-BS, and BS-receiver. Then, we utilize the\nFisher information matrix (FIM) to quantify the information available about the channel parameters in these links. By\ntransforming these FIMs, we derive the FIM for 9D receiver localization parameters—comprising 3D position, 3D\norientation, and 3D velocity—along with LEO position and velocity offsets. We present closed-form expressions for\nthe FIM entries corresponding to these localization parameters. Our identifiability analysis based on the FIM reveals\nthat: i) With a single LEO, three BSs, and three time slots are required to estimate the 9D localization parameters\nand correct the LEO position and velocity. ii) With two LEOs, the same configuration (three BSs and three time\nslots) suffices for both tasks. iii) With three LEOs, three BSs and four time slots are needed to achieve the same\ngoal. A key insight from the Cram ´er-Rao lower bound (CRLB) analysis is that, under the configuration of one LEO,\nthree BSs, and three time slots, the estimated errors for receiver positioning, velocity, and orientation, as well as LEO\nposition and velocity offsets, are 0.1 cm, 1 mm",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\2026_arXiv2610.29387_Starlink-Ku-PDU-Header-and-Payload-Coding.pdf",
+      "sha256": "f4ebd27e22951577a16c73c7ec0ffae54532c6c1d326c5884e88fb8897db0e1f",
+      "bytes": 7142536,
+      "pages": 30,
+      "metadata_title": "Protocol Data Unit Header Decoding and Payload Coding Recovery in the Starlink Ku-Band Downlink",
+      "first_page_text": "1\nProtocol Data Unit Header Decoding and Payload Coding Recovery\nin the Starlink Ku-Band Downlink\nHaoyan Liu, Yichuan Ma, Haotong Zhao, Chengguang Li, and Min Yang\nAbstract—Existing Starlink downlink studies describe syn-\nchronization, pilots, and predictable waveform elements, but\nthese descriptions do not establish how received header bits\nspecify payload allocations and channel coding. Using 18 frames\nfrom one continuous complex-baseband capture spanning ap-\nproximately 24 ms, we identify two protocol data unit (PDU)\nheader regions in each frame and decode their contents after\nreceiver correction and reference-phase removal. We recover the\nheaders’ terminated rate-1/3 convolutional code with constraint\nlength seven and an eight-bit cyclic redundancy check over\nthe concatenated information words. The decoded bits support\na conditional 20-bit layout of modulation and coding scheme\n(MCS) index–length pairs, linking format labels and quantities\nto subsequent payload regions. Predicted allocation endpoints\nagree with signal-based estimates in 16 of 18 frames and\ndiffer by at most two symbols in the remaining frames. We\nfurther recover modulation mappings and equivalent quasi-cyclic\nlow-density parity-check coding relations for several payload\nformats, including rate-1/2 and rate-5/8 families. Fixed generators\npredict 78,848, 9,984, and 811,008 parity bits for formats 5,\n9, and 21 without disagreement on codewords excluded from\ntheir generator fitting. Cross-modulation tests support shared\nencoders. Formats 28 and 37 have verified shortened cores, with\n256 and 384 additional b",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\2026_CASJ_LEO-Crowding-Altitude-Inclination-Map-16620-Satellites.pdf",
+      "sha256": "a419da8aacc02712f3ff45bd83f90b675b8eba0b2dca23bed6d91871607efaa9",
+      "bytes": 471342,
+      "pages": 12,
+      "metadata_title": "A FEW SHELLS, A FEW OPERATORS: WHERE LOW EARTH ORBIT IS CROWDED IN AN ALTITUDE-INCLINATION MAP OF 16,620 ACTIVE SATELLITES",
+      "first_page_text": " \n \n \nUDC 629.783  \n \nNurzhan Sanzhar \nGrade 8 student \nNational School of Physics and Mathematics Almaty (NSPM) \n(Almaty, Kazakhstan) \nScientific supervisor: Sydyk Assyltay \n2nd-year student, \nNew York University Abu Dhabi \n(Abu Dhabi, UAE) \nA FEW SHELLS, A FEW OPERATORS: WHERE LOW EARTH ORBIT IS \nCROWDED IN AN ALTITUDE-INCLINATION MAP OF 16,620 ACTIVE \nSATELLITES \nAbstract: Orbital congestion is usually described by counting satellites at each altitude. \nAltitude alone, however, cannot show how the population is organised, because satellites at one \naltitude may fly in very different orbital planes. Using the CelesTrak catalogue of active \nsatellites retrieved on 28 September 2026 (16,620 objects), we computed each satellite's mean \naltitude from its mean motion with Kepler's third law and mapped the population on two axes \nat once, altitude in 50 km bands and inclination in 5 degree bands. Crowding is extremely \nconcentrated. 70.3% of active satellites fly between 450 and 600 km, and the single band 450 -\n500 km holds 9,899 satellites (59.6% of the cata logue), 93.7% of them Starlink. The three \ndensest altitude -inclination cells are all in this band: 50 -55 degrees (4,425 satellites, 99.7% \nStarlink), 40-45 degrees (3,266, 99.4% Starlink) and 95 -100 degrees (1,886, 73.7% Starlink). \nMost of the next -largest concentrations are also single -operator shells: Amazon Kuiper holds \n369 of 612 satellites at 600 -650 km, OneWeb 648 of 720 at 1,150 -1,250 km, and Qianfan 198 \nof 244 at 1,050 -1,100 km. Without these four constellations, no 50 km band holds more than \n646 acti",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\2026_SpaceCourt_State-Responsibility-and-Commercial-Satellite-Systems.pdf",
+      "sha256": "e4671737fdc100f4f75fe2e623c72b360477be8988670d2cb0ee5ab10c6a01d9",
+      "bytes": 461553,
+      "pages": 14,
+      "metadata_title": "G2519 FINAL PAPER.docx",
+      "first_page_text": "Space\n \nCourt\n \nFoundation\n \nStudent\n \nSpace\n \nLaw\n \nJournal\n,\n \n2026\n \nVol\n \n1\n \n(issue\n \n3),\n \nApril\n \n2026\n \n \n©\n \nThe\n \nAuthor(s)\n \n2026.\n \nPublished\n \nby\n \nSpace\n \nCourt\n \nFoundation.\n \nThis\n \nis\n \nan\n \nOpen\n \nAccess\n \narticle\n \ndistributed\n \nunder\n \nthe\n \nterms\n \nof\n \nthe\n \nCreative\n \nCommons\n \nAttribution\n \nLicense\n \n(\nhttps://creativecommons.org/licenses/by/4.0/\n),\n \nwhich\n \npermits\n \nunrestricted\n \nreuse,\n \ndistribution,\n \nand\n \nreproduction\n \nin\n \nany\n \nmedium,\n \nprovided\n \nthe\n \noriginal\n \nwork\n \nis\n \nproperly\n \ncited.\n \n \n \n \nSTATE\n \nRESPONSIBILITY\n \nAND\n \nCOMMERCIAL\n \nSATELLITE\n \nSYSTEMS\n \nIN\n \nARMED\n \nCONFLICT\n \nKAITLYN\n \nTHOMAS\n1\n \n \nABSTRACT\n \nThe\n \nmilitarization\n \nof\n \nouter\n \nspace\n \nis\n \nincreasingly\n \ndriven\n \nby\n \nmilitary\n \nreliance\n \non\n \ncommercial\n \nspace\n \ninfrastructure.\n \nPrivately\n \nowned\n \nand\n \noperated\n \nsatellite\n \nsystems\n \nare\n \nable\n \nto\n \nprovide\n \ncritical\n \ncommunications,\n \nnavigation,\n \nand\n \nintelligence\n \ncapabilities\n \nthat\n \nhave\n \nbecome\n \nessential\n \nto\n \nmodern\n \nmilitary\n \noperations\n \non\n \nEarth.\n \nThese\n \nsystems\n \nare\n \ntypically\n \ninherently\n \ndual-use,\n \ndesigned\n \nfor\n \ncivilian\n \npurposes\n \nbut\n \neasily\n \nadaptable\n \nto\n \nmilitary\n \nuse.\n \nInternational\n \nspace\n \nlaw,\n \nhowever,\n \nremains\n \nrooted\n \nin\n \noutdated\n \nassumptions\n \nregarding\n \nState\n \nownership\n \nand\n \ncontrol,\n \nraising\n \nquestions\n \nabout\n \nits\n \ncapacity\n \nto\n \nregulate\n \nthis\n \nevolving\n \nform\n \nof\n \nmilitarization.\n \n \nThis\n \npaper\n \nexamines\n \nwhy\n \nexisting\n \ninternational\n \nframeworks\n \nstruggle\n \nto\n \naddress\n \nmilitary\n \nreliance\n \non\n \nprivate",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\2210.11578v3.pdf",
+      "sha256": "e175dcec18f2a46e99e06366ba8db6bb77a6112b72686f87b07d26e08b60beb4",
+      "bytes": 908519,
+      "pages": 14,
+      "metadata_title": "",
+      "first_page_text": "Signal Structure of the Starlink Ku-Band Downlink\nTodd E. Humphreys ∗, Peter A. Iannucci ∗, Zacharias M. Komodromos †, Andrew M. Graff †\n∗Department of Aerospace Engineering and Engineering Mechanics, The University of Texas at Austin\n†Department of Electrical and Computer Engineering, The University of Texas at Austin\nAbstract—We develop a technique for blind signal identifica-\ntion of the Starlink downlink signal in the 10.7 to 12.7 GHz\nband and present a detailed picture of the signal’s structure. Im-\nportantly, the signal characterization offered herein includes the\nexact values of synchronization sequences embedded in the signal\nthat can be exploited to produce pseudorange measurements.\nSuch an understanding of the signal is essential to emerging\nefforts that seek to dual-purpose Starlink signals for positioning,\nnavigation, and timing, despite their being designed solely for\nbroadband Internet provision.\nIndex Terms—Starlink, signal identification, positioning, time\nsynchronization, low Earth orbit\nI. I NTRODUCTION\nIn addition to revolutionizing global communications,\nrecently-launched broadband low-Earth-orbit (LEO) mega-\nconstellations are poised to revolutionize global positioning,\nnavigation, and timing (PNT). Compared to traditional global\nnavigation satellite systems (GNSS), they offer higher power,\nwider bandwidth, more rapid multipath decorrelation, and\nthe possibility of stronger authentication and zero-age-of-\nephemeris, all of which will enable greater accuracy and\ngreater resilience against jamming and spoofing [1]–[5].\nWith over 3000 satellites already in",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\2605.20394v1.pdf",
+      "sha256": "d70f16e63be77f074466301d226bfed73d5553001cd9b9678655a65c8d0e5339",
+      "bytes": 4590927,
+      "pages": 5,
+      "metadata_title": "Starlink Beacons for Passive LEO-Aided 9D Navigation",
+      "first_page_text": "Starlink Beacons for Passive LEO-Aided 9D\nNavigation\nNisanur Camuzcu,Student Member , IEEE,Tiep M. Hoang,Member , IEEE,Alireza Vahid,Senior Member , IEEE\nAbstract—Global Navigation Satellite Systems (GNSS) under-\npin positioning, navigation, and timing (PNT), yet their low-\npower signals are easily blocked or disrupted, leaving gaps\nin PNT availability in contested environments (e.g., maritime)\nwhere interference, spoofing, or denial can occur. A key practical\nneed is an independent, ubiquitous aiding signal that can be\ntracked passively and fused with inertial sensing to sustain\nfull navigation-state estimation without dedicated or cooperative\ninfrastructure. This paper presents an end-to-end LEO-aided\nhybrid framework that fuses GPS, Starlink downlink beacons,\nand an inertial measurement unit (IMU) in a 9D (3D position, 3D\nvelocity, and 3D attitude) PNT system using an extended Kalman\nfilter (EKF). We (i) extract Doppler-rate from Starlink downlink\nbeacon tones by associating measurements with satellite IDs, (ii)\nbenchmark beacon Doppler-rate against OFDM-derived range\nobservables under a common processing/estimation pipeline, and\n(iii) integrate the resulting observable into inertial navigation. We\nevaluate GPS/IMU, Starlink/IMU, and GPS–Starlink–IMU using\nFisher-information predictions, Monte Carlo simulations, and\nhardware measurements. Results show that Starlink Doppler-\nrate provides meaningful complementary PNT information, and\ncan aid 9D estimation when GNSS is degraded or intermittently\nunavailable.\nIndex Terms—LEO satellite, Starlink, GPS, 9D localization.\nI. INT",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\Detection of Strong S-Band Emissions from the Starshield Constellation - Observations and Regulatory Context.pdf",
+      "sha256": "9a194d351fa246247c42ff7dc27d28244ca09590cfff38ce803dc1c5e5850dad",
+      "bytes": 1032058,
+      "pages": 15,
+      "metadata_title": "",
+      "first_page_text": "Detection of Strong S-Band Emissions from the Starshield\nConstellation — Observations and Regulatory Context\nL. Scott Tilley, AScT\nAbstract\nStrong wideband S-band emissions have been detected from satellites associated with the\nStarshield constellation. These emissions, centred within the 2025–2110 MHz band allocated\ninternationally for Earth-to-space and space-to-space links, exhibit Doppler characteristics\nand power levels consistent with direct space-to-Earth transmissions. Using orbital solutions\nderived  from  community-maintained  Two-Line  Elements  (TLEs)  and  open-source  signal\nanalysis tools, the observed carriers align with line-of-sight velocities for ~70° inclination,\n~14.97 rev/day orbits. The signals span tens of megahertz in bandwidth, are coherent and\nDoppler-clean, and remain detectable well into antenna side-lobes—properties inconsistent\nwith deep-space or cross-link activity. The study summarizes the observational methods,\nspectral findings, and international regulatory context, emphasizing ITU Radio Regulations,\nwhich restrict downlink use in this band. These results raise questions about frequency-\nallocation  compliance  and  the  broader  need  for  transparent  coordination  among\ngovernmental, commercial, and scientific stakeholders. The work is presented as a verifiable,\npublic-interest observation and invites independent replication and analysis.\n1.0 Introduction\nThis study documents persistent  S-band emissions  observed from a low Earth orbit (LEO)\nsatellite constellation believed to be associated with the  National Reconnaissance Office’s\n(N",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\kassas_navigating_the_arctic_circle_with_starlink_and_oneweb_leo_satellites.pdf",
+      "sha256": "81b7e40e4c42bd1bc1fbdd4f1b7ed97c87e1f095990ff8a213a14f915611d2d6",
+      "bytes": 3353215,
+      "pages": 6,
+      "metadata_title": "",
+      "first_page_text": "Navigating the Arctic Circle with Starlink and\nOneWeb LEO Satellites\nWill Barrett∗, Sharbel Kozhaya ∗, Zaher M. Kassas ∗, and David Marsh †\n∗Department of Electrical and Computer Engineering; The Ohio State University, USA\n†The Wilson Center; Washington, D.C., USA\nbarrett.1020@osu.edu, kozhaya.1@osu.edu, zkassas@ieee.org, dmarsh.space@gmail.com\nAbstract—The exploitation of low Earth orbit (LEO) satellite\nsignals of opportunity from the Starlink and OneWeb constella-\ntions for maritime navigation in the Arctic Circle is investigated.\nFirst, the current geopolitical importance of the Arctic Circle is\ndiscussed. Second, the received signal from LEO constellations\nis modeled, and a software-defined receiver is implemented to\nextract Doppler frequency measurements from overhead LEO\nsatellites. Third, an extended Kalman filter (EKF) is designed to\nfuse Starlink and OneWeb Doppler measurements with altimeter\ndata, assuming a velocity random walk dynamics for the ship.\nExperimental results are presented of the Adventure Canada ship\nnavigating along the west coast of Greenland over a trajectory of\n8.17 km traversed in 20 minutes, where the altimeter-only two-\ndimensional (2D) position root-mean squared error (RMSE) was\n629 m and the final error was 1,081 m. However, fusing altimeter\ndata with Doppler measurements from 12 Starlink and 9 OneWeb\nsatellites dramatically reduced the 2D position RMSE to 119 m\nand the final error to 27 m.\nIndex Terms —LEO, PNT, navigation, signals of opportunity,\nStarlink, OneWeb, Arctic, Greenland, maritime, vessel, ship.\nI. I NTRODUCTION\nModern society h",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\kassas_starlink_for_pnt_a_trick_or_a_treat.pdf",
+      "sha256": "e2ab24857a123f1b9f190c8adc2020fccf09c96d6bbaea9d94c1e29422e7d025",
+      "bytes": 10512883,
+      "pages": 10,
+      "metadata_title": "",
+      "first_page_text": "Starlink for PNT: A Trick or a Treat?\nSharbel Kozhaya, Joe Saroufim, and Zaher M. Kassas\nThe Ohio State University\nBIOGRAPHIES\nSharbel Kozhaya is a Ph.D student in the Department of Electrical and Computer Engineering at The Ohio State University\nand a member of the Autonomous Systems Perception, Intelligence, and Navigation (ASPIN) Laboratory. He received a B.E. in\nElectrical Engineering from the Lebanese American University. His current research interests include opportunistic navigation,\nlow Earth orbit satellites, cognitive software-defined radio, and 5G. He is the recipient of the 2023 IEEE/ION Position, Location,\nand Navigation Symposium (PLANS) best student paper award.\nJoe Saroufim is a Ph.D student in the Department of Electrical and Computer Engineering at The Ohio State University and\na member of the ASPIN Laboratory. He received a B.E. in Mechanical Engineering from the Lebanese American University.\nHis current research interests include low Earth orbit satellites, situational awareness, autonomous vehicles, and sensor fusion.\nZak Kassas is the TRC Endowed Chair in Intelligent Transportation Systems and a professor at The Ohio State University.\nHe is the Director of the ASPIN Laboratory. He is also Director of the U.S. Department of Transportation Center: CARMEN\n(Center for Automated Vehicle Research with Multimodal AssurEd Navigation), focusing on navigation resiliency and security\nof highly automated transportation systems. He received a B.E. with Honors in Electrical Engineering from the Lebanese\nAmerican University, an M.S. in Electrical and Computer Enginee",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\komodromos_starlink_simulator.pdf",
+      "sha256": "fcf1bb30b8be1995723ea0def5adc90f3b7e53e8a942c3febc6a92b463482ffc",
+      "bytes": 1239789,
+      "pages": 15,
+      "metadata_title": "",
+      "first_page_text": "Signal Simulator for Starlink Ku-Band Downlink\nZacharias M. Komodromos †, Wenkai Qin ∗, Todd E. Humphreys ∗\n∗Department of Aerospace Engineering and Engineering Mechanics, The University of Texas at Austin\n†Department of Electrical and Computer Engineering, The University of Texas at Austin\nABSTRACT\nThis paper summarizes the current-known model for Starlink’s Ku-band downlink signal and develops a platform for simulating\na received signal. The simulator models key elements of the signal structure, along with channel effects such as noise, delay,\nand Doppler. Further, this paper outlines a hypothesis testing detection process for acquisition of a Starlink downlink frame.\nThe information in this paper will be of general interest to those seeking to understand the Starlink waveform, but is particularly\ntargeted to those wishing to exploit Starlink as an alternative to GNSS for position, navigation, and timing (PNT). The simulator\ncan also make use of precise ephemerides to generate more faithful signals. Theoretical limits on the minimum signal-to-noise\nratio required to detect a frame are presented and supported by simulated signals. Finally, the hypothesis testing detection\nprocess is applied to live-captured Starlink data.\nI. BIOGRAPHIES\nZacharias M. Komodromos (B.S., Iowa State University) is a Ph.D. student in the Department of Electrical and Computer\nEngineering at The University of Texas at Austin and a member of the UT Radionavigation Laboratory. His research interests\ninclude wireless communications and re-purposing broadband Internet satellites for positioning, navig",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\qin_pilots_starlink_dl.pdf",
+      "sha256": "d9d056fbd4d69579c4f0da9b279fb4520e09c92cab90c35ff3e35a7758938d32",
+      "bytes": 14978039,
+      "pages": 15,
+      "metadata_title": "",
+      "first_page_text": "Pilots and Other Predictable Elements of the\nStarlink Ku-Band Downlink\nWenkai Qin1,*, Mark L. Psiaki 2, John R. Bowman 2, & Todd E. Humphreys 1\n1Department of Aerospace Engineering and Engineering Mechanics, The University of Texas at Austin, Austin,\nTX, USA\n2Department of Aerospace and Ocean Engineering, Virginia Tech, Blacksburg, V A, USA\n*Corresponding author: wqin@utexas.edu\nAbstract—We identify and characterize dedicated pilot symbols\nand other predictable elements embedded within the Starlink\nKu-band downlink waveform. Exploitation of these predictable\nelements enables precise opportunistic positioning, navigation,\nand timing using compact, low-gain receivers by maximizing\nthe signal processing gain available for signal acquisition and\ntime-of-arrival (TOA) estimation. We develop a post-processing\nacquisition and demodulation framework to decode Starlink\nframes and disclose the explicit sequences of theedge pilots—\nbands of 4QAM symbols located at both edges of each Starlink\nchannel that apparently repeat identically across all frames,\nbeams, channels, and satellites. We further reveal that the great\nmajority of QPSK-modulated symbols do not carry high-entropy\nuser data but instead follow a regular tessellated structure super-\nimposed on a constant reference template. We demonstrate that\nexploiting frame-level predictable elements yields a processing\ngain of approximately 48 dB, thereby enabling low-cost, compact\nreceivers to extract precise TOA measurements even from low-\nSNR Starlink side beams.\nINTRODUCTION\nPosition, navigation, and timing (PNT) is a crucial utilit",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\s44459-025-00013-y.pdf",
+      "sha256": "7daca368e90d8de13d2f12141d7fe5679ef9678a4149506d47d7d444ec314783",
+      "bytes": 1069216,
+      "pages": 10,
+      "metadata_title": "Signal parameter estimation and demodulation of the OneWeb Ku-band downlink",
+      "first_page_text": "npj | wireless technology Article\nhttps://doi.org/10.1038/s44459-025-00013-y\nSignal parameter estimation and\ndemodulation of the OneWeb Ku-band\ndownlink\nCheck for updates\nZacharias M. Komodromos1 &T o d dE .H u m p h r e y s2\nWe present techniques for estimating key parameters of OneWeb ’s Ku-band downlink signal\n(10.7–12.7 GHz) and reveal it as a single-carrier QPSK signal with a 230.4 MHz symbol rate. The\ntechniques also estimate the signal’s roll-off factor and center frequencies. We further provide theﬁrst\npublished account of OneWeb signal demodulation, revealing the basic frame structure of the\ndownlink signal, including a synchronization sequence that repeats every millisecond and is common\nacross all beams, channels, and satellites. Identifying this sequence enables making time-of-arrival\nmeasurements from OneWeb signals. These ﬁndings contribute to the growing body of research\nfocused on repurposing low-Earth-orbit satellite communication signals for positioning, navigation,\nand timing.\nThe rapid expansion of low-Earth-orbit (LEO) mega-constellations has\nenabled unprecedented global broadband coverage. These mega-\nconstellations could also revolutionize the positioning, navigation, and\ntiming (PNT) landscape by serving as a new source of signals for PNT 1.\nWhile their primary mission is usually broadband communication, there\nhave been studies exploring the cost fora constellation operator adopting a\nfused communications-and-PNT service2, and numerous studies on use of\ntheir signal for opportunistic PNT. LEO signals offer increased satellite\nvisibility, enhanced geo",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\s44459-026-00075-6.pdf",
+      "sha256": "62ff0cbf3c4e56c45ef00eae080593350653205e7d22ccdcbdad47eaa376a84d",
+      "bytes": 2394337,
+      "pages": 13,
+      "metadata_title": "Pilots and other predictable elements of the Starlink Ku-band downlink",
+      "first_page_text": "npj | wireless technology Article\nhttps://doi.org/10.1038/s44459-026-00075-6\nPilots and other predictable elements of\nthe Starlink Ku-band downlink\nCheck for updates\nWenkai Qin1 , Mark L. Psiaki2, John R. Bowman2 & Todd E. Humphreys1\nWe identify and characterize dedicated pilot symbols and other predictable elements embedded\nwithin the Starlink Ku-band downlink waveform. Exploitation of these predictable elements enables\nprecise opportunistic positioning, navigation, and timing using compact, low-gain receivers by\nmaximizing the signal processing gain available for signal acquisition and time-of-arrival (TOA)\nestimation. We develop a post-processing acquisition and demodulation framework to decode\nStarlink frames and disclose the explicit sequences of the edge pilots—bands of 4QAM symbols\nlocated at both edges of each Starlink channel that apparently repeat identically across all frames,\nbeams, channels, and satellites. We further reveal that the great majority of QPSK-modulated symbols\ndo not carry high-entropy user data but instead follow a regular tessellated structure superimposed on\na constant reference template. We demonstrate that exploiting frame-level predictable elements\nyields a processing gain of approximately 48 dB, thereby enabling low-cost, compact receivers to\nextract precise TOA measurements even from low-SNR Starlink side beams.\nPosition, navigation, and timing (PNT) is a crucial utility whose applications\nspan vast sectors of modern life. From agriculture to aviation to ﬁnancial\nmarkets, Global Navigation Satellite Systems (GNSS) —the prevailing\ntechnolog",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\Satcon-DECam-mrawls.pdf",
+      "sha256": "ab8a7b6400d550cc317d99a73145c9ea85305f734677f87c2fe09ed8c794df2d",
+      "bytes": 18104770,
+      "pages": 25,
+      "metadata_title": "Satcon-DECam-mrawls",
+      "first_page_text": "Comparing SpaceX’s DarkSat to \nbrighter Starlink siblings\nin g-band with DECam\nMeredith Rawls \nSATCON1 • June 29, 2020\n@merrdiﬀ\t\n@mrawls\narxiv.org/abs/2006.12417\n",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\papers\\Starlink_Downlink_AmBC.pdf",
+      "sha256": "dc433d6db209d3d54db69c2c67a98587e75c7706b1004c5095fe521386fef84c",
+      "bytes": 411468,
+      "pages": 5,
+      "metadata_title": "",
+      "first_page_text": "Starlink Ku-Band Downlink Based Ambient\nBackscatter Communication\nJingyi Liao, Kalle Ruttik, and Riku Jäntti\nDepartment of Information and Communications Engineering,\nAalto University,\nEspoo, Finland\nZhu Han\nDepartment of Electrical and Computer Engineering,\nUniversity of Houston,\nHouston, Texas, USA\nAbstract—With the development of the Starlink network,\nsatellite communication has become a primary means of Internet\naccess in remote areas. Leveraging the ubiquitous downlink\nfrom Low-Earth-Orbit (LEO) satellites and the portability of\nground stations, this paper explores the feasibility of using\nStarlink downlink signals as an illuminating signal for Ambient\nBackscatter Communication (AmBC). We propose an AmBC\nsystem that operates in the Ku-band, utilizing Starlink downlink\nsignals. Furthermore, we analyze the impact factors for AmBC\nperformance and derive its analytical expression. Numerical\nsimulation results demonstrate that the AmBC based on the\nStarlink downlink achieves a Bit Error Rate (BER) on the order\nof 10−2, highlighting its potential for practical applications.\nIndex Terms —Ambient Backscatter Communications, Low\nEarth Orbit, Doppler Effect, Satellite Communications\nI. I NTRODUCTION\nThe Starlink megaconstellation planned by SpaceX is ex-\npected to consist of 42,000 satellites. As of February 2025,\nmore than 7,000 Starlink satellites are already operational\nin Low-Earth Orbit (LEO) constellations [1]. In the near\nfuture, Starlink is anticipated to provide ubiquitous coverage,\nmaking it a promising ambient signal source for Ambient\nBackscatter Communication (AmBC)",
+      "scope": "Local bibliographic/source audit only; full-paper conclusions are not certified by metadata extraction."
+    }
+  ],
+  "code_packages": [
+    {
+      "directory": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\21CMA_Starlink_VHF",
+      "readme_files": [
+        {
+          "path": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\21CMA_Starlink_VHF\\21CMA_Starlink_VHF-main\\21CMA_Starlink_VHF-main\\README.md",
+          "sha256": "f51daa9f596e775ad93d4f036b268d32b06d96f645da0acc626a57a4ce4ee113"
+        }
+      ],
+      "status": "Located inherited code; not a validated runtime dependency or universal decoder."
+    },
+    {
+      "directory": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\gnss_sdr",
+      "readme_files": [
+        {
+          "path": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\gnss_sdr\\gnss-sdr-0.0.22\\README.md",
+          "sha256": "4a4f75f82d5bc5f0b22e1ea00af6c3738a158095ec069751fb689ab3f53be491"
+        }
+      ],
+      "status": "Located inherited code; not a validated runtime dependency or universal decoder."
+    },
+    {
+      "directory": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\leo-tracker",
+      "readme_files": [
+        {
+          "path": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\leo-tracker\\README.md",
+          "sha256": "cfbac17b180be485e01f1fdbc23b3f524efb066542c7a91473d13fca48ad94a7"
+        },
+        {
+          "path": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\leo-tracker\\.pytest_cache\\README.md",
+          "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+        },
+        {
+          "path": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\leo-tracker\\3d_prints\\quad_lnb\\README.md",
+          "sha256": "cbcd032c1bcf8490c54fd99de76e5b85e8f432b1559a16bb7adf021cc8d49ef8"
+        }
+      ],
+      "status": "Located inherited code; not a validated runtime dependency or universal decoder."
+    },
+    {
+      "directory": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\leo-tracker-reduxredux",
+      "readme_files": [
+        {
+          "path": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\leo-tracker-reduxredux\\README.md",
+          "sha256": "6551ac663cca17ffd09939861f8ccaa13e019fe1811b0b94b6917ee0396414ee"
+        },
+        {
+          "path": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\leo-tracker-reduxredux\\.pytest_cache\\README.md",
+          "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+        },
+        {
+          "path": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\leo-tracker-reduxredux\\docs\\README.md",
+          "sha256": "99db1fee93097b1ba66c0629c890f705d2133778237f7b072532fc54549aab43"
+        }
+      ],
+      "status": "Located inherited code; not a validated runtime dependency or universal decoder."
+    },
+    {
+      "directory": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_37ghz_revb",
+      "readme_files": [],
+      "status": "Located inherited code; not a validated runtime dependency or universal decoder."
+    },
+    {
+      "directory": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_37ghz_unified",
+      "readme_files": [],
+      "status": "Located inherited code; not a validated runtime dependency or universal decoder."
+    },
+    {
+      "directory": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_downlink_analysis",
+      "readme_files": [
+        {
+          "path": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_downlink_analysis\\Starlink-Downlink-Analysis-main\\README.md",
+          "sha256": "49993220e9b75ea26681dd48b59e5cd8ce13f872c2eb427096a1ea8e79bd320f"
+        },
+        {
+          "path": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_downlink_analysis\\Starlink-Downlink-Analysis-main\\data\\README.md",
+          "sha256": "b02d3afabc4a756b4eb2520d967c59d4f421edb54a5937f1eb63384c43ddc8e1"
+        }
+      ],
+      "status": "Located inherited code; not a validated runtime dependency or universal decoder."
+    },
+    {
+      "directory": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_dtc_uemr",
+      "readme_files": [
+        {
+          "path": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_dtc_uemr\\starlink_dtc_uemr_derived_data_and_code\\README.md",
+          "sha256": "ed14df55bfd42ad414317d3868cf2c007ed4c33c84825849639f4fbdbd71d6d8"
+        }
+      ],
+      "status": "Located inherited code; not a validated runtime dependency or universal decoder."
+    },
+    {
+      "directory": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_leo_pnt",
+      "readme_files": [
+        {
+          "path": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_leo_pnt\\README.md",
+          "sha256": "924ee043410779f046ea71cbb0c844d45d46ca35c28cb8f22570cbd071e65c61"
+        }
+      ],
+      "status": "Located inherited code; not a validated runtime dependency or universal decoder."
+    },
+    {
+      "directory": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator",
+      "readme_files": [
+        {
+          "path": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\third_party\\starlink_simulator\\README.md",
+          "sha256": "786e6793e83f889cfb336d5a4e6ee03cf5a3e207395fc386421fa1c1e275e776"
+        }
+      ],
+      "status": "Located inherited code; not a validated runtime dependency or universal decoder."
+    }
+  ],
+  "licensing": "Imported user legacy materials retain their source status; no new license is asserted. The simulator includes its original MIT notice. No remote publication.",
+  "scope": "Read-only local source recovery; copied NPY is complex64 derived from the hash-verified published CSV; no new RF or independent capture."
+}

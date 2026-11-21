@@ -1,0 +1,36 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E005",
+  "title": "循环结构与周期波形",
+  "status": "imported historical evidence; organization only",
+  "question": "分带循环族是否可靠；能否恢复周期平均结构？",
+  "inputs": "原 WAV、E001 频漂轨迹与分带数组。",
+  "methods": "循环估计、去频漂比较、周期波形恢复。",
+  "controls_and_limits": "保留已知周期和平稳有色噪声对照；约 750 Hz 特征不是协议字段。",
+  "dependencies": "依赖 E001；validate_cyclic_estimators 为快速合成对照。",
+  "scripts": [
+    "analyze_subband_cyclostationarity.py",
+    "present_cyclic_evidence.py",
+    "recover_cyclic_waveform.py",
+    "summarize_cyclic_evidence.py",
+    "validate_cyclic_estimators.py"
+  ],
+  "artifacts": [
+    "experiments/E005/results/cyclic_drift_consistency.json",
+    "experiments/E005/results/cyclic_estimator_controls.json",
+    "experiments/E005/results/cyclic_evidence_summary.json",
+    "experiments/E005/results/recovered_cyclic_power.csv",
+    "experiments/E005/results/recovered_cyclic_waveform.json",
+    "experiments/E005/results/recovered_cyclic_waveform.npz",
+    "experiments/E005/figures/subband_cyclic_structure.png",
+    "experiments/E005/figures/subband_cyclic_structure.svg",
+    "experiments/E005/results/subband_cyclostationarity.json",
+    "experiments/E005/results/subband_cyclostationarity_arrays.npz",
+    "experiments/E005/results/subband_cyclostationarity_dechirped.json",
+    "experiments/E005/results/subband_cyclostationarity_dechirped_arrays.npz"
+  ],
+  "parameters_and_seeds": "Retained in source/results; missing historical settings are not invented.",
+  "baseline_tag": "v0.0.1",
+  "provenance_manifest": "../../provenance/layout_manifest.json",
+  "reproducibility_limits": "Some historical results were produced interactively without standalone scripts. Classification is not a full independent rerun."
+}

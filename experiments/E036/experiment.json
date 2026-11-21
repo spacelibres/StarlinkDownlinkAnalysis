@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E036",
+  "title": "Qin 全档案清点与 MCS 6、35、42、93 的 PN15 边界",
+  "input": "Qin, Psiaki, Bowman and Humphreys author supplement, decodedExemplarFrames_20251019T2214.mat",
+  "scripts": ["survey_qin_headers.py", "extract_qin_low_mcs.py", "audit_qin_low_codes.py"],
+  "seed": 2026112136
+}

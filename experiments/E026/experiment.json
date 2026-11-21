@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E026",
+  "title": "60 位尾段模板的窄带可辨识性与转移",
+  "input": "data/raw/leo_tracker_snapshot/reports/2026_10_18_dsx01_pilot_clock/DSX01-S05/selected_iq.npz",
+  "scripts": ["audit_narrowband_cycle.py"],
+  "seed": 2026112126
+}

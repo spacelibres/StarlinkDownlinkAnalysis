@@ -1,0 +1,9 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E016",
+  "title": "Code 21 多项式系统编码与 Code 9 转移检验",
+  "input": "data/raw/legacy_wideband/Starlink_Downlink_IQ.npy",
+  "scripts": ["code21_ring.py", "validate_code21.py", "check_code21_single_bit.py"],
+  "seed": 2026112115,
+  "limitations": "One shared measured capture and a literature-assisted bit mapping. Equivalent systematic generator, not a sparse Tanner graph or application schema."
+}

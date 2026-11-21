@@ -1,0 +1,31 @@
+{
+  "schema": "starlink-legacy-import/v1",
+  "utc": "2026-11-20T15:34:02.903670+00:00",
+  "files": [
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\68_ku_payload_equalised.py",
+      "snapshot": "references/legacy_research/payload/analysis/68_ku_payload_equalised.py",
+      "sha256": "12631233ef96e40132884189406957f4173cb22315859f7a63ec14558c09562d",
+      "bytes": 8011
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\probes\\p3_pilot_slope.py",
+      "snapshot": "references/legacy_research/payload/analysis/probes/p3_pilot_slope.py",
+      "sha256": "c7df7bfcdc0fb5ec804fa429d9a22c931790c17d3795ff8578cd7257b82f45e6",
+      "bytes": 4366
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\docs\\reports\\53_ku_payload_first_step.md",
+      "snapshot": "references/legacy_research/payload/docs/reports/53_ku_payload_first_step.md",
+      "sha256": "c297c1bf02e79f371904bac236834e614751194b66dc507b7d24447bca88fd69",
+      "bytes": 5216
+    },
+    {
+      "source": "LOCAL_USER_DIRECTORY\\Documents\\starlink_beacon_iq-master\\starlink_beacon_iq-master\\analysis\\53_ku_channel_profile.py",
+      "snapshot": "references/legacy_research/payload/analysis/53_ku_channel_profile.py",
+      "sha256": "5911ff5971e9c766a31d6ab23ccf1de7450270fdabf327c30246dd5430350ef3",
+      "bytes": 5284
+    }
+  ],
+  "scope": "Legacy labels and calibration ideas only; mislabeled H2 intervals are not adopted as code5 payload."
+}

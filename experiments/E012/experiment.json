@@ -1,0 +1,15 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E012",
+  "title": "Code5 系统校验关系与接收校正",
+  "input": "data/raw/legacy_wideband/Starlink_Downlink_IQ.npy",
+  "seed": 2026112012,
+  "training_legacy_frames": [-1,1,2],
+  "qc_lift": 128,
+  "systematic_bits": 1024,
+  "parity_bits": 1024,
+  "scripts": ["code5_core.py","audit_code5_parity.py","collect_payload_sources.py"],
+  "source_manifest": "provenance/legacy_payload_import.json",
+  "gate": "Full input rank and consistent training equations before frozen reserved parity predictions",
+  "limitations": "Inherited same-capture parameters; QC is structural prior; no sparse full-rank H or application plaintext claim"
+}

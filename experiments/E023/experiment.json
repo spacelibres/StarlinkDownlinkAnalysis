@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E023",
+  "title": "Code 68 资源边界和任意标号方程",
+  "input": "data/raw/legacy_wideband/Starlink_Downlink_IQ.npy",
+  "scripts": ["code68_mapping_core.py","audit_code68.py"],
+  "seed": 2026112023
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "starlink-formula-supplement/v1",
+  "scope": "E011 supplement to the archived 50-card library; formulas are working definitions, not a claim to all worldwide formulas.",
+  "checked_on": "2026-11-20",
+  "cards": [
+    {
+      "id": "E011_COHERENCE",
+      "formula": "C_j = abs(sum(z[jW:(j+1)W])) / sum(abs(z[jW:(j+1)W])), W=32",
+      "role": "Reference-consistency statistic after PN removal; invariant to one nonzero common complex gain",
+      "source": "references/legacy_research/second_header/analysis/66_ku_header2_final.py",
+      "verification": "Synthetic gain/phase invariance and E010 scalar resource agreement pass; E011 reports all threshold failures",
+      "limit": "Channel phase within a window, slot edges and reference-like payload alter detectability; this is not cyclic spectral coherence"
+    },
+    {
+      "id": "E011_L2_CHANGE",
+      "formula": "J(k)=sum_{j<k}(C_j-mean(C_<k))^2 + sum_{j>=k}(C_j-mean(C_>=k))^2; k_hat=argmin J(k)",
+      "source": "https://centre-borelli.github.io/ruptures-docs/user-guide/costs/costl2/",
+      "author_code": "https://github.com/deepcharles/ruptures/blob/master/src/ruptures/costs/costl2.py",
+      "verification": "Current implementation exhaustively evaluates one split through cumulative sums; known step/constant synthetic tests pass",
+      "limit": "A forced optimum exists even under no change; reported contrast/SSE admission and minimum length remain necessary"
+    },
+    {
+      "id": "E011_ALLOCATION",
+      "formula": "Q=ceil(Nc/b); separate=C*Q; joint=ceil(C*Nc/b); endpoint=header_start+114*N+sum(allocation_lengths)",
+      "source": "https://arxiv.org/html/2610.29387v2#S4.SS2",
+      "verification": "Frozen map tested on real decoded fields; E011 compares predicted lengths with header-blind signal estimates",
+      "limit": "Nc and b are separate inherited hypotheses; code68 uses a symbol unit only. Endpoints do not determine unknown parity matrices."
+    },
+    {
+      "id": "E011_UNIT_IDENTIFIABILITY",
+      "formula": "y=A*u; unit nullity = columns(A)-rank(A); minimize t subject to -t <= A*u-y <= t and u>=1",
+      "source": "E011 algebraic diagnostic; current NumPy least squares and SciPy HiGHS linear programming",
+      "verification": "Synthetic counterexample verifies that a negative minimum-norm unit does not exclude positive solutions; both layouts admit positive examples on current endpoints",
+      "limit": "This is same-data fitting, not a held-out prediction; bounds and unknown units are model assumptions"
+    },
+    {
+      "id": "E011_SCALE_AMBIGUITY",
+      "formula": "(2*C)*(Q/2)=C*Q",
+      "source": "E010 retained H1 bits evaluated under conditional 19/20-bit parsing",
+      "verification": "All 18 first headers have doubled 19-bit quantities; halving resource units preserves the H2 location",
+      "limit": "Shows a count/unit ambiguity; it neither proves the 19-bit model nor uniquely specifies the full field widths"
+    }
+  ]
+}

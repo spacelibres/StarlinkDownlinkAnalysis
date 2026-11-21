@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E027",
+  "title": "原始 WAV 的 60 位模板及接收机对照",
+  "input": "data/raw/wav/USER_IQ.wav",
+  "scripts": ["audit_wav_cycle_transfer.py"],
+  "seed": 2026112127
+}

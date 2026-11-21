@@ -1,0 +1,12 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E014",
+  "title": "独立UT宽带捕获与冻结编码转移",
+  "input": "data/raw/ut_250msps/Starlink_Downlink_IQ_250MSps.bin",
+  "source_manifest": "provenance/ut_capture_import.json",
+  "scripts": ["ut_receiver_core.py","download_ut_capture.py","validate_ut_capture.py"],
+  "frozen_generator": "runs/v010-code5-parity-02/artifacts/experiments/E012/results/code5_observations.npz",
+  "frozen_checks": "runs/v011-sparse-code5/artifacts/experiments/E013/results/sparse_code5_arrays.npz",
+  "gate": "Hash-pinned new capture, PSS/pilot-only acquisition and tracking, no P/H refit, CRC not a selector",
+  "limitations": "High-level author results inspected; independent RF but not blind-to-literature validation; application semantics unresolved"
+}

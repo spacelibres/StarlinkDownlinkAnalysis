@@ -1,0 +1,17 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E013",
+  "title": "稀疏完整校验阵与Code5软纠错",
+  "input": "runs/v010-code5-parity-02/artifacts/experiments/E012/results/code5_observations.npz",
+  "seed": 2026112013,
+  "qc_lift": 128,
+  "search_support_weights": [1,2,3],
+  "maximum_check_weight": 6,
+  "minsum": {"eta":0.8,"max_iterations":60,"message_clipping":false},
+  "injected_llr_flips": [1,4,16],
+  "synthetic_real_awgn_sigma": [0.4,0.6,0.8,1.0],
+  "synthetic_trials_per_sigma": 16,
+  "scripts": ["sparse_code5_core.py","audit_sparse_code5.py"],
+  "gate": "RankH=rankHp=1024, GHT=0 and Hp inverse generator reconstruction before codeword checks",
+  "limitations": "Inherited same-capture model; finite support search and synthetic correction experiments; source semantics unresolved"
+}

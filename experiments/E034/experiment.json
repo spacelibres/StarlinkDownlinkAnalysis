@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E034",
+  "title": "Qin 档案的双头部与 Code 21 跨录波转移",
+  "input": "Qin, Psiaki, Bowman and Humphreys author supplement, decodedExemplarFrames_20251019T2214.mat",
+  "scripts": ["snapshot_qin_exemplars.py", "audit_qin_exemplars.py"],
+  "seed": null
+}

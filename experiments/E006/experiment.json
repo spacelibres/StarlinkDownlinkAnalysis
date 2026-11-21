@@ -1,0 +1,42 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E006",
+  "title": "突发沿、同步和中心频率网格",
+  "status": "imported historical evidence; organization only",
+  "question": "终止沿如何对齐；窄带同步匹配依赖何种中心网格？",
+  "inputs": "原 WAV、轨迹、参考 PSS/SSS 与循环结果。",
+  "methods": "分带包络、终止沿、相干/非相干同步探测和中心缺口网格检验。",
+  "controls_and_limits": "沿精度受滤波与 SNR 限制；已知模板匹配不等于未知载荷解码。",
+  "dependencies": "依赖 E001/E005 和 references/qin。",
+  "scripts": [
+    "acquire_narrowband_sync_prefix.py",
+    "measure_burst_edge_alignment.py",
+    "test_central_gutter_grid.py",
+    "wav_coherent_frame_probe.py",
+    "wav_noncoherent_sync_probe.py"
+  ],
+  "artifacts": [
+    "experiments/E006/results/burst_edge_alignment.json",
+    "experiments/E006/results/burst_edge_alignment_arrays.npz",
+    "experiments/E006/results/burst_edge_alignment_quarter_ms.json",
+    "experiments/E006/results/burst_edge_alignment_quarter_ms_arrays.npz",
+    "experiments/E006/results/central_gutter_grid_test.json",
+    "experiments/E006/results/central_gutter_grid_test_arrays.npz",
+    "experiments/E006/results/narrowband_sync_prefix_extended_observations.npz",
+    "experiments/E006/results/narrowband_sync_prefix_extended_test.json",
+    "experiments/E006/results/narrowband_sync_prefix_observations.npz",
+    "experiments/E006/results/narrowband_sync_prefix_test.json",
+    "experiments/E006/results/wav_coherent_frame_probe.npz",
+    "experiments/E006/results/wav_coherent_frame_results.json",
+    "experiments/E006/results/wav_noncoherent_sync_profiles.npz",
+    "experiments/E006/results/wav_noncoherent_sync_results.json",
+    "experiments/E006/results/wav_pss_specificity_extended_profiles.npz",
+    "experiments/E006/results/wav_pss_specificity_extended_results.json",
+    "experiments/E006/results/wav_pss_specificity_profiles.npz",
+    "experiments/E006/results/wav_pss_specificity_results.json"
+  ],
+  "parameters_and_seeds": "Retained in source/results; missing historical settings are not invented.",
+  "baseline_tag": "v0.0.1",
+  "provenance_manifest": "../../provenance/layout_manifest.json",
+  "reproducibility_limits": "Some historical results were produced interactively without standalone scripts. Classification is not a full independent rerun."
+}

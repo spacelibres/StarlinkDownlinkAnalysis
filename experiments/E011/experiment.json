@@ -1,0 +1,13 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E011",
+  "title": "资源端点与字段可辨识性",
+  "input": "data/raw/legacy_wideband/Starlink_Downlink_IQ.npy",
+  "header_input": "runs/v008-complete-header-layout-02/artifacts/experiments/E010/results/full_header_layout.json",
+  "seed": 2026112011,
+  "window_permutation_controls_per_frame": 199,
+  "primary": {"window_resources":32,"threshold":0.45,"block_windows":16,"minimum_blocks":2,"required_high_fraction":0.8},
+  "scripts": ["allocation_core.py","audit_allocation_observability.py"],
+  "gate": "Signal-only calculations precede header comparison; all missing estimates and controls retained; no tuning to field predictions",
+  "limitations": "Inherited same-capture waveform and unit models; boundary diagnostics do not authenticate padding, field layout or payload code"
+}

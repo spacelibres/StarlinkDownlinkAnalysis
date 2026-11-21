@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/GUIDE.txt",
+    "file": "analysis\\reference\\qin\\GUIDE.txt",
+    "bytes": 6426,
+    "sha256": "c84db336c7b4a4866e64f1467d5c46c6b226fa360c329de0de3a621f32bb5b39",
+    "transport_tls_verified": false,
+    "note": "Server certificate chain could not be verified. Public reference material only; no downloaded code executed."
+  },
+  {
+    "url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/LICENSE.txt",
+    "file": "analysis\\reference\\qin\\LICENSE.txt",
+    "bytes": 2417,
+    "sha256": "2eac370ac8e59527726a0b3ee5493f9f1bc1ff1a941f2bb68a1b97230c009046",
+    "transport_tls_verified": false,
+    "note": "Server certificate chain could not be verified. Public reference material only; no downloaded code executed."
+  },
+  {
+    "url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/reference-template/referenceTemplate.mat",
+    "file": "analysis\\reference\\qin\\referenceTemplate.mat",
+    "bytes": 99179,
+    "sha256": "ec77ad6f9a17c8b14451f7f3cea6114952d0ad3aca26b3eb8c0e9aec06b002cd",
+    "transport_tls_verified": false,
+    "note": "Server certificate chain could not be verified. Public reference material only; no downloaded code executed."
+  },
+  {
+    "url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/reference-template/sssVec.mat",
+    "file": "analysis\\reference\\qin\\sssVec.mat",
+    "bytes": 1602,
+    "sha256": "d1e35826279baf0fc3e5a6fa3d34e5a83dd525956132ad9cecdb2af48450f982",
+    "transport_tls_verified": false,
+    "note": "Server certificate chain could not be verified. Public reference material only; no downloaded code executed."
+  },
+  {
+    "url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/reference-template/genReferenceTemplate.m",
+    "file": "analysis\\reference\\qin\\genReferenceTemplate.m",
+    "bytes": 1837,
+    "sha256": "07965e1b49bae96f8fee74052f5eb7af017cc34b881c2cf6b51c31a6fe11fdda",
+    "transport_tls_verified": false,
+    "note": "Server certificate chain could not be verified. Public reference material only; no downloaded code executed."
+  },
+  {
+    "url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/reference-template/genPss.m",
+    "file": "analysis\\reference\\qin\\genPss.m",
+    "bytes": 964,
+    "sha256": "32c7a9a5844499e5f92dbd6503fdd0f2ebe178a1f6691313887f70b53e1d21b6",
+    "transport_tls_verified": false,
+    "note": "Server certificate chain could not be verified. Public reference material only; no downloaded code executed."
+  },
+  {
+    "url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/reference-template/genSss.m",
+    "file": "analysis\\reference\\qin\\genSss.m",
+    "bytes": 1752,
+    "sha256": "b327682ef5adc9c2692c3a0332cd0a4c9a30bc262fad45824b770d9e3c2b5e3e",
+    "transport_tls_verified": false,
+    "note": "Server certificate chain could not be verified. Public reference material only; no downloaded code executed."
+  }
+]

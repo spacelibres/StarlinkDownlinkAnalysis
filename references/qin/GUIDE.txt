@@ -1,0 +1,122 @@
+STARLINK REFERENCE TEMPLATE SUPPLEMENTAL MATERIALS
+The University of Texas at Austin - Radionavigation Laboratory
+
+Associated with: "Pilots and Other Predictable Elements of the Starlink Ku-Band Downlink"
+
+This package contains decoded Starlink Ku-band downlink frames (1009 frames from
+STARLINK-31848, v2.0-mini, captured January 21, 2025) and MATLAB scripts for reference
+template analysis, modulation mapping, and signal research.
+
+DIRECTORY STRUCTURE
+===================
+
+.
+|-- exemplar-frames-data
+|   |-- decodedExemplarFrames_20251019T2214.mat ... MAT file with 1009 decoded frames
+|   |                                               (yDataDec, yDataSoft, modEst, SINRs,
+|   |                                               betas, TOAs, hasTemplate, and
+|   |                                               configuration fields)
+|   `-- EXEMPLAR_FRAMES_GUIDE.txt ................. Detailed field-by-field documentation
+|                                                   of dataset structure and processing
+|                                                   pipeline
+|
+|-- reference-template
+|   |-- correlateEdgePilots.m ..................... Correlate IQ samples against edge
+|   |                                               pilot local replica in the time domain
+|   |-- genEdgePilots.m ........................... Generate edge pilot matrix (16
+|   |                                               subcarriers x 302 symbols) from hex
+|   |                                               codes in Appendix A
+|   |-- genPss.m .................................. Generate Primary Synchronization
+|   |                                               Sequence (PSS), the LFSR-based
+|   |                                               chirp-like waveform
+|   |-- genSss.m .................................. Generate Secondary Synchronization
+|   |                                               Sequence (SSS), the first OFDM symbol
+|   |                                               in every frame
+|   |-- genReferenceTemplate.m .................... Main function to generate the
+|   |                                               time-domain reference template from
+|   |                                               the [1024 x 301] reference QPSK
+|   |                                               rotations
+|   |-- referenceTemplate.mat ..................... Reference template rotations [1024 x
+|   |                                               301] extracted from consensus across
+|   |                                               exemplar frames (LFSR-based QPSK
+|   |                                               pattern)
+|   `-- sssVec.mat ................................ Pre-computed SSS vector in frequency
+|                                                   domain [1024 x 1] QPSK symbols
+|
+|-- utils
+|   |-- complexConstellations
+|   |   |-- gen4QAMconst.m ........................ Generate 4-QAM (pi/4-rotated QPSK)
+|   |   |                                           constellation points
+|   |   |-- genQPSKconst.m ........................ Generate QPSK constellation points on
+|   |   |                                           unit circle
+|   |   |-- modEnum.m ............................. Enumeration of modulation types (QPSK,
+|   |   |                                           4QAM, 8PSK, 16QAM, 32QAM)
+|   |   `-- modulationMap.m ....................... Map modulation estimates to types for
+|   |                                               visualization
+|   `-- signalProcessing
+|       |-- fftcorr.m ............................. Fast cross-correlation using FFT
+|       |                                           (equivalent to xcorr but faster)
+|       |-- qpsk2rotations.m ...................... Convert QPSK symbols to rotation
+|       |                                           indices (0, 1, 2, 3 for 0, pi/2, pi,
+|       |                                           3pi/2 radians)
+|       `-- starlinkConstants.m ................... Starlink signal parameters (Fs=240MHz,
+|                                                   N=1024, Ng=32, Ff=750Hz, etc.)
+|
+|-- loadAndPlotExemplarFrames.m ................... Main visualization script that loads
+|                                                   dataset and generates 6 diagnostic
+|                                                   plots (modulation map, frame
+|                                                   structure, signal quality/Doppler,
+|                                                   constellation, template comparison,
+|                                                   T-code analysis)
+|-- GUIDE.txt ..................................... This file
+|-- LICENSE ....................................... MIT (code) + CC-BY-4.0 (data)
+`-- startup.m ..................................... MATLAB startup script to configure
+                                                    paths and dependencies
+
+
+GETTING STARTED
+===============
+
+Prerequisites:
+- MATLAB R2020a or later
+
+Setup:
+1. Download and extract this folder to your workspace
+2. Start MATLAB and navigate to this directory
+3. Run: startup
+4. Run: loadAndPlotExemplarFrames
+
+This will generate 6 diagnostic plots showing the modulation map, frame structure diagram,
+signal quality (SINR) and Doppler shift, decoded constellations, a reference template
+comparison (decoded QPSK, template, and deviation), and T-code analysis.
+
+
+DATASET SUMMARY
+===============
+
+Exemplar Frames Dataset (decodedExemplarFrames_20251019T2214.mat):
+- 1009 decoded frames from STARLINK-31848 (v2.0-mini)
+- Captured: January 21, 2025
+- Sampling rate: 240 MHz
+- Frame rate: 750 Hz
+- SINR range: 9-19 dB
+- Each frame: 301 OFDM symbols (1 SSS + 300 data symbols)
+- Dimensions: [1024 subcarriers x 301 symbols x 1009 frames]
+
+Primary Fields:
+- yDataDec:      Hard-decoded symbols (complex double)
+- yDataSoft:     Soft-decoded symbols before hard decision (complex double)
+- modEst:        Estimated modulation constellation per symbol (cell array)
+- hasTemplate:   Boolean flag for reference template identification (logical)
+- SINRs:         Signal quality in dB (double)
+- betas:         Doppler shift estimates (double)
+- TOAs:          Time of arrival for each frame (double)
+
+See exemplar-frames-data/EXEMPLAR_FRAMES_GUIDE.txt for detailed field documentation.
+
+CONTACT
+=======
+
+The University of Texas at Austin
+Radionavigation Laboratory
+https://radionavlab.ae.utexas.edu

@@ -1,0 +1,41 @@
+{
+  "schema": "starlink-qin-historical-tle-reference/v1",
+  "retrieved_utc": "2026-11-21T07:22:00.582005+00:00",
+  "sources": [
+    {
+      "url": "https://satchecker.cps.iau.org/tools/get-nearest-tle/?id=59782&id_type=catalog&epoch=2460697.58980324",
+      "response_sha256": "ca26b6d3c1616f0d02f8cfaa531705bc870e6bea747669f896dc8e41abd5fc0d",
+      "response_utf8": "[{\"orbital_data\":[{\"data_source\":\"celestrak\",\"date_collected\":\"2025-01-22 16:00:15 UTC\",\"epoch\":\"2025-01-22 01:07:42 UTC\",\"satellite_id\":59782,\"satellite_name\":\"STARLINK-31363\",\"tle_line1\":\"1 59782U 24093A   25022.04701498 -.00000440  00000+0 -32741-5 0  9994\",\"tle_line2\":\"2 59782  42.9984  16.7394 0000524 207.4644 152.6185 15.40713771 39700\"}],\"source\":\"IAU CPS SatChecker\",\"version\":\"1.9.0\"}]\n"
+    },
+    {
+      "url": "https://satchecker.cps.iau.org/tools/get-nearest-tle/?id=59783&id_type=catalog&epoch=2460697.58980324",
+      "response_sha256": "9ce4296b8f5537438066e1dc14724d581a976ac035534dc0a111c166d624e1ab",
+      "response_utf8": "[{\"orbital_data\":[{\"data_source\":\"celestrak\",\"date_collected\":\"2025-01-22 08:00:18 UTC\",\"epoch\":\"2025-01-22 02:47:41 UTC\",\"satellite_id\":59783,\"satellite_name\":\"STARLINK-31868\",\"tle_line1\":\"1 59783C 24093B   25022.11645833 -.00007618  00000+0 -18163-3 0   224\",\"tle_line2\":\"2 59783  43.0017  13.2214 0001588 251.7352 337.2138 15.40726694    11\"}],\"source\":\"IAU CPS SatChecker\",\"version\":\"1.9.0\"}]\n"
+    },
+    {
+      "url": "https://satchecker.cps.iau.org/tools/get-nearest-tle/?id=59784&id_type=catalog&epoch=2460697.58980324",
+      "response_sha256": "f807d5c92cdd12544f1dcbb46433a3899e1d00b7574d22605e0588128c751f73",
+      "response_utf8": "[{\"orbital_data\":[{\"data_source\":\"celestrak\",\"date_collected\":\"2025-01-22 08:00:18 UTC\",\"epoch\":\"2025-01-22 02:51:41 UTC\",\"satellite_id\":59784,\"satellite_name\":\"STARLINK-31848\",\"tle_line1\":\"1 59784C 24093C   25022.11923611  .00002667  00000+0  63578-4 0   226\",\"tle_line2\":\"2 59784  43.0008  17.6900 0001400 262.2256 311.4077 15.40724099    18\"}],\"source\":\"IAU CPS SatChecker\",\"version\":\"1.9.0\"}]\n"
+    },
+    {
+      "url": "https://satchecker.cps.iau.org/tools/get-nearest-tle/?id=59785&id_type=catalog&epoch=2460697.58980324",
+      "response_sha256": "c79925ddab00f13864949ac6964b6d0db36bfac28bcded479a6c2e7e725e93fa",
+      "response_utf8": "[{\"orbital_data\":[{\"data_source\":\"celestrak\",\"date_collected\":\"2025-01-22 08:00:18 UTC\",\"epoch\":\"2025-01-22 02:49:41 UTC\",\"satellite_id\":59785,\"satellite_name\":\"STARLINK-31890\",\"tle_line1\":\"1 59785C 24093D   25022.11784722 -.00021713  00000+0 -51791-3 0   223\",\"tle_line2\":\"2 59785  43.0005  17.6671 0001490 278.7627 299.6078 15.40729569    19\"}],\"source\":\"IAU CPS SatChecker\",\"version\":\"1.9.0\"}]\n"
+    },
+    {
+      "url": "https://satchecker.cps.iau.org/tools/get-nearest-tle/?id=59786&id_type=catalog&epoch=2460697.58980324",
+      "response_sha256": "fcb7980862f9275199f64fd17cbb4b4a7a2745210aa9e1334c274c4879e68c0f",
+      "response_utf8": "[{\"orbital_data\":[{\"data_source\":\"celestrak\",\"date_collected\":\"2025-01-22 08:00:18 UTC\",\"epoch\":\"2025-01-22 02:53:42 UTC\",\"satellite_id\":59786,\"satellite_name\":\"STARLINK-31862\",\"tle_line1\":\"1 59786C 24093E   25022.12062500 -.00001035  00000+0 -24673-4 0   223\",\"tle_line2\":\"2 59786  43.0005  17.5905 0001062 230.0698  28.5866 15.40735322    11\"}],\"source\":\"IAU CPS SatChecker\",\"version\":\"1.9.0\"}]\n"
+    },
+    {
+      "url": "https://satchecker.cps.iau.org/tools/get-nearest-tle/?id=59787&id_type=catalog&epoch=2460697.58980324",
+      "response_sha256": "1b90030964ba6293a67a113300628bfd955cb51d6044e5f241904402c360f334",
+      "response_utf8": "[{\"orbital_data\":[{\"data_source\":\"celestrak\",\"date_collected\":\"2025-01-22 08:00:18 UTC\",\"epoch\":\"2025-01-22 02:50:42 UTC\",\"satellite_id\":59787,\"satellite_name\":\"STARLINK-31870\",\"tle_line1\":\"1 59787C 24093F   25022.11854167  .00009127  00000+0  21757-3 0   228\",\"tle_line2\":\"2 59787  43.0005  17.6329 0001415 266.4946 328.1765 15.40717546    19\"}],\"source\":\"IAU CPS SatChecker\",\"version\":\"1.9.0\"}]\n"
+    },
+    {
+      "url": "https://satchecker.cps.iau.org/tools/get-nearest-tle/?id=59788&id_type=catalog&epoch=2460697.58980324",
+      "response_sha256": "2ddffd4a8f63c1e0fc62348a0ad4ad3f190dc8ea85439b3a29267e15e2a7d4b3",
+      "response_utf8": "[{\"orbital_data\":[{\"data_source\":\"celestrak\",\"date_collected\":\"2025-01-22 08:00:18 UTC\",\"epoch\":\"2025-01-22 02:54:41 UTC\",\"satellite_id\":59788,\"satellite_name\":\"STARLINK-31888\",\"tle_line1\":\"1 59788C 24093G   25022.12131944  .00075570  00000+0  18023-2 0   227\",\"tle_line2\":\"2 59788  43.0008  17.5255 0001564 273.2991  14.1911 15.40637123    18\"}],\"source\":\"IAU CPS SatChecker\",\"version\":\"1.9.0\"}]\n"
+    }
+  ]
+}

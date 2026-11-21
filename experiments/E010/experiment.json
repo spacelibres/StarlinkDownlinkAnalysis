@@ -1,0 +1,13 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E010",
+  "title": "捕获边界与条件双头部资源布局",
+  "input": "data/raw/legacy_wideband/Starlink_Downlink_IQ.npy",
+  "source_manifest": "provenance/legacy_second_header_import.json",
+  "seed": 2026112010,
+  "resource_permutation_controls": 512,
+  "wrong_position_offsets": [-114,-1,1,114],
+  "scripts": ["layout_core.py", "collect_second_header_sources.py", "replay_full_header_layout.py"],
+  "gate": "Resource-bound H1 eligibility, H1-predicted H2 location, prefix-derived H2 block count, frozen CRC and re-encoding; no CRC-guided branch selection",
+  "limitations": "Inherited same-capture waveform parameters; conditional field layout; no user narrowband message claim"
+}

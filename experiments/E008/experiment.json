@@ -1,0 +1,16 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E008",
+  "title": "接收模型与未知信息独立检验",
+  "scope": "Offline existing WAV and both NPZ snapshots; no RF device or transmission; no push",
+  "seed": 2026112008,
+  "controls": 999,
+  "npz_training_cycles": 9,
+  "npz_reserved_cycles": 9,
+  "excluded_initial_cycles": 2,
+  "cycle_classes": [2,3,4,5,6,7,8,9,10,11,12],
+  "scripts": ["receiver_models.py", "audit_npz_information.py", "audit_wav_prefix_consistency.py", "audit_code_observability.py", "summarize_campaign.py", "cross_receiver_information.py", "summarize_robustness.py"],
+  "inputs": ["data/raw/leo_tracker_snapshot", "data/raw/wav", "references/qin", "experiments/E006/results"],
+  "success_criterion": "Reserved-data prediction and max-statistic controls precede any unknown-bit claim; full header requires observability, re-encoding and frozen CRC",
+  "limitations": "Inherited acquisition and prior hypotheses; cycle replicates are not independent captures; narrowband receiver filtering remains approximate"
+}

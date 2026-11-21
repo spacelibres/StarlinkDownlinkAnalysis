@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E031",
+  "title": "去 PN15 后的非零 12 位重复结构",
+  "input": "data/raw/ut_250msps/Starlink_Downlink_IQ_250MSps.bin",
+  "scripts": ["audit_ut_repeated_data.py"],
+  "seed": 2026112128
+}

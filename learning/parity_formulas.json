@@ -1,0 +1,50 @@
+{
+  "schema": "starlink-formula-supplement/v1",
+  "scope": "E012 six-card supplement; code consistency is not application plaintext, LDPC uniqueness or transmitted BER.",
+  "checked_on": "2026-11-20",
+  "cards": [
+    {
+      "id": "E012_RECEIVER",
+      "formula": "r_c(t)=r(t)*exp(-j*(2*pi*f0*tau+pi*fdot*tau^2)); Xhat=Y/H*exp(-j*(phi+alpha*k))",
+      "source": "https://arxiv.org/html/2610.29387v2#S2.SS2",
+      "verification": "Inherited parameter implementation; alternating eight pilots fit each slot, other eight yield 43200 reserved labels with zero disagreements",
+      "limit": "Timing/CFO constants inherited from same capture; no new blind RF acquisition or physical oscillator/Doppler separation"
+    },
+    {
+      "id": "E012_GF2_GENERATOR",
+      "formula": "UP=V over GF(2); p=uP; G=[I|P]; parity errors=weight(p_observed XOR uP)",
+      "source": "https://arxiv.org/html/2610.29387v2#S5.SS1",
+      "author_solver_reference": "https://github.com/mhostetter/galois/blob/main/src/galois/_domains/_linalg.py",
+      "verification": "Known synthetic mapping/rank-deficiency/inconsistency tests; actual training rank1024 with zero contradiction, 78848 reserved parity coordinates agree",
+      "limit": "Generator recovered under fixed candidate partitions and receiver convention; dense P does not by itself establish sparse LDPC checks"
+    },
+    {
+      "id": "E012_QC_AUGMENTATION",
+      "formula": "If T rotates each Z-bit block, candidate [uT,pT] must satisfy pT=(uT)P; Z=128",
+      "source": "https://arxiv.org/html/2610.29387v2#S5.SS1",
+      "verification": "14 words yield1792 structural equations; recovered P commutes with the declared QC128 shift; synthetic circulant forward test passes",
+      "limit": "Rotations are a structural assumption, not independent observations or new transmissions"
+    },
+    {
+      "id": "E012_IDENTIFIABILITY",
+      "formula": "If rank(U)=K and equations consistent, P is unique within that input order/model. Without QC, raw rank<=number of received words.",
+      "source": "E012 GF2 rank and consistency experiment",
+      "verification": "Training raw rank14, all91 first-body inputs rank91, QC-expanded training rank1024",
+      "limit": "Unique fitted matrix under QC is not a unique transmitter realization or unseen-data validation"
+    },
+    {
+      "id": "E012_COMPLEMENT",
+      "formula": "If 1_K*P=1_M, then (u XOR 1_K)*P=(uP) XOR 1_M",
+      "source": "E012 direct binary algebra and all-one-word check",
+      "verification": "Recovered matrix accepts all-one word; complementing each of93 codewords preserves parity",
+      "limit": "Parity alone cannot select global bit polarity. Current physical labels rely on known receiver references, not a parity search."
+    },
+    {
+      "id": "E012_REFERENCE_GAIN",
+      "formula": "g=sum(conj(a_known)*z_known)/sum(abs(a_known)^2); target prediction=g*(1-2*p_predicted)",
+      "source": "E012 known-prefix least-squares follow-up",
+      "verification": "Only pre-existing H1 first16 bits and their first48 encoded symbols calibrate g; reserved parity NMSE0.60683 unscaled,0.027787 scaled; fixed flips0.275937",
+      "limit": "A post-first-run diagnostic, explicitly recorded. Gain must never be fitted to target parity; signal error is not BER."
+    }
+  ]
+}

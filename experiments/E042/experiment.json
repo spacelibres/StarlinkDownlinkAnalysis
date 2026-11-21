@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E042",
+  "title": "原始 WAV 的 15 槽模式与 60 位相对序列",
+  "input": "E041 aligned 2.4 MS/s WAV spectral projections, analytic PN, and frozen E025 reference",
+  "scripts": ["audit_wav_tessellation.py", "audit_wav_tessellation_reference.py"],
+  "seed": 2026112142
+}

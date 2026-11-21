@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E039",
+  "title": "MCS 6 折叠校验和锚前字段",
+  "input": "E036 processed Qin symbols and PN15, E038 edge decisions and anchor observations, E030 frozen 32QAM labels",
+  "scripts": ["audit_qin_mcs6_folded.py", "audit_qin_anchor_prefix.py"],
+  "seed": 2026112139
+}

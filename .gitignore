@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.cache/
+.venv/
+.pytest_cache/
+*.tmp
+.DS_Store
+/data/Starlink_Downlink_IQ_250MSps.bin
+/data/raw/**/*.wav
+/data/raw/**/*.bin
+/data/raw/**/*.npy
+/data/raw/**/*.npz
+/data/raw/**/*.ci16
+/data/raw/**/*.zip
+/data/derived/**/*.ci16
+/data/derived/**/*.npz

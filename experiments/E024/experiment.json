@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E024",
+  "title": "两份宽带参考与窄带第二头部可观测性",
+  "input": "data/raw/ut_250msps/Starlink_Downlink_IQ_250MSps.bin",
+  "scripts": ["audit_h2_projection.py"],
+  "seed": null
+}

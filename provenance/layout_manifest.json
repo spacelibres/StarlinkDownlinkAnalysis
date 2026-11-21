@@ -1,0 +1,1473 @@
+{
+  "schema": "starlink-layout/v1",
+  "baseline_tag": "v0.0.1",
+  "migration_version": "0.0.2",
+  "files": [
+    {
+      "original_path": "analysis/acquire_narrowband_sync_prefix.py",
+      "current_path": "experiments/E006/scripts/acquire_narrowband_sync_prefix.py",
+      "sha256_before": "4593f4092059f0a527c394f88f67b7137385a52183f155aeda5115e78a84fa90",
+      "bytes_before": 8492,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/analyze_iq.py",
+      "current_path": "experiments/E001/scripts/analyze_iq.py",
+      "sha256_before": "5e53bcd930513e03e2fdbd22fe0f4686571a1f6df1e2dc9adffcb2c53a273009",
+      "bytes_before": 7042,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/analyze_subband_cyclostationarity.py",
+      "current_path": "experiments/E005/scripts/analyze_subband_cyclostationarity.py",
+      "sha256_before": "a88b6e7bcb56a0b8c939ffd5e74ea7b2383bdd7897b1cff1aa3e35e3dce3fe50",
+      "bytes_before": 11447,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/audit_header_observability.py",
+      "current_path": "experiments/E003/scripts/audit_header_observability.py",
+      "sha256_before": "42913b88b29117bd80cd9a2a716318016ec70be4fba254b0463dc5597728b963",
+      "bytes_before": 8006,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/audit_nonpilot_leakage.py",
+      "current_path": "experiments/E003/scripts/audit_nonpilot_leakage.py",
+      "sha256_before": "9c02355229cbb31ba778cd4dd5924fbbb9db2d389feca1121d26c091fc437bfc",
+      "bytes_before": 4010,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/build_communication_formula_library.py",
+      "current_path": "learning/build_communication_formula_library.py",
+      "sha256_before": "51a05f356ad1f06784022584740c348303fa644b16fc919f93d997088f95a1c5",
+      "bytes_before": 29222,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/burst_edge_alignment.json",
+      "current_path": "experiments/E006/results/burst_edge_alignment.json",
+      "sha256_before": "61b35ec3c7b661e4c89c203d5789e1ce898dc873364fd929300ee8bb39f851c7",
+      "bytes_before": 6973,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/burst_edge_alignment_arrays.npz",
+      "current_path": "experiments/E006/results/burst_edge_alignment_arrays.npz",
+      "sha256_before": "05c81e3d7d28978cf1a75869db986e57a2e346dc6b546a2c1fe9bc424c119fa6",
+      "bytes_before": 97249,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/burst_edge_alignment_quarter_ms.json",
+      "current_path": "experiments/E006/results/burst_edge_alignment_quarter_ms.json",
+      "sha256_before": "9ab120b7e1e2427e50adf2ef229dca7e699459b56bca473d5e61a75c821e0cc4",
+      "bytes_before": 6854,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/burst_edge_alignment_quarter_ms_arrays.npz",
+      "current_path": "experiments/E006/results/burst_edge_alignment_quarter_ms_arrays.npz",
+      "sha256_before": "db5c6a199127eaeeecb78ef3cea0912d3170ff430c5dca0dbbd4f45a3afb1a1a",
+      "bytes_before": 283602,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/candidate_track.npz",
+      "current_path": "experiments/E001/results/candidate_track.npz",
+      "sha256_before": "1c2cb3caa3ac8ddc62b40c17d4808d1c6a27528a1fbd0538890d66fbbefb0136",
+      "bytes_before": 3383,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/central_binary_region_test.json",
+      "current_path": "experiments/E007/results/central_binary_region_test.json",
+      "sha256_before": "5b6c40452e5ab7fbe25ce4bb1b5ec7b482e9e152920bd7340fba9eecec9dbe3c",
+      "bytes_before": 2670,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/central_gutter_grid_test.json",
+      "current_path": "experiments/E006/results/central_gutter_grid_test.json",
+      "sha256_before": "e68b199f2e5d517cb68e7edf0b6d951aab1aef637768bd60be48938ea911a541",
+      "bytes_before": 4492,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/central_gutter_grid_test_arrays.npz",
+      "current_path": "experiments/E006/results/central_gutter_grid_test_arrays.npz",
+      "sha256_before": "c28662d21f12206d8d9647d8588efb7ffcbd3592a3271004432c55af0db29662",
+      "bytes_before": 46219,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/central_narrowband_model_control.json",
+      "current_path": "experiments/E007/results/central_narrowband_model_control.json",
+      "sha256_before": "cb9491845051e74c9975a0ac6c1fa9a434e3f53dec46dc5e7e75d7b39a263d21",
+      "bytes_before": 821,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/central_ofdm_candidates.json",
+      "current_path": "experiments/E007/results/central_ofdm_candidates.json",
+      "sha256_before": "4dfd443fb43561ca332c82fa9b4f4d17103a6cf9cff35d70e68593fc6cacd3b9",
+      "bytes_before": 2030,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/central_ofdm_symbol_candidates.npz",
+      "current_path": "experiments/E007/results/central_ofdm_symbol_candidates.npz",
+      "sha256_before": "746456a2faad2ca59edc3c4a618323c84ee00a3af5988157d10fd7fd03ccf6a9",
+      "bytes_before": 6651921,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/central_relative_patterns.csv",
+      "current_path": "experiments/E007/results/central_relative_patterns.csv",
+      "sha256_before": "1b888d6dd0c579d834d9365291137f61e39b0ab69f51adfb4f7cd2ae722671df",
+      "bytes_before": 35319,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/check_global_spectral_axis.py",
+      "current_path": "experiments/E004/scripts/check_global_spectral_axis.py",
+      "sha256_before": "045cab36d21d9131dc7b762d31fe92871ecda29f2cd4b9371048e9468648e780",
+      "bytes_before": 2605,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/check_paired_unknown_overlap.py",
+      "current_path": "experiments/E003/scripts/check_paired_unknown_overlap.py",
+      "sha256_before": "838d6eb53e71e96f15af6b58c4110e3d714ae86192001cc35ec7017556197a6e",
+      "bytes_before": 2227,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/cyclic_drift_consistency.json",
+      "current_path": "experiments/E005/results/cyclic_drift_consistency.json",
+      "sha256_before": "ae4577fd625489b15501ef20f2d5f3ece9ed828c39670c24041e20fcfa68f51c",
+      "bytes_before": 3060,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/cyclic_estimator_controls.json",
+      "current_path": "experiments/E005/results/cyclic_estimator_controls.json",
+      "sha256_before": "1cb3fcea3106998fce0dfeff7855d4be1d91dea2f3bc49a7afb9dcb5df592625",
+      "bytes_before": 751,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/cyclic_evidence_summary.json",
+      "current_path": "experiments/E005/results/cyclic_evidence_summary.json",
+      "sha256_before": "bf846483b8467e4fbc1bbb79b1ffffd2f95beb23acb3be7b136318bc692ccef1",
+      "bytes_before": 26588,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/decode_paired_tcode.py",
+      "current_path": "experiments/E003/scripts/decode_paired_tcode.py",
+      "sha256_before": "c4dca8a61466352ec2f05bbdfc18aa58bc4e90df00a1f2d8a7baeab6d5887a1d",
+      "bytes_before": 8403,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/decode_progress.png",
+      "current_path": "experiments/E007/figures/decode_progress.png",
+      "sha256_before": "3d0dd0890cb9abe374b6bf44bce59c504b05808c27825203069d970f7cbd7560",
+      "bytes_before": 229325,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/decode_progress.svg",
+      "current_path": "experiments/E007/figures/decode_progress.svg",
+      "sha256_before": "fbd7ee52890becfdb782dc0e137d7e3c497ed6fa2e2a77869cbeded7c174518d",
+      "bytes_before": 223093,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/decode_progress_summary.json",
+      "current_path": "experiments/E007/results/decode_progress_summary.json",
+      "sha256_before": "b0ef90d40e68425efe0cebcb0bcaa61b78318db3c7b1321895d4831f4b5f38c1",
+      "bytes_before": 4317,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/decoded_known_pilot_symbols.npz",
+      "current_path": "experiments/E003/results/decoded_known_pilot_symbols.npz",
+      "sha256_before": "3c6bb684c2287d0cb1ea73dd4b3f206fe020bf8fe01e71afaab0fb4d847aee3d",
+      "bytes_before": 4002113,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/deeper_checks.py",
+      "current_path": "experiments/E001/scripts/deeper_checks.py",
+      "sha256_before": "863c3292557a1b3813f22e5164d23db2ef559a66d2e90fdf191bee078c3a07b3",
+      "bytes_before": 4304,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/deeper_metrics.json",
+      "current_path": "experiments/E001/results/deeper_metrics.json",
+      "sha256_before": "41e109a49fa3fd5f8876e49ad5f420d1562db886377f181dbb802cc04fa5b508",
+      "bytes_before": 12766,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/drift_scan.npz",
+      "current_path": "experiments/E001/results/drift_scan.npz",
+      "sha256_before": "2ec01f93c7d306782b4833ded26277547fab464669bcf94b0990b25374d45baf",
+      "bytes_before": 406356,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/event_metrics.json",
+      "current_path": "experiments/E001/results/event_metrics.json",
+      "sha256_before": "58fa5f27b384f8b7a81d8afb83a9bfaeacd9569a9ea34845108b5f15d3558916",
+      "bytes_before": 1580,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/export_npz_iq.py",
+      "current_path": "experiments/E002/scripts/export_npz_iq.py",
+      "sha256_before": "7264b46ffcd9751c1507090e5134990196262854a5c33e0f66c2b85a6711362c",
+      "bytes_before": 2822,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/extract_central_ofdm_candidates.py",
+      "current_path": "experiments/E007/scripts/extract_central_ofdm_candidates.py",
+      "sha256_before": "1a601d5577ddb7e8525df8c3394b2f54a1709af86e87755ede7d1c1d74583e4e",
+      "bytes_before": 8343,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/extract_signal_content.py",
+      "current_path": "experiments/E003/scripts/extract_signal_content.py",
+      "sha256_before": "1f81a554e34588511cfb0501f5fb21a743511fe25a276604df77ff9601cb0804",
+      "bytes_before": 7217,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/focus_event.py",
+      "current_path": "experiments/E001/scripts/focus_event.py",
+      "sha256_before": "92c53245e3eca9777e5487807c90021571c734c67c47101a2f8400d949c3d7db",
+      "bytes_before": 5683,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/frame_candidate_catalog.csv",
+      "current_path": "experiments/E007/results/frame_candidate_catalog.csv",
+      "sha256_before": "5f9e1af6d60ac6c894a2e6a0c19e619e1ec0f3ef1cd61842f6bc6f0ccf42f95b",
+      "bytes_before": 811120,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/frame_candidates/candidate_00_row_5465.npz",
+      "current_path": "data/derived/frame_candidates/candidate_00_row_5465.npz",
+      "sha256_before": "a4e3777c9583313e4de2a5e8439c3e1014827022510f4a1dfbc91b441af8b1d9",
+      "bytes_before": 4920,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/frame_candidates/candidate_01_row_4746.npz",
+      "current_path": "data/derived/frame_candidates/candidate_01_row_4746.npz",
+      "sha256_before": "12052852028d0ac67a1f95af2ba63cfdf8a6f2bff24c5ba32752d32a7ae1546d",
+      "bytes_before": 4871,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/frame_candidates/candidate_02_row_5716.npz",
+      "current_path": "data/derived/frame_candidates/candidate_02_row_5716.npz",
+      "sha256_before": "f016b956ebcae9bf29f60c841d709c7add911a41c5ce85c03ab4c82f6afe36f9",
+      "bytes_before": 4911,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/frame_candidates/candidate_03_row_4690.npz",
+      "current_path": "data/derived/frame_candidates/candidate_03_row_4690.npz",
+      "sha256_before": "24ffe42771878c85f54772c0dfb09b18bc73835a6f5ec157e2e8ba619bb68036",
+      "bytes_before": 4817,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/frame_candidates/candidate_04_row_4085.npz",
+      "current_path": "data/derived/frame_candidates/candidate_04_row_4085.npz",
+      "sha256_before": "be06bb28bd0f8aeef646dae5cfa5ad5b17673d93bcb47cca86ab6158a71fc5dc",
+      "bytes_before": 4930,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/frame_candidates/candidate_05_row_4744.npz",
+      "current_path": "data/derived/frame_candidates/candidate_05_row_4744.npz",
+      "sha256_before": "a146bdf38c7910e45a167e110ad8607576a6f96012e42f42ac4c9e520d32324d",
+      "bytes_before": 4734,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/frame_candidates/candidate_06_row_3845.npz",
+      "current_path": "data/derived/frame_candidates/candidate_06_row_3845.npz",
+      "sha256_before": "33fcd32fc6cdfa9e3cda25f650cdbabd2b9b797c9ffe9fa8152d43d7b921724f",
+      "bytes_before": 4927,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/frame_candidates/candidate_07_row_6101.npz",
+      "current_path": "data/derived/frame_candidates/candidate_07_row_6101.npz",
+      "sha256_before": "f3d4cbb392989194cd093f42a5d9fc9bff0e02388f6da03ecd9890b19297c7e4",
+      "bytes_before": 4951,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/frequency_interpretation.json",
+      "current_path": "experiments/E001/results/frequency_interpretation.json",
+      "sha256_before": "ec9c7a4613f9605632bcba1805a8fafc7cec213f0ad8d319ea522455b37cb98d",
+      "bytes_before": 403,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/global_component_power.csv",
+      "current_path": "experiments/E004/results/global_component_power.csv",
+      "sha256_before": "f1777dccba1883df1b66f81fca0f36dbb02778ff62d7871183db0359d1880b08",
+      "bytes_before": 70634,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/global_hypothesis_tests.png",
+      "current_path": "experiments/E004/figures/global_hypothesis_tests.png",
+      "sha256_before": "9141d9eee8af4a076bee1e0b8f7824c8f2a3c3e3d10fc695e62e0c897cc4b163",
+      "bytes_before": 298070,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/global_hypothesis_tests.svg",
+      "current_path": "experiments/E004/figures/global_hypothesis_tests.svg",
+      "sha256_before": "192bc96503f7220cb2ab61822f7059f3c2f8af9619c61485feae6a52cdc94339",
+      "bytes_before": 263697,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/global_signal_audit.json",
+      "current_path": "experiments/E004/results/global_signal_audit.json",
+      "sha256_before": "e3ee99720a0a813d034707cbe8822f1f8b75913ac5531a83d074146559a6933f",
+      "bytes_before": 8850,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/global_signal_audit.py",
+      "current_path": "experiments/E004/scripts/global_signal_audit.py",
+      "sha256_before": "a9849ae21913b7e32a957ad8f6b087f70344d98ab033bd643d6c6b115d26185f",
+      "bytes_before": 6614,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/global_signal_audit_arrays.npz",
+      "current_path": "experiments/E004/results/global_signal_audit_arrays.npz",
+      "sha256_before": "ccb00c53a9311adace840be00c5ea2d89e54eabef40e9e20c34089b93c900564",
+      "bytes_before": 924382,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/global_spectral_axis_validation.json",
+      "current_path": "experiments/E004/results/global_spectral_axis_validation.json",
+      "sha256_before": "1dbc3108fa987bc1cdbf66604b11028a939c439dacd538a4d1a1f5aef871401f",
+      "bytes_before": 1908,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/header_observability_audit.json",
+      "current_path": "experiments/E003/results/header_observability_audit.json",
+      "sha256_before": "b4fc8035393fd0fd429cb44945ee3dfdd6ead29b3db554029482f4c7442714ff",
+      "bytes_before": 10153,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/identify_satellite_audit.py",
+      "current_path": "experiments/E002/scripts/identify_satellite_audit.py",
+      "sha256_before": "76806c6051843e11fb038ae6762267bb983c73dc378f6abc8d5c5257f9f609de",
+      "bytes_before": 4778,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/inspect_waterfall.py",
+      "current_path": "experiments/E001/scripts/inspect_waterfall.py",
+      "sha256_before": "92ef583c4ca317b03a14dab55643a51a6b80a91e312a53bbebaaf2e317ee893c",
+      "bytes_before": 4005,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/inventory_npz.py",
+      "current_path": "experiments/E002/scripts/inventory_npz.py",
+      "sha256_before": "e497d9ddd4fdf22e3c71d1cbcb2e98ad4c7ae6e3f8ae8fa934d9d45d55dae804",
+      "bytes_before": 2670,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/known_pilot_verification.json",
+      "current_path": "experiments/E003/results/known_pilot_verification.json",
+      "sha256_before": "74c748ac93278365cec490e5848e354506ad2d1855f82b0f4445f8867153777e",
+      "bytes_before": 5093,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/learning/educational_fec_demo.py",
+      "current_path": "learning/educational_fec_demo.py",
+      "sha256_before": "a21e7882736768e03c9c90cf526bf11fd23f12d271828d91adeee3c5c1502e2e",
+      "bytes_before": 3665,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/learning/educational_fec_demo_results.json",
+      "current_path": "learning/educational_fec_demo_results.json",
+      "sha256_before": "d450efe34499387426c0c23d524acd25046e2c9b2b25fed6ca8e0a28cb4f80eb",
+      "bytes_before": 530,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/learning/formula_library.json",
+      "current_path": "learning/formula_library.json",
+      "sha256_before": "4e8a8ebb87136b0c66b6b933a18d8b629176d0497519320d61eb8b0b08344c61",
+      "bytes_before": 36236,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/learning/通信公式与证据学习.ipynb",
+      "current_path": "learning/通信公式与证据学习.ipynb",
+      "sha256_before": "108ffb461ed97a311e527b824dfa62238b8be925211e654b08faae33f59b4f4d",
+      "bytes_before": 53455,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/learning/通信公式学习索引.txt",
+      "current_path": "learning/通信公式学习索引.txt",
+      "sha256_before": "3cdb97babd01729e2ea3dbbd2ad3f856b7b403e9fa984fc3f6673c983f92a89a",
+      "bytes_before": 27267,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/measure_burst_edge_alignment.py",
+      "current_path": "experiments/E006/scripts/measure_burst_edge_alignment.py",
+      "sha256_before": "1aa5721afefd61d580e556713f482d8ef8534aff300a14f29c9611978c8969b8",
+      "bytes_before": 8068,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/metrics.json",
+      "current_path": "experiments/E001/results/metrics.json",
+      "sha256_before": "5aa601ded166075d7422ee77e75c578cc0f62d3d6b9c968ee5e1e554ea7e08ff",
+      "bytes_before": 5954,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/narrowband_sync_prefix_extended_observations.npz",
+      "current_path": "experiments/E006/results/narrowband_sync_prefix_extended_observations.npz",
+      "sha256_before": "b9af2297c108252c5f9262caf4e4d6ba12d5bc566c6fd8a8230bc1bb05d48d0e",
+      "bytes_before": 4478336,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/narrowband_sync_prefix_extended_test.json",
+      "current_path": "experiments/E006/results/narrowband_sync_prefix_extended_test.json",
+      "sha256_before": "121cf15b26693b480f4fae74cedcd0e629c8067d3a03affb1460432af7a7edb1",
+      "bytes_before": 412653,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/narrowband_sync_prefix_observations.npz",
+      "current_path": "experiments/E006/results/narrowband_sync_prefix_observations.npz",
+      "sha256_before": "b9af2297c108252c5f9262caf4e4d6ba12d5bc566c6fd8a8230bc1bb05d48d0e",
+      "bytes_before": 4478336,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/narrowband_sync_prefix_test.json",
+      "current_path": "experiments/E006/results/narrowband_sync_prefix_test.json",
+      "sha256_before": "505b083e2b5767d6c1071bdf5538e2dff03ba1f13b208f9319df0f8d399cbc18",
+      "bytes_before": 31404,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/nonpilot_leakage_audit.json",
+      "current_path": "experiments/E003/results/nonpilot_leakage_audit.json",
+      "sha256_before": "7568ff3956971ec9dc14813a2744612cf8485c15c732c415eddb4b81741bf586",
+      "bytes_before": 4115,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/nonpilot_relative_sign_candidates.csv",
+      "current_path": "experiments/E003/results/nonpilot_relative_sign_candidates.csv",
+      "sha256_before": "6e6162f26c19e65ffd6967bc92e05fc01a7e6341c8ee7cc775e56d763700fb00",
+      "bytes_before": 48310,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/npz_inventory.csv",
+      "current_path": "experiments/E002/results/npz_inventory.csv",
+      "sha256_before": "a4779b978566a99695fcb6a7b157ff57a5ed42a6063cf9d414cefa6a292898ca",
+      "bytes_before": 10002778,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/npz_inventory.json",
+      "current_path": "experiments/E002/results/npz_inventory.json",
+      "sha256_before": "82dd098beddb8f389498c49a022b8293197bf13a86431173044203494d9d7a29",
+      "bytes_before": 18436866,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/npz_iq_exports/manifest.json",
+      "current_path": "data/derived/ci16/manifest.json",
+      "sha256_before": "22092b60aea7a51565d69a2088c91e4ee9de3a09d3556310b1c35abbb6e0f9f5",
+      "bytes_before": 8223,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/npz_iq_exports/paired_window_0_dual_rx.ci16",
+      "current_path": "data/derived/ci16/paired_window_0_dual_rx.ci16",
+      "sha256_before": "e60d7d93c7251bb15a3d27c7b988454cf0956a75d314514defa7c8deb4ad2726",
+      "bytes_before": 400000,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/npz_iq_exports/paired_window_1_dual_rx.ci16",
+      "current_path": "data/derived/ci16/paired_window_1_dual_rx.ci16",
+      "sha256_before": "b5af403964fd8484a94405354857f89bd6ade316c14a30c1c0e310593a452427",
+      "bytes_before": 400000,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/npz_iq_exports/S05_iq_0_single_rx.ci16",
+      "current_path": "data/derived/ci16/S05_iq_0_single_rx.ci16",
+      "sha256_before": "8a970a8821bd48bad7fb37190b88027595d5d1fcc45fec3d46470f8723a5dfcf",
+      "bytes_before": 200000,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/npz_iq_exports/S05_iq_1_single_rx.ci16",
+      "current_path": "data/derived/ci16/S05_iq_1_single_rx.ci16",
+      "sha256_before": "f34c979ea33f1f36332b4a774c43d1db13af0e2f17bcc1a9abfa6a6cc40765c1",
+      "bytes_before": 200000,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/npz_iq_exports/S05_iq_2_single_rx.ci16",
+      "current_path": "data/derived/ci16/S05_iq_2_single_rx.ci16",
+      "sha256_before": "db6249b083bd5713fc3902a662b3ceb4c4aeafbda7941ae8e8ac00e10a710af8",
+      "bytes_before": 200000,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/npz_iq_exports/S05_iq_3_single_rx.ci16",
+      "current_path": "data/derived/ci16/S05_iq_3_single_rx.ci16",
+      "sha256_before": "c0ca519f49dcfa87f34310c91da2eb470656f81812bde025616fc04010572354",
+      "bytes_before": 200000,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/npz_iq_exports/S05_iq_4_single_rx.ci16",
+      "current_path": "data/derived/ci16/S05_iq_4_single_rx.ci16",
+      "sha256_before": "ea84a3f160ea9a1323a90b9ed223fcf129e8fddc341f97730ddf8379d8ccdbaf",
+      "bytes_before": 200000,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/npz_iq_exports/S05_iq_5_single_rx.ci16",
+      "current_path": "data/derived/ci16/S05_iq_5_single_rx.ci16",
+      "sha256_before": "58bd5ed309a9133824ef66c33138dc2c23b38ebb33124b79812323c6a73cd147",
+      "bytes_before": 200000,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/npz_iq_exports/S05_iq_6_single_rx.ci16",
+      "current_path": "data/derived/ci16/S05_iq_6_single_rx.ci16",
+      "sha256_before": "0f8afff924c3c438d0b6726ecbbdd222202f2cb1dffc5ac702e8eda351e4924f",
+      "bytes_before": 200000,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/npz_iq_exports/S05_iq_7_single_rx.ci16",
+      "current_path": "data/derived/ci16/S05_iq_7_single_rx.ci16",
+      "sha256_before": "ee255eb263f4f4edf1b1820467174a4efcbeed56f6c642b4d2ccec205db1b819",
+      "bytes_before": 200000,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/NPZ数据说明.txt",
+      "current_path": "reports/E002/NPZ数据说明.txt",
+      "sha256_before": "4be1e801d9f304b7703e6581a66d518d533876a192bc36272d82164ce23f7809",
+      "bytes_before": 4730,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/observed_nonpilot_subcarriers.npz",
+      "current_path": "experiments/E003/results/observed_nonpilot_subcarriers.npz",
+      "sha256_before": "8e348a48925da443eaeede77e889d621cebeeb82bd3bb7dc8519a09d41d5d45e",
+      "bytes_before": 220898,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/observed_pilot_states.csv",
+      "current_path": "experiments/E003/results/observed_pilot_states.csv",
+      "sha256_before": "11c6b18a22d7d0d3355487e192f9c3f0ad46b394148aff8cd7b854f76d698f0c",
+      "bytes_before": 222259,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/observed_pilot_states.npz",
+      "current_path": "experiments/E003/results/observed_pilot_states.npz",
+      "sha256_before": "2cfc432abaa04f158d904bbebb6b38938fbb5900b965926589193ad63e95bb98",
+      "bytes_before": 34955,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/overview.png",
+      "current_path": "experiments/E001/figures/overview.png",
+      "sha256_before": "a23d0ab4623a1b72b42f4eb2d04b6c864876bef1e067b192ea6347d952fc0e2f",
+      "bytes_before": 1039591,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/overview.svg",
+      "current_path": "experiments/E001/figures/overview.svg",
+      "sha256_before": "37ea5de38d79e263b1a548f4efbc227567b0e3433592a6a6abf806d4ff6d594b",
+      "bytes_before": 747494,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/paired_tcode_candidates.csv",
+      "current_path": "experiments/E003/results/paired_tcode_candidates.csv",
+      "sha256_before": "3e6540804af81e6f46f9734f333baaa6a019d853caf3e76b7e24ab4508a958cc",
+      "bytes_before": 1047,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/paired_tcode_observations.npz",
+      "current_path": "experiments/E003/results/paired_tcode_observations.npz",
+      "sha256_before": "95b97417ee8baa95a0cef50ef63b8e770a4cb8880bdcb8bb1487833aa46a1899",
+      "bytes_before": 633439,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/paired_tcode_results.json",
+      "current_path": "experiments/E003/results/paired_tcode_results.json",
+      "sha256_before": "715602a58c3699f585dd23f809bae68e03fa6b1dd47b76267c9adcdaace65029",
+      "bytes_before": 4332,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/paired_unknown_overlap_check.json",
+      "current_path": "experiments/E003/results/paired_unknown_overlap_check.json",
+      "sha256_before": "5f397199e39899f10151836300936d121c367acbe0b47912ae763e83d69da588",
+      "bytes_before": 34567,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/partial_header_complex_observations.csv",
+      "current_path": "experiments/E003/results/partial_header_complex_observations.csv",
+      "sha256_before": "d92d5813a79b3ef9a52996ec4b195bd826053cfad733d0580e0b9c5adfade870",
+      "bytes_before": 21445,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/perframe_content_results.json",
+      "current_path": "experiments/E003/results/perframe_content_results.json",
+      "sha256_before": "0c6367a46682c5874dc3daef2cccf7c285fa5611a2912e66b43db9991b2155e5",
+      "bytes_before": 5058,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/perframe_nonpilot_content.npz",
+      "current_path": "experiments/E003/results/perframe_nonpilot_content.npz",
+      "sha256_before": "cbb5a3f11b993d1cf902ce2b6c13900b3e03de28e934f198b2af197a72665d92",
+      "bytes_before": 1220872,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/present_cyclic_evidence.py",
+      "current_path": "experiments/E005/scripts/present_cyclic_evidence.py",
+      "sha256_before": "a6b19ea88775a55930c34290414c601101369d5674530eeeb10df99c611abddf",
+      "bytes_before": 5983,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/present_decode_progress.py",
+      "current_path": "experiments/E007/scripts/present_decode_progress.py",
+      "sha256_before": "0df00fc44b51524903b5d4137b5e7abc017c1e25df8f3f78c10635bc99f16310",
+      "bytes_before": 5117,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/present_global_hypothesis_tests.py",
+      "current_path": "experiments/E004/scripts/present_global_hypothesis_tests.py",
+      "sha256_before": "f16b0a0632cf7f92c5f79f67eeb922cf9b9b052e24bf7d4f0e74d1903fbe9c01",
+      "bytes_before": 5431,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/present_signal_content.py",
+      "current_path": "experiments/E003/scripts/present_signal_content.py",
+      "sha256_before": "a45732488d160e070d5fad05e555cc5c766c3108fb871f02fefa7b75ed7b5c86",
+      "bytes_before": 6492,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/probe_unknown_subcarrier.py",
+      "current_path": "experiments/E003/scripts/probe_unknown_subcarrier.py",
+      "sha256_before": "1ecadc28545ac36bd973bdc4b54dceb957d4a65de34a9905869f27b035f6148a",
+      "bytes_before": 5039,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/projected_decoder_closure_controls.json",
+      "current_path": "experiments/E003/results/projected_decoder_closure_controls.json",
+      "sha256_before": "b7caa75b700944582d8d3a4d56d1d7bbe961a955ee086bd7a38ac9fba9e3586e",
+      "bytes_before": 583,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/projected_nonpilot_decoder.py",
+      "current_path": "experiments/E003/scripts/projected_nonpilot_decoder.py",
+      "sha256_before": "7407c0dda1a5bdd55be2f182471c857dbff52f13da7d9df8ee929b0095466680",
+      "bytes_before": 5732,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/projected_nonpilot_observations.npz",
+      "current_path": "experiments/E003/results/projected_nonpilot_observations.npz",
+      "sha256_before": "28a26762a989238ceb6c75cde329edb86a3c51c37499d61bd34ce37a6548fb42",
+      "bytes_before": 697557,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/projected_nonpilot_results.json",
+      "current_path": "experiments/E003/results/projected_nonpilot_results.json",
+      "sha256_before": "939520a2f77691b7c31de654797801cf42b35f177f0125f8c398e2c1b68e302a",
+      "bytes_before": 7819,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/projected_relative_signs.csv",
+      "current_path": "experiments/E003/results/projected_relative_signs.csv",
+      "sha256_before": "3b5627699ce5272729d9cd0c98431be370fe0fc02b43f6de05dfd24e4025144c",
+      "bytes_before": 113758,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/publish_decode_progress.py",
+      "current_path": "experiments/E007/scripts/publish_decode_progress.py",
+      "sha256_before": "0c8e07a43e985f68adccecfbe18aee54380415f35e8ae9be02f10462208041b4",
+      "bytes_before": 5010,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/recover_cyclic_waveform.py",
+      "current_path": "experiments/E005/scripts/recover_cyclic_waveform.py",
+      "sha256_before": "63a1ca388f9ef5229319d88c14d3da8b2e1553a02d4398b6cb0be8ac90953f08",
+      "bytes_before": 5275,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/recovered_cyclic_power.csv",
+      "current_path": "experiments/E005/results/recovered_cyclic_power.csv",
+      "sha256_before": "79d76168157e6b48823bbce56a2fe14de1e1032351805f8fc542a515fcbaec7c",
+      "bytes_before": 772976,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/recovered_cyclic_waveform.json",
+      "current_path": "experiments/E005/results/recovered_cyclic_waveform.json",
+      "sha256_before": "72988d99e0fa0e98272f3b6b6c9e6809021ee9ade34224af0b4466ef8418b41b",
+      "bytes_before": 4293,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/recovered_cyclic_waveform.npz",
+      "current_path": "experiments/E005/results/recovered_cyclic_waveform.npz",
+      "sha256_before": "ab89069c8483e9fb28e0e605a20c1cb4f92f077c1ff091807fab293a1c26d470",
+      "bytes_before": 3848610,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/reference/misaka_provenance.json",
+      "current_path": "references/misaka_provenance.json",
+      "sha256_before": "1ad2203b142c9182c2acdf142479f7d91273e44c2399691d1ce2cb37da06254a",
+      "bytes_before": 330,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/reference/misaka_README.md",
+      "current_path": "references/misaka_README.md",
+      "sha256_before": "9f965025db7e50d9b7df1f6dcc4bcbeae3a0f761b5a494fa4ed5304a53267f94",
+      "bytes_before": 19716,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/reference/qin/genPss.m",
+      "current_path": "references/qin/genPss.m",
+      "sha256_before": "32c7a9a5844499e5f92dbd6503fdd0f2ebe178a1f6691313887f70b53e1d21b6",
+      "bytes_before": 964,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/reference/qin/genReferenceTemplate.m",
+      "current_path": "references/qin/genReferenceTemplate.m",
+      "sha256_before": "07965e1b49bae96f8fee74052f5eb7af017cc34b881c2cf6b51c31a6fe11fdda",
+      "bytes_before": 1837,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/reference/qin/genSss.m",
+      "current_path": "references/qin/genSss.m",
+      "sha256_before": "b327682ef5adc9c2692c3a0332cd0a4c9a30bc262fad45824b770d9e3c2b5e3e",
+      "bytes_before": 1752,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/reference/qin/GUIDE.txt",
+      "current_path": "references/qin/GUIDE.txt",
+      "sha256_before": "c84db336c7b4a4866e64f1467d5c46c6b226fa360c329de0de3a621f32bb5b39",
+      "bytes_before": 6426,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/reference/qin/LICENSE.txt",
+      "current_path": "references/qin/LICENSE.txt",
+      "sha256_before": "2eac370ac8e59527726a0b3ee5493f9f1bc1ff1a941f2bb68a1b97230c009046",
+      "bytes_before": 2417,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/reference/qin/referenceTemplate.mat",
+      "current_path": "references/qin/referenceTemplate.mat",
+      "sha256_before": "ec77ad6f9a17c8b14451f7f3cea6114952d0ad3aca26b3eb8c0e9aec06b002cd",
+      "bytes_before": 99179,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/reference/qin/sources.json",
+      "current_path": "references/qin/sources.json",
+      "sha256_before": "6731d1b7c706fd61755cb4e9c267dc5e15c4ffaf788b1f3a7cfe205fff33ecba",
+      "bytes_before": 3342,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/reference/qin/sssVec.mat",
+      "current_path": "references/qin/sssVec.mat",
+      "sha256_before": "d1e35826279baf0fc3e5a6fa3d34e5a83dd525956132ad9cecdb2af48450f982",
+      "bytes_before": 1602,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/reference/Starlink_waterfall_v2.py",
+      "current_path": "references/Starlink_waterfall_v2.py",
+      "sha256_before": "74828f5a7adcf72cd1c99dd0ad9ab255f51591d5eda7bb86e1264cd1727eadee",
+      "bytes_before": 7347,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/reference_waterfall.png",
+      "current_path": "experiments/E001/figures/reference_waterfall.png",
+      "sha256_before": "1068edaa541cd521136b2795879797e74c629dda48f1d06d47b7da1aaaf9a94d",
+      "bytes_before": 717913,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/refine_perframe_content.py",
+      "current_path": "experiments/E003/scripts/refine_perframe_content.py",
+      "sha256_before": "ca4f1f82c34050d7aceb16bee89b048d8f6136fe32e17594a42ab3c5d0783e63",
+      "bytes_before": 2487,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/refined_track.npz",
+      "current_path": "experiments/E001/results/refined_track.npz",
+      "sha256_before": "c1fe6f9a6d3d33c2d6daf22467962a6a8c7669cceaf5c8329d0f38458eccd200",
+      "bytes_before": 4693,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/satellite_candidate_model_audit.json",
+      "current_path": "experiments/E002/results/satellite_candidate_model_audit.json",
+      "sha256_before": "2118dcadf8c64a05b44732bd47489ebf9d92e4a7ed4005d83b4c4073158e5175",
+      "bytes_before": 99109,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/satellite_identity_audit.json",
+      "current_path": "experiments/E002/results/satellite_identity_audit.json",
+      "sha256_before": "a97f4bd2e6378f759230a368e1ba10721fe1e0e9a1dfd343b6304a22e4eb9921",
+      "bytes_before": 263057,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/satellite_identity_candidates.csv",
+      "current_path": "experiments/E002/results/satellite_identity_candidates.csv",
+      "sha256_before": "639d803ed92bf993960ff477c881a325d94b9c3b841f3a71cfe1151d3614715b",
+      "bytes_before": 1711,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/sideband_phase_coupling.json",
+      "current_path": "experiments/E004/results/sideband_phase_coupling.json",
+      "sha256_before": "43e0c5167315a932f15428ef860c3ccf43a163897995409e74660a4166867ed4",
+      "bytes_before": 4552,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/sideband_phase_coupling_arrays.npz",
+      "current_path": "experiments/E004/results/sideband_phase_coupling_arrays.npz",
+      "sha256_before": "02ace382ca94acce7968b020e11d619eaf4cfa36972ac1316ffe3b0507efb18f",
+      "bytes_before": 7972626,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/signal_content.png",
+      "current_path": "experiments/E003/figures/signal_content.png",
+      "sha256_before": "1f181cc1872c25358c92582902d365b4919e0d167c21c8cf1c117ba40722b91c",
+      "bytes_before": 485966,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/signal_content.svg",
+      "current_path": "experiments/E003/figures/signal_content.svg",
+      "sha256_before": "a19d292a72cb1e4368a6b05dbef244745a367ff1278df2dfaf681b103e9e21ec",
+      "bytes_before": 218967,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/signal_content_extraction.json",
+      "current_path": "experiments/E003/results/signal_content_extraction.json",
+      "sha256_before": "817c3f1ccdeca8453bcab1ce9ce9560617b6703e20d8bb4f641bf7419e24314d",
+      "bytes_before": 4657,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/signal_content_summary.json",
+      "current_path": "experiments/E003/results/signal_content_summary.json",
+      "sha256_before": "0d8cef30625e755011547c9b3887d131481c1ac7f4579bdce1b7f0c8560cb9a9",
+      "bytes_before": 1416,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/signal_event.png",
+      "current_path": "experiments/E001/figures/signal_event.png",
+      "sha256_before": "b65ae314aa07682aa24752ce382a172c46158c7f51b218f5d4a4b9a7de8e3838",
+      "bytes_before": 774426,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/signal_event.svg",
+      "current_path": "experiments/E001/figures/signal_event.svg",
+      "sha256_before": "610549e6b79bbd045ea3535438df4c5e291ecb698cca94a6876b1bc89f8a6ae2",
+      "bytes_before": 371567,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/spectrum_data.npz",
+      "current_path": "experiments/E001/results/spectrum_data.npz",
+      "sha256_before": "4f3a3e415de315a59d75481474e716fb311e1ecbfeaffa6a6ca825550945bedb",
+      "bytes_before": 9292302,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/subband_cyclic_structure.png",
+      "current_path": "experiments/E005/figures/subband_cyclic_structure.png",
+      "sha256_before": "1db8ddc3b73271c2ed12e3a6a6b681e69532ab8a35af3d4f569638e240021f30",
+      "bytes_before": 287383,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/subband_cyclic_structure.svg",
+      "current_path": "experiments/E005/figures/subband_cyclic_structure.svg",
+      "sha256_before": "fef727be9aee6603cccd73a8ad3bc6114b847b9533957470b1b906594d5784a1",
+      "bytes_before": 344811,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/subband_cyclostationarity.json",
+      "current_path": "experiments/E005/results/subband_cyclostationarity.json",
+      "sha256_before": "79d0a6cc0a4b673ad23ba0a59e91a5c281590939574090724881e8c29f829881",
+      "bytes_before": 15397,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/subband_cyclostationarity_arrays.npz",
+      "current_path": "experiments/E005/results/subband_cyclostationarity_arrays.npz",
+      "sha256_before": "8035b2c965891a0796b5d9fe0640445a842082763dbc40b2ab4cc0a3099a2b8a",
+      "bytes_before": 1056271,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/subband_cyclostationarity_dechirped.json",
+      "current_path": "experiments/E005/results/subband_cyclostationarity_dechirped.json",
+      "sha256_before": "41f3787f40f7e6e612f7fd28c07ae775f8c5bb3f6bf824d180cdebd9ca0d9e25",
+      "bytes_before": 15495,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/subband_cyclostationarity_dechirped_arrays.npz",
+      "current_path": "experiments/E005/results/subband_cyclostationarity_dechirped_arrays.npz",
+      "sha256_before": "793a442cc6e1937ce5d8c239f089581c747850ed59bef1be51263c4297d3bccc",
+      "bytes_before": 1056458,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/summarize_cyclic_evidence.py",
+      "current_path": "experiments/E005/scripts/summarize_cyclic_evidence.py",
+      "sha256_before": "ac0015527004ae0d5a78c57038d6be6f0827489a94332be63104422975bca680",
+      "bytes_before": 4006,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/test_central_binary_regions.py",
+      "current_path": "experiments/E007/scripts/test_central_binary_regions.py",
+      "sha256_before": "a31003bb0d8d12c763e6cba5fc2b21aef0b24dd25224a729c97e1acc350b625f",
+      "bytes_before": 3280,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/test_central_gutter_grid.py",
+      "current_path": "experiments/E006/scripts/test_central_gutter_grid.py",
+      "sha256_before": "3e656a04fc7c444f305bba88678496d72ba1f293b917779dbfc0dca869bb3b56",
+      "bytes_before": 3538,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/test_sideband_phase_coupling.py",
+      "current_path": "experiments/E004/scripts/test_sideband_phase_coupling.py",
+      "sha256_before": "785490540a1ac94c663eb7d5482d69edaadcb2eb559e468ea2e0b2c12d22bc11",
+      "bytes_before": 6441,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/test_wideband_drift_link.py",
+      "current_path": "experiments/E004/scripts/test_wideband_drift_link.py",
+      "sha256_before": "a79c68795d552306dd27cf1ea867d0d8f2c47892e77a3ceebb018c1cd921935a",
+      "bytes_before": 3445,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/transition_metrics.json",
+      "current_path": "experiments/E001/results/transition_metrics.json",
+      "sha256_before": "22539b70d19aee2e0fad829576bdb5c0d2f1d4a39cee32780bb21b7dbc7a23f6",
+      "bytes_before": 535,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/unknown_subcarrier_probe.json",
+      "current_path": "experiments/E003/results/unknown_subcarrier_probe.json",
+      "sha256_before": "69bdb013579d77fdbc758fa23b1a18552b325c1c630355e86deac3f3c1b03534",
+      "bytes_before": 5592,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/validate_central_narrowband_model.py",
+      "current_path": "experiments/E007/scripts/validate_central_narrowband_model.py",
+      "sha256_before": "162c06ae38449ea4091ac39b6624632191a32e31a083181b8df9f26f535fb479",
+      "bytes_before": 3437,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/validate_cyclic_estimators.py",
+      "current_path": "experiments/E005/scripts/validate_cyclic_estimators.py",
+      "sha256_before": "5007af17e058f5a715ae62647efe0ea3a1d9bb538b96199dba899249f63d565b",
+      "bytes_before": 3789,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/validate_projected_decoder.py",
+      "current_path": "experiments/E003/scripts/validate_projected_decoder.py",
+      "sha256_before": "8d04d29428bd9b94ad365a341f64b3f475cc4357e550791cdaec66b8cbadd669",
+      "bytes_before": 3489,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/verify_known_pilots.py",
+      "current_path": "experiments/E003/scripts/verify_known_pilots.py",
+      "sha256_before": "b2e8977bb3cfaceaa3cb57ef57c6cf8fa657b77b7b293aebbd9f263d45a97252",
+      "bytes_before": 4556,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/waterfall_detail.png",
+      "current_path": "experiments/E001/figures/waterfall_detail.png",
+      "sha256_before": "95751a4c201d11012e6c6013b4f0a66c0d6d08db32bd1418c3104f80bf7ac78b",
+      "bytes_before": 2268580,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/waterfall_detail.svg",
+      "current_path": "experiments/E001/figures/waterfall_detail.svg",
+      "sha256_before": "0299f2ffb80ac15ef7241dad92cad491dc2bc9fd6d17c5d8d5a51a3175017303",
+      "bytes_before": 1181984,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/waterfall_detail_data.npz",
+      "current_path": "experiments/E001/results/waterfall_detail_data.npz",
+      "sha256_before": "72469e32abed4fa13d3895cf54eb3fee41f71a28f18bb348f58d875def05905f",
+      "bytes_before": 101260207,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/waterfall_peaks.json",
+      "current_path": "experiments/E001/results/waterfall_peaks.json",
+      "sha256_before": "0b58c1bec2259a90330d14beaf2760f38b8ca30f365418ce2f301bab53c0d11f",
+      "bytes_before": 18722,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/wav_coherent_frame_probe.npz",
+      "current_path": "experiments/E006/results/wav_coherent_frame_probe.npz",
+      "sha256_before": "2c90d2e3a74ea0bc5b29246e551ad785aa01955e252d71647c452a9ae42f741e",
+      "bytes_before": 3047477,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/wav_coherent_frame_probe.py",
+      "current_path": "experiments/E006/scripts/wav_coherent_frame_probe.py",
+      "sha256_before": "5ad899cc055f80e38b62f5a60385f4f433699c12b448d82f6d68ee926b0fee53",
+      "bytes_before": 4595,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/wav_coherent_frame_results.json",
+      "current_path": "experiments/E006/results/wav_coherent_frame_results.json",
+      "sha256_before": "6b38540d3e96fbbde713060b8f275a2839f77c2c1cb38a6ef072b169f7ec68aa",
+      "bytes_before": 923,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/wav_frame_fold_probe.npz",
+      "current_path": "experiments/E003/results/wav_frame_fold_probe.npz",
+      "sha256_before": "d77fc1f93ce72b0cfd798cfeb0c31a1dd85ce2ebcd951ab876f0abbdf94bd795",
+      "bytes_before": 3009454,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/wav_frame_structure.npz",
+      "current_path": "experiments/E003/results/wav_frame_structure.npz",
+      "sha256_before": "42d1947537d1240030a94b274ac20f3aea642de0ee5da255f7115d5b1e9152d9",
+      "bytes_before": 3656015,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/wav_noncoherent_sync_probe.py",
+      "current_path": "experiments/E006/scripts/wav_noncoherent_sync_probe.py",
+      "sha256_before": "dbe9524f3bda7e9d0948209b0228b892f9511ed18d2823deb0f1dfa68d942c73",
+      "bytes_before": 4728,
+      "preserve_bytes": false
+    },
+    {
+      "original_path": "analysis/wav_noncoherent_sync_profiles.npz",
+      "current_path": "experiments/E006/results/wav_noncoherent_sync_profiles.npz",
+      "sha256_before": "d220f3c7fdffa2d52b04fe757557089b8ae534ce9c562434fea545b5ffaead3a",
+      "bytes_before": 1056314,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/wav_noncoherent_sync_results.json",
+      "current_path": "experiments/E006/results/wav_noncoherent_sync_results.json",
+      "sha256_before": "e926666ade9afc36a3a95794d1311b8b579cc315e098260347676fed551572cc",
+      "bytes_before": 3804,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/wav_pss_specificity_extended_profiles.npz",
+      "current_path": "experiments/E006/results/wav_pss_specificity_extended_profiles.npz",
+      "sha256_before": "3f7361e8fecc1ad6d48fb2409a5303846b3411920bfafc36e3fe9a5a70e4db48",
+      "bytes_before": 6793444,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/wav_pss_specificity_extended_results.json",
+      "current_path": "experiments/E006/results/wav_pss_specificity_extended_results.json",
+      "sha256_before": "0d3a74f7eb07a03fed11def189792ddb31a4ae607cbd20261150ae0dba02624c",
+      "bytes_before": 23303,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/wav_pss_specificity_profiles.npz",
+      "current_path": "experiments/E006/results/wav_pss_specificity_profiles.npz",
+      "sha256_before": "0b91499737bee0bcc62dacb896a5dfc10683447f7aea5b7012351e731e7e3897",
+      "bytes_before": 910540,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/wav_pss_specificity_results.json",
+      "current_path": "experiments/E006/results/wav_pss_specificity_results.json",
+      "sha256_before": "450646c5f1278287a6f661b60603426c6b80da42a5b5926caa40005626f535f0",
+      "bytes_before": 3340,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/wideband_drift_link.json",
+      "current_path": "experiments/E004/results/wideband_drift_link.json",
+      "sha256_before": "ec40955f90e0214d24d53c0e198ca54e7e44d7048396766af7ca62941a093e67",
+      "bytes_before": 2137,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/wideband_drift_link_arrays.npz",
+      "current_path": "experiments/E004/results/wideband_drift_link_arrays.npz",
+      "sha256_before": "780682c50a1981d0cceef69fd3ac610348d1e97eb90df5ddcaf4dbce24d25eed",
+      "bytes_before": 24194,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/信标内容解析续查结果.txt",
+      "current_path": "reports/E003/信标内容解析续查结果.txt",
+      "sha256_before": "7850582272d982a54b7b8c3b1a2f63c1da5d78d58690157370f15aa7700c21fa",
+      "bytes_before": 5917,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/信标内容解析阶段结果.txt",
+      "current_path": "reports/E003/信标内容解析阶段结果.txt",
+      "sha256_before": "7a4aa505cbda973ccc99e8cf16cab62accb027c8c092aa11b1ff35513133974c",
+      "bytes_before": 8053,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/分析报告.txt",
+      "current_path": "reports/E001/分析报告.txt",
+      "sha256_before": "f50d79c3248e84502f8ea0bec89c399b37ab536224e989faa3ca15d2bc086b05",
+      "bytes_before": 15334,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/分步解码进展.txt",
+      "current_path": "reports/E007/分步解码进展.txt",
+      "sha256_before": "e69e672f73fcef0a15f66714249a360421ade70a20abae084524b5e5b04d96f3",
+      "bytes_before": 6373,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/分频带循环结构与公式学习结果.txt",
+      "current_path": "reports/E005/分频带循环结构与公式学习结果.txt",
+      "sha256_before": "ae054839acb0c7a36c497507024aae8908e72bf1e35684f7012b5c404c928a33",
+      "bytes_before": 8719,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/卫星编号识别结果.txt",
+      "current_path": "reports/E002/卫星编号识别结果.txt",
+      "sha256_before": "22a9e71523cc6498bbca5c54e30a78da3dae3f7ce5b89b2f939a350ebf4b0733",
+      "bytes_before": 5493,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/整体信号结构分析.txt",
+      "current_path": "reports/E004/整体信号结构分析.txt",
+      "sha256_before": "426f2b58ef32818995de45389ae6e5eacb08bf0a2068fe179257d59b9d8c002a",
+      "bytes_before": 5399,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/波形关联假设检验.txt",
+      "current_path": "reports/E004/波形关联假设检验.txt",
+      "sha256_before": "2847e54e9f6805277eebaac954506435b5e1e936ca78fef0a7cc370a584174e1",
+      "bytes_before": 5503,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "analysis/终止沿对齐检验.txt",
+      "current_path": "reports/E006/终止沿对齐检验.txt",
+      "sha256_before": "2dee839c4897e10bd1c80c24e995cd8e51b79e8e2dae4d52b798e07a0d5065f5",
+      "bytes_before": 5062,
+      "preserve_bytes": true
+    },
+    {
+      "original_path": "USER_IQ.wav",
+      "current_path": "data/raw/wav/USER_IQ.wav",
+      "sha256_before": "af03914ea773bf2eaa2698dd674afa6ac6a5ecc9cb6a69f81350777ab5789041",
+      "bytes_before": 153111596,
+      "preserve_bytes": true
+    }
+  ],
+  "legacy_paths": {
+    "analysis/acquire_narrowband_sync_prefix.py": "experiments/E006/scripts/acquire_narrowband_sync_prefix.py",
+    "analysis/analyze_iq.py": "experiments/E001/scripts/analyze_iq.py",
+    "analysis/analyze_subband_cyclostationarity.py": "experiments/E005/scripts/analyze_subband_cyclostationarity.py",
+    "analysis/audit_header_observability.py": "experiments/E003/scripts/audit_header_observability.py",
+    "analysis/audit_nonpilot_leakage.py": "experiments/E003/scripts/audit_nonpilot_leakage.py",
+    "analysis/build_communication_formula_library.py": "learning/build_communication_formula_library.py",
+    "analysis/burst_edge_alignment.json": "experiments/E006/results/burst_edge_alignment.json",
+    "analysis/burst_edge_alignment_arrays.npz": "experiments/E006/results/burst_edge_alignment_arrays.npz",
+    "analysis/burst_edge_alignment_quarter_ms.json": "experiments/E006/results/burst_edge_alignment_quarter_ms.json",
+    "analysis/burst_edge_alignment_quarter_ms_arrays.npz": "experiments/E006/results/burst_edge_alignment_quarter_ms_arrays.npz",
+    "analysis/candidate_track.npz": "experiments/E001/results/candidate_track.npz",
+    "analysis/central_binary_region_test.json": "experiments/E007/results/central_binary_region_test.json",
+    "analysis/central_gutter_grid_test.json": "experiments/E006/results/central_gutter_grid_test.json",
+    "analysis/central_gutter_grid_test_arrays.npz": "experiments/E006/results/central_gutter_grid_test_arrays.npz",
+    "analysis/central_narrowband_model_control.json": "experiments/E007/results/central_narrowband_model_control.json",
+    "analysis/central_ofdm_candidates.json": "experiments/E007/results/central_ofdm_candidates.json",
+    "analysis/central_ofdm_symbol_candidates.npz": "experiments/E007/results/central_ofdm_symbol_candidates.npz",
+    "analysis/central_relative_patterns.csv": "experiments/E007/results/central_relative_patterns.csv",
+    "analysis/check_global_spectral_axis.py": "experiments/E004/scripts/check_global_spectral_axis.py",
+    "analysis/check_paired_unknown_overlap.py": "experiments/E003/scripts/check_paired_unknown_overlap.py",
+    "analysis/cyclic_drift_consistency.json": "experiments/E005/results/cyclic_drift_consistency.json",
+    "analysis/cyclic_estimator_controls.json": "experiments/E005/results/cyclic_estimator_controls.json",
+    "analysis/cyclic_evidence_summary.json": "experiments/E005/results/cyclic_evidence_summary.json",
+    "analysis/decode_paired_tcode.py": "experiments/E003/scripts/decode_paired_tcode.py",
+    "analysis/decode_progress.png": "experiments/E007/figures/decode_progress.png",
+    "analysis/decode_progress.svg": "experiments/E007/figures/decode_progress.svg",
+    "analysis/decode_progress_summary.json": "experiments/E007/results/decode_progress_summary.json",
+    "analysis/decoded_known_pilot_symbols.npz": "experiments/E003/results/decoded_known_pilot_symbols.npz",
+    "analysis/deeper_checks.py": "experiments/E001/scripts/deeper_checks.py",
+    "analysis/deeper_metrics.json": "experiments/E001/results/deeper_metrics.json",
+    "analysis/drift_scan.npz": "experiments/E001/results/drift_scan.npz",
+    "analysis/event_metrics.json": "experiments/E001/results/event_metrics.json",
+    "analysis/export_npz_iq.py": "experiments/E002/scripts/export_npz_iq.py",
+    "analysis/extract_central_ofdm_candidates.py": "experiments/E007/scripts/extract_central_ofdm_candidates.py",
+    "analysis/extract_signal_content.py": "experiments/E003/scripts/extract_signal_content.py",
+    "analysis/focus_event.py": "experiments/E001/scripts/focus_event.py",
+    "analysis/frame_candidate_catalog.csv": "experiments/E007/results/frame_candidate_catalog.csv",
+    "analysis/frame_candidates/candidate_00_row_5465.npz": "data/derived/frame_candidates/candidate_00_row_5465.npz",
+    "analysis/frame_candidates/candidate_01_row_4746.npz": "data/derived/frame_candidates/candidate_01_row_4746.npz",
+    "analysis/frame_candidates/candidate_02_row_5716.npz": "data/derived/frame_candidates/candidate_02_row_5716.npz",
+    "analysis/frame_candidates/candidate_03_row_4690.npz": "data/derived/frame_candidates/candidate_03_row_4690.npz",
+    "analysis/frame_candidates/candidate_04_row_4085.npz": "data/derived/frame_candidates/candidate_04_row_4085.npz",
+    "analysis/frame_candidates/candidate_05_row_4744.npz": "data/derived/frame_candidates/candidate_05_row_4744.npz",
+    "analysis/frame_candidates/candidate_06_row_3845.npz": "data/derived/frame_candidates/candidate_06_row_3845.npz",
+    "analysis/frame_candidates/candidate_07_row_6101.npz": "data/derived/frame_candidates/candidate_07_row_6101.npz",
+    "analysis/frequency_interpretation.json": "experiments/E001/results/frequency_interpretation.json",
+    "analysis/global_component_power.csv": "experiments/E004/results/global_component_power.csv",
+    "analysis/global_hypothesis_tests.png": "experiments/E004/figures/global_hypothesis_tests.png",
+    "analysis/global_hypothesis_tests.svg": "experiments/E004/figures/global_hypothesis_tests.svg",
+    "analysis/global_signal_audit.json": "experiments/E004/results/global_signal_audit.json",
+    "analysis/global_signal_audit.py": "experiments/E004/scripts/global_signal_audit.py",
+    "analysis/global_signal_audit_arrays.npz": "experiments/E004/results/global_signal_audit_arrays.npz",
+    "analysis/global_spectral_axis_validation.json": "experiments/E004/results/global_spectral_axis_validation.json",
+    "analysis/header_observability_audit.json": "experiments/E003/results/header_observability_audit.json",
+    "analysis/identify_satellite_audit.py": "experiments/E002/scripts/identify_satellite_audit.py",
+    "analysis/inspect_waterfall.py": "experiments/E001/scripts/inspect_waterfall.py",
+    "analysis/inventory_npz.py": "experiments/E002/scripts/inventory_npz.py",
+    "analysis/known_pilot_verification.json": "experiments/E003/results/known_pilot_verification.json",
+    "analysis/learning/educational_fec_demo.py": "learning/educational_fec_demo.py",
+    "analysis/learning/educational_fec_demo_results.json": "learning/educational_fec_demo_results.json",
+    "analysis/learning/formula_library.json": "learning/formula_library.json",
+    "analysis/learning/通信公式与证据学习.ipynb": "learning/通信公式与证据学习.ipynb",
+    "analysis/learning/通信公式学习索引.txt": "learning/通信公式学习索引.txt",
+    "analysis/measure_burst_edge_alignment.py": "experiments/E006/scripts/measure_burst_edge_alignment.py",
+    "analysis/metrics.json": "experiments/E001/results/metrics.json",
+    "analysis/narrowband_sync_prefix_extended_observations.npz": "experiments/E006/results/narrowband_sync_prefix_extended_observations.npz",
+    "analysis/narrowband_sync_prefix_extended_test.json": "experiments/E006/results/narrowband_sync_prefix_extended_test.json",
+    "analysis/narrowband_sync_prefix_observations.npz": "experiments/E006/results/narrowband_sync_prefix_observations.npz",
+    "analysis/narrowband_sync_prefix_test.json": "experiments/E006/results/narrowband_sync_prefix_test.json",
+    "analysis/nonpilot_leakage_audit.json": "experiments/E003/results/nonpilot_leakage_audit.json",
+    "analysis/nonpilot_relative_sign_candidates.csv": "experiments/E003/results/nonpilot_relative_sign_candidates.csv",
+    "analysis/npz_inventory.csv": "experiments/E002/results/npz_inventory.csv",
+    "analysis/npz_inventory.json": "experiments/E002/results/npz_inventory.json",
+    "analysis/npz_iq_exports/manifest.json": "data/derived/ci16/manifest.json",
+    "analysis/npz_iq_exports/paired_window_0_dual_rx.ci16": "data/derived/ci16/paired_window_0_dual_rx.ci16",
+    "analysis/npz_iq_exports/paired_window_1_dual_rx.ci16": "data/derived/ci16/paired_window_1_dual_rx.ci16",
+    "analysis/npz_iq_exports/S05_iq_0_single_rx.ci16": "data/derived/ci16/S05_iq_0_single_rx.ci16",
+    "analysis/npz_iq_exports/S05_iq_1_single_rx.ci16": "data/derived/ci16/S05_iq_1_single_rx.ci16",
+    "analysis/npz_iq_exports/S05_iq_2_single_rx.ci16": "data/derived/ci16/S05_iq_2_single_rx.ci16",
+    "analysis/npz_iq_exports/S05_iq_3_single_rx.ci16": "data/derived/ci16/S05_iq_3_single_rx.ci16",
+    "analysis/npz_iq_exports/S05_iq_4_single_rx.ci16": "data/derived/ci16/S05_iq_4_single_rx.ci16",
+    "analysis/npz_iq_exports/S05_iq_5_single_rx.ci16": "data/derived/ci16/S05_iq_5_single_rx.ci16",
+    "analysis/npz_iq_exports/S05_iq_6_single_rx.ci16": "data/derived/ci16/S05_iq_6_single_rx.ci16",
+    "analysis/npz_iq_exports/S05_iq_7_single_rx.ci16": "data/derived/ci16/S05_iq_7_single_rx.ci16",
+    "analysis/NPZ数据说明.txt": "reports/E002/NPZ数据说明.txt",
+    "analysis/observed_nonpilot_subcarriers.npz": "experiments/E003/results/observed_nonpilot_subcarriers.npz",
+    "analysis/observed_pilot_states.csv": "experiments/E003/results/observed_pilot_states.csv",
+    "analysis/observed_pilot_states.npz": "experiments/E003/results/observed_pilot_states.npz",
+    "analysis/overview.png": "experiments/E001/figures/overview.png",
+    "analysis/overview.svg": "experiments/E001/figures/overview.svg",
+    "analysis/paired_tcode_candidates.csv": "experiments/E003/results/paired_tcode_candidates.csv",
+    "analysis/paired_tcode_observations.npz": "experiments/E003/results/paired_tcode_observations.npz",
+    "analysis/paired_tcode_results.json": "experiments/E003/results/paired_tcode_results.json",
+    "analysis/paired_unknown_overlap_check.json": "experiments/E003/results/paired_unknown_overlap_check.json",
+    "analysis/partial_header_complex_observations.csv": "experiments/E003/results/partial_header_complex_observations.csv",
+    "analysis/perframe_content_results.json": "experiments/E003/results/perframe_content_results.json",
+    "analysis/perframe_nonpilot_content.npz": "experiments/E003/results/perframe_nonpilot_content.npz",
+    "analysis/present_cyclic_evidence.py": "experiments/E005/scripts/present_cyclic_evidence.py",
+    "analysis/present_decode_progress.py": "experiments/E007/scripts/present_decode_progress.py",
+    "analysis/present_global_hypothesis_tests.py": "experiments/E004/scripts/present_global_hypothesis_tests.py",
+    "analysis/present_signal_content.py": "experiments/E003/scripts/present_signal_content.py",
+    "analysis/probe_unknown_subcarrier.py": "experiments/E003/scripts/probe_unknown_subcarrier.py",
+    "analysis/projected_decoder_closure_controls.json": "experiments/E003/results/projected_decoder_closure_controls.json",
+    "analysis/projected_nonpilot_decoder.py": "experiments/E003/scripts/projected_nonpilot_decoder.py",
+    "analysis/projected_nonpilot_observations.npz": "experiments/E003/results/projected_nonpilot_observations.npz",
+    "analysis/projected_nonpilot_results.json": "experiments/E003/results/projected_nonpilot_results.json",
+    "analysis/projected_relative_signs.csv": "experiments/E003/results/projected_relative_signs.csv",
+    "analysis/publish_decode_progress.py": "experiments/E007/scripts/publish_decode_progress.py",
+    "analysis/recover_cyclic_waveform.py": "experiments/E005/scripts/recover_cyclic_waveform.py",
+    "analysis/recovered_cyclic_power.csv": "experiments/E005/results/recovered_cyclic_power.csv",
+    "analysis/recovered_cyclic_waveform.json": "experiments/E005/results/recovered_cyclic_waveform.json",
+    "analysis/recovered_cyclic_waveform.npz": "experiments/E005/results/recovered_cyclic_waveform.npz",
+    "analysis/reference/misaka_provenance.json": "references/misaka_provenance.json",
+    "analysis/reference/misaka_README.md": "references/misaka_README.md",
+    "analysis/reference/qin/genPss.m": "references/qin/genPss.m",
+    "analysis/reference/qin/genReferenceTemplate.m": "references/qin/genReferenceTemplate.m",
+    "analysis/reference/qin/genSss.m": "references/qin/genSss.m",
+    "analysis/reference/qin/GUIDE.txt": "references/qin/GUIDE.txt",
+    "analysis/reference/qin/LICENSE.txt": "references/qin/LICENSE.txt",
+    "analysis/reference/qin/referenceTemplate.mat": "references/qin/referenceTemplate.mat",
+    "analysis/reference/qin/sources.json": "references/qin/sources.json",
+    "analysis/reference/qin/sssVec.mat": "references/qin/sssVec.mat",
+    "analysis/reference/Starlink_waterfall_v2.py": "references/Starlink_waterfall_v2.py",
+    "analysis/reference_waterfall.png": "experiments/E001/figures/reference_waterfall.png",
+    "analysis/refine_perframe_content.py": "experiments/E003/scripts/refine_perframe_content.py",
+    "analysis/refined_track.npz": "experiments/E001/results/refined_track.npz",
+    "analysis/satellite_candidate_model_audit.json": "experiments/E002/results/satellite_candidate_model_audit.json",
+    "analysis/satellite_identity_audit.json": "experiments/E002/results/satellite_identity_audit.json",
+    "analysis/satellite_identity_candidates.csv": "experiments/E002/results/satellite_identity_candidates.csv",
+    "analysis/sideband_phase_coupling.json": "experiments/E004/results/sideband_phase_coupling.json",
+    "analysis/sideband_phase_coupling_arrays.npz": "experiments/E004/results/sideband_phase_coupling_arrays.npz",
+    "analysis/signal_content.png": "experiments/E003/figures/signal_content.png",
+    "analysis/signal_content.svg": "experiments/E003/figures/signal_content.svg",
+    "analysis/signal_content_extraction.json": "experiments/E003/results/signal_content_extraction.json",
+    "analysis/signal_content_summary.json": "experiments/E003/results/signal_content_summary.json",
+    "analysis/signal_event.png": "experiments/E001/figures/signal_event.png",
+    "analysis/signal_event.svg": "experiments/E001/figures/signal_event.svg",
+    "analysis/spectrum_data.npz": "experiments/E001/results/spectrum_data.npz",
+    "analysis/subband_cyclic_structure.png": "experiments/E005/figures/subband_cyclic_structure.png",
+    "analysis/subband_cyclic_structure.svg": "experiments/E005/figures/subband_cyclic_structure.svg",
+    "analysis/subband_cyclostationarity.json": "experiments/E005/results/subband_cyclostationarity.json",
+    "analysis/subband_cyclostationarity_arrays.npz": "experiments/E005/results/subband_cyclostationarity_arrays.npz",
+    "analysis/subband_cyclostationarity_dechirped.json": "experiments/E005/results/subband_cyclostationarity_dechirped.json",
+    "analysis/subband_cyclostationarity_dechirped_arrays.npz": "experiments/E005/results/subband_cyclostationarity_dechirped_arrays.npz",
+    "analysis/summarize_cyclic_evidence.py": "experiments/E005/scripts/summarize_cyclic_evidence.py",
+    "analysis/test_central_binary_regions.py": "experiments/E007/scripts/test_central_binary_regions.py",
+    "analysis/test_central_gutter_grid.py": "experiments/E006/scripts/test_central_gutter_grid.py",
+    "analysis/test_sideband_phase_coupling.py": "experiments/E004/scripts/test_sideband_phase_coupling.py",
+    "analysis/test_wideband_drift_link.py": "experiments/E004/scripts/test_wideband_drift_link.py",
+    "analysis/transition_metrics.json": "experiments/E001/results/transition_metrics.json",
+    "analysis/unknown_subcarrier_probe.json": "experiments/E003/results/unknown_subcarrier_probe.json",
+    "analysis/validate_central_narrowband_model.py": "experiments/E007/scripts/validate_central_narrowband_model.py",
+    "analysis/validate_cyclic_estimators.py": "experiments/E005/scripts/validate_cyclic_estimators.py",
+    "analysis/validate_projected_decoder.py": "experiments/E003/scripts/validate_projected_decoder.py",
+    "analysis/verify_known_pilots.py": "experiments/E003/scripts/verify_known_pilots.py",
+    "analysis/waterfall_detail.png": "experiments/E001/figures/waterfall_detail.png",
+    "analysis/waterfall_detail.svg": "experiments/E001/figures/waterfall_detail.svg",
+    "analysis/waterfall_detail_data.npz": "experiments/E001/results/waterfall_detail_data.npz",
+    "analysis/waterfall_peaks.json": "experiments/E001/results/waterfall_peaks.json",
+    "analysis/wav_coherent_frame_probe.npz": "experiments/E006/results/wav_coherent_frame_probe.npz",
+    "analysis/wav_coherent_frame_probe.py": "experiments/E006/scripts/wav_coherent_frame_probe.py",
+    "analysis/wav_coherent_frame_results.json": "experiments/E006/results/wav_coherent_frame_results.json",
+    "analysis/wav_frame_fold_probe.npz": "experiments/E003/results/wav_frame_fold_probe.npz",
+    "analysis/wav_frame_structure.npz": "experiments/E003/results/wav_frame_structure.npz",
+    "analysis/wav_noncoherent_sync_probe.py": "experiments/E006/scripts/wav_noncoherent_sync_probe.py",
+    "analysis/wav_noncoherent_sync_profiles.npz": "experiments/E006/results/wav_noncoherent_sync_profiles.npz",
+    "analysis/wav_noncoherent_sync_results.json": "experiments/E006/results/wav_noncoherent_sync_results.json",
+    "analysis/wav_pss_specificity_extended_profiles.npz": "experiments/E006/results/wav_pss_specificity_extended_profiles.npz",
+    "analysis/wav_pss_specificity_extended_results.json": "experiments/E006/results/wav_pss_specificity_extended_results.json",
+    "analysis/wav_pss_specificity_profiles.npz": "experiments/E006/results/wav_pss_specificity_profiles.npz",
+    "analysis/wav_pss_specificity_results.json": "experiments/E006/results/wav_pss_specificity_results.json",
+    "analysis/wideband_drift_link.json": "experiments/E004/results/wideband_drift_link.json",
+    "analysis/wideband_drift_link_arrays.npz": "experiments/E004/results/wideband_drift_link_arrays.npz",
+    "analysis/信标内容解析续查结果.txt": "reports/E003/信标内容解析续查结果.txt",
+    "analysis/信标内容解析阶段结果.txt": "reports/E003/信标内容解析阶段结果.txt",
+    "analysis/分析报告.txt": "reports/E001/分析报告.txt",
+    "analysis/分步解码进展.txt": "reports/E007/分步解码进展.txt",
+    "analysis/分频带循环结构与公式学习结果.txt": "reports/E005/分频带循环结构与公式学习结果.txt",
+    "analysis/卫星编号识别结果.txt": "reports/E002/卫星编号识别结果.txt",
+    "analysis/整体信号结构分析.txt": "reports/E004/整体信号结构分析.txt",
+    "analysis/波形关联假设检验.txt": "reports/E004/波形关联假设检验.txt",
+    "analysis/终止沿对齐检验.txt": "reports/E006/终止沿对齐检验.txt",
+    "USER_IQ.wav": "data/raw/wav/USER_IQ.wav"
+  }
+}

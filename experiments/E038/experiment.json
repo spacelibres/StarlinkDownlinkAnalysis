@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E038",
+  "title": "Code 5 到 MCS 6 的相位转移与扩展记录",
+  "input": "E036 Qin hard-decision archive and slices, E037 fixed grammar, E012/E013 fixed Code 5 generator and checks",
+  "scripts": ["audit_qin_mcs6_transfer.py", "verify_qin_mcs6_anchor_edge.py"],
+  "seed": 2026112138
+}

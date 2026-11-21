@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E032",
+  "title": "跨宽带 PN15 转移与 Code 68 候选边界",
+  "input": "data/raw/legacy_wideband/Starlink_Downlink_IQ.npy",
+  "scripts": ["audit_legacy_pn_transfer.py"],
+  "seed": 2026112132
+}

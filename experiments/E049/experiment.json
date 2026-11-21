@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E049",
+  "title": "统一解析参考后的 60 位序列族",
+  "input": "117 Qin exemplar archive frames and published template, E025 binary tail, E041/E042 WAV spectra, E048 NPZ residuals",
+  "scripts": ["audit_reference_word_families.py"],
+  "seed": 2026112149
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "starlink-formula-supplement/v1",
+  "checked_on": "2026-11-20",
+  "scope": "E013 five working cards; sparse-code equivalence and controlled correction do not establish application meaning or physical BER.",
+  "cards": [
+    {
+      "id": "E013_SPARSE_DUAL",
+      "formula": "For h=[a,b], [I|P]h^T=0 iff a^T=P*b^T. If P invertible, b^T=P^(-1)*a^T.",
+      "source": "https://arxiv.org/html/2610.29387v2#S5.SS2",
+      "verification": "3337744 declared QC-normalized supports tested with exact1024-bit images; eight weight6 seed orbits recovered",
+      "limit": "Finite support/QC prior, not an exhaustive search of all possible dual vectors or transmitter descriptions"
+    },
+    {
+      "id": "E013_CODE_EQUIVALENCE",
+      "formula": "rank(G)=K, rank(H)=N-K and G*H^T=0 imply rowspace(G)=nullspace(H)",
+      "source": "Finite-field dimension theorem, instantiated in E013",
+      "verification": "N2048,K1024; rankH1024 and zero orthogonality residual. All1024 rows sparse weight6, columns weight2/3/4.",
+      "limit": "Equivalent representation in fixed receiver coordinates, not unique standard identity, distance or girth proof"
+    },
+    {
+      "id": "E013_REVERSE_PARITY",
+      "formula": "H=[Hu|Hp]; Hp*p^T=Hu*u^T; if Hp full rank, P=(Hp^(-1)*Hu)^T",
+      "source": "https://arxiv.org/html/2610.29387v2#S5.SS2",
+      "verification": "rankHp1024; reverse GF2 solve exactly reconstructs frozen E012 P",
+      "limit": "A redundant algebraic cross-check, not an additional independently received signal"
+    },
+    {
+      "id": "E013_LLR_CONVENTION",
+      "formula": "For real Gaussian noise variance sigma^2, BPSK L=2*y/sigma^2. For circular complex noise E|w|^2=v, normalized BPSK L=4*Re(z)/v. L>0 favors bit0.",
+      "source": "Gaussian likelihood ratio; https://arxiv.org/html/2610.29387v2#S5.SS3",
+      "verification": "Real-symbol simulation uses true sigma; actual RF uses declared assumed scale0.02 after known-prefix normalization",
+      "limit": "Assumed likelihood scale is not independent RF noise measurement; no clipping min-sum is homogeneous under global positive scaling"
+    },
+    {
+      "id": "E013_NORMALIZED_MINSUM",
+      "formula": "r(c->v)=eta*prod_{u!=v}sign(q(u->c))*min_{u!=v}|q(u->c)|; q(v->c)=L(v)+sum_{d!=c}r(d->v)",
+      "source": "https://arxiv.org/html/2610.29387v2#S5.SS3",
+      "author_reference": "https://github.com/quantumgizmos/ldpc/blob/main/src_cpp/bp.hpp",
+      "verification": "Synchronous eta0.8,max60; known Hamming correction and valid-but-wrong-word counterexample. Real words unchanged, artificial flips corrected, strong simulated noise failures retained.",
+      "limit": "Zero syndrome proves membership only. Controlled results do not establish ML optimality, universal correction radius or channel performance."
+    }
+  ]
+}

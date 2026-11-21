@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E050",
+  "title": "帧内分配次序与实际星座跳变",
+  "input": "250 MS/s and 480 MS/s measured wideband IQ, E014/E010 headers, published constellation models and ideal narrow view masks",
+  "scripts": ["audit_internal_allocations.py"],
+  "seed": null
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "starlink-capture-import/v1",
+  "recorded_utc": "2026-11-20T15:55:08.289505+00:00",
+  "source_url": "https://github.com/misaka666/Starlink-Downlink-Analysis/releases/download/v2.0.0/Starlink_Downlink_IQ_250MSps.bin",
+  "redirected_host": "release-assets.githubusercontent.com",
+  "upstream_origin": "UT Austin Qin supplement exemplar250-257.zip, as attributed by release author",
+  "metadata_url": "https://github.com/misaka666/Starlink-Downlink-Analysis/blob/main/data/metadata.json",
+  "files": [
+    {
+      "snapshot": "data/raw/ut_250msps/Starlink_Downlink_IQ_250MSps.bin",
+      "sha256": "c69e82022d45173cdcaf1a5fdc8a2b864e2d61e85ae819af54b16002044adae3",
+      "bytes": 50000000
+    }
+  ],
+  "sample_rate_hz": 250000000,
+  "complex_samples": 12500000,
+  "dtype": "little-endian signed int16 interleaved I,Q",
+  "scope": "Unmodified author release asset; independent RF from legacy24ms capture, not blind-to-literature validation. No new license asserted or remote publication."
+}

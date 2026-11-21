@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E033",
+  "title": "Code 68 准循环模型的精确秩与保留校验",
+  "input": "data/raw/legacy_wideband/Starlink_Downlink_IQ.npy",
+  "scripts": ["audit_code68_qc_rank.py"],
+  "seed": 2026112133
+}

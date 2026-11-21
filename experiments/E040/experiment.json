@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E040",
+  "title": "原始 WAV 的两侧偏移谱线",
+  "input": "Original 2.4 MS/s WAV, frozen E001/E005/E006 axes and E014 250 MS/s timing positive comparator",
+  "scripts": ["audit_wav_shifted_lines.py", "present_wav_shifted_lines.py"],
+  "seed": 2026112140
+}

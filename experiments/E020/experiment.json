@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E020",
+  "title": "Code 28 重根商环逐阶拟合",
+  "input": "runs/v017-code28-hard",
+  "scripts": ["quotient_lift_core.py", "audit_code28_quotient.py", "soft_quotient_core.py", "audit_code28_soft_quotient.py"],
+  "seeds": [2026112020, 2026112021]
+}

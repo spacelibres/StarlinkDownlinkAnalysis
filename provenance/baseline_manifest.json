@@ -1,0 +1,924 @@
+{
+  "schema": "starlink-baseline/v1",
+  "date": "2026-11-20",
+  "scope": "All pre-organization workspace files except regenerable Python bytecode caches. No original evidence was recomputed.",
+  "file_count": 183,
+  "total_bytes": 364354795,
+  "files": [
+    {
+      "path": "analysis/acquire_narrowband_sync_prefix.py",
+      "bytes": 8492,
+      "sha256": "4593f4092059f0a527c394f88f67b7137385a52183f155aeda5115e78a84fa90"
+    },
+    {
+      "path": "analysis/analyze_iq.py",
+      "bytes": 7042,
+      "sha256": "5e53bcd930513e03e2fdbd22fe0f4686571a1f6df1e2dc9adffcb2c53a273009"
+    },
+    {
+      "path": "analysis/analyze_subband_cyclostationarity.py",
+      "bytes": 11447,
+      "sha256": "a88b6e7bcb56a0b8c939ffd5e74ea7b2383bdd7897b1cff1aa3e35e3dce3fe50"
+    },
+    {
+      "path": "analysis/audit_header_observability.py",
+      "bytes": 8006,
+      "sha256": "42913b88b29117bd80cd9a2a716318016ec70be4fba254b0463dc5597728b963"
+    },
+    {
+      "path": "analysis/audit_nonpilot_leakage.py",
+      "bytes": 4010,
+      "sha256": "9c02355229cbb31ba778cd4dd5924fbbb9db2d389feca1121d26c091fc437bfc"
+    },
+    {
+      "path": "analysis/build_communication_formula_library.py",
+      "bytes": 29222,
+      "sha256": "51a05f356ad1f06784022584740c348303fa644b16fc919f93d997088f95a1c5"
+    },
+    {
+      "path": "analysis/burst_edge_alignment.json",
+      "bytes": 6973,
+      "sha256": "61b35ec3c7b661e4c89c203d5789e1ce898dc873364fd929300ee8bb39f851c7"
+    },
+    {
+      "path": "analysis/burst_edge_alignment_arrays.npz",
+      "bytes": 97249,
+      "sha256": "05c81e3d7d28978cf1a75869db986e57a2e346dc6b546a2c1fe9bc424c119fa6"
+    },
+    {
+      "path": "analysis/burst_edge_alignment_quarter_ms.json",
+      "bytes": 6854,
+      "sha256": "9ab120b7e1e2427e50adf2ef229dca7e699459b56bca473d5e61a75c821e0cc4"
+    },
+    {
+      "path": "analysis/burst_edge_alignment_quarter_ms_arrays.npz",
+      "bytes": 283602,
+      "sha256": "db5c6a199127eaeeecb78ef3cea0912d3170ff430c5dca0dbbd4f45a3afb1a1a"
+    },
+    {
+      "path": "analysis/candidate_track.npz",
+      "bytes": 3383,
+      "sha256": "1c2cb3caa3ac8ddc62b40c17d4808d1c6a27528a1fbd0538890d66fbbefb0136"
+    },
+    {
+      "path": "analysis/central_binary_region_test.json",
+      "bytes": 2670,
+      "sha256": "5b6c40452e5ab7fbe25ce4bb1b5ec7b482e9e152920bd7340fba9eecec9dbe3c"
+    },
+    {
+      "path": "analysis/central_gutter_grid_test.json",
+      "bytes": 4492,
+      "sha256": "e68b199f2e5d517cb68e7edf0b6d951aab1aef637768bd60be48938ea911a541"
+    },
+    {
+      "path": "analysis/central_gutter_grid_test_arrays.npz",
+      "bytes": 46219,
+      "sha256": "c28662d21f12206d8d9647d8588efb7ffcbd3592a3271004432c55af0db29662"
+    },
+    {
+      "path": "analysis/central_narrowband_model_control.json",
+      "bytes": 821,
+      "sha256": "cb9491845051e74c9975a0ac6c1fa9a434e3f53dec46dc5e7e75d7b39a263d21"
+    },
+    {
+      "path": "analysis/central_ofdm_candidates.json",
+      "bytes": 2030,
+      "sha256": "4dfd443fb43561ca332c82fa9b4f4d17103a6cf9cff35d70e68593fc6cacd3b9"
+    },
+    {
+      "path": "analysis/central_ofdm_symbol_candidates.npz",
+      "bytes": 6651921,
+      "sha256": "746456a2faad2ca59edc3c4a618323c84ee00a3af5988157d10fd7fd03ccf6a9"
+    },
+    {
+      "path": "analysis/central_relative_patterns.csv",
+      "bytes": 35319,
+      "sha256": "1b888d6dd0c579d834d9365291137f61e39b0ab69f51adfb4f7cd2ae722671df"
+    },
+    {
+      "path": "analysis/check_global_spectral_axis.py",
+      "bytes": 2605,
+      "sha256": "045cab36d21d9131dc7b762d31fe92871ecda29f2cd4b9371048e9468648e780"
+    },
+    {
+      "path": "analysis/check_paired_unknown_overlap.py",
+      "bytes": 2227,
+      "sha256": "838d6eb53e71e96f15af6b58c4110e3d714ae86192001cc35ec7017556197a6e"
+    },
+    {
+      "path": "analysis/cyclic_drift_consistency.json",
+      "bytes": 3060,
+      "sha256": "ae4577fd625489b15501ef20f2d5f3ece9ed828c39670c24041e20fcfa68f51c"
+    },
+    {
+      "path": "analysis/cyclic_estimator_controls.json",
+      "bytes": 751,
+      "sha256": "1cb3fcea3106998fce0dfeff7855d4be1d91dea2f3bc49a7afb9dcb5df592625"
+    },
+    {
+      "path": "analysis/cyclic_evidence_summary.json",
+      "bytes": 26588,
+      "sha256": "bf846483b8467e4fbc1bbb79b1ffffd2f95beb23acb3be7b136318bc692ccef1"
+    },
+    {
+      "path": "analysis/decode_paired_tcode.py",
+      "bytes": 8403,
+      "sha256": "c4dca8a61466352ec2f05bbdfc18aa58bc4e90df00a1f2d8a7baeab6d5887a1d"
+    },
+    {
+      "path": "analysis/decode_progress.png",
+      "bytes": 229325,
+      "sha256": "3d0dd0890cb9abe374b6bf44bce59c504b05808c27825203069d970f7cbd7560"
+    },
+    {
+      "path": "analysis/decode_progress.svg",
+      "bytes": 223093,
+      "sha256": "fbd7ee52890becfdb782dc0e137d7e3c497ed6fa2e2a77869cbeded7c174518d"
+    },
+    {
+      "path": "analysis/decode_progress_summary.json",
+      "bytes": 4317,
+      "sha256": "b0ef90d40e68425efe0cebcb0bcaa61b78318db3c7b1321895d4831f4b5f38c1"
+    },
+    {
+      "path": "analysis/decoded_known_pilot_symbols.npz",
+      "bytes": 4002113,
+      "sha256": "3c6bb684c2287d0cb1ea73dd4b3f206fe020bf8fe01e71afaab0fb4d847aee3d"
+    },
+    {
+      "path": "analysis/deeper_checks.py",
+      "bytes": 4304,
+      "sha256": "863c3292557a1b3813f22e5164d23db2ef559a66d2e90fdf191bee078c3a07b3"
+    },
+    {
+      "path": "analysis/deeper_metrics.json",
+      "bytes": 12766,
+      "sha256": "41e109a49fa3fd5f8876e49ad5f420d1562db886377f181dbb802cc04fa5b508"
+    },
+    {
+      "path": "analysis/drift_scan.npz",
+      "bytes": 406356,
+      "sha256": "2ec01f93c7d306782b4833ded26277547fab464669bcf94b0990b25374d45baf"
+    },
+    {
+      "path": "analysis/event_metrics.json",
+      "bytes": 1580,
+      "sha256": "58fa5f27b384f8b7a81d8afb83a9bfaeacd9569a9ea34845108b5f15d3558916"
+    },
+    {
+      "path": "analysis/export_npz_iq.py",
+      "bytes": 2822,
+      "sha256": "7264b46ffcd9751c1507090e5134990196262854a5c33e0f66c2b85a6711362c"
+    },
+    {
+      "path": "analysis/extract_central_ofdm_candidates.py",
+      "bytes": 8343,
+      "sha256": "1a601d5577ddb7e8525df8c3394b2f54a1709af86e87755ede7d1c1d74583e4e"
+    },
+    {
+      "path": "analysis/extract_signal_content.py",
+      "bytes": 7217,
+      "sha256": "1f81a554e34588511cfb0501f5fb21a743511fe25a276604df77ff9601cb0804"
+    },
+    {
+      "path": "analysis/focus_event.py",
+      "bytes": 5683,
+      "sha256": "92c53245e3eca9777e5487807c90021571c734c67c47101a2f8400d949c3d7db"
+    },
+    {
+      "path": "analysis/frame_candidate_catalog.csv",
+      "bytes": 811120,
+      "sha256": "5f9e1af6d60ac6c894a2e6a0c19e619e1ec0f3ef1cd61842f6bc6f0ccf42f95b"
+    },
+    {
+      "path": "analysis/frame_candidates/candidate_00_row_5465.npz",
+      "bytes": 4920,
+      "sha256": "a4e3777c9583313e4de2a5e8439c3e1014827022510f4a1dfbc91b441af8b1d9"
+    },
+    {
+      "path": "analysis/frame_candidates/candidate_01_row_4746.npz",
+      "bytes": 4871,
+      "sha256": "12052852028d0ac67a1f95af2ba63cfdf8a6f2bff24c5ba32752d32a7ae1546d"
+    },
+    {
+      "path": "analysis/frame_candidates/candidate_02_row_5716.npz",
+      "bytes": 4911,
+      "sha256": "f016b956ebcae9bf29f60c841d709c7add911a41c5ce85c03ab4c82f6afe36f9"
+    },
+    {
+      "path": "analysis/frame_candidates/candidate_03_row_4690.npz",
+      "bytes": 4817,
+      "sha256": "24ffe42771878c85f54772c0dfb09b18bc73835a6f5ec157e2e8ba619bb68036"
+    },
+    {
+      "path": "analysis/frame_candidates/candidate_04_row_4085.npz",
+      "bytes": 4930,
+      "sha256": "be06bb28bd0f8aeef646dae5cfa5ad5b17673d93bcb47cca86ab6158a71fc5dc"
+    },
+    {
+      "path": "analysis/frame_candidates/candidate_05_row_4744.npz",
+      "bytes": 4734,
+      "sha256": "a146bdf38c7910e45a167e110ad8607576a6f96012e42f42ac4c9e520d32324d"
+    },
+    {
+      "path": "analysis/frame_candidates/candidate_06_row_3845.npz",
+      "bytes": 4927,
+      "sha256": "33fcd32fc6cdfa9e3cda25f650cdbabd2b9b797c9ffe9fa8152d43d7b921724f"
+    },
+    {
+      "path": "analysis/frame_candidates/candidate_07_row_6101.npz",
+      "bytes": 4951,
+      "sha256": "f3d4cbb392989194cd093f42a5d9fc9bff0e02388f6da03ecd9890b19297c7e4"
+    },
+    {
+      "path": "analysis/frequency_interpretation.json",
+      "bytes": 403,
+      "sha256": "ec9c7a4613f9605632bcba1805a8fafc7cec213f0ad8d319ea522455b37cb98d"
+    },
+    {
+      "path": "analysis/global_component_power.csv",
+      "bytes": 70634,
+      "sha256": "f1777dccba1883df1b66f81fca0f36dbb02778ff62d7871183db0359d1880b08"
+    },
+    {
+      "path": "analysis/global_hypothesis_tests.png",
+      "bytes": 298070,
+      "sha256": "9141d9eee8af4a076bee1e0b8f7824c8f2a3c3e3d10fc695e62e0c897cc4b163"
+    },
+    {
+      "path": "analysis/global_hypothesis_tests.svg",
+      "bytes": 263697,
+      "sha256": "192bc96503f7220cb2ab61822f7059f3c2f8af9619c61485feae6a52cdc94339"
+    },
+    {
+      "path": "analysis/global_signal_audit.json",
+      "bytes": 8850,
+      "sha256": "e3ee99720a0a813d034707cbe8822f1f8b75913ac5531a83d074146559a6933f"
+    },
+    {
+      "path": "analysis/global_signal_audit.py",
+      "bytes": 6614,
+      "sha256": "a9849ae21913b7e32a957ad8f6b087f70344d98ab033bd643d6c6b115d26185f"
+    },
+    {
+      "path": "analysis/global_signal_audit_arrays.npz",
+      "bytes": 924382,
+      "sha256": "ccb00c53a9311adace840be00c5ea2d89e54eabef40e9e20c34089b93c900564"
+    },
+    {
+      "path": "analysis/global_spectral_axis_validation.json",
+      "bytes": 1908,
+      "sha256": "1dbc3108fa987bc1cdbf66604b11028a939c439dacd538a4d1a1f5aef871401f"
+    },
+    {
+      "path": "analysis/header_observability_audit.json",
+      "bytes": 10153,
+      "sha256": "b4fc8035393fd0fd429cb44945ee3dfdd6ead29b3db554029482f4c7442714ff"
+    },
+    {
+      "path": "analysis/identify_satellite_audit.py",
+      "bytes": 4778,
+      "sha256": "76806c6051843e11fb038ae6762267bb983c73dc378f6abc8d5c5257f9f609de"
+    },
+    {
+      "path": "analysis/inspect_waterfall.py",
+      "bytes": 4005,
+      "sha256": "92ef583c4ca317b03a14dab55643a51a6b80a91e312a53bbebaaf2e317ee893c"
+    },
+    {
+      "path": "analysis/inventory_npz.py",
+      "bytes": 2670,
+      "sha256": "e497d9ddd4fdf22e3c71d1cbcb2e98ad4c7ae6e3f8ae8fa934d9d45d55dae804"
+    },
+    {
+      "path": "analysis/known_pilot_verification.json",
+      "bytes": 5093,
+      "sha256": "74c748ac93278365cec490e5848e354506ad2d1855f82b0f4445f8867153777e"
+    },
+    {
+      "path": "analysis/learning/educational_fec_demo.py",
+      "bytes": 3665,
+      "sha256": "a21e7882736768e03c9c90cf526bf11fd23f12d271828d91adeee3c5c1502e2e"
+    },
+    {
+      "path": "analysis/learning/educational_fec_demo_results.json",
+      "bytes": 530,
+      "sha256": "d450efe34499387426c0c23d524acd25046e2c9b2b25fed6ca8e0a28cb4f80eb"
+    },
+    {
+      "path": "analysis/learning/formula_library.json",
+      "bytes": 36236,
+      "sha256": "4e8a8ebb87136b0c66b6b933a18d8b629176d0497519320d61eb8b0b08344c61"
+    },
+    {
+      "path": "analysis/learning/通信公式与证据学习.ipynb",
+      "bytes": 53455,
+      "sha256": "108ffb461ed97a311e527b824dfa62238b8be925211e654b08faae33f59b4f4d"
+    },
+    {
+      "path": "analysis/learning/通信公式学习索引.txt",
+      "bytes": 27267,
+      "sha256": "3cdb97babd01729e2ea3dbbd2ad3f856b7b403e9fa984fc3f6673c983f92a89a"
+    },
+    {
+      "path": "analysis/measure_burst_edge_alignment.py",
+      "bytes": 8068,
+      "sha256": "1aa5721afefd61d580e556713f482d8ef8534aff300a14f29c9611978c8969b8"
+    },
+    {
+      "path": "analysis/metrics.json",
+      "bytes": 5954,
+      "sha256": "5aa601ded166075d7422ee77e75c578cc0f62d3d6b9c968ee5e1e554ea7e08ff"
+    },
+    {
+      "path": "analysis/narrowband_sync_prefix_extended_observations.npz",
+      "bytes": 4478336,
+      "sha256": "b9af2297c108252c5f9262caf4e4d6ba12d5bc566c6fd8a8230bc1bb05d48d0e"
+    },
+    {
+      "path": "analysis/narrowband_sync_prefix_extended_test.json",
+      "bytes": 412653,
+      "sha256": "121cf15b26693b480f4fae74cedcd0e629c8067d3a03affb1460432af7a7edb1"
+    },
+    {
+      "path": "analysis/narrowband_sync_prefix_observations.npz",
+      "bytes": 4478336,
+      "sha256": "b9af2297c108252c5f9262caf4e4d6ba12d5bc566c6fd8a8230bc1bb05d48d0e"
+    },
+    {
+      "path": "analysis/narrowband_sync_prefix_test.json",
+      "bytes": 31404,
+      "sha256": "505b083e2b5767d6c1071bdf5538e2dff03ba1f13b208f9319df0f8d399cbc18"
+    },
+    {
+      "path": "analysis/nonpilot_leakage_audit.json",
+      "bytes": 4115,
+      "sha256": "7568ff3956971ec9dc14813a2744612cf8485c15c732c415eddb4b81741bf586"
+    },
+    {
+      "path": "analysis/nonpilot_relative_sign_candidates.csv",
+      "bytes": 48310,
+      "sha256": "6e6162f26c19e65ffd6967bc92e05fc01a7e6341c8ee7cc775e56d763700fb00"
+    },
+    {
+      "path": "analysis/npz_inventory.csv",
+      "bytes": 10002778,
+      "sha256": "a4779b978566a99695fcb6a7b157ff57a5ed42a6063cf9d414cefa6a292898ca"
+    },
+    {
+      "path": "analysis/npz_inventory.json",
+      "bytes": 18436866,
+      "sha256": "82dd098beddb8f389498c49a022b8293197bf13a86431173044203494d9d7a29"
+    },
+    {
+      "path": "analysis/npz_iq_exports/manifest.json",
+      "bytes": 8223,
+      "sha256": "22092b60aea7a51565d69a2088c91e4ee9de3a09d3556310b1c35abbb6e0f9f5"
+    },
+    {
+      "path": "analysis/npz_iq_exports/paired_window_0_dual_rx.ci16",
+      "bytes": 400000,
+      "sha256": "e60d7d93c7251bb15a3d27c7b988454cf0956a75d314514defa7c8deb4ad2726"
+    },
+    {
+      "path": "analysis/npz_iq_exports/paired_window_1_dual_rx.ci16",
+      "bytes": 400000,
+      "sha256": "b5af403964fd8484a94405354857f89bd6ade316c14a30c1c0e310593a452427"
+    },
+    {
+      "path": "analysis/npz_iq_exports/S05_iq_0_single_rx.ci16",
+      "bytes": 200000,
+      "sha256": "8a970a8821bd48bad7fb37190b88027595d5d1fcc45fec3d46470f8723a5dfcf"
+    },
+    {
+      "path": "analysis/npz_iq_exports/S05_iq_1_single_rx.ci16",
+      "bytes": 200000,
+      "sha256": "f34c979ea33f1f36332b4a774c43d1db13af0e2f17bcc1a9abfa6a6cc40765c1"
+    },
+    {
+      "path": "analysis/npz_iq_exports/S05_iq_2_single_rx.ci16",
+      "bytes": 200000,
+      "sha256": "db6249b083bd5713fc3902a662b3ceb4c4aeafbda7941ae8e8ac00e10a710af8"
+    },
+    {
+      "path": "analysis/npz_iq_exports/S05_iq_3_single_rx.ci16",
+      "bytes": 200000,
+      "sha256": "c0ca519f49dcfa87f34310c91da2eb470656f81812bde025616fc04010572354"
+    },
+    {
+      "path": "analysis/npz_iq_exports/S05_iq_4_single_rx.ci16",
+      "bytes": 200000,
+      "sha256": "ea84a3f160ea9a1323a90b9ed223fcf129e8fddc341f97730ddf8379d8ccdbaf"
+    },
+    {
+      "path": "analysis/npz_iq_exports/S05_iq_5_single_rx.ci16",
+      "bytes": 200000,
+      "sha256": "58bd5ed309a9133824ef66c33138dc2c23b38ebb33124b79812323c6a73cd147"
+    },
+    {
+      "path": "analysis/npz_iq_exports/S05_iq_6_single_rx.ci16",
+      "bytes": 200000,
+      "sha256": "0f8afff924c3c438d0b6726ecbbdd222202f2cb1dffc5ac702e8eda351e4924f"
+    },
+    {
+      "path": "analysis/npz_iq_exports/S05_iq_7_single_rx.ci16",
+      "bytes": 200000,
+      "sha256": "ee255eb263f4f4edf1b1820467174a4efcbeed56f6c642b4d2ccec205db1b819"
+    },
+    {
+      "path": "analysis/NPZ数据说明.txt",
+      "bytes": 4730,
+      "sha256": "4be1e801d9f304b7703e6581a66d518d533876a192bc36272d82164ce23f7809"
+    },
+    {
+      "path": "analysis/observed_nonpilot_subcarriers.npz",
+      "bytes": 220898,
+      "sha256": "8e348a48925da443eaeede77e889d621cebeeb82bd3bb7dc8519a09d41d5d45e"
+    },
+    {
+      "path": "analysis/observed_pilot_states.csv",
+      "bytes": 222259,
+      "sha256": "11c6b18a22d7d0d3355487e192f9c3f0ad46b394148aff8cd7b854f76d698f0c"
+    },
+    {
+      "path": "analysis/observed_pilot_states.npz",
+      "bytes": 34955,
+      "sha256": "2cfc432abaa04f158d904bbebb6b38938fbb5900b965926589193ad63e95bb98"
+    },
+    {
+      "path": "analysis/overview.png",
+      "bytes": 1039591,
+      "sha256": "a23d0ab4623a1b72b42f4eb2d04b6c864876bef1e067b192ea6347d952fc0e2f"
+    },
+    {
+      "path": "analysis/overview.svg",
+      "bytes": 747494,
+      "sha256": "37ea5de38d79e263b1a548f4efbc227567b0e3433592a6a6abf806d4ff6d594b"
+    },
+    {
+      "path": "analysis/paired_tcode_candidates.csv",
+      "bytes": 1047,
+      "sha256": "3e6540804af81e6f46f9734f333baaa6a019d853caf3e76b7e24ab4508a958cc"
+    },
+    {
+      "path": "analysis/paired_tcode_observations.npz",
+      "bytes": 633439,
+      "sha256": "95b97417ee8baa95a0cef50ef63b8e770a4cb8880bdcb8bb1487833aa46a1899"
+    },
+    {
+      "path": "analysis/paired_tcode_results.json",
+      "bytes": 4332,
+      "sha256": "715602a58c3699f585dd23f809bae68e03fa6b1dd47b76267c9adcdaace65029"
+    },
+    {
+      "path": "analysis/paired_unknown_overlap_check.json",
+      "bytes": 34567,
+      "sha256": "5f397199e39899f10151836300936d121c367acbe0b47912ae763e83d69da588"
+    },
+    {
+      "path": "analysis/partial_header_complex_observations.csv",
+      "bytes": 21445,
+      "sha256": "d92d5813a79b3ef9a52996ec4b195bd826053cfad733d0580e0b9c5adfade870"
+    },
+    {
+      "path": "analysis/perframe_content_results.json",
+      "bytes": 5058,
+      "sha256": "0c6367a46682c5874dc3daef2cccf7c285fa5611a2912e66b43db9991b2155e5"
+    },
+    {
+      "path": "analysis/perframe_nonpilot_content.npz",
+      "bytes": 1220872,
+      "sha256": "cbb5a3f11b993d1cf902ce2b6c13900b3e03de28e934f198b2af197a72665d92"
+    },
+    {
+      "path": "analysis/present_cyclic_evidence.py",
+      "bytes": 5983,
+      "sha256": "a6b19ea88775a55930c34290414c601101369d5674530eeeb10df99c611abddf"
+    },
+    {
+      "path": "analysis/present_decode_progress.py",
+      "bytes": 5117,
+      "sha256": "0df00fc44b51524903b5d4137b5e7abc017c1e25df8f3f78c10635bc99f16310"
+    },
+    {
+      "path": "analysis/present_global_hypothesis_tests.py",
+      "bytes": 5431,
+      "sha256": "f16b0a0632cf7f92c5f79f67eeb922cf9b9b052e24bf7d4f0e74d1903fbe9c01"
+    },
+    {
+      "path": "analysis/present_signal_content.py",
+      "bytes": 6492,
+      "sha256": "a45732488d160e070d5fad05e555cc5c766c3108fb871f02fefa7b75ed7b5c86"
+    },
+    {
+      "path": "analysis/probe_unknown_subcarrier.py",
+      "bytes": 5039,
+      "sha256": "1ecadc28545ac36bd973bdc4b54dceb957d4a65de34a9905869f27b035f6148a"
+    },
+    {
+      "path": "analysis/projected_decoder_closure_controls.json",
+      "bytes": 583,
+      "sha256": "b7caa75b700944582d8d3a4d56d1d7bbe961a955ee086bd7a38ac9fba9e3586e"
+    },
+    {
+      "path": "analysis/projected_nonpilot_decoder.py",
+      "bytes": 5732,
+      "sha256": "7407c0dda1a5bdd55be2f182471c857dbff52f13da7d9df8ee929b0095466680"
+    },
+    {
+      "path": "analysis/projected_nonpilot_observations.npz",
+      "bytes": 697557,
+      "sha256": "28a26762a989238ceb6c75cde329edb86a3c51c37499d61bd34ce37a6548fb42"
+    },
+    {
+      "path": "analysis/projected_nonpilot_results.json",
+      "bytes": 7819,
+      "sha256": "939520a2f77691b7c31de654797801cf42b35f177f0125f8c398e2c1b68e302a"
+    },
+    {
+      "path": "analysis/projected_relative_signs.csv",
+      "bytes": 113758,
+      "sha256": "3b5627699ce5272729d9cd0c98431be370fe0fc02b43f6de05dfd24e4025144c"
+    },
+    {
+      "path": "analysis/publish_decode_progress.py",
+      "bytes": 5010,
+      "sha256": "0c8e07a43e985f68adccecfbe18aee54380415f35e8ae9be02f10462208041b4"
+    },
+    {
+      "path": "analysis/recover_cyclic_waveform.py",
+      "bytes": 5275,
+      "sha256": "63a1ca388f9ef5229319d88c14d3da8b2e1553a02d4398b6cb0be8ac90953f08"
+    },
+    {
+      "path": "analysis/recovered_cyclic_power.csv",
+      "bytes": 772976,
+      "sha256": "79d76168157e6b48823bbce56a2fe14de1e1032351805f8fc542a515fcbaec7c"
+    },
+    {
+      "path": "analysis/recovered_cyclic_waveform.json",
+      "bytes": 4293,
+      "sha256": "72988d99e0fa0e98272f3b6b6c9e6809021ee9ade34224af0b4466ef8418b41b"
+    },
+    {
+      "path": "analysis/recovered_cyclic_waveform.npz",
+      "bytes": 3848610,
+      "sha256": "ab89069c8483e9fb28e0e605a20c1cb4f92f077c1ff091807fab293a1c26d470"
+    },
+    {
+      "path": "analysis/reference/misaka_provenance.json",
+      "bytes": 330,
+      "sha256": "1ad2203b142c9182c2acdf142479f7d91273e44c2399691d1ce2cb37da06254a"
+    },
+    {
+      "path": "analysis/reference/misaka_README.md",
+      "bytes": 19716,
+      "sha256": "9f965025db7e50d9b7df1f6dcc4bcbeae3a0f761b5a494fa4ed5304a53267f94"
+    },
+    {
+      "path": "analysis/reference/qin/genPss.m",
+      "bytes": 964,
+      "sha256": "32c7a9a5844499e5f92dbd6503fdd0f2ebe178a1f6691313887f70b53e1d21b6"
+    },
+    {
+      "path": "analysis/reference/qin/genReferenceTemplate.m",
+      "bytes": 1837,
+      "sha256": "07965e1b49bae96f8fee74052f5eb7af017cc34b881c2cf6b51c31a6fe11fdda"
+    },
+    {
+      "path": "analysis/reference/qin/genSss.m",
+      "bytes": 1752,
+      "sha256": "b327682ef5adc9c2692c3a0332cd0a4c9a30bc262fad45824b770d9e3c2b5e3e"
+    },
+    {
+      "path": "analysis/reference/qin/GUIDE.txt",
+      "bytes": 6426,
+      "sha256": "c84db336c7b4a4866e64f1467d5c46c6b226fa360c329de0de3a621f32bb5b39"
+    },
+    {
+      "path": "analysis/reference/qin/LICENSE.txt",
+      "bytes": 2417,
+      "sha256": "2eac370ac8e59527726a0b3ee5493f9f1bc1ff1a941f2bb68a1b97230c009046"
+    },
+    {
+      "path": "analysis/reference/qin/referenceTemplate.mat",
+      "bytes": 99179,
+      "sha256": "ec77ad6f9a17c8b14451f7f3cea6114952d0ad3aca26b3eb8c0e9aec06b002cd"
+    },
+    {
+      "path": "analysis/reference/qin/sources.json",
+      "bytes": 3342,
+      "sha256": "6731d1b7c706fd61755cb4e9c267dc5e15c4ffaf788b1f3a7cfe205fff33ecba"
+    },
+    {
+      "path": "analysis/reference/qin/sssVec.mat",
+      "bytes": 1602,
+      "sha256": "d1e35826279baf0fc3e5a6fa3d34e5a83dd525956132ad9cecdb2af48450f982"
+    },
+    {
+      "path": "analysis/reference/Starlink_waterfall_v2.py",
+      "bytes": 7347,
+      "sha256": "74828f5a7adcf72cd1c99dd0ad9ab255f51591d5eda7bb86e1264cd1727eadee"
+    },
+    {
+      "path": "analysis/reference_waterfall.png",
+      "bytes": 717913,
+      "sha256": "1068edaa541cd521136b2795879797e74c629dda48f1d06d47b7da1aaaf9a94d"
+    },
+    {
+      "path": "analysis/refine_perframe_content.py",
+      "bytes": 2487,
+      "sha256": "ca4f1f82c34050d7aceb16bee89b048d8f6136fe32e17594a42ab3c5d0783e63"
+    },
+    {
+      "path": "analysis/refined_track.npz",
+      "bytes": 4693,
+      "sha256": "c1fe6f9a6d3d33c2d6daf22467962a6a8c7669cceaf5c8329d0f38458eccd200"
+    },
+    {
+      "path": "analysis/satellite_candidate_model_audit.json",
+      "bytes": 99109,
+      "sha256": "2118dcadf8c64a05b44732bd47489ebf9d92e4a7ed4005d83b4c4073158e5175"
+    },
+    {
+      "path": "analysis/satellite_identity_audit.json",
+      "bytes": 263057,
+      "sha256": "a97f4bd2e6378f759230a368e1ba10721fe1e0e9a1dfd343b6304a22e4eb9921"
+    },
+    {
+      "path": "analysis/satellite_identity_candidates.csv",
+      "bytes": 1711,
+      "sha256": "639d803ed92bf993960ff477c881a325d94b9c3b841f3a71cfe1151d3614715b"
+    },
+    {
+      "path": "analysis/sideband_phase_coupling.json",
+      "bytes": 4552,
+      "sha256": "43e0c5167315a932f15428ef860c3ccf43a163897995409e74660a4166867ed4"
+    },
+    {
+      "path": "analysis/sideband_phase_coupling_arrays.npz",
+      "bytes": 7972626,
+      "sha256": "02ace382ca94acce7968b020e11d619eaf4cfa36972ac1316ffe3b0507efb18f"
+    },
+    {
+      "path": "analysis/signal_content.png",
+      "bytes": 485966,
+      "sha256": "1f181cc1872c25358c92582902d365b4919e0d167c21c8cf1c117ba40722b91c"
+    },
+    {
+      "path": "analysis/signal_content.svg",
+      "bytes": 218967,
+      "sha256": "a19d292a72cb1e4368a6b05dbef244745a367ff1278df2dfaf681b103e9e21ec"
+    },
+    {
+      "path": "analysis/signal_content_extraction.json",
+      "bytes": 4657,
+      "sha256": "817c3f1ccdeca8453bcab1ce9ce9560617b6703e20d8bb4f641bf7419e24314d"
+    },
+    {
+      "path": "analysis/signal_content_summary.json",
+      "bytes": 1416,
+      "sha256": "0d8cef30625e755011547c9b3887d131481c1ac7f4579bdce1b7f0c8560cb9a9"
+    },
+    {
+      "path": "analysis/signal_event.png",
+      "bytes": 774426,
+      "sha256": "b65ae314aa07682aa24752ce382a172c46158c7f51b218f5d4a4b9a7de8e3838"
+    },
+    {
+      "path": "analysis/signal_event.svg",
+      "bytes": 371567,
+      "sha256": "610549e6b79bbd045ea3535438df4c5e291ecb698cca94a6876b1bc89f8a6ae2"
+    },
+    {
+      "path": "analysis/spectrum_data.npz",
+      "bytes": 9292302,
+      "sha256": "4f3a3e415de315a59d75481474e716fb311e1ecbfeaffa6a6ca825550945bedb"
+    },
+    {
+      "path": "analysis/subband_cyclic_structure.png",
+      "bytes": 287383,
+      "sha256": "1db8ddc3b73271c2ed12e3a6a6b681e69532ab8a35af3d4f569638e240021f30"
+    },
+    {
+      "path": "analysis/subband_cyclic_structure.svg",
+      "bytes": 344811,
+      "sha256": "fef727be9aee6603cccd73a8ad3bc6114b847b9533957470b1b906594d5784a1"
+    },
+    {
+      "path": "analysis/subband_cyclostationarity.json",
+      "bytes": 15397,
+      "sha256": "79d0a6cc0a4b673ad23ba0a59e91a5c281590939574090724881e8c29f829881"
+    },
+    {
+      "path": "analysis/subband_cyclostationarity_arrays.npz",
+      "bytes": 1056271,
+      "sha256": "8035b2c965891a0796b5d9fe0640445a842082763dbc40b2ab4cc0a3099a2b8a"
+    },
+    {
+      "path": "analysis/subband_cyclostationarity_dechirped.json",
+      "bytes": 15495,
+      "sha256": "41f3787f40f7e6e612f7fd28c07ae775f8c5bb3f6bf824d180cdebd9ca0d9e25"
+    },
+    {
+      "path": "analysis/subband_cyclostationarity_dechirped_arrays.npz",
+      "bytes": 1056458,
+      "sha256": "793a442cc6e1937ce5d8c239f089581c747850ed59bef1be51263c4297d3bccc"
+    },
+    {
+      "path": "analysis/summarize_cyclic_evidence.py",
+      "bytes": 4006,
+      "sha256": "ac0015527004ae0d5a78c57038d6be6f0827489a94332be63104422975bca680"
+    },
+    {
+      "path": "analysis/test_central_binary_regions.py",
+      "bytes": 3280,
+      "sha256": "a31003bb0d8d12c763e6cba5fc2b21aef0b24dd25224a729c97e1acc350b625f"
+    },
+    {
+      "path": "analysis/test_central_gutter_grid.py",
+      "bytes": 3538,
+      "sha256": "3e656a04fc7c444f305bba88678496d72ba1f293b917779dbfc0dca869bb3b56"
+    },
+    {
+      "path": "analysis/test_sideband_phase_coupling.py",
+      "bytes": 6441,
+      "sha256": "785490540a1ac94c663eb7d5482d69edaadcb2eb559e468ea2e0b2c12d22bc11"
+    },
+    {
+      "path": "analysis/test_wideband_drift_link.py",
+      "bytes": 3445,
+      "sha256": "a79c68795d552306dd27cf1ea867d0d8f2c47892e77a3ceebb018c1cd921935a"
+    },
+    {
+      "path": "analysis/transition_metrics.json",
+      "bytes": 535,
+      "sha256": "22539b70d19aee2e0fad829576bdb5c0d2f1d4a39cee32780bb21b7dbc7a23f6"
+    },
+    {
+      "path": "analysis/unknown_subcarrier_probe.json",
+      "bytes": 5592,
+      "sha256": "69bdb013579d77fdbc758fa23b1a18552b325c1c630355e86deac3f3c1b03534"
+    },
+    {
+      "path": "analysis/validate_central_narrowband_model.py",
+      "bytes": 3437,
+      "sha256": "162c06ae38449ea4091ac39b6624632191a32e31a083181b8df9f26f535fb479"
+    },
+    {
+      "path": "analysis/validate_cyclic_estimators.py",
+      "bytes": 3789,
+      "sha256": "5007af17e058f5a715ae62647efe0ea3a1d9bb538b96199dba899249f63d565b"
+    },
+    {
+      "path": "analysis/validate_projected_decoder.py",
+      "bytes": 3489,
+      "sha256": "8d04d29428bd9b94ad365a341f64b3f475cc4357e550791cdaec66b8cbadd669"
+    },
+    {
+      "path": "analysis/verify_known_pilots.py",
+      "bytes": 4556,
+      "sha256": "b2e8977bb3cfaceaa3cb57ef57c6cf8fa657b77b7b293aebbd9f263d45a97252"
+    },
+    {
+      "path": "analysis/waterfall_detail.png",
+      "bytes": 2268580,
+      "sha256": "95751a4c201d11012e6c6013b4f0a66c0d6d08db32bd1418c3104f80bf7ac78b"
+    },
+    {
+      "path": "analysis/waterfall_detail.svg",
+      "bytes": 1181984,
+      "sha256": "0299f2ffb80ac15ef7241dad92cad491dc2bc9fd6d17c5d8d5a51a3175017303"
+    },
+    {
+      "path": "analysis/waterfall_detail_data.npz",
+      "bytes": 101260207,
+      "sha256": "72469e32abed4fa13d3895cf54eb3fee41f71a28f18bb348f58d875def05905f"
+    },
+    {
+      "path": "analysis/waterfall_peaks.json",
+      "bytes": 18722,
+      "sha256": "0b58c1bec2259a90330d14beaf2760f38b8ca30f365418ce2f301bab53c0d11f"
+    },
+    {
+      "path": "analysis/wav_coherent_frame_probe.npz",
+      "bytes": 3047477,
+      "sha256": "2c90d2e3a74ea0bc5b29246e551ad785aa01955e252d71647c452a9ae42f741e"
+    },
+    {
+      "path": "analysis/wav_coherent_frame_probe.py",
+      "bytes": 4595,
+      "sha256": "5ad899cc055f80e38b62f5a60385f4f433699c12b448d82f6d68ee926b0fee53"
+    },
+    {
+      "path": "analysis/wav_coherent_frame_results.json",
+      "bytes": 923,
+      "sha256": "6b38540d3e96fbbde713060b8f275a2839f77c2c1cb38a6ef072b169f7ec68aa"
+    },
+    {
+      "path": "analysis/wav_frame_fold_probe.npz",
+      "bytes": 3009454,
+      "sha256": "d77fc1f93ce72b0cfd798cfeb0c31a1dd85ce2ebcd951ab876f0abbdf94bd795"
+    },
+    {
+      "path": "analysis/wav_frame_structure.npz",
+      "bytes": 3656015,
+      "sha256": "42d1947537d1240030a94b274ac20f3aea642de0ee5da255f7115d5b1e9152d9"
+    },
+    {
+      "path": "analysis/wav_noncoherent_sync_probe.py",
+      "bytes": 4728,
+      "sha256": "dbe9524f3bda7e9d0948209b0228b892f9511ed18d2823deb0f1dfa68d942c73"
+    },
+    {
+      "path": "analysis/wav_noncoherent_sync_profiles.npz",
+      "bytes": 1056314,
+      "sha256": "d220f3c7fdffa2d52b04fe757557089b8ae534ce9c562434fea545b5ffaead3a"
+    },
+    {
+      "path": "analysis/wav_noncoherent_sync_results.json",
+      "bytes": 3804,
+      "sha256": "e926666ade9afc36a3a95794d1311b8b579cc315e098260347676fed551572cc"
+    },
+    {
+      "path": "analysis/wav_pss_specificity_extended_profiles.npz",
+      "bytes": 6793444,
+      "sha256": "3f7361e8fecc1ad6d48fb2409a5303846b3411920bfafc36e3fe9a5a70e4db48"
+    },
+    {
+      "path": "analysis/wav_pss_specificity_extended_results.json",
+      "bytes": 23303,
+      "sha256": "0d3a74f7eb07a03fed11def189792ddb31a4ae607cbd20261150ae0dba02624c"
+    },
+    {
+      "path": "analysis/wav_pss_specificity_profiles.npz",
+      "bytes": 910540,
+      "sha256": "0b91499737bee0bcc62dacb896a5dfc10683447f7aea5b7012351e731e7e3897"
+    },
+    {
+      "path": "analysis/wav_pss_specificity_results.json",
+      "bytes": 3340,
+      "sha256": "450646c5f1278287a6f661b60603426c6b80da42a5b5926caa40005626f535f0"
+    },
+    {
+      "path": "analysis/wideband_drift_link.json",
+      "bytes": 2137,
+      "sha256": "ec40955f90e0214d24d53c0e198ca54e7e44d7048396766af7ca62941a093e67"
+    },
+    {
+      "path": "analysis/wideband_drift_link_arrays.npz",
+      "bytes": 24194,
+      "sha256": "780682c50a1981d0cceef69fd3ac610348d1e97eb90df5ddcaf4dbce24d25eed"
+    },
+    {
+      "path": "analysis/信标内容解析续查结果.txt",
+      "bytes": 5917,
+      "sha256": "7850582272d982a54b7b8c3b1a2f63c1da5d78d58690157370f15aa7700c21fa"
+    },
+    {
+      "path": "analysis/信标内容解析阶段结果.txt",
+      "bytes": 8053,
+      "sha256": "7a4aa505cbda973ccc99e8cf16cab62accb027c8c092aa11b1ff35513133974c"
+    },
+    {
+      "path": "analysis/分析报告.txt",
+      "bytes": 15334,
+      "sha256": "f50d79c3248e84502f8ea0bec89c399b37ab536224e989faa3ca15d2bc086b05"
+    },
+    {
+      "path": "analysis/分步解码进展.txt",
+      "bytes": 6373,
+      "sha256": "e69e672f73fcef0a15f66714249a360421ade70a20abae084524b5e5b04d96f3"
+    },
+    {
+      "path": "analysis/分频带循环结构与公式学习结果.txt",
+      "bytes": 8719,
+      "sha256": "ae054839acb0c7a36c497507024aae8908e72bf1e35684f7012b5c404c928a33"
+    },
+    {
+      "path": "analysis/卫星编号识别结果.txt",
+      "bytes": 5493,
+      "sha256": "22a9e71523cc6498bbca5c54e30a78da3dae3f7ce5b89b2f939a350ebf4b0733"
+    },
+    {
+      "path": "analysis/整体信号结构分析.txt",
+      "bytes": 5399,
+      "sha256": "426f2b58ef32818995de45389ae6e5eacb08bf0a2068fe179257d59b9d8c002a"
+    },
+    {
+      "path": "analysis/波形关联假设检验.txt",
+      "bytes": 5503,
+      "sha256": "2847e54e9f6805277eebaac954506435b5e1e936ca78fef0a7cc370a584174e1"
+    },
+    {
+      "path": "analysis/终止沿对齐检验.txt",
+      "bytes": 5062,
+      "sha256": "2dee839c4897e10bd1c80c24e995cd8e51b79e8e2dae4d52b798e07a0d5065f5"
+    },
+    {
+      "path": "USER_IQ.wav",
+      "bytes": 153111596,
+      "sha256": "af03914ea773bf2eaa2698dd674afa6ac6a5ecc9cb6a69f81350777ab5789041"
+    }
+  ]
+}

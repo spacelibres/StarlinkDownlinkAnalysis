@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E041",
+  "title": "原 WAV 两侧共同定时与公开模板复验",
+  "input": "E040 complex block folds and frozen phase reference; Qin PSS, SSS and pure-QPSK reference",
+  "scripts": ["audit_wav_joint_phase.py"],
+  "seed": 2026112141
+}

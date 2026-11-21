@@ -1,0 +1,15 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E009",
+  "title": "旧研究恢复与宽带实测头部对照",
+  "source_manifest": "provenance/legacy_research_import.json",
+  "input": "data/raw/legacy_wideband/Starlink_Downlink_IQ.npy",
+  "sample_rate_hz": 480000000,
+  "source_sample_count": 11520180,
+  "seed": 2026112009,
+  "resource_permutation_controls": 512,
+  "known_prefix": "0x3048, first16 uncoded bits; polarity only",
+  "scripts": ["collect_legacy_sources.py", "protocol_core.py", "replay_legacy_wideband.py"],
+  "gate": "Recompute all complete first headers from IQ; frozen CRC, exact archive comparison, re-encoding, null controls and full-grid PN equivalence",
+  "limitations": "Historical same-capture parameter selection; conditional replay only, not independent protocol discovery. User narrowband decoded-message count remains separate."
+}

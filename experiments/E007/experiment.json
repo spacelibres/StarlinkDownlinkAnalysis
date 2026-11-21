@@ -1,0 +1,33 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E007",
+  "title": "条件子载波提取与解码进展",
+  "status": "imported historical evidence; organization only",
+  "question": "条件模型能否提取中心载波；哪些未知区域仍不能解释？",
+  "inputs": "原 WAV、候选前缀与频率网格、跨组估计。",
+  "methods": "六载波复数提取、逐槽半子载波相位修正、结构与随机对照。",
+  "controls_and_limits": "保留 240 MHz 网格经滤波降采样的合成对照；没有本地未知比特/有效 CRC 头部。",
+  "dependencies": "依赖 E001/E005/E006；frame_candidates 只是候选片段。",
+  "scripts": [
+    "extract_central_ofdm_candidates.py",
+    "present_decode_progress.py",
+    "publish_decode_progress.py",
+    "test_central_binary_regions.py",
+    "validate_central_narrowband_model.py"
+  ],
+  "artifacts": [
+    "experiments/E007/results/central_binary_region_test.json",
+    "experiments/E007/results/central_narrowband_model_control.json",
+    "experiments/E007/results/central_ofdm_candidates.json",
+    "experiments/E007/results/central_ofdm_symbol_candidates.npz",
+    "experiments/E007/results/central_relative_patterns.csv",
+    "experiments/E007/figures/decode_progress.png",
+    "experiments/E007/figures/decode_progress.svg",
+    "experiments/E007/results/decode_progress_summary.json",
+    "experiments/E007/results/frame_candidate_catalog.csv"
+  ],
+  "parameters_and_seeds": "Retained in source/results; missing historical settings are not invented.",
+  "baseline_tag": "v0.0.1",
+  "provenance_manifest": "../../provenance/layout_manifest.json",
+  "reproducibility_limits": "Some historical results were produced interactively without standalone scripts. Classification is not a full independent rerun."
+}

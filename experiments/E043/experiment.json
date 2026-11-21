@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E043",
+  "title": "250 MS/s 录波的两组帧时轴与弱头部",
+  "input": "data/raw/ut_250msps/Starlink_Downlink_IQ_250MSps.bin",
+  "scripts": ["audit_ut_weak_frames.py"],
+  "seed": 2026112143
+}

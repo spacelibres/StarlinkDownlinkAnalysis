@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E035",
+  "title": "Qin 档案的新格式资源长度与 PN15 边界",
+  "input": "E034 Qin exemplar snapshots and validated header audit",
+  "scripts": ["audit_qin_lengths.py"],
+  "seed": 2026112135
+}

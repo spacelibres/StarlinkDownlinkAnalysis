@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E044",
+  "title": "偏移时轴的导频定时与共同首头部",
+  "input": "250 MS/s CI16 with E043 synchronization peaks and frozen E013 Code 5 checks",
+  "scripts": ["audit_ut_offset_grid_pilots.py"],
+  "seed": 2026112144
+}

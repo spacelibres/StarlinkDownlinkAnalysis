@@ -1,0 +1,289 @@
+{
+  "description": "Lossless CI16 export of retained original IQ snippets, not new acquisition or a continuous recording. Same physical windows occur in both source sets.",
+  "files": [
+    {
+      "file": "S05_iq_0_single_rx.ci16",
+      "sample_rate_hz": 2500000,
+      "sample_count": 50000,
+      "receiver_count": 1,
+      "duration_s": 0.02,
+      "dtype": "<i2",
+      "layout": [
+        "sample",
+        "receiver",
+        "component"
+      ],
+      "component_order": [
+        "I",
+        "Q"
+      ],
+      "bytes": 200000,
+      "sha256": "8a970a8821bd48bad7fb37190b88027595d5d1fcc45fec3d46470f8723a5dfcf",
+      "source_window_sha256_verified": false,
+      "source_npz": "../leo-tracker-reduxredux-main\\reports\\2026_10_18_dsx01_pilot_clock\\DSX01-S05\\selected_iq.npz",
+      "array_key": "iq_0",
+      "receiver_ids": [
+        0
+      ],
+      "context_time_s": 36.726974503,
+      "actual_rf_hz": 11459687500.0
+    },
+    {
+      "file": "S05_iq_1_single_rx.ci16",
+      "sample_rate_hz": 2500000,
+      "sample_count": 50000,
+      "receiver_count": 1,
+      "duration_s": 0.02,
+      "dtype": "<i2",
+      "layout": [
+        "sample",
+        "receiver",
+        "component"
+      ],
+      "component_order": [
+        "I",
+        "Q"
+      ],
+      "bytes": 200000,
+      "sha256": "f34c979ea33f1f36332b4a774c43d1db13af0e2f17bcc1a9abfa6a6cc40765c1",
+      "source_window_sha256_verified": false,
+      "source_npz": "../leo-tracker-reduxredux-main\\reports\\2026_10_18_dsx01_pilot_clock\\DSX01-S05\\selected_iq.npz",
+      "array_key": "iq_1",
+      "receiver_ids": [
+        0
+      ],
+      "context_time_s": 76.152545646,
+      "actual_rf_hz": 11459687500.0
+    },
+    {
+      "file": "S05_iq_2_single_rx.ci16",
+      "sample_rate_hz": 2500000,
+      "sample_count": 50000,
+      "receiver_count": 1,
+      "duration_s": 0.02,
+      "dtype": "<i2",
+      "layout": [
+        "sample",
+        "receiver",
+        "component"
+      ],
+      "component_order": [
+        "I",
+        "Q"
+      ],
+      "bytes": 200000,
+      "sha256": "db6249b083bd5713fc3902a662b3ceb4c4aeafbda7941ae8e8ac00e10a710af8",
+      "source_window_sha256_verified": false,
+      "source_npz": "../leo-tracker-reduxredux-main\\reports\\2026_10_18_dsx01_pilot_clock\\DSX01-S05\\selected_iq.npz",
+      "array_key": "iq_2",
+      "receiver_ids": [
+        0
+      ],
+      "context_time_s": 218.948991677,
+      "actual_rf_hz": 11709687500.0
+    },
+    {
+      "file": "S05_iq_3_single_rx.ci16",
+      "sample_rate_hz": 2500000,
+      "sample_count": 50000,
+      "receiver_count": 1,
+      "duration_s": 0.02,
+      "dtype": "<i2",
+      "layout": [
+        "sample",
+        "receiver",
+        "component"
+      ],
+      "component_order": [
+        "I",
+        "Q"
+      ],
+      "bytes": 200000,
+      "sha256": "c0ca519f49dcfa87f34310c91da2eb470656f81812bde025616fc04010572354",
+      "source_window_sha256_verified": false,
+      "source_npz": "../leo-tracker-reduxredux-main\\reports\\2026_10_18_dsx01_pilot_clock\\DSX01-S05\\selected_iq.npz",
+      "array_key": "iq_3",
+      "receiver_ids": [
+        0
+      ],
+      "context_time_s": 259.077703224,
+      "actual_rf_hz": 11709687500.0
+    },
+    {
+      "file": "S05_iq_4_single_rx.ci16",
+      "sample_rate_hz": 2500000,
+      "sample_count": 50000,
+      "receiver_count": 1,
+      "duration_s": 0.02,
+      "dtype": "<i2",
+      "layout": [
+        "sample",
+        "receiver",
+        "component"
+      ],
+      "component_order": [
+        "I",
+        "Q"
+      ],
+      "bytes": 200000,
+      "sha256": "ea84a3f160ea9a1323a90b9ed223fcf129e8fddc341f97730ddf8379d8ccdbaf",
+      "source_window_sha256_verified": false,
+      "source_npz": "../leo-tracker-reduxredux-main\\reports\\2026_10_18_dsx01_pilot_clock\\DSX01-S05\\selected_iq.npz",
+      "array_key": "iq_4",
+      "receiver_ids": [
+        1
+      ],
+      "context_time_s": 80.685883673,
+      "actual_rf_hz": 10959687500.0
+    },
+    {
+      "file": "S05_iq_5_single_rx.ci16",
+      "sample_rate_hz": 2500000,
+      "sample_count": 50000,
+      "receiver_count": 1,
+      "duration_s": 0.02,
+      "dtype": "<i2",
+      "layout": [
+        "sample",
+        "receiver",
+        "component"
+      ],
+      "component_order": [
+        "I",
+        "Q"
+      ],
+      "bytes": 200000,
+      "sha256": "58bd5ed309a9133824ef66c33138dc2c23b38ebb33124b79812323c6a73cd147",
+      "source_window_sha256_verified": false,
+      "source_npz": "../leo-tracker-reduxredux-main\\reports\\2026_10_18_dsx01_pilot_clock\\DSX01-S05\\selected_iq.npz",
+      "array_key": "iq_5",
+      "receiver_ids": [
+        1
+      ],
+      "context_time_s": 106.273778932,
+      "actual_rf_hz": 10959687500.0
+    },
+    {
+      "file": "S05_iq_6_single_rx.ci16",
+      "sample_rate_hz": 2500000,
+      "sample_count": 50000,
+      "receiver_count": 1,
+      "duration_s": 0.02,
+      "dtype": "<i2",
+      "layout": [
+        "sample",
+        "receiver",
+        "component"
+      ],
+      "component_order": [
+        "I",
+        "Q"
+      ],
+      "bytes": 200000,
+      "sha256": "0f8afff924c3c438d0b6726ecbbdd222202f2cb1dffc5ac702e8eda351e4924f",
+      "source_window_sha256_verified": false,
+      "source_npz": "../leo-tracker-reduxredux-main\\reports\\2026_10_18_dsx01_pilot_clock\\DSX01-S05\\selected_iq.npz",
+      "array_key": "iq_6",
+      "receiver_ids": [
+        1
+      ],
+      "context_time_s": 195.201316287,
+      "actual_rf_hz": 11959687500.0
+    },
+    {
+      "file": "S05_iq_7_single_rx.ci16",
+      "sample_rate_hz": 2500000,
+      "sample_count": 50000,
+      "receiver_count": 1,
+      "duration_s": 0.02,
+      "dtype": "<i2",
+      "layout": [
+        "sample",
+        "receiver",
+        "component"
+      ],
+      "component_order": [
+        "I",
+        "Q"
+      ],
+      "bytes": 200000,
+      "sha256": "ee255eb263f4f4edf1b1820467174a4efcbeed56f6c642b4d2ccec205db1b819",
+      "source_window_sha256_verified": false,
+      "source_npz": "../leo-tracker-reduxredux-main\\reports\\2026_10_18_dsx01_pilot_clock\\DSX01-S05\\selected_iq.npz",
+      "array_key": "iq_7",
+      "receiver_ids": [
+        1
+      ],
+      "context_time_s": 217.216029884,
+      "actual_rf_hz": 11959687500.0
+    },
+    {
+      "file": "paired_window_0_dual_rx.ci16",
+      "sample_rate_hz": 2500000,
+      "sample_count": 50000,
+      "receiver_count": 2,
+      "duration_s": 0.02,
+      "dtype": "<i2",
+      "layout": [
+        "sample",
+        "receiver",
+        "component"
+      ],
+      "component_order": [
+        "I",
+        "Q"
+      ],
+      "bytes": 400000,
+      "sha256": "e60d7d93c7251bb15a3d27c7b988454cf0956a75d314514defa7c8deb4ad2726",
+      "source_window_sha256_verified": true,
+      "source_npz": "../leo-tracker-reduxredux-main\\reports\\2026_10_18_dsx01_pilot_clock\\paired_RX\\selected_iq.npz",
+      "array_keys": [
+        "iq_0",
+        "iq_1"
+      ],
+      "receiver_ids": [
+        0,
+        1
+      ],
+      "context_time_s": [
+        36.726974503,
+        36.727086078
+      ],
+      "actual_rf_hz": 11459687500.0
+    },
+    {
+      "file": "paired_window_1_dual_rx.ci16",
+      "sample_rate_hz": 2500000,
+      "sample_count": 50000,
+      "receiver_count": 2,
+      "duration_s": 0.02,
+      "dtype": "<i2",
+      "layout": [
+        "sample",
+        "receiver",
+        "component"
+      ],
+      "component_order": [
+        "I",
+        "Q"
+      ],
+      "bytes": 400000,
+      "sha256": "b5af403964fd8484a94405354857f89bd6ade316c14a30c1c0e310593a452427",
+      "source_window_sha256_verified": true,
+      "source_npz": "../leo-tracker-reduxredux-main\\reports\\2026_10_18_dsx01_pilot_clock\\paired_RX\\selected_iq.npz",
+      "array_keys": [
+        "iq_2",
+        "iq_3"
+      ],
+      "receiver_ids": [
+        0,
+        1
+      ],
+      "context_time_s": [
+        76.152545646,
+        76.152545646
+      ],
+      "actual_rf_hz": 11459687500.0
+    }
+  ]
+}

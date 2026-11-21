@@ -1,0 +1,9 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E018",
+  "title": "图 12 冻结 QC 校验的多调制验证",
+  "input": "data/raw/legacy_wideband/Starlink_Downlink_IQ.npy",
+  "scripts": ["qc_figure_core.py", "validate_qc_figure.py"],
+  "source": "https://arxiv.org/pdf/2610.29387v2#page=17",
+  "limitations": "Published matrix transcription and one known capture. Whole-word complement may be unresolved. Code 27 and Code 39 each have one observed word."
+}

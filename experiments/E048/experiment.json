@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E048",
+  "title": "三类录波的残差预测与逐帧相位",
+  "input": "E041 aligned WAV spectra, E042 fixed period-15 model, E008 two NPZ frontends, E025 measured binary tail, Qin empirical reference",
+  "scripts": ["audit_residual_transfer.py"],
+  "seed": 2026112148
+}

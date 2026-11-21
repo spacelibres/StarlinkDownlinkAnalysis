@@ -1,0 +1,9 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E017",
+  "title": "Code 37 缩短编码和未知坐标验证",
+  "input": "data/raw/legacy_wideband/Starlink_Downlink_IQ.npy",
+  "scripts": ["code37_core.py", "validate_code37.py"],
+  "group_seed": 2026112017,
+  "limitations": "One previously studied capture. The shortening relation leaves a 384-bit segment and one spare label coordinate unexplained."
+}

@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E019",
+  "title": "Code 28 缩短编码与双分组恢复",
+  "input": "data/raw/legacy_wideband/Starlink_Downlink_IQ.npy",
+  "scripts": ["code28_core.py", "validate_code28.py", "audit_code28_boundaries.py"],
+  "group_seed": 2026112019
+}

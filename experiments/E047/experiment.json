@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E047",
+  "title": "多录波解码链审计",
+  "input": "Original WAV, both selected IQ NPZ files, both archived wideband captures and frozen H1/H2/Code 5 references",
+  "scripts": ["audit_cross_capture_decoding.py"],
+  "seed": null
+}

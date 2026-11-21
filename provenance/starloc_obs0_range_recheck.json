@@ -1,0 +1,32 @@
+{
+  "schema": "starlink-starloc-range-recheck/v1",
+  "alternate_endpoint": "https://zenodo.org/api/records/19043854/files/starloc_dataset_obs_0.zip/content",
+  "snapshot_sha256": "0cfd8ae97371bee852246567d00d0c083f18de0d8470bb901fbdb86b885c8b8b",
+  "checks": [
+    {
+      "start_seconds": 8,
+      "receiver": 0,
+      "content_range": "bytes 14261536779-14263136778/42362931803",
+      "sha256": "0b5c29d721ce48cc42148dd4ee1be46d18b84f8abc08ef79ecd8c4323e421fa1"
+    },
+    {
+      "start_seconds": 55,
+      "receiver": 1,
+      "content_range": "bytes 898839656-900439655/42362931803",
+      "sha256": "7d1e9f8e64165ea730b148c06e8321ae1d7d2664cee02e03897157dd020d1eee"
+    },
+    {
+      "start_seconds": 200,
+      "receiver": 2,
+      "content_range": "bytes 31448233902-31449833901/42362931803",
+      "sha256": "b883a8cb52dc6f719d3e44feeba75a443e8c624dbedc5c10b162d0c52f234e9f"
+    },
+    {
+      "start_seconds": 227,
+      "receiver": 0,
+      "content_range": "bytes 17765536779-17767136778/42362931803",
+      "sha256": "228474ed77a4c2b2970fe2e04ce0a71dc97393008339e0866154ab375ab1d394"
+    }
+  ],
+  "scope": "Storage path equality for cited sample ranges, not a second RF capture or a full member CRC."
+}

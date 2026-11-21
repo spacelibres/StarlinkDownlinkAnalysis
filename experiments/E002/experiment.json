@@ -1,0 +1,27 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E002",
+  "title": "数据清点与来源审计",
+  "status": "imported historical evidence; organization only",
+  "question": "两份选段和外部 NPZ 包含什么；CI16 导出是否可追溯？",
+  "inputs": "本地 selected IQ 快照；完整外部库未复制。",
+  "methods": "NPZ 清点、复数样点解释、CI16 导出、来源和早期编号审计。",
+  "controls_and_limits": "历史编号审计不是空口编号解码；全库清点仍依赖外部源。",
+  "dependencies": "完整清点依赖 STARLINK_EXTERNAL_LEO_ROOT。",
+  "scripts": [
+    "export_npz_iq.py",
+    "identify_satellite_audit.py",
+    "inventory_npz.py"
+  ],
+  "artifacts": [
+    "experiments/E002/results/npz_inventory.csv",
+    "experiments/E002/results/npz_inventory.json",
+    "experiments/E002/results/satellite_candidate_model_audit.json",
+    "experiments/E002/results/satellite_identity_audit.json",
+    "experiments/E002/results/satellite_identity_candidates.csv"
+  ],
+  "parameters_and_seeds": "Retained in source/results; missing historical settings are not invented.",
+  "baseline_tag": "v0.0.1",
+  "provenance_manifest": "../../provenance/layout_manifest.json",
+  "reproducibility_limits": "Some historical results were produced interactively without standalone scripts. Classification is not a full independent rerun."
+}

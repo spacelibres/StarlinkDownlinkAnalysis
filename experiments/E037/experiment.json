@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E037",
+  "title": "MCS 6 去扰字节结构与边缘载波误差",
+  "input": "E036 processed Qin archive decisions and PN15 model; E014 verified Code 5 from 250 MS/s IQ",
+  "scripts": ["audit_qin_mcs6_structure.py"],
+  "seed": 2026112136
+}

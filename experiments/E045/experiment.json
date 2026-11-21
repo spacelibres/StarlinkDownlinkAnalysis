@@ -1,0 +1,8 @@
+{
+  "schema": "starlink-experiment-record/v1",
+  "id": "E045",
+  "title": "偏移帧的 H2 起点与系统区重复",
+  "input": "E044 B-grid frame soft observations and E029 frozen PN15",
+  "scripts": ["audit_ut_offset_h2_systematics.py"],
+  "seed": 2026112145
+}

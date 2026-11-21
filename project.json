@@ -1,0 +1,648 @@
+{
+  "schema": "starlink-scientific-project/v1",
+  "name": "StarlinkBeacon",
+  "version_file": "VERSION",
+  "baseline_version": "0.0.0",
+  "experiments": [
+    {
+      "id": "E001",
+      "title": "基础录波、频谱与事件",
+      "directory": "experiments/E001"
+    },
+    {
+      "id": "E002",
+      "title": "数据清点与来源审计",
+      "directory": "experiments/E002"
+    },
+    {
+      "id": "E003",
+      "title": "导频与局部编码候选",
+      "directory": "experiments/E003"
+    },
+    {
+      "id": "E004",
+      "title": "全局分量和频漂关联",
+      "directory": "experiments/E004"
+    },
+    {
+      "id": "E005",
+      "title": "循环结构与周期波形",
+      "directory": "experiments/E005"
+    },
+    {
+      "id": "E006",
+      "title": "突发沿、同步和中心频率网格",
+      "directory": "experiments/E006"
+    },
+    {
+      "id": "E007",
+      "title": "条件子载波提取与解码进展",
+      "directory": "experiments/E007"
+    },
+    {
+      "id": "E008",
+      "title": "接收模型与未知信息独立检验",
+      "directory": "experiments/E008"
+    },
+    {
+      "id": "E009",
+      "title": "旧研究恢复与宽带实测头部对照",
+      "directory": "experiments/E009"
+    },
+    {
+      "id": "E010",
+      "title": "捕获边界与条件双头部资源布局",
+      "directory": "experiments/E010"
+    },
+    {
+      "id": "E011",
+      "title": "资源端点与字段可辨识性",
+      "directory": "experiments/E011"
+    },
+    {
+      "id": "E012",
+      "title": "Code5 系统校验关系与接收校正",
+      "directory": "experiments/E012"
+    },
+    {
+      "id": "E013",
+      "title": "稀疏完整校验阵与Code5软纠错",
+      "directory": "experiments/E013"
+    },
+    {
+      "id": "E014",
+      "title": "独立UT宽带捕获与冻结编码转移",
+      "directory": "experiments/E014"
+    },
+    {
+      "id": "E015",
+      "title": "Code 9 系统编码与整帧保留组验证",
+      "directory": "experiments/E015"
+    },
+    {
+      "id": "E016",
+      "title": "Code 21 多项式系统编码与 Code 9 转移检验",
+      "directory": "experiments/E016"
+    },
+    {
+      "id": "E017",
+      "title": "Code 37 缩短编码和未知坐标验证",
+      "directory": "experiments/E017"
+    },
+    {
+      "id": "E018",
+      "title": "图 12 冻结 QC 校验的多调制验证",
+      "directory": "experiments/E018"
+    },
+    {
+      "id": "E019",
+      "title": "Code 28 缩短编码与双分组恢复",
+      "directory": "experiments/E019"
+    },
+    {
+      "id": "E020",
+      "title": "Code 28 重根商环逐阶拟合",
+      "directory": "experiments/E020"
+    },
+    {
+      "id": "E021",
+      "title": "Code 28 接收修正与完整缩短关系复现",
+      "directory": "experiments/E021"
+    },
+    {
+      "id": "E022",
+      "title": "Code 28/37 未知中段的序列检验",
+      "directory": "experiments/E022"
+    },
+    {
+      "id": "E023",
+      "title": "Code 68 资源边界和任意标号方程",
+      "directory": "experiments/E023"
+    },
+    {
+      "id": "E024",
+      "title": "两份宽带参考与窄带第二头部可观测性",
+      "directory": "experiments/E024"
+    },
+    {
+      "id": "E025",
+      "title": "250 MS/s 二元尾段边界与 60 位周期",
+      "directory": "experiments/E025"
+    },
+    {
+      "id": "E026",
+      "title": "60 位尾段模板的窄带可辨识性与转移",
+      "directory": "experiments/E026"
+    },
+    {
+      "id": "E027",
+      "title": "原始 WAV 的 60 位模板及接收机对照",
+      "directory": "experiments/E027"
+    },
+    {
+      "id": "E028",
+      "title": "250 MS/s MCS 66 和 70 的编码审计",
+      "directory": "experiments/E028"
+    },
+    {
+      "id": "E029",
+      "title": "MCS 66 和 70 末字的 PN15 预测",
+      "directory": "experiments/E029"
+    },
+    {
+      "id": "E030",
+      "title": "交叉 32QAM 资源、PN15 与标号",
+      "directory": "experiments/E030"
+    },
+    {
+      "id": "E031",
+      "title": "去 PN15 后的非零 12 位重复结构",
+      "directory": "experiments/E031"
+    },
+    {
+      "id": "E032",
+      "title": "跨宽带 PN15 转移与 Code 68 候选边界",
+      "directory": "experiments/E032"
+    },
+    {
+      "id": "E033",
+      "title": "Code 68 准循环模型的精确秩与保留校验",
+      "directory": "experiments/E033"
+    },
+    {
+      "id": "E034",
+      "title": "Qin 档案的双头部与 Code 21 跨录波转移",
+      "directory": "experiments/E034"
+    },
+    {
+      "id": "E035",
+      "title": "Qin 档案的新格式资源长度与 PN15 边界",
+      "directory": "experiments/E035"
+    },
+    {
+      "id": "E036",
+      "title": "Qin 全档案清点与四种 PN15 边界",
+      "directory": "experiments/E036"
+    },
+    {
+      "id": "E037",
+      "title": "MCS 6 去扰字节结构与边缘载波误差",
+      "directory": "experiments/E037"
+    },
+    {
+      "id": "E038",
+      "title": "Code 5 到 MCS 6 的相位转移与扩展记录",
+      "directory": "experiments/E038"
+    },
+    {
+      "id": "E039",
+      "title": "MCS 6 折叠校验和锚前字段",
+      "directory": "experiments/E039"
+    },
+    {
+      "id": "E040",
+      "title": "原始 WAV 的两侧偏移谱线",
+      "directory": "experiments/E040"
+    },
+    {
+      "id": "E041",
+      "title": "原 WAV 两侧共同定时与公开模板复验",
+      "directory": "experiments/E041"
+    },
+    {
+      "id": "E042",
+      "title": "原始 WAV 的 15 槽模式与 60 位相对序列",
+      "directory": "experiments/E042"
+    },
+    {
+      "id": "E043",
+      "title": "250 MS/s 录波的两组帧时轴与弱头部",
+      "directory": "experiments/E043"
+    },
+    {
+      "id": "E044",
+      "title": "偏移时轴的导频定时与共同首头部",
+      "directory": "experiments/E044"
+    },
+    {
+      "id": "E045",
+      "title": "偏移帧的 H2 起点与系统区重复",
+      "directory": "experiments/E045"
+    },
+    {
+      "id": "E046",
+      "title": "偏移帧 Code 5 留出校验位",
+      "directory": "experiments/E046"
+    },
+    {
+      "id": "E047",
+      "title": "多录波解码链审计",
+      "directory": "experiments/E047"
+    },
+    {
+      "id": "E048",
+      "title": "三类录波的残差预测与逐帧相位",
+      "directory": "experiments/E048"
+    },
+    {
+      "id": "E049",
+      "title": "统一解析参考后的 60 位序列族",
+      "directory": "experiments/E049"
+    },
+    {
+      "id": "E050",
+      "title": "帧内分配次序与实际星座跳变",
+      "directory": "experiments/E050"
+    },
+    {
+      "id": "E051",
+      "title": "宽带同星座分配边界的 PN15 盲定位",
+      "directory": "experiments/E051"
+    },
+    {
+      "id": "E052",
+      "title": "MCS 85 系统区的跨码字记录与长度",
+      "directory": "experiments/E052"
+    },
+    {
+      "id": "E053",
+      "title": "MCS 85 计数候选与公开帧格式",
+      "directory": "experiments/E053"
+    },
+    {
+      "id": "E054",
+      "title": "StarLoc 三路窄带的九音与帧周期对照",
+      "directory": "experiments/E054"
+    },
+    {
+      "id": "E055",
+      "title": "LEO Tracker 原工程数据与双路频漂复核",
+      "directory": "experiments/E055"
+    },
+    {
+      "id": "E056",
+      "title": "LEO Tracker 频偏分支的符号内验证",
+      "directory": "experiments/E056"
+    },
+    {
+      "id": "E057",
+      "title": "LEO 双接收机的逐符号预测",
+      "directory": "experiments/E057"
+    },
+    {
+      "id": "E058",
+      "title": "H1/H2 卷积码的留出输出验证",
+      "directory": "experiments/E058"
+    },
+    {
+      "id": "E059",
+      "title": "双时轴循环前缀差分与导频预测",
+      "directory": "experiments/E059"
+    },
+    {
+      "id": "E060",
+      "title": "高阶载荷的准循环常数投影软判",
+      "directory": "experiments/E060"
+    },
+    {
+      "id": "E061",
+      "title": "原 IQ 槽内调制与硬判档案对照",
+      "directory": "experiments/E061"
+    },
+    {
+      "id": "E062",
+      "title": "Code 21 的留出校验与单符号纠正",
+      "directory": "experiments/E062"
+    },
+    {
+      "id": "E063",
+      "title": "前段 Code 5 对后段 Code 21 的边缘相位校准",
+      "directory": "experiments/E063"
+    },
+    {
+      "id": "E064",
+      "title": "LEO Tracker 导频相位的整块留出检验",
+      "directory": "experiments/E064"
+    },
+    {
+      "id": "E065",
+      "title": "LEO 非导频时域模板与双路相位转移",
+      "directory": "experiments/E065"
+    },
+    {
+      "id": "E066",
+      "title": "双路 LEO 重复字的无参考估计",
+      "directory": "experiments/E066"
+    },
+    {
+      "id": "E067",
+      "title": "全档案尾段相位与头部分配",
+      "directory": "experiments/E067"
+    },
+    {
+      "id": "E068",
+      "title": "H2 描述符布局与资源长度可辨识性",
+      "directory": "experiments/E068"
+    },
+    {
+      "id": "E069",
+      "title": "同星座分配内的 PN15 顺序证据",
+      "directory": "experiments/E069"
+    },
+    {
+      "id": "E070",
+      "title": "PN15 填充的末字分布与字节对齐",
+      "directory": "experiments/E070"
+    },
+    {
+      "id": "E071",
+      "title": "LEO 配对录波档案与 +511 标称覆盖",
+      "directory": "experiments/E071"
+    },
+    {
+      "id": "E072",
+      "title": "LEO 上边缘数字限带与帧内相位转移",
+      "directory": "experiments/E072"
+    },
+    {
+      "id": "E073",
+      "title": "PN15 系统位的纠错编码顺序",
+      "directory": "experiments/E073"
+    },
+    {
+      "id": "E074",
+      "title": "高阶后段预测与跨档案组近重复",
+      "directory": "experiments/E074"
+    },
+    {
+      "id": "E075",
+      "title": "高阶近重复帧的幅度量化擦除与软判恢复",
+      "directory": "experiments/E075"
+    },
+    {
+      "id": "E076",
+      "title": "三重观测合并与 Code 5 擦除校验",
+      "directory": "experiments/E076"
+    },
+    {
+      "id": "E077",
+      "title": "高阶密集折叠关系与实际灵敏度",
+      "directory": "experiments/E077"
+    },
+    {
+      "id": "E078",
+      "title": "Code 5 字节偏移与可选短记录",
+      "directory": "experiments/E078"
+    },
+    {
+      "id": "E079",
+      "title": "Code 5 帧序、离轴帧与 LEO 频窗可辨识性",
+      "directory": "experiments/E079"
+    },
+    {
+      "id": "E080",
+      "title": "Code 5 档案首字恢复与重复内容验证",
+      "directory": "experiments/E080"
+    },
+    {
+      "id": "E081",
+      "title": "首字复增益转移与高阶星座观测恢复",
+      "directory": "experiments/E081"
+    },
+    {
+      "id": "E082",
+      "title": "高阶增益校正后的折叠与稀疏校验检验",
+      "directory": "experiments/E082"
+    },
+    {
+      "id": "E083",
+      "title": "MCS 66 系统区参与项、部分校验矩阵和单擦除补值",
+      "directory": "experiments/E083"
+    },
+    {
+      "id": "E084",
+      "title": "MCS 66 新增独立校验、PN 等价解与扩展擦除对照",
+      "directory": "experiments/E084"
+    },
+    {
+      "id": "E085",
+      "title": "MCS 66 窄相位窗第五族校验和擦除对照",
+      "directory": "experiments/E085"
+    },
+    {
+      "id": "E086",
+      "title": "LEO DS7 的 60 位重复字跨录波验证",
+      "directory": "experiments/E086"
+    },
+    {
+      "id": "E087",
+      "title": "LEO 窄带早期符号与宽带 Code 5 坐标交叉验证",
+      "directory": "experiments/E087"
+    },
+    {
+      "id": "E088",
+      "title": "MCS 66 部分软译码的实测 PN 和重复字对照",
+      "directory": "experiments/E088"
+    },
+    {
+      "id": "E089",
+      "title": "LEO 分数样点定时、跨帧导频响应和非导频预测",
+      "directory": "experiments/E089"
+    },
+    {
+      "id": "E090",
+      "title": "原始 WAV 两侧相干模板与细线的终止辨识",
+      "directory": "experiments/E090"
+    },
+    {
+      "id": "E091",
+      "title": "Code 5 目录 CRC24 和首条记录跨度",
+      "directory": "experiments/E091"
+    },
+    {
+      "id": "E092",
+      "title": "Code 5 时变位段、离轴时间与窄带 CRC 可辨识性",
+      "directory": "experiments/E092"
+    },
+    {
+      "id": "E093",
+      "title": "LEO 上边缘重复位假设与 Code 5",
+      "directory": "experiments/E093"
+    },
+    {
+      "id": "E094",
+      "title": "Code 5 地固位置与速度",
+      "directory": "experiments/E094"
+    },
+    {
+      "id": "E095",
+      "title": "Code 5 GPS 时间标记与同期轨道",
+      "directory": "experiments/E095"
+    },
+    {
+      "id": "E096",
+      "title": "Code 5 空口卫星编号与历史目录排名",
+      "directory": "experiments/E096"
+    },
+    {
+      "id": "E097",
+      "title": "Code 5 冗余帧时钟及 LEO 窄带重建",
+      "directory": "experiments/E097"
+    },
+    {
+      "id": "E098",
+      "title": "限带实测 IQ 捕获与 Code 5 帧时钟恢复",
+      "directory": "experiments/E098"
+    },
+    {
+      "id": "E099",
+      "title": "LEO 原工程输入索引与留出导频档案复算",
+      "directory": "experiments/E099"
+    },
+    {
+      "id": "E100",
+      "title": "Code 5 多记录目录、分配终点与 LEO 频窗投影",
+      "directory": "experiments/E100"
+    },
+    {
+      "id": "E101",
+      "title": "Code 5 后续记录的嵌套长度、帧计数及跨帧配对",
+      "directory": "experiments/E101"
+    },
+    {
+      "id": "E102",
+      "title": "25 MS/s 限带 IQ 中搜索 Code 5 后续记录帧计数",
+      "directory": "experiments/E102"
+    },
+    {
+      "id": "E103",
+      "title": "MCS 6 的跨格式目录 CRC24、描述项与边缘擦除",
+      "directory": "experiments/E103"
+    },
+    {
+      "id": "E104",
+      "title": "MCS 6 记录长度、跨码字边界及零填充",
+      "directory": "experiments/E104"
+    },
+    {
+      "id": "E105",
+      "title": "MCS 6 目录到后续分配的长度转移及记录头验证",
+      "directory": "experiments/E105"
+    },
+    {
+      "id": "E106",
+      "title": "LEO 上边缘跨导频残余相位检验",
+      "directory": "experiments/E106"
+    },
+    {
+      "id": "E107",
+      "title": "LEO 原生 25 MS/s 实测频偏、时钟通带与锚位擦除",
+      "directory": "experiments/E107"
+    },
+    {
+      "id": "E108",
+      "title": "LEO 双路原始 IQ 的盲重复字拟合与跨接收机留出",
+      "directory": "experiments/E108"
+    },
+    {
+      "id": "E109",
+      "title": "250 MS/s 弱时间轴的 H2 及后续分配实收验证",
+      "directory": "experiments/E109"
+    },
+    {
+      "id": "E110",
+      "title": "250 MS/s 偏移帧的全体区填充扫描与由体区约束 H2",
+      "directory": "experiments/E110"
+    },
+    {
+      "id": "E111",
+      "title": "弱帧 PN15 起点与 MCS 66 校验转移",
+      "directory": "experiments/E111"
+    },
+    {
+      "id": "E112",
+      "title": "原 WAV 终止前后重新捕获 60 位重复族",
+      "directory": "experiments/E112"
+    },
+    {
+      "id": "E113",
+      "title": "原 WAV 周期位置 34 的相反极性与零振幅检验",
+      "directory": "experiments/E113"
+    },
+    {
+      "id": "E114",
+      "title": "原 WAV 逐帧相对符号与跨频点留出预测",
+      "directory": "experiments/E114"
+    },
+    {
+      "id": "E115",
+      "title": "LEO 双路原始 IQ 的 WAV 三位置对应与整块留出",
+      "directory": "experiments/E115"
+    },
+    {
+      "id": "E116",
+      "title": "原 WAV 整字逐帧移位与三位置变化的分频留出",
+      "directory": "experiments/E116"
+    },
+    {
+      "id": "E117",
+      "title": "原 WAV 重复尾段起始范围与宽带分配相位碰撞",
+      "directory": "experiments/E117"
+    },
+    {
+      "id": "E118",
+      "title": "弱偏移时间轴的留出尾相位与 H2 分配约束",
+      "directory": "experiments/E118"
+    },
+    {
+      "id": "E119",
+      "title": "弱帧资源级尾段边界及第 14 时隙双分配头部",
+      "directory": "experiments/E119"
+    },
+    {
+      "id": "E120",
+      "title": "MCS 70 的部分准循环校验、擦除推断及弱帧转移",
+      "directory": "experiments/E120"
+    },
+    {
+      "id": "E121",
+      "title": "LEO DS9 双接收机重复字与宽带模板的逐窗口交叉验证",
+      "directory": "experiments/E121"
+    },
+    {
+      "id": "E122",
+      "title": "MCS 66/85 和 70/88 的跨调制校验与位序复验",
+      "directory": "experiments/E122"
+    },
+    {
+      "id": "E123",
+      "title": "交叉 32QAM 第 16,385 位、独立取整与同波形复验",
+      "directory": "experiments/E123"
+    },
+    {
+      "id": "E124",
+      "title": "MCS 85 全档案记录间距、候选标签与计数检验",
+      "directory": "experiments/E124"
+    },
+    {
+      "id": "E125",
+      "title": "交叉 32QAM 部分软译码、记录验证与计数进位",
+      "directory": "experiments/E125"
+    },
+    {
+      "id": "E126",
+      "title": "MCS 85 四字节定位与独立记录边界",
+      "directory": "experiments/E126"
+    },
+    {
+      "id": "E127",
+      "title": "跨码率系统位对齐与 MCS 66/85 第六族校验",
+      "directory": "experiments/E127"
+    },
+    {
+      "id": "E128",
+      "title": "MCS 66/85 完整等价校验矩阵与奇偶符号留出重编码",
+      "directory": "experiments/E128"
+    }
+  ]
+}
