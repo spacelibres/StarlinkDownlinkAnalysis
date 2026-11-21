@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.0.2] - 2026-11-22
+
+### Purpose
+- Make the current manuscript with the stone byline discoverable from the public project home page.
+
+### Changes
+- Point the README to the exact PDF release asset and its release page. Label the existing editable drafts as earlier versions.
+
+### Scientific record
+- The release mirrors the local v0.0.153 PDF byte for byte. Its SHA-256 is 9482f58fb20a6a8a97f9895f755921d2935567efbe54f56a00bd0968710d1568.
+
+### Validation
+- All 13 data-independent tests passed, the staged snapshot was checked, and the public PDF matched the signed local master on download.
+
+### Limitations
+- The published PDF is an interim manuscript. The public code snapshot preserves its existing evidence scope.
+
 ## [0.0.1] - 2026-11-21
 
 ### Purpose
