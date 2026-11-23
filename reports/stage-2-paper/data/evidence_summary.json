@@ -1,0 +1,638 @@
+{
+  "schema": "starlink-stage-2-paper-evidence/v1",
+  "palette": {
+    "primary": "#007BFF",
+    "secondary": "#FF3733",
+    "accent": "#F4F764",
+    "deep": "#0D1721",
+    "surface": "#F1F5F9",
+    "ink": "#122A44",
+    "card": "#FCFDFE",
+    "muted": "#627180",
+    "line": "#C9D0D8",
+    "success": "#176E55",
+    "warning": "#845A0B",
+    "danger": "#C01C34",
+    "primaryOnLight": "#006CE0",
+    "primaryOnDark": "#007BFF",
+    "planetOnLight": "#E00400",
+    "planetOnDark": "#FF3733"
+  },
+  "data": {
+    "captures": {
+      "qin": 1009,
+      "legacy480": 18,
+      "ut250": 10
+    },
+    "codes": {
+      "full_length": 12,
+      "shortened": 2,
+      "shared_partial": 4,
+      "other_partial": 1,
+      "unresolved": 6
+    },
+    "application_messages": 0,
+    "full": {
+      "stages": [
+        {
+          "experiment": "E229",
+          "words": 39415,
+          "closed": 2146
+        },
+        {
+          "experiment": "E240",
+          "words": 39498,
+          "closed": 2194,
+          "new_words": 83
+        },
+        {
+          "experiment": "E241",
+          "words": 39720,
+          "closed": 2214,
+          "new_words": 222
+        },
+        {
+          "experiment": "E242",
+          "words": 40220,
+          "closed": 2284,
+          "new_words": 500
+        },
+        {
+          "experiment": "E243",
+          "words": 40361,
+          "closed": 2284,
+          "new_words": 141
+        },
+        {
+          "experiment": "E244",
+          "words": 41169,
+          "closed": 2361,
+          "new_words": 808
+        }
+      ],
+      "word_denominator": 43040,
+      "allocation_denominator": 2635,
+      "formats": [
+        66,
+        70,
+        85,
+        88
+      ]
+    },
+    "partial": {
+      "formats": [
+        {
+          "mcs": 71,
+          "before": 836,
+          "added": 290,
+          "total": 1415
+        },
+        {
+          "mcs": 75,
+          "before": 333,
+          "added": 79,
+          "total": 563
+        },
+        {
+          "mcs": 78,
+          "before": 346,
+          "added": 144,
+          "total": 609
+        },
+        {
+          "mcs": 81,
+          "before": 133,
+          "added": 23,
+          "total": 205
+        }
+      ],
+      "allocation_denominator": 952,
+      "closed_before": 586,
+      "newly_closed": 177,
+      "high_parity_start": 12288,
+      "systematic_ends": {
+        "71": 10752,
+        "75": 11008,
+        "78": 11520,
+        "81": 11776
+      },
+      "arm_outcomes": {
+        "gain_only+combined": 458,
+        "combined": 77,
+        "neither": 608,
+        "gain_only": 1
+      }
+    },
+    "mcs57_receiver": {
+      "scorable_fragments": 1215,
+      "qam_support": 1210,
+      "pn222": {
+        "bits": 26624,
+        "archive_hard": 226,
+        "slot_soft": 324,
+        "mixture": 229
+      },
+      "pn245": {
+        "pn_common_bits": 237930,
+        "pn_errors": 612,
+        "pn_baseline_errors": 651
+      },
+      "crc24": {
+        "E178": 4,
+        "E234_new": 33,
+        "E245_new": 8
+      }
+    },
+    "mcs57_repeat": {
+      "routes": [
+        {
+          "route": "one_donor",
+          "targets": 211,
+          "donor_candidate_bits": 1104,
+          "native_corroborated_bits": 660,
+          "native_opposed_bits": 42,
+          "compared": 419869,
+          "nominal_disagreements": 266,
+          "permuted_disagreements": 211021
+        },
+        {
+          "route": "two_donors",
+          "targets": 75,
+          "donor_candidate_bits": 622,
+          "native_corroborated_bits": 485,
+          "native_opposed_bits": 11,
+          "compared": 142974,
+          "nominal_disagreements": 33,
+          "permuted_disagreements": 71133
+        }
+      ],
+      "inventory": {
+        "all_nonterminal_windows": 13843,
+        "qualified_pairs": 181,
+        "waveform_pairs": 181,
+        "waveform_pairs_passing_both_directions": 181,
+        "passes_at_new_coordinates": 219,
+        "passes_across_archive_groups": 0,
+        "complete_candidate_words": 0
+      },
+      "minimum_residual_erasures": 8
+    },
+    "aligned": {
+      "block_bits": 512,
+      "scope_counts": {
+        "high_verified": 28,
+        "low_no_observation": 70,
+        "low_rank_deficient": 17,
+        "low_inconsistent": 11
+      },
+      "low": [
+        {
+          "fold": 1,
+          "rank": 0,
+          "features": 24,
+          "contradictions": 0,
+          "calibration_rows": 0,
+          "holdout_rows": 0
+        },
+        {
+          "fold": 2,
+          "rank": 0,
+          "features": 47,
+          "contradictions": 0,
+          "calibration_rows": 0,
+          "holdout_rows": 0
+        },
+        {
+          "fold": 4,
+          "rank": 0,
+          "features": 93,
+          "contradictions": 0,
+          "calibration_rows": 0,
+          "holdout_rows": 0
+        },
+        {
+          "fold": 8,
+          "rank": 0,
+          "features": 185,
+          "contradictions": 0,
+          "calibration_rows": 0,
+          "holdout_rows": 0
+        },
+        {
+          "fold": 16,
+          "rank": 24,
+          "features": 369,
+          "contradictions": 0,
+          "calibration_rows": 25,
+          "holdout_rows": 19
+        },
+        {
+          "fold": 32,
+          "rank": 737,
+          "features": 737,
+          "contradictions": 80,
+          "calibration_rows": 906,
+          "holdout_rows": 1049
+        },
+        {
+          "fold": 64,
+          "rank": 1473,
+          "features": 1473,
+          "contradictions": 4370,
+          "calibration_rows": 10084,
+          "holdout_rows": 12034
+        }
+      ],
+      "high": [
+        {
+          "fold": 1,
+          "tested": 4,
+          "full_rank": 4,
+          "contradictions": 0,
+          "holdout_errors": 0,
+          "holdout_rows": 1080
+        },
+        {
+          "fold": 2,
+          "tested": 4,
+          "full_rank": 4,
+          "contradictions": 0,
+          "holdout_errors": 0,
+          "holdout_rows": 2160
+        },
+        {
+          "fold": 4,
+          "tested": 4,
+          "full_rank": 4,
+          "contradictions": 0,
+          "holdout_errors": 0,
+          "holdout_rows": 4320
+        },
+        {
+          "fold": 8,
+          "tested": 4,
+          "full_rank": 4,
+          "contradictions": 0,
+          "holdout_errors": 0,
+          "holdout_rows": 8640
+        },
+        {
+          "fold": 16,
+          "tested": 4,
+          "full_rank": 4,
+          "contradictions": 0,
+          "holdout_errors": 0,
+          "holdout_rows": 17280
+        },
+        {
+          "fold": 32,
+          "tested": 4,
+          "full_rank": 4,
+          "contradictions": 0,
+          "holdout_errors": 0,
+          "holdout_rows": 34560
+        },
+        {
+          "fold": 64,
+          "tested": 4,
+          "full_rank": 4,
+          "contradictions": 0,
+          "holdout_errors": 0,
+          "holdout_rows": 69120
+        }
+      ]
+    },
+    "headers": {
+      "ut_events": 51,
+      "h1_accepted": 37,
+      "h2_accepted": 26,
+      "weak_h2": [
+        {
+          "event_ms": 15.425910371341924,
+          "allocations": [
+            [
+              70,
+              40
+            ],
+            [
+              92,
+              1
+            ]
+          ],
+          "tail_interval_resources": [
+            175705,
+            175765
+          ]
+        },
+        {
+          "event_ms": 19.42585403771233,
+          "allocations": [
+            [
+              70,
+              43
+            ],
+            [
+              78,
+              1
+            ]
+          ],
+          "tail_interval_resources": [
+            188053,
+            188113
+          ]
+        },
+        {
+          "event_ms": 26.092421070648335,
+          "allocations": [
+            [
+              70,
+              3
+            ],
+            [
+              85,
+              41
+            ]
+          ],
+          "tail_interval_resources": [
+            155293,
+            155353
+          ]
+        }
+      ],
+      "weak_crc": {
+        "event_ms": 19.425854,
+        "hex": "EC",
+        "selected": 24,
+        "comparisons": 24,
+        "control_matches": 0,
+        "control_comparisons": 216,
+        "partition_agreement": false
+      },
+      "leo": {
+        "headers": 1009,
+        "at_least_one_visible_symbol": 175,
+        "descriptor_rank_histogram": {
+          "0": 922,
+          "3": 23,
+          "4": 11,
+          "5": 53
+        },
+        "unique_descriptors": 0
+      }
+    },
+    "vhf": {
+      "channel_hz": 137055000,
+      "packets": 2,
+      "measurement_hz": -3523.916595102509,
+      "models": {
+        "gps_j2": {
+          "predicted_differential_hz": -3524.9990955695484,
+          "observed_minus_predicted_hz": 1.0825004670396083
+        },
+        "gps_spherical": {
+          "predicted_differential_hz": -3524.8610388286443,
+          "observed_minus_predicted_hz": 0.9444437261354324
+        },
+        "unix_j2": {
+          "predicted_differential_hz": -2888.223893216478,
+          "observed_minus_predicted_hz": -635.692701886031
+        },
+        "gps_inertial_velocity_components": {
+          "predicted_differential_hz": -3454.9206376698944,
+          "observed_minus_predicted_hz": -68.99595743261443
+        }
+      },
+      "alternate_gps_j2_residual_hz": 1.108884106082769,
+      "split_preamble_residuals_hz": [
+        -3.5110375961444333,
+        6.3811578750874105,
+        -3.487659619180249,
+        6.391797454883545
+      ],
+      "raw_window_sha256s": [
+        "03158f246b565be5dfcc9ab91dacd794f47e816ebeb9e35f56594ab268663d2c",
+        "49192b6779fb8b594cac65085724666fd450fa8dbda7185c3b3a87909ecf5efb"
+      ]
+    }
+  },
+  "denominator_notes": {
+    "capture": "Counts are per inventory. Qin and UT 250 MS/s share part of a capture. The MCS classes partition 25 observed labels. Application messages count verified semantics.",
+    "full": "Fixed E229 denominators for Qin MCS 66/70/85/88 after measured frame-end closure. E240 has two consecutive runs contributing 7 and 76 distinct new words. First allocation closures from the experiment reports.",
+    "partial": "MCS denominators from E230 inventories. E247 additions exclude existing positive controls. Allocation closure concerns the systematic bytes.",
+    "pipeline": "Three decoder branches use only the permanent mask, or that mask plus either of two disjoint whole-symbol sets. Gain-only and gain-plus-variance are separate estimation arms. Low-address parity contributes no decoder prior.",
+    "mcs57_receiver": "PN15 comparisons use separately selected common received bits per experiment. CRC24 totals count unique coordinates, with four E178 directories and a two-coordinate overlap with the 35 directly read in E234. The E245 report deduplicates eight additional coordinates.",
+    "mcs57_repeat": "Compared bits overlap on whole-symbol holdout per target. Native support and opposition count prior six-view erasures where two target low-margin branches agree. Donor and target share an archive group.",
+    "aligned": "One high control per MCS and fold. High rows count whole-group holdout equations. Low rank and contradictions are from calibration. The 98 low-address models count all tested alignments and windows.",
+    "headers": "The 51-event denominator merges 24 and 28 synchronized events with one overlap. E218 weak events have information and body-boundary support with unresolved CRC. LEO paired 2.5 MS/s results project 1,009 Qin H2 references conditionally. Ranks measure descriptor constraints.",
+    "vhf": "Residual is observed minus predicted differential frequency. Split-preamble limits span two disjoint preamble halves under two downconversions. All estimates derive from the same pair of recorded packets. The span is descriptive."
+  },
+  "sources_by_section": {
+    "capture": [
+      "evidence_map",
+      "E174_qin",
+      "E174_legacy480",
+      "E174_ut250"
+    ],
+    "full": [
+      "E229",
+      "E240_first",
+      "E240",
+      "E240_report",
+      "E241",
+      "E241_report",
+      "E242",
+      "E242_report",
+      "E243",
+      "E243_report",
+      "E244",
+      "E244_report"
+    ],
+    "partial": [
+      "E230",
+      "E247"
+    ],
+    "pipeline": [
+      "E247_method",
+      "E230",
+      "E247"
+    ],
+    "mcs57_receiver": [
+      "E222",
+      "E222_report",
+      "E234",
+      "E234_report",
+      "E245",
+      "E245_report"
+    ],
+    "mcs57_repeat": [
+      "E246"
+    ],
+    "aligned": [
+      "E248"
+    ],
+    "headers": [
+      "E215",
+      "E216",
+      "E236",
+      "E236_report",
+      "evidence_map",
+      "E218",
+      "E220"
+    ],
+    "vhf": [
+      "E206",
+      "E237",
+      "E237_report"
+    ]
+  },
+  "sources": {
+    "palette": {
+      "path": "references/visual_identity/assets/palette-tokens.json",
+      "sha256": "84fd3783077719b9a7cc1975ecefdbbac5f7b665475a29254ae072f26bb6e6c1"
+    },
+    "evidence_map": {
+      "path": "docs/DECODE_MAP.md",
+      "sha256": "6b0880b0e0789285336e49f1117afcdae736d20b58e7400e50f077ab522b0b6c"
+    },
+    "E174_qin": {
+      "path": "runs/v181-code5-json-v2/artifacts/experiments/E174/results/qin_control_records.v2.json",
+      "sha256": "e10e65f13a763922a170837ad25ed0b6f1fc9a8399429f0135fa77abda8f14b0"
+    },
+    "E174_legacy480": {
+      "path": "runs/v181-code5-json-v2/artifacts/experiments/E174/results/legacy480_control_records.v2.json",
+      "sha256": "47cdcaebb6a6da37dae239c0fef275def7361a4419c5275a3cae51eb156c7a2e"
+    },
+    "E174_ut250": {
+      "path": "runs/v181-code5-json-v2/artifacts/experiments/E174/results/ut250_control_records.v2.json",
+      "sha256": "7f8e45a8ccc904d48ad63a517e92a063d166cc4f3f39f0b4c87da9376274eb6a"
+    },
+    "E229": {
+      "path": "runs/v236-qin-short-tail-coverage-audit/artifacts/experiments/E229/results/qin_short_tail_coverage.json",
+      "sha256": "5e2d5668972dc2c96a09275f480090d085e8eb7a0c1fd492d60c4e32ef4f8ff7"
+    },
+    "E240_first": {
+      "path": "runs/v247-qin-pn15-terminals/artifacts/experiments/E240/results/qin_pn15_terminal_recovery.json",
+      "sha256": "dad1d9b84f28996ced0697e175ebc2d4b1764925f9ea7efcc8e5a1e7213b386a"
+    },
+    "E240": {
+      "path": "runs/v247-qin-cross32-pn15-final/artifacts/experiments/E240/results/qin_pn15_terminal_recovery.json",
+      "sha256": "6fb59ac307bab0dbf2a30fc8e7b7b51b285be7010f1425f132ad782cb65dd92f"
+    },
+    "E240_report": {
+      "path": "reports/E240/2026-11-23-Qin末字PN15辅助译码.md",
+      "sha256": "5a348a25375c48ba469b95804c787948cd89b07f968e2f37b893670816d538b7"
+    },
+    "E241": {
+      "path": "runs/v248-qin-neighbor-channel/artifacts/experiments/E241/results/qin_neighbor_channel.json",
+      "sha256": "b7a4a64464c576f7297e9bf87b27d6524d469520f8124b7cfaa4694300907b47"
+    },
+    "E241_report": {
+      "path": "reports/E241/2026-11-23-Qin相邻已验码字信道估计.md",
+      "sha256": "2d982cf809107212556b54a8584f1969db78084fb2db95788bf42656d9dc5029"
+    },
+    "E242": {
+      "path": "runs/v249-qin-cross-mcs-channel/artifacts/experiments/E242/results/qin_cross_mcs_channel.json",
+      "sha256": "507fefc57a9d169e128e5b03e726b8d26428a6d0e469d6c13180c2e6642f48d6"
+    },
+    "E242_report": {
+      "path": "reports/E242/2026-11-23-Qin同帧跨MCS信道估计.md",
+      "sha256": "eaf5f2b89222cd2011fbb2122036a0d1d24dede4d4e79b8825791a7a4261a66c"
+    },
+    "E243": {
+      "path": "runs/v250-qin-code5-channel/artifacts/experiments/E243/results/qin_code5_channel.json",
+      "sha256": "649631b2008e42b2ed9d0dbc3acb6d58da10efb5b5d044e9a01803b7a6d1cc85"
+    },
+    "E243_report": {
+      "path": "reports/E243/2026-11-23-Qin实收Code5信道迁移.md",
+      "sha256": "ef22fe931f4436f21dc35a9d423fd6aac03b30eb8e778c2d475a1e7b8e999be3"
+    },
+    "E244": {
+      "path": "runs/v251-qin-channel-backlog/artifacts/experiments/E244/results/qin_channel_backlog.json",
+      "sha256": "5a645f848185892bc007d565b903d5d6e3e21eb151644d530e346fdcdfd9e347"
+    },
+    "E244_report": {
+      "path": "reports/E244/2026-11-23-Qin四档全量信道补测.md",
+      "sha256": "1583c4712887098b73c4feee83deb8fa0f936d7007ca284563198eb6eb41d42e"
+    },
+    "E230": {
+      "path": "runs/v237-qin-shared-coverage/artifacts/experiments/E230/results/qin_complete_shared_cores.json",
+      "sha256": "549e565d24b86d8f7e97d4192a23cbe790568b009fa64cba37cdcb476bb0ef98"
+    },
+    "E247": {
+      "path": "runs/v254-qin-partial-core-transfer/artifacts/experiments/E247/results/qin_partial_core_transfer.json",
+      "sha256": "173b9e9c1b20f4014018dd30cd8d3619d7a02222496bd9d94500f759dc1b139f"
+    },
+    "E247_method": {
+      "path": "experiments/E247/scripts/replay_qin_partial_core_transfer.py",
+      "sha256": "e3ccb79d1fcfc4fabb7560bc376fd893bcf5884032020785da52a9227f18acee"
+    },
+    "E222": {
+      "path": "runs/v229-mcs57-qam-disturbance/artifacts/experiments/E222/results/mcs57_qam_disturbance.json",
+      "sha256": "ef49feeeeb7b1f1043b839977ed70c5ed0d4628815cb5a538dc557ccf6d8dabb"
+    },
+    "E222_report": {
+      "path": "reports/E222/2026-11-23-MCS57软符号与坐标误差.md",
+      "sha256": "c66e5bbe28ee4e5f07bc27d740e5150ac484a92a4fae8f26915fea5af1cf2c58"
+    },
+    "E234": {
+      "path": "runs/v241-qin-mcs57-prefixes/artifacts/experiments/E234/results/qin_mcs57_direct_prefix_replay.json",
+      "sha256": "7473de9ff982f250cd3911e711c4167fb89929754478772bb009b2c740f8ba9f"
+    },
+    "E234_report": {
+      "path": "reports/E234/2026-11-23-Qin-MCS57全档案目录与实收位.md",
+      "sha256": "1905021a8e709efc43cc7e4e202ce9c5563f0494ae10b6968b825ec6ef604f84"
+    },
+    "E245": {
+      "path": "runs/v252-qin-mcs57-code5/artifacts/experiments/E245/results/qin_mcs57_code5.json",
+      "sha256": "3ff0ddb3658d67bd64a24619edb60edc5ba86d2112265612579b6ecf2d62e23a"
+    },
+    "E245_report": {
+      "path": "reports/E245/2026-11-23-Qin-MCS57实收Code5复判与掩码校验.md",
+      "sha256": "97871bebf7e650beb149b242414fba514b1abfac280ddf8f574bc3eac1566978"
+    },
+    "E246": {
+      "path": "runs/v253-qin-mcs57-repeat-extension/artifacts/experiments/E246/results/qin_mcs57_repeat_extension.json",
+      "sha256": "7f8e6bdb1c554bfe1839b48c9b34371c935b17c5b1c35239d44ea66edd304895"
+    },
+    "E248": {
+      "path": "runs/v255-qin-partial-512/artifacts/experiments/E248/results/qin_partial_512_projections.json",
+      "sha256": "e3f60704cc1654ede59dc989abf6ec247fdb95bc2ee8e0d9ff96f493bc957357"
+    },
+    "E215": {
+      "path": "runs/v222-offset-grid-header-replay/artifacts/experiments/E215/results/ut_offset_grid_headers.json",
+      "sha256": "c6a1de4cc6ee76c865e083c1cbaa2104a1207ac0eeabef731e5615aa59e5fce9"
+    },
+    "E216": {
+      "path": "runs/v223-ut-short-h1-bank/artifacts/experiments/E216/results/ut_short_h1_bank.json",
+      "sha256": "3a31c245c885b8fcbd9f207856d731ddb42754842974428b7006c79cfb974e2a"
+    },
+    "E236": {
+      "path": "runs/v243-ut-h2-crc-balanced/artifacts/experiments/E236/results/ut_h2_crc_likelihoods.json",
+      "sha256": "221c4af9d9d29378f19e5ed679cd19058ea770566aee5625fe681183645d94a6"
+    },
+    "E236_report": {
+      "path": "reports/E236/2026-11-23-弱H2的CRC似然与卷积距离谱.md",
+      "sha256": "944ab85326688b8d553ab4f04404b5d92b67f4911ebbf66b3b0eafa2d6d89476"
+    },
+    "E218": {
+      "path": "runs/v225-ut-h2-disjoint-halves-final/artifacts/experiments/E218/results/ut_h2_disjoint_halves.json",
+      "sha256": "08cd99e671f5af47d60bbeddcf49f7435732b10723971df34173dc5b4f81f342"
+    },
+    "E220": {
+      "path": "runs/v227-leo-h2-archive-aperture/artifacts/experiments/E220/results/leo_h2_archive_aperture.json",
+      "sha256": "aeec419b1f76d0e0e79944b0b22a9f68e9da88352e61e7063d3bb4134444de11"
+    },
+    "E206": {
+      "path": "runs/v213-21cma-vhf-raw-replay-final/artifacts/experiments/E206/results/vhf_21cma_packets.json",
+      "sha256": "467e320d77ed9c97deeeffea570215393e28301d92ddc4c777dc3ace92fc1ad9"
+    },
+    "E237": {
+      "path": "runs/v244-vhf-state-chirps-final/artifacts/experiments/E237/results/vhf_state_chirp_validation.json",
+      "sha256": "6bfa16028a90000b78ae633294b2c1f8a02f8f38222c23b424774c3242b5fe2c"
+    },
+    "E237_report": {
+      "path": "reports/E237/2026-11-23-VHF包内状态与前导载频.md",
+      "sha256": "fc4981883610a1700c5a0603c659d31e7eeabda492e04a4770c7b7381a29b8b4"
+    }
+  }
+}

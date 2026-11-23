@@ -1,0 +1,6 @@
+matplotlib==3.11.2
+numpy==2.4.6
+PyMuPDF>=1.24
+reportlab==5.1.0
+resvg-py==0.5.0
+svglib==2.4.0

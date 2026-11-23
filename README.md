@@ -4,6 +4,13 @@ An evidence-based study of recorded Starlink Ku-band downlink signals, from wave
 
 这是 StarlinkBeacon 的精简公开版。论文和实验记录保留了数据来源、对照组、重复验证以及仍有歧义的结果。这里的控制记录恢复结论适用于报告中的录波和条件。
 
+## 第二阶段论文 · Stage II research article
+
+- [中文论文 PDF](reports/stage-2-paper/starlink-ku-downlink-stage-ii-stone-zh.pdf) · [English article PDF](reports/stage-2-paper/starlink-ku-downlink-stage-ii-stone.pdf)
+- [中英文源稿、证据与复现 / Sources, evidence and reproduction](reports/stage-2-paper/README.md) · [GitHub 发布页 / Release](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/tag/paper-stage-ii-2026-11-23)
+
+## 早期论文与档案 · Interim article and archive
+
 - [stone 署名版论文 PDF](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/download/paper-2026-11-22/starlink-ku-downlink-interim-stone.pdf) · [发布页](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/tag/paper-2026-11-22)
 - [早期英文稿](reports/interim-paper/manuscript.md) · [早期中文摘要与成果归因](reports/interim-paper/中文摘要与贡献对照.md)
 - [实验索引 E001–E146](docs/EXPERIMENTS.md) · [解码证据总表](docs/DECODE_MAP.md) · [当前证据边界](docs/CURRENT_STATUS.md)

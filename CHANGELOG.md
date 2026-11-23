@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.0.3] - 2026-11-23
+
+### Purpose
+- Give proceedings readers and research collaborators a matched Chinese and English follow-up to the signed interim study.
+
+### Changes
+- Add two 11-page PDFs, editable articles, nine vector figure pairs, measured JSON extracts and lightweight verification commands. Link the release in the repository index.
+
+### Scientific record
+- Document 41169 of 43040 whole words and 2184 of 2792 partial cores, MCS 57 directories and repeat erasures, withheld waveform checks, low parity contradictions, weak headers and separate VHF Doppler evidence.
+
+### Validation
+- Checked both PDFs and nine vector pairs, matched six header CRC-8 checks and eight CRC-24 directories, verified eight shortened high parity vectors and rejected altered controls. Retained the 1425-file published snapshot.
+
+### Limitations
+- The public package includes extracted evidence and reproducible plots and checks. Raw IQ and the full later experiment archive are required for complete replay.
+
 ## [0.0.2] - 2026-11-22
 
 ### Purpose
