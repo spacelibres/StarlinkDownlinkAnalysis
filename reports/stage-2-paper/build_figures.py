@@ -82,7 +82,7 @@ def capture_evidence():
     counts = D['captures']
     ax = diagram(fig, [.025, .17, .41, .71])
     ax.text(0, 1.05, 'A   Two-header capture inventories', fontsize=10, fontweight='bold')
-    labels = ['Qin public archive', 'Independent legacy 480 MS/s', 'UT 250 MS/s main time grid']
+    labels = ['Qin public archive', 'Independent 480 MS/s capture', 'UT 250 MS/s main timing sequence']
     for y, label, key in zip([.83, .53, .23], labels, counts, strict=True):
         ax.hlines(y-.13, 0, .98, color=LINE, linewidth=.6)
         ax.text(.01, y, label, va='center')
@@ -118,7 +118,8 @@ def full_word_coverage():
         ax.axhline(total, color=GRAY, linewidth=.7, linestyle=(0, (4, 2)))
         ax.text(5.05, total, f'{n(total)} total', ha='right', va='bottom', color=GRAY, fontsize=7.7)
         ax.set(xlim=(-.35, 5.4), ylim=scale, xticks=range(len(stages)))
-        ax.set_xticklabels([x['experiment'] for x in stages], fontsize=7.4)
+        ax.set_xticklabels(['Frame\nends', 'PN15\nprior', 'Same\nallocation',
+                            'Cross-\nMCS', 'Code 5\nreference', 'Remaining\nblocks'], fontsize=7.0)
         ax.yaxis.set_major_formatter(FuncFormatter(lambda tick, _: n(int(tick))))
         for idx in [0, len(stages)-1]:
             ax.annotate(n(values[idx]), (idx, values[idx]), xytext=(0, 7), textcoords='offset points',
@@ -146,7 +147,8 @@ def partial_core_coverage():
     ax.invert_yaxis()
     ax.xaxis.set_major_formatter(PercentFormatter(1, decimals=0))
     ax.spines['left'].set_visible(False)
-    fig.legend(handles=[Patch(color=BLUE, label='E230 accepted'), Patch(color=GREEN, label='E247 additions')],
+    fig.legend(handles=[Patch(color=BLUE, label='Earlier accepted cores'),
+                        Patch(color=GREEN, label='Added with Code 5 references')],
                loc='upper left', bbox_to_anchor=(.147, .965), frameon=False, ncol=2,
                borderaxespad=0, fontsize=8)
     total = sum(r['total'] for r in rows)
@@ -191,9 +193,9 @@ def receiver_and_crc():
     fig = figure(88)
     positions = [[.13, .26, .23, .52], [.45, .26, .18, .52], [.746, .26, .231, .52]]
     pn1, pn2 = data['pn222'], data['pn245']
-    groups = [('E222 PN15 errors', [pn1['slot_soft'], pn1['mixture'], pn1['archive_hard']],
-               ['Slot soft', 'Mixture', 'Archive hard'], [GRAY, BLUE, P['deep']]),
-              ('E245 PN15 errors', [pn2['pn_baseline_errors'], pn2['pn_errors']],
+    groups = [('PN15 errors by demapper', [pn1['slot_soft'], pn1['mixture'], pn1['archive_hard']],
+               ['Slotwise soft', 'Mixture', 'Hard decision'], [GRAY, BLUE, P['deep']]),
+              ('PN15 after gain fit', [pn2['pn_baseline_errors'], pn2['pn_errors']],
                ['Baseline', 'Code 5 joint'], [GRAY, BLUE])]
     for i, (title, values, labels, palette) in enumerate(groups):
         ax = panel(fig, positions[i], 'AB'[i], title, 'x')
@@ -215,8 +217,9 @@ def receiver_and_crc():
         cumulative += value
         ax.text(idx, cumulative+1, str(cumulative), ha='center', color=BLUE, fontsize=8.1)
     ax.set(ylim=(0, 51), xticks=range(3), yticks=[0, 20, 40])
-    ax.set_xticklabels(['E178', 'E234', 'E245'])
-    note(fig, f"E222 also favored 16QAM in {n(data['qam_support'])} / {n(data['scorable_fragments'])} scored slot fragments. "
+    ax.set_xticklabels(['Initial\nsubset', 'Full\narchive', 'Code 5\nreference'])
+    note(fig, f"Independent constellation scoring favored 16QAM in "
+              f"{n(data['qam_support'])} / {n(data['scorable_fragments'])} slot fragments.\n"
               'CRC24 sites are cumulative and deduplicated.')
     return fig
 

@@ -7,11 +7,12 @@ An evidence-based study of recorded Starlink Ku-band downlink signals, from wave
 ## 第二阶段论文 · Stage II research article
 
 - [中文论文 PDF](reports/stage-2-paper/starlink-ku-downlink-stage-ii-stone-zh.pdf) · [English article PDF](reports/stage-2-paper/starlink-ku-downlink-stage-ii-stone.pdf)
-- [中英文源稿、证据与复现 / Sources, evidence and reproduction](reports/stage-2-paper/README.md) · [GitHub 发布页 / Release](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/tag/paper-stage-ii-2026-11-23)
+- [中英文源稿、证据与复现 / Sources, evidence and reproduction](reports/stage-2-paper/README.md) · [修订稿发布页 / Revised release](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/tag/paper-revision-2026-11-23)
 
 ## 早期论文与档案 · Interim article and archive
 
 - [stone 署名版论文 PDF](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/download/paper-2026-11-22/starlink-ku-downlink-interim-stone.pdf) · [发布页](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/tag/paper-2026-11-22)
+- [中期论文中文全文 PDF](reports/interim-paper/starlink-ku-downlink-interim-stone-zh.pdf) · [中期中文论文源稿](reports/interim-paper/manuscript.zh.md)
 - [早期英文稿](reports/interim-paper/manuscript.md) · [早期中文摘要与成果归因](reports/interim-paper/中文摘要与贡献对照.md)
 - [实验索引 E001–E146](docs/EXPERIMENTS.md) · [解码证据总表](docs/DECODE_MAP.md) · [当前证据边界](docs/CURRENT_STATUS.md)
 - [公开版复现与数据来源](docs/PUBLIC_EDITION.md) · [来源与哈希清单](provenance/public_snapshot.json) · [Changelog](CHANGELOG.md)

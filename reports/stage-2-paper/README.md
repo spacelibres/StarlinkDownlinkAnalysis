@@ -2,9 +2,9 @@
 
 **stone** · [vistone868@gmail.com](mailto:vistone868@gmail.com) · 2026-11-23
 
-[中文 PDF](starlink-ku-downlink-stage-ii-stone-zh.pdf) · [中文稿源文件](manuscript.zh.md) · [English PDF](starlink-ku-downlink-stage-ii-stone.pdf) · [English source](manuscript.md) · [GitHub release](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/tag/paper-stage-ii-2026-11-23)
+[中文 PDF](starlink-ku-downlink-stage-ii-stone-zh.pdf) · [中文稿源文件](manuscript.zh.md) · [English PDF](starlink-ku-downlink-stage-ii-stone.pdf) · [English source](manuscript.md) · [修订稿发布页 / Revised release](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/tag/paper-revision-2026-11-23)
 
-两份全文各包含九幅图、八张表、九个公式和两段算法。图内共用英文技术标签，中文正文逐图给出完整图注。 [中期论文发布页](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/tag/paper-2026-11-22)
+两份全文各包含九幅图、八张表、九个公式和两段算法。图内共用英文技术标签，中文正文逐图给出完整图注。 [中期论文中文 PDF](../interim-paper/starlink-ku-downlink-interim-stone-zh.pdf) · [中期中文源稿](../interim-paper/manuscript.zh.md) · [中期英文初版](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/tag/paper-2026-11-22)
 
 Both editions contain nine figures, eight tables, nine equations and two algorithms. They share the same measured values and figure panels.
 
@@ -28,6 +28,7 @@ From the repository root with Python 3.11 or later:
     python reports/stage-2-paper/build_figures.py
     python reports/stage-2-paper/render.py --language en
     python reports/stage-2-paper/render.py --language zh
+    python reports/stage-2-paper/render.py --paper interim --language zh
     python reports/stage-2-paper/verify_package.py
 
 第一步仅用 Python 标准库。它检查 6 个实测头部 CRC-8、3 个 H2 起点、8 个新增目录 CRC-24，以及从四种格式选出的 8 个核心各 4,096 条校验方程。故意改动的向量必须失败。绘图程序读取公开的汇总 JSON，无需 IQ。中文版在 Windows 使用微软雅黑，可用 `--cjk-font` 和 `--cjk-bold` 指定支持的 TrueType 字体。其他系统的字体可影响分页。

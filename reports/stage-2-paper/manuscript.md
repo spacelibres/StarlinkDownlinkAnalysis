@@ -6,15 +6,15 @@ stone
 
 Research article · 23 November 2026
 
-**Abstract.** How many unresolved Starlink Ku-band codewords can be recovered by improving the receiver when the code is already known, and what prevents recovery when only part of the code is known? We reprocess a public archive of 1,009 OFDM frames using received symbols from previously verified words in the same frame to estimate the residual channel. Across four modulation and coding schemes (MCS), 41,169 of 43,040 words pass full channel and withheld-waveform checks, up from 39,415 after frame-end closure. Across four schemes with a shared verified parity region, 2,184 of 2,792 words pass the systematics and high-address parity checks, up from 1,648. For MCS 57, the revised receiver adds eight CRC-24 directories. Same-group repeats corroborate 1,145 erased positions and oppose 53 on the target’s low-margin observations. Every target still contains erasures. Mask-aware 512-bit projections validate all 28 high-address controls but identify no low-address relation. A separate 137.055 MHz VHF test compares a received orbital state with differential preamble Doppler and finds a +1.08 Hz residual for one packet pair. These results separate recovery limited by the receiver, by missing channel-code constraints, and by the available observations.
+**Abstract.** We estimate the residual channel in Starlink Ku-band downlink recordings using received symbols from verified codewords in the same orthogonal frequency-division multiplexing (OFDM) frame. In a public dataset of 1,009 frames, the number of codewords meeting complete parity and held-out waveform criteria increases from 39,415 to 41,169 of 43,040 across four modulation and coding schemes (MCS). Across four schemes with a known subset of parity equations, the number of blocks for which the systematic and high-address parity bits are verified increases from 1,648 to 2,184 of 2,792. For MCS 57, the revised receiver identifies eight additional directories that pass CRC-24. Repeated observations within recording groups agree with the target’s lower-margin decisions at 1,145 erased positions and disagree at 53. Every target retains erasures. Masked 512-bit projections recover the verified high-address relation in all 28 controls. The tested low-address relations either lack data, are underdetermined, or yield inconsistent equations. In a separate 137.055 MHz VHF observation, a state vector from one packet predicts the differential preamble Doppler of a packet pair with a residual of +1.08 Hz (observed minus predicted). The results distinguish limits imposed by the receiver, the unknown code, and the available bandwidth.
 
 **Index terms.** Channel estimation, erasure masks, OFDM, passive observations, quasi-cyclic codes, Starlink.
 
 ## 1. Introduction and observations
 
-The earlier study [1] extracted timing, satellite numbering and Earth-fixed state from the first allocation, called Code 5, and tested the state against relative arrival times. Here we use those received words to recover later allocations and test missing parity relations. The waveform and pilot models follow Humphreys et al. [2] and Qin et al. [3]. The two-header geometry and coding models build on Liu et al. [4]. H1 denotes the first header. H2 gives subsequent allocations as MCS labels and word counts. An allocation is a contiguous span of codeword resources. [Earlier paper](../interim-paper/manuscript.md) · [Liu et al., v2](https://arxiv.org/abs/2610.29387v2)
+An earlier study [1] extracted timing, satellite numbering and Earth-fixed state from Code 5, the first allocation in a frame, and tested the state against relative arrival times. Here we use received Code 5 symbols and other in-frame references to estimate the channel for subsequent allocations. The waveform and pilot models follow Humphreys et al. [2] and Qin et al. [3]. The two-header layout and coding models build on Liu et al. [4]. H1 denotes the first header. H2 describes subsequent allocations by modulation and coding scheme and codeword count. Each allocation occupies a contiguous span of coded resources.
 
-The principal input is the Qin archive of complex frequency-domain observations [3]. All 1,009 archived frames have measured ends consistent with H2. The archive and the 250 MS/s IQ capture overlap at the source. Their agreement checks transfer across representations. The older 480 MS/s capture is distinct. Native narrowband IQ and the VHF voltage recordings address separate measurement questions. A replay, a masked branch, or a repeated numerical result shares the underlying RF evidence. [Frame-end audit](data/evidence_summary.json) · [Input and header ledger](README.md)
+The primary dataset consists of equalized complex frequency-domain samples published by Qin et al. [3]. The measured ends of all 1,009 frames agree with the ends predicted from H2. These data overlap in acquisition with the 250 MS/s complex in-phase and quadrature (IQ) recording [4], so agreement between them checks the two representations of shared observations. The legacy 480 MS/s recording is a separate acquisition. The LEO Tracker narrowband observations and the 21CMA VHF recordings address separate measurement questions [6, 7]. Comparisons between receiver configurations use samples from the same acquisition.
 
 | Source | Data and units | Role |
 | --- | --- | --- |
@@ -26,25 +26,25 @@ The principal input is the Qin archive of complex frequency-domain observations 
 
 ### Figure 1. Capture counts and the evidence hierarchy from measured waveforms to interpreted fields. Counts describe different units. The Qin archive and 250 MS/s capture share source evidence.
 
-## 2. Recovery census
+## 2. Codeword and allocation recovery
 
-For MCS 66, 70, 85 and 88, a full-channel acceptance refers to all modeled systematic and parity positions. Allocation closure requires every word in that allocation, so the word and allocation denominators measure different outcomes. Starting with the measured frame-end baseline, the additional passes recover 1,754 full words and close 215 allocations. The resulting coverage is 95.65% by word and 89.60% by allocation. Of 1,871 words still lacking acceptance, 1,661 belong to MCS 85 or 88. CRC-24–verified directories reach 375 across these four formats. [Baseline](data/evidence_summary.json) · [Final word and allocation counts](data/evidence_summary.json)
+For MCS 66, 70, 85 and 88, a verified codeword satisfies all modeled parity equations and the waveform comparisons in Section 3. An allocation is fully recovered when every codeword within it meets those criteria. After confirming the measured frame ends, the receiver methods below increased the number of verified codewords by 1,754 and the number of fully recovered allocations by 215. The resulting coverage is 95.65% by codeword and 89.60% by allocation. Of the 1,871 codewords that remain unresolved, 1,661 belong to MCS 85 or 88. Across the four formats, 375 directories pass CRC-24.
 
-| Step | Full words added | Full words total | Allocations closed |
+| Receiver method | Additional codewords | Cumulative codewords | Fully recovered allocations |
 | --- | ---: | ---: | ---: |
-| Measured frame-end baseline | — | 39,415 | 2,146 |
-| PN15-assisted terminal recovery | 83 | 39,498 | 2,194 |
+| Initial coverage with measured frame ends | — | 39,415 | 2,146 |
+| PN15-assisted decoding of final codewords | 83 | 39,498 | 2,194 |
 | Same-allocation references | 222 | 39,720 | 2,214 |
 | Same-frame, other MCS | 500 | 40,220 | 2,284 |
 | Initial Code 5 transfer | 141 | 40,361 | 2,284 |
-| Coverage sweep | 808 | 41,169 | 2,361 |
+| Channel estimation on remaining eligible codewords | 808 | 41,169 | 2,361 |
 | Total eligible | — | 43,040 | 2,635 |
 
-### Figure 2. Cumulative full-word acceptance and allocation closure for MCS 66, 70, 85 and 88. The two panels retain their own denominators.
+### Figure 2. Cumulative recovery of complete codewords and allocations for MCS 66, 70, 85 and 88. Dashed lines indicate the total eligible counts.
 
-MCS 71, 75, 78 and 81 share a partially verified encoder, with a systematic region and verified high-address parity. Transferred Code 5 estimates recover 536 additional cores. The 763 of 952 allocations with closed systematic bytes include 177 newly closed allocations. Closing gaps also makes 240 new outer records continuously readable across 721,766 bytes, including previously recovered bytes within those intervals. One directory CRC-24 is verified in this four-format set. The low-address parity region retains separate bit values and erasures. [Partial-core replay](data/evidence_summary.json)
+For MCS 71, 75, 78 and 81, the available encoding model covers the systematic bits and the high-address parity region. Code 5 channel estimates allow both regions to be verified in 536 additional blocks. The systematic bytes are fully recovered in 763 of 952 allocations, including 177 gained through this analysis. Within the newly readable intervals, 240 outer records span 721,766 bytes, including bytes already recovered before the gaps were filled. One directory passes CRC-24. The remaining low-address parity is represented by direct bit decisions and erasures.
 
-| MCS | Retried words | Added cores | Accepted cores | Rate |
+| MCS | Previously unresolved blocks examined | Additional verified cores | Total verified cores | Rate |
 | --- | ---: | ---: | ---: | ---: |
 | 71 | 579 | 290 | 1,126 / 1,415 | 79.58% |
 | 75 | 230 | 79 | 412 / 563 | 73.18% |
@@ -52,96 +52,96 @@ MCS 71, 75, 78 and 81 share a partially verified encoder, with a systematic regi
 | 81 | 72 | 23 | 156 / 205 | 76.10% |
 | Total | 1,144 | 536 | 2,184 / 2,792 | 78.22% |
 
-### Figure 3. Cumulative high-address core acceptance and new cores among retried words by MCS. Core acceptance covers the systematics and verified high-address parity.
+### Figure 3. Verified systematic and high-address parity regions for four MCS formats with partially known codes. Rates use the total number of blocks in each format.
 
-## 3. Channel estimation and waveform acceptance
+## 3. Channel estimation and waveform validation
 
-The Qin FFT archive has already been equalized. The receiver estimates its residual frequency-selective response after removing a complex scalar per reference slot. For a known reference symbol xᵢ and complex observation yᵢ, the scalar âₜ is the least-squares projection in slot t. A local residual gain ĝₖ pools the power and cross-products after scalar correction, over a 17-data-carrier window Wₖ centered at k. Residual power supplies the variance estimate, with normalized variance clipped to [0.0125, 0.5]. On target slots the scalar uses the opposite carrier parity from the symbols being scored. [Estimator and masks](data/evidence_summary.json) · [Code 5 transfer](data/evidence_summary.json)
+Initial equalization follows the processing of the published Qin Fourier-domain data [3]. To estimate the residual frequency-selective response, we first remove a complex scalar per reference slot. Let x_i and y_i denote the known reference symbol and its measured complex value. I_t is the set of retained symbols in slot t, and an asterisk denotes complex conjugation. Equation (1) gives the least-squares scalar estimate. Equation (2) gives the local residual gain at carrier k. The set W_k contains reference samples in a window of 17 data carriers centered on k, and t(i) is the slot of sample i. The normalized residual variance is bounded between 0.0125 and 0.5. Within target slots, the scalar used to score odd carriers is estimated from the even carriers, and vice versa.
 
-> (1) âₜ = Σᵢ conj(xᵢ)yᵢ / Σᵢ |xᵢ|², summed over retained reference symbols in slot t.
+> (1) $\hat{a}_t=\frac{\sum_{i\in I_t}x_i^{*}y_i}{\sum_{i\in I_t}|x_i|^2}$
 
-> (2) ĝₖ = Σᵢ∈Wₖ conj(xᵢ)(yᵢ/âₜ) / Σᵢ∈Wₖ |xᵢ|².
+> (2) $\hat{g}_k=\frac{\sum_{i\in W_k}x_i^{*}(y_i/\hat{a}_{t(i)})}{\sum_{i\in W_k}|x_i|^2}$
 
-Given a normalized constellation, the receiver sums symbol likelihoods over each bit label. It uses either a fixed variance or the transferred estimate. The log-likelihood ratio is positive when label 0 has greater likelihood. Each withheld bit receives zero log-likelihood ratio and its symbol is excluded from the scalar fit in that branch. A separate re-encoder tests the result against the withheld complex observations z using their energy to normalize the squared error of prediction p. [Matched acceptance criteria](data/evidence_summary.json)
+For a normalized observation z, the receiver computes a log-likelihood ratio at bit position b by summing over the constellation subsets with label 0 or 1 at that position. The variance in Equation (3) is fixed or estimated from the reference symbols. A positive ratio favors 0. Each held-out symbol is excluded from the scalar estimate and its bit likelihood ratios are set to zero. The decoded bits are re-encoded and remodulated to obtain predicted complex samples p_i. The normalized squared error in Equation (4) compares these predictions with the withheld observations z_i.
 
-> (3) Lᵦ(z) = log [Σₓ:ᵦ₌₀ exp(−|z − x|²/σ̂²) / Σₓ:ᵦ₌₁ exp(−|z − x|²/σ̂²)].
+> (3) $L_b(z)=\log\frac{\sum_{x\in\mathcal{X}_{b,0}}\exp(-|z-x|^2/\hat{\sigma}^{2})}{\sum_{x\in\mathcal{X}_{b,1}}\exp(-|z-x|^2/\hat{\sigma}^{2})}$
 
-> (4) E(z,p) = Σᵢ |zᵢ − pᵢ|² / Σᵢ |zᵢ|².
+> (4) $E(z,p)=\frac{\sum_i|z_i-p_i|^2}{\sum_i|z_i|^2}$
 
-### Algorithm 1. Transfer the channel and assess the word
+### Algorithm 1. Estimate the channel from in-frame references and validate the recovered bits
 
 ```text
-Freeze the reference words, constellation, code, and target coordinates.
-For known QAM words, regenerate symbols using each word’s own MCS.
-For Code 5, take BPSK signs only where the native mask records reception.
+Specify the reference blocks, constellation, encoder and target positions.
+Remodulate verified QAM reference blocks using their respective MCS.
+For Code 5, use only directly observed BPSK signs.
 Estimate slot scalars, local carrier gains, and residual variances.
-Run a branch with all symbols and two branches with disjoint masks.
-Keep erased symbols out of each branch’s fit and assign them zero LLR.
-Require all three branches to agree and pass the applicable parity tests.
-Re-encode. Score masked systematic and parity samples separately.
-Accept when both masks beat unit error and the shifted-block prediction.
-Store every failed test, erasure, and target coordinate for audit.
+Decode with the applicable permanent erasures, then with each of two disjoint sets of additional whole-symbol erasures.
+Exclude erased symbols from the slot fit and set their bit log-likelihood ratios to zero.
+Require agreement across all three decoding results and satisfaction of the applicable parity equations.
+Re-encode and compare the predicted and held-out waveforms for systematic and parity symbols separately.
+Require each normalized held-out error to be below one and below the error of the within-block shifted prediction.
+
 ```
 
-Each mask contains 32 systematic and 32 parity symbols. The partial-core receiver also excludes low-address parity and symbols straddling its boundary. Terminal recovery uses the frozen PN15 sequence only after a directly detected padding boundary. The two masks remain erased even when their values could be supplied by PN15. The 83 accepted terminal words agree across all branches. For 69, no branch reproduces the accepted word when the PN15 prior is disabled. This tests the contribution of the reference on identified padding. [Terminal receiver](data/evidence_summary.json) · [Partial-core receiver](data/evidence_summary.json)
+Each set of withheld symbols contains 32 systematic and 32 parity symbols. When only part of the code is known, low-address parity and symbols that straddle its boundary are excluded from all three decoding attempts. For a final codeword, PN15 is used as a prior after the padding boundary is detected in the received samples. The two sets of withheld symbols are excluded even where PN15 specifies their values. The three decoding results agree on all 83 recovered final codewords. When the PN15 prior is removed, none of the three attempts reproduces the verified result in 69 of those 83 cases.
 
-| Targets and paired receiver change | Eligible | Accepted | Matched comparison |
+| Channel reference | Target codewords | Verified codewords | Comparison on the same targets |
 | --- | ---: | ---: | --- |
 | Nearest verified word in allocation | 298 | 222 | Flat receiver passes 3 |
 | Verified word in same frame, other MCS | 1,709 | 500 | Flat passes 2 |
 | Two Code 5 references, initial test | 347 | 141 | Gain only 133, variance only 0, flat 0 |
-| Two Code 5 references, coverage sweep | 2,473 | 775 | 731 also pass gain only |
+| Two Code 5 references, remaining eligible targets | 2,473 | 775 | 731 also pass using the gain estimate alone |
 | New same-frame QAM references | 80 | 33 | 26 also pass gain only |
 
-Across 249 frames in the sweep and its controls, estimating one Code 5 word from the other gives 498 directed comparisons. Correctly aligned carrier estimates outperform flat gain in 490 and a 251-carrier shift in all 498. Median normalized errors are 0.0350, 0.0430 and 0.0540, respectively. The comparisons reuse frames and quantify the paired receiver effect on this archive. [Same-allocation comparison](data/evidence_summary.json) · [Cross-MCS comparison](data/evidence_summary.json) · [Coverage sweep](data/evidence_summary.json)
+A paired comparison in 249 frames uses each of the two Code 5 blocks in turn to estimate the channel of the other, yielding 498 directed comparisons. The correctly aligned carrier estimates produce a lower error than flat gain in 490 comparisons and a lower error than an estimate shifted by 251 carriers in all 498. The corresponding median normalized errors are 0.0350, 0.0430 and 0.0540. Both directions within each frame share the same recorded samples.
 
-### Figure 4. Paired channel estimation and waveform validation. The retained carrier fit feeds the unmasked branch and two disjoint whole-symbol erasure branches. Withheld positions stay erased until the re-encoded word is tested against the observed waveform.
+### Figure 4. Channel estimation from in-frame references and comparison with withheld waveforms. The decoder uses the permanent erasures and then two disjoint sets of additional whole-symbol erasures. The temporarily withheld systematic and parity symbols are used to evaluate the re-encoded predictions.
 
-## 4. MCS 57 remains a code-identification problem
+## 4. MCS 57 receiver performance and code identification
 
-The Code 5 receiver replays all 14,330 word windows across 487 MCS 57 allocations using the frozen 16QAM labeling. At the same 0.08 decision-margin threshold, the joint estimate adds 1,447,124 visible bits and returns 730,320 formerly visible bits to erasure. Among common observations, 50,142 of 113,705,831 decisions disagree. On the narrower frozen PN15 comparison of 237,930 visible positions, bit errors fall from 651 to 612, or 0.274% to 0.257%. PN15 provides a known-padding control. The unknown-bit disagreements remain archived. [MCS 57 replay and masks](data/evidence_summary.json)
+We apply the channel estimates from Code 5 to all 14,330 codeword windows in 487 MCS 57 allocations, using the same 16QAM bit labeling in both receiver configurations. At a decision margin of 0.08, the joint estimate yields decisions at 1,447,124 previously erased positions and leaves 730,320 previously decided positions erased. The two configurations disagree at 50,142 of 113,705,831 common positions. Among 237,930 common positions in the known PN15 padding, the errors decrease from 651 to 612, or from 0.274% to 0.257%. Outside the known padding, a disagreement indicates sensitivity to the receiver configuration without establishing the transmitted bit.
 
-The revised receiver confirms 31 directory coordinates, eight new. The deduplicated historical total is 45. It also adds 24 outer-record coordinates with 69,379 observed bits across their headers and bodies. All 24 retain erasures. At the strong margin there is no complete nonterminal word for a masked rank fit. Across six registrations for each hypothesized period of 128 and 256, all 285 received four-term candidates appear once. The prespecified two-nomination gate admits none to held groups. A synthetic four-term control passes 3,583 same-mask comparisons. Its shifted control passes 49.68%. [Directory and sparse-check evidence](data/evidence_summary.json)
+The revised receiver recovers 31 directories that pass CRC-24. Eight are additional to those already identified, yielding 45 distinct directory positions across the analyses. It also identifies the bounds of 24 additional outer records. Their headers and bodies contain 69,379 observed bits, and every record retains erasures. At the 0.08 margin, every non-final codeword contains at least one erased bit, leaving no complete sample on which to estimate rank. Six searches per hypothesized period of 128 or 256 bits yield 285 four-term parity candidates, each appearing in only one search. The analysis requires a candidate to occur in at least two searches before testing it on separate recording groups. A synthetic four-term relation evaluated under the same observation masks passes all 3,583 comparisons. Shifting one input of that synthetic relation gives a 49.68% pass rate.
 
-### Figure 5. MCS 57 receiver effects at the frozen margin, error counts on common PN15 positions, and the deduplicated directory CRC-24 history.
+### Figure 5. MCS 57 receiver comparisons on common PN15 positions and cumulative counts of distinct directories that pass CRC-24.
 
-Repeated observations test a different source of evidence. Candidate pairs qualify on systematic and parity regions separately and are evaluated in both directions on withheld whole symbols. Selected donors are in the same archive group as the target. Their 16-symbol log likelihoods are summed at matched coordinates, in the manner of soft combining [5]. The resulting bit is proposed only if each donor agrees, the donor margin clears the strong threshold, and all six earlier receiver views erased that bit. Target views estimated from the two Code 5 words then corroborate or oppose the proposal at the lower margin of 0.02. [Repeated-word replay](data/evidence_summary.json) · [Chase combining](https://doi.org/10.1109/TCOM.1985.1096314)
+Pairs of potentially repeated MCS 57 codewords are selected using systematic and parity positions separately, then compared in both directions on whole symbols withheld from selection. The observations used as references and their target belong to the same recording group. Following soft combining [5], the log likelihood at constellation point x is summed over the set of references D, where the subscript d identifies the contributing observation. The pooled bit likelihood sums over the corresponding bit-label subsets. We consider a proposed bit only at positions erased by all six previous receiver configurations, and require the references to agree at a decision margin of at least 0.08. For comparison, the target waveform is evaluated separately using each Code 5 channel reference. Agreement between those two target estimates at a margin of 0.02 determines whether the target supports or contradicts the proposed bit.
 
-> (5) ℓpool(x) = Σd ℓd(x). The pooled bit score uses the constellation subsets with labels 1 and 0.
+> (5) $\ell_{\mathrm{pool}}(x)=\sum_{d\in\mathcal{D}}\ell_d(x)$
 
-| Donors | Targets | Held bits | Disagree | Shifted disagree | Target agrees / opposes |
+| Reference observations | Target codewords | Held-out bits | Aligned disagreements | Shifted disagreements | Target agreements / disagreements |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | One | 211 | 419,869 | 266 | 211,021 | 660 / 42 |
 | Two | 75 | 142,974 | 33 | 71,133 | 485 / 11 |
 
-The 181 qualifying pairs cover 286 target words, of which 219 are new accepted coordinates for this waveform comparison. The paired frames share H1, H2 and Code 5 time and counter within each pair. That dependence limits causal interpretation of the duplicate observations, including how they arose at transmission or in the archive. Of 1,726 donor-proposed positions, 1,145 have target corroboration, 53 face target opposition, and 528 are undecided by the target. The most complete word still has eight erasures. The one- and two-donor groups contain different targets, so their error rates describe those groups. [Held-waveform comparison](data/evidence_summary.json)
+The 181 qualifying pairs cover 286 target codewords, including 219 additional positions at which the waveform comparison succeeds. Each pair shares H1, H2 and the time and counter fields in Code 5. The observations cannot determine whether the repetition originated in the transmission or in the construction of the dataset. Of 1,726 bit candidates from repeated observations, the target supports 1,145 and contradicts 53, with 528 unresolved by the target. Even the most complete codeword retains eight erasures. The groups with one and two reference observations contain different targets, so the error rates describe the respective groups.
 
-### Figure 6. Held-position disagreements with one or two donors and low-margin support or opposition from the target’s own waveform. The donor groups use different target words.
+### Figure 6. Held-out disagreements using one or two repeated reference observations, and agreement or disagreement with the target waveform at a lower decision margin. The two groups contain different targets.
 
-## 5. Locating missing parity with masked projections
+## 5. Testing unknown parity with masked projections
 
-The partial encoder aligns the systematic bits by right shortening. The assessment uses 512-bit windows from both edges of the low-address interval, preserving the unavailable part of each fragment as masked. The first verified 512-bit high-address block is a positive control. A fold of width m maps each residue j to the XOR of all bit positions in that residue. Its mask is the conjunction of the corresponding observations. Unknown bits therefore cannot contribute a complete output equation. [Folding evidence and bit conventions](data/evidence_summary.json) · [512-bit assessment](data/evidence_summary.json)
+The known part of the encoder aligns the systematic bits using right shortening. Candidate low-address parity is examined in 512-bit windows aligned to either boundary of the interval. Unobserved positions, including those outside a partial window, are treated as erasures. The first verified high-address block of 512 bits is the positive control. For fold width m, each residue j from 0 to m − 1 gives an output F obtained by XOR of the corresponding parity bits b. The indicator s is one at observed positions and zero elsewhere. Its product M in Equation (6) equals one only when every constituent bit is observed.
 
-> (6) Fₘ(b)[j] = XORᵣ b[j + rm] and Mₘ[j] = ANDᵣ seen[j + rm], for 0 ≤ r < 512/m.
+> (6) $F_m(b)_j=\bigoplus_{r=0}^{512/m-1}b_{j+rm},\qquad M_m(s)_j=\prod_{r=0}^{512/m-1}s_{j+rm}$
 
-For each visible projection the design uses the circularly aligned systematic folds and an affine intercept. Let A be the resulting binary design, θ its coefficients and q the observed projected parity. Rank measures identifiability. Any inconsistent reduced row rules out a single exact fit under the model and retained observations.
+For each observed projection, the binary design matrix A contains the circularly aligned systematic folds and an intercept. The vector θ contains the unknown coefficients and q the observed projected parity. Equation (7) has a unique solution only when the system is consistent and the column rank equals the number of coefficients. A reduced row with zero coefficients and a nonzero parity value indicates that the model cannot fit the retained observations exactly.
 
-> (7) Aθ = q over GF(2). Unique calibration requires rank(A) = dim(θ) and no inconsistent rows.
+> (7) $A\theta=q\quad\mathrm{over}\ \mathrm{GF}(2)$
 
 ### Algorithm 2. Screen a cyclic parity hypothesis
 
 ```text
-Right-align each systematic word with zero shortening and fold its blocks.
+Right-align each systematic block using zero shortening and fold it by residues.
 For moduli 1, 2, 4, 8, 16, 32, and 64, fold each candidate parity window.
 Include a row only if every constituent output bit is directly observed.
-Use whole assigned archive units for calibration and holdout.
-Fit an affine relation by GF(2) elimination and record rank and residuals.
-Score a unique nonconstant fit on held rows and shifted systematic blocks.
-Accept only with enough held rows, zero nominal errors, and shift errors.
-Keep rank deficits and contradictions as separate outcomes.
+Fit on the calibration groups and test on separate groups of recordings.
+Fit an affine relation by binary elimination and record rank and inconsistent equations.
+Evaluate each unique, nonconstant fit on held-out observations and on shifted systematic-block controls.
+Retain a model if sufficiently many held-out rows are available, the aligned error count is zero, and the shifted comparison produces errors.
+Distinguish underdetermined systems from inconsistent equations.
 ```
 
-The inherited partition contains 30 calibration and 30 holdout units after excluding earlier calibration groups and coupling identified repeats. No new partition is fitted to the result. The 28 format-specific high-address controls all reach full rank and give zero held errors. Of the 98 format-specific low-address tests, 70 lack complete calibration projections, 17 have rank deficits with no contradictions, and 11 have contradictions. In the pooled test of the 512-bit window immediately before the verified high region, both the 32- and 64-residue models reach full rank, yet their equations conflict. A shortage of independent rows explains some tests. The contradictory cases reject exact agreement given the masks and bit decisions. Their origin could include decision errors or differences in encoding structure. [Whole-group design](data/evidence_summary.json) · [Per-window and pooled JSON](data/evidence_summary.json)
+Groups used to develop the existing code model are excluded. Related repeats are kept together and the remaining data are partitioned into 30 calibration and 30 held-out groups. The 28 format-specific high-address controls all reach full rank and give zero errors on held-out observations. Of the 98 format-specific low-address tests, 70 have no complete calibration projections, 17 are rank deficient with no inconsistent equations, and 11 yield inconsistent equations. When pooling the 512-bit low-address window adjacent to the verified high-address region, the models with 32 and 64 residues both reach full rank but produce inconsistent equations. Missing projections or rank deficiency limit some tests. The inconsistent equations indicate that the observed bits and the proposed model cannot hold simultaneously. Potential explanations include bit-decision errors and a mismatch in the assumed code structure.
 
 | Pooled low-block fold | Rank / terms | Calibration rows | Contradictions |
 | --- | ---: | ---: | ---: |
@@ -154,7 +154,7 @@ The inherited partition contains 30 calibration and 30 holdout units after exclu
 
 ## 6. Weak headers and native narrowband limits
 
-The 250 MS/s observation contains 51 deduplicated synchronization events, including offset tracks. Verified coverage is 37 H1 and 26 H2. Two offset events have allocation information supported by complementary convolutional-output subsets and measured body structure. At 19.425854 ms, fixing the non-CRC bits and blindly ranking all 256 CRC bytes on 42 coded resources returns `EC` in 24 of 24 comparisons and 0 of 216 shifted or wrong-PN controls. The complementary halves fail to reproduce it consistently. The halves at 26.092421 ms also conflict. Three historical positive controls fail this stricter half-split gate. [Event ledger](data/evidence_summary.json) · [CRC scoring and distance-spectrum partitions](data/evidence_summary.json)
+Across the main and offset time grids of the 250 MS/s recording, there are 51 distinct synchronization events, with 37 verified H1 and 26 verified H2 headers. Two offset events have allocation fields supported by disjoint subsets of the convolutional outputs and by observed frame-body boundaries. At 19.425854 ms, the non-CRC header bits are held fixed and all 256 CRC byte values are ranked by their agreement with 42 coded resources. The combined resources favor hex EC in all 24 comparisons. None of the 216 comparisons using shifted resources or an incorrect PN sequence favors it. The two complementary subsets do not consistently select the same byte. At 26.092421 ms the subsets also disagree. Three previously verified comparison headers likewise fail this stricter subset-agreement criterion.
 
 | Time (ms) | Body-supported allocations | CRC evidence |
 | ---: | --- | --- |
@@ -162,48 +162,47 @@ The 250 MS/s observation contains 51 deduplicated synchronization events, includ
 | 19.425854 | MCS 70 × 43, MCS 78 × 1 | Pooled `EC`, unstable halves |
 | 26.092421 | MCS 70 × 3, MCS 85 × 41 | `7D` in one half, conflict |
 
-For the ten native 2.5 MS/s LEO Tracker windows [6], the frequency mask can be projected onto the 1,009 Qin H2 references. This conditional calculation fixes H1, H2 start, prefix, descriptor count and padding and assumes correct in-band decisions. The two-receiver union touches encoded resources in 175 references and constrains descriptors in 87. Its maximum rank is five. No allocation list is unique. A pair of measured Qin headers with matching geometry and identical five visible coded bits still has different allocations. The result quantifies the information that those observed apertures can carry under the assumptions. [Native-mask rank audit](data/evidence_summary.json)
+The occupied bands in ten native 2.5 MS/s LEO Tracker windows [6] are projected onto the encoded H2 headers of the 1,009 Qin frames. The calculation assumes known H1, H2 start, header prefix, descriptor count and padding, and correct decisions on all available in-band symbols. In the paired-receiver view, at least one coded resource is visible for 175 H2 headers, and the visible positions constrain an allocation descriptor for 87. The maximum rank is five and no complete allocation list is uniquely determined. Two measured Qin headers illustrate the ambiguity. Their H2 geometries and five visible coded bits agree, although their transmitted allocations differ.
 
 ### Figure 8. H1 and H2 coverage among 51 events, three split-CRC cases with body-supported allocations, and conditional descriptor ranks under native 2.5 MS/s receiver masks.
 
 ## 7. A separate VHF orbital-state check
 
-The two public 21CMA voltage windows at 137.055 MHz are separated by 99.987 s [7]. Both packets pass the PHY-header and payload CRCs. The first has a valid GPS-tagged ECEF state and the second has a zero GPS week and all-zero state fields. Opposite chirp directions supply a first-order time-offset cancellation. With signed chirp slope κ and timing error δt, the dechirped peaks have equal and opposite timing contributions. [Raw replay](data/evidence_summary.json) · [21CMA paper, v1](https://arxiv.org/abs/2610.37158v1)
+The two public 21CMA voltage windows at 137.055 MHz contain packets received 99.987 s apart [7]. Both packets pass the physical-layer header and payload CRCs. The first contains a valid GPS epoch and an Earth-centered, Earth-fixed (ECEF) position and velocity. The second contains a zero GPS week and zero state fields. For a chirp-slope magnitude κ and timing offset δt, the frequency peaks after dechirping are shifted by κδt with opposite signs for up- and down-chirps. Equation (8) averages the median up- and down-chirp peaks to estimate the carrier frequency offset.
 
-> (8) f̂CFO = (median f↑ + median f↓)/2, with f↑, f↓ ≈ fCFO ± κδt.
+> (8) $\hat{f}_{\mathrm{CFO}}=\frac{\mathrm{median}(f_{\uparrow})+\mathrm{median}(f_{\downarrow})}{2}$
 
-Propagate the first packet’s state using its GPS epoch and a J₂ gravity model, then project the velocity along the line of sight from the fixed published station position rₛ. Differencing the two predicted received frequencies cancels a common constant offset. [Published station and events](https://arxiv.org/html/2610.37158v1#S2) · [Doppler computation](data/evidence_summary.json)
+The first packet’s state is propagated from its GPS epoch with a J2 gravity model. In Equation (9), the satellite position and velocity are r and v, the published station position is r_s [7], f_0 is the carrier frequency, and c is the speed of light. The predicted difference is the Doppler at the second preamble minus the Doppler at the first. Taking the difference cancels a constant receiver frequency offset common to the two events.
 
-> (9) fD = −f₀ (r − rₛ)·v / (c ‖r − rₛ‖). The predicted difference is fD(t₂) − fD(t₁).
+> (9) $f_{\mathrm{D}}=-\frac{f_0(\mathbf{r}-\mathbf{r}_s)\cdot\mathbf{v}}{c\Vert\mathbf{r}-\mathbf{r}_s\Vert}$
 
 | State or epoch interpretation | Predicted Δf (Hz) | Observed − predicted (Hz) |
 | --- | ---: | ---: |
-| GPS, ECEF velocity, J₂ | −3,525.00 | +1.08 |
+| GPS, ECEF velocity, J2 | −3,525.00 | +1.08 |
 | GPS, ECEF velocity, spherical gravity | −3,524.86 | +0.94 |
 | GPS, treat velocity components as inertial | −3,454.92 | −69.00 |
 | Unix field as state epoch | −2,888.22 | −635.69 |
 
-The measured difference is −3,523.92 Hz. The alternate downconversion gives a +1.11 Hz residual. Two disjoint preamble subsets across the two algorithms give residuals from −3.51 to +6.39 Hz. These are within-pair sensitivity results. One packet pair supports the GPS epoch and Earth-fixed state interpretation. Light time, site effects and clock offsets lack independent calibration, and the comparison leaves the Unix field’s purpose open. This VHF result has its own signal, receiver and packet format. [Measured frequencies and model variants](data/evidence_summary.json)
+The measured difference is −3,523.92 Hz. An alternative downconversion gives a residual of +1.11 Hz. The two disjoint preamble subsets, each processed with both downconversions, yield residuals from −3.51 to +6.39 Hz. This range describes sensitivity within one packet pair. These observations support interpreting the state epoch as GPS time and the state as Earth-fixed. Light-time effects, site effects and oscillator offsets lack independent calibration, and the meaning of the Unix field remains open. This VHF measurement uses a separate signal, receiver and packet format from the Ku-band observations.
 
 ### Figure 9. 21CMA differential Doppler from one packet pair and the alternatives for the received state. Preamble-subset sensitivity bounds apply only to this VHF comparison.
 
 ## 8. Conclusions and collaboration
 
-In-frame channel estimates account for substantial additional recovery where a verified encoding model already exists. For a partial encoder, the same receiver expands the set of readable systematic bytes while retaining the unverified parity region. MCS 57 offers evidence for directories and repeated waveform positions, but the lack of complete high-margin nonterminal words and reproducible sparse constraints still blocks full-code identification. The 512-bit tests provide a usable calibration baseline for separating absent observations from mutually inconsistent equations. Outer-record boundaries, CRCs and checks on received waveforms establish specific transport-level evidence. Verified application-message count remains zero. [Current evidence ledger](README.md)
+Channel estimates from the same frame increase the number of recoverable codewords for the four formats with complete code models. For the four formats with partially known codes, they extend the range of recoverable systematic bytes. The low-address parity equations remain undetermined. For MCS 57, directory CRCs and repeated waveform positions constrain portions of the stream. Erasures in non-final codewords and the lack of reproducible sparse parity relations leave the full code unresolved. The 512-bit projections distinguish missing observations from inconsistent equations. The observed record boundaries, CRCs and received waveform comparisons support transport-layer conclusions. Application-layer message contents have yet to be verified.
 
-We invite collaborators with experience in error-correcting code identification, OFDM soft receivers, or timing and orbit estimation. Concrete contributions include testing candidate MCS 57 checks against frozen whole-group splits, explaining contradictory low-address rows with a model that preserves the verified high-address controls, reproducing weak H2 on the archived IQ, and independently evaluating the one-pair Doppler estimate. Reports of failed hypotheses are welcome alongside runnable analyses and explicit masks. Existing public recordings suffice for these contributions. Contact [stone](mailto:vistone868@gmail.com), or visit the [project repository](https://github.com/spacelibres/StarlinkDownlinkAnalysis).
+Further tests can compare candidate MCS 57 parity relations on separate recording groups, seek a low-address parity model compatible with the high-address controls, and assess weak H2 headers against the published IQ. Independent analysis of the measured VHF Doppler would help characterize the sensitivity to timing and downconversion. Correspondence may be addressed to the author.
 
-## 9. Data and reproducibility
+## 9. Data availability
 
-The archive records per-input hashes, coordinates, masks, exclusions, reference provenance, group assignments, and measured controls. The two completed 512-bit executions are deterministic replays on fixed inputs. Receiver scores compare the same targets across branches, and counts are descriptive of their archived units. All work uses existing recordings. Public input sources are listed below. The local evidence archive indexes the detailed results used for these figures and tables. [Provenance and replay instructions](README.md) · [Archive status](README.md)
+The analysis uses previously collected measurements. The public inputs and their roles are listed below. Codeword and allocation statistics refer to the Qin recordings. The conclusions about narrower bandwidth condition on the measured LEO Tracker passbands, and the VHF comparison refers to one 21CMA packet pair.
 
-| Result | Evidence and replay |
+| Public data | Use in this study |
 | --- | --- |
-| Full words and allocations | [E240](data/evidence_summary.json), [E241](data/evidence_summary.json), [E242](data/evidence_summary.json), [E243](data/evidence_summary.json), [E244](data/evidence_summary.json) |
-| Masked MCS 57 and repeats | [E245](data/evidence_summary.json), [E246](data/evidence_summary.json) |
-| Partial core and 512-bit model | [E247](data/evidence_summary.json), [E248](data/evidence_summary.json), [completed run](data/evidence_summary.json), [repeat](data/evidence_summary.json) |
-| Weak and narrowband H2 | [E218](data/evidence_summary.json), [E220](data/evidence_summary.json), [E236](data/evidence_summary.json) |
-| VHF voltage and orbit check | [E206](data/evidence_summary.json), [E237](data/evidence_summary.json) |
+| Qin et al. [3] | Complex frequency-domain frame samples for coverage, channel estimation and parity hypotheses |
+| Liu et al. [4] | 250 MS/s Ku-band IQ for the header and frame-boundary comparisons |
+| LEO Tracker [6] | Native narrowband windows and paired receiver passbands |
+| Yang et al. [7] | Two 21CMA VHF voltage windows and the published station coordinates |
 
 ## References
 
@@ -219,4 +218,4 @@ The archive records per-input hashes, coordinates, masks, exclusions, reference 
 
 [6] LEO Tracker contributors, “leo-tracker-reduxredux,” receiver software and observations. [Repository and data index](https://github.com/misko/leo-tracker-reduxredux).
 
-[7] Y. Yang et al., “Detection and characterisation of Starlink VHF TT&C emissions at 137.055 MHz with the 21 CentiMeter Array,” arXiv:2610.37158v1, Oct. 2026. [Preprint v1](https://arxiv.org/abs/2610.37158v1) · [Voltage data](https://zenodo.org/records/23309576).
+[7] Y. Yang et al., “Detection and characterisation of Starlink VHF TT&C emissions at 137.055 MHz with the 21 CentiMeter Array,” arXiv:2610.37158v1, Oct. 2026. [Preprint v1](https://arxiv.org/abs/2610.37158v1) · [Voltage data](https://zenodo.org/records/23309576) · [Station coordinates](https://arxiv.org/html/2610.37158v1#S2).

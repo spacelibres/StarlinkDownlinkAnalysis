@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.0.4] - 2026-11-23
+
+### Purpose
+- Make corrected submission editions and the full Chinese interim paper available alongside the archived releases.
+
+### Changes
+- Publish scientific chart labels, typeset vector equations, public-source citations only, natural Chinese terminology, and a new Chinese interim PDF and source.
+
+### Scientific record
+- Preserve the stage II measurements and figures and all measured interim results. Reproduce the revised publications without changing prior tags.
+
+### Validation
+- Checked three PDFs, 21 numbered vector equations, nine vector figure pairs, selected CRC and parity checks, and the original 1425-file public snapshot.
+
+### Limitations
+- Figure labels are shared between editions. Raw IQ replay requires the original scientific archive.
+
 ## [0.0.3] - 2026-11-23
 
 ### Purpose

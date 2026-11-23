@@ -8,6 +8,9 @@ from pathlib import Path
 import re
 import xml.etree.ElementTree as ET
 
+from matplotlib import rc_context
+from matplotlib.font_manager import FontProperties
+from matplotlib.mathtext import math_to_image
 import resvg_py
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
@@ -16,7 +19,7 @@ from reportlab.lib.utils import ImageReader
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (
-    BaseDocTemplate, Frame, KeepTogether, PageTemplate, Paragraph, Preformatted,
+    BaseDocTemplate, Flowable, Frame, KeepTogether, PageTemplate, Paragraph, Preformatted,
     Spacer, Table, TableStyle,
 )
 from svglib.svglib import svg2rlg
@@ -33,7 +36,8 @@ MUTED = colors.HexColor(PALETTE['muted'])
 LINE = colors.HexColor(PALETTE['line'])
 SURFACE = colors.HexColor(PALETTE['surface'])
 PRIMARY = colors.HexColor(PALETTE['primaryOnLight'])
-PUBLIC_SOURCE = 'https://github.com/spacelibres/StarlinkDownlinkAnalysis/blob/main/reports/stage-2-paper/'
+SUBSCRIPT = str.maketrans('₀₁₂₃₄₅₆₇₈₉ₐᵢₖₘₙₛₜ', '0123456789aikmnst')
+SUPERSCRIPT = str.maketrans('⁰¹²³⁴⁵⁶⁷⁸⁹', '0123456789')
 
 
 def register_fonts():
@@ -60,14 +64,18 @@ def register_fonts():
 def options():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--language', choices=('en', 'zh'), default='en')
+    parser.add_argument('--paper', choices=('stage-2', 'interim'), default='stage-2')
     parser.add_argument('--cjk-font', type=Path, default=Path('C:/Windows/Fonts/msyh.ttc'))
     parser.add_argument('--cjk-bold', type=Path, default=Path('C:/Windows/Fonts/msyhbd.ttc'))
-    return parser.parse_args()
+    args = parser.parse_args()
+    if args.paper == 'interim' and args.language != 'zh':
+        parser.error('The published English interim paper has its own archival renderer')
+    return args
 
 
-ARGS = options() if __name__ == '__main__' else argparse.Namespace(language='en')
+ARGS = options() if __name__ == '__main__' else argparse.Namespace(language='en', paper='stage-2')
 CHINESE = ARGS.language == 'zh'
-SANS, BOLD, ITALIC, _, MONO = register_fonts()
+SANS, BOLD, _, _, MONO = register_fonts()
 if CHINESE:
     if ARGS.cjk_font.is_file() and ARGS.cjk_bold.is_file():
         SANS, BOLD = 'PaperCJK', 'PaperCJKBold'
@@ -77,7 +85,6 @@ if CHINESE:
         from reportlab.pdfbase.cidfonts import UnicodeCIDFont
         SANS = BOLD = 'STSong-Light'
         pdfmetrics.registerFont(UnicodeCIDFont(SANS))
-    ITALIC = SANS
     pdfmetrics.registerFontFamily(SANS, normal=SANS, bold=BOLD, italic=SANS, boldItalic=BOLD)
 
 
@@ -97,16 +104,18 @@ CELL = style('cell', 8.95, 12.1)
 CELL_HEAD = style('cell-head', 8.95, 12.1, BOLD)
 CODE = style('algorithm', 8.5, 11.9, SANS if CHINESE else MONO,
              leftIndent=9, rightIndent=9, spaceBefore=5, spaceAfter=9)
-EQUATION = style('equation', 10.3, 14.7, ITALIC, leftIndent=13, rightIndent=13, spaceAfter=8)
 
 
 def inline(text):
     text = text.replace(' ', ' ').replace('‑', '-')
     html = escape(text, quote=False)
+    for positions, tag in ((SUBSCRIPT, 'sub'), (SUPERSCRIPT, 'super')):
+        symbols = ''.join(chr(char) for char in positions)
+        html = re.sub(rf'[{symbols}]+', lambda m: f'<{tag}>{m[0].translate(positions)}</{tag}>', html)
     def link(match):
         label, destination = match.groups()
         if not destination.startswith(('https://', 'http://', 'mailto:')):
-            destination = PUBLIC_SOURCE + destination
+            raise ValueError(f'Manuscript contains a relative link: {destination}')
         return f'<link href="{destination}" color="{PALETTE["primaryOnLight"]}"><u>{label}</u></link>'
 
     html = re.sub(r'\[([^\[\]]+)\]\(([^)\s]+)\)', link, html)
@@ -157,8 +166,8 @@ def table_for(lines):
     return tb
 
 
-def figure(number, caption):
-    paths = sorted((HERE / 'figures').glob(f'{number:02d}-*.svg'))
+def figure(number, caption, paper):
+    paths = sorted((paper / 'figures').glob(f'{number:02d}-*.svg'))
     if len(paths) != 1:
         raise ValueError(f'Expected one vector file for figure {number}, found {len(paths)}')
     drawing = svg2rlg(str(paths[0]))
@@ -170,6 +179,32 @@ def figure(number, caption):
     drawing.height *= scale
     drawing.hAlign = 'CENTER'
     return KeepTogether([drawing, para(caption, CAPTION), Spacer(1, 4)])
+
+
+class DisplayEquation(Flowable):
+    """Center a vector-rendered formula and right-align its equation number."""
+
+    def __init__(self, number, expression):
+        super().__init__()
+        self.number = number
+        svg = BytesIO()
+        with rc_context({'svg.fonttype': 'path'}):
+            math_to_image(expression, svg, prop=FontProperties(size=12), format='svg',
+                          color=PALETTE['ink'])
+        svg.seek(0)
+        self.formula = svg2rlg(svg)
+        if not self.formula or self.formula.width <= 0 or self.formula.height <= 0:
+            raise ValueError(f'Equation {number} produced an empty vector')
+        self.height = self.formula.height + 12
+        self.width = CONTENT_W
+        if self.formula.width > self.width - 64:
+            raise ValueError(f'Equation {number} exceeds the available column width')
+
+    def draw(self):
+        self.formula.drawOn(self.canv, (self.width - self.formula.width) / 2, 6)
+        self.canv.setFillColor(INK)
+        self.canv.setFont(SANS, 9)
+        self.canv.drawRightString(self.width, self.height / 2 - 3, f'({self.number})')
 
 
 def blocks(text):
@@ -197,8 +232,9 @@ def blocks(text):
         yield 'text', '\n'.join(block)
 
 
-def manuscript_flow(source):
+def manuscript_flow(source, paper):
     story, figures = [], set()
+    equations = []
     title = None
     references = False
     for kind, raw in blocks(source):
@@ -215,7 +251,7 @@ def manuscript_flow(source):
                 raise ValueError('Duplicate figure marker')
             figures.add(number)
             label = f'图 {number}。' if CHINESE else f'Figure {number}.'
-            story.append(figure(number, f'**{label}** {match[3]}'))
+            story.append(figure(number, f'**{label}** {match[3]}', paper))
         elif raw.startswith('# '):
             title = raw[2:]
             story.append(para(title, TITLE))
@@ -227,7 +263,12 @@ def manuscript_flow(source):
         elif raw.startswith('|'):
             story.extend([table_for(raw.splitlines()), Spacer(1, 8)])
         elif raw.startswith('> '):
-            story.append(para(' '.join(s.removeprefix('> ') for s in raw.splitlines()), EQUATION))
+            equation = re.fullmatch(r'> \((\d+)\) (\$[^$\n]+\$)', raw)
+            if equation is None:
+                raise ValueError(f'Use numbered single-line TeX for display equations: {raw}')
+            number = int(equation[1])
+            equations.append(number)
+            story.append(DisplayEquation(number, equation[2]))
         elif not any(getattr(item, 'style', None) is H2 for item in story) and (
                  'vistone868@gmail.com' in raw or raw.strip() == 'stone'):
             for line in raw.splitlines():
@@ -238,19 +279,27 @@ def manuscript_flow(source):
             story.extend(para(line, BODY) for line in raw.splitlines())
         else:
             story.append(para(raw.replace('\n', ' '), BODY))
-    if title is None or figures != set(range(1, 10)):
-        raise ValueError(f'Manuscript title or nine figure markers missing, found {sorted(figures)}')
+    expected_figures, expected_equations = (9, 9) if paper == HERE else (8, None)
+    if title is None or figures != set(range(1, expected_figures + 1)):
+        raise ValueError(f'Manuscript title or figure markers missing, found {sorted(figures)}')
+    if not equations or equations != list(range(1, len(equations) + 1)):
+        raise ValueError(f'Expected sequential numbered equations, found {equations}')
+    if expected_equations is not None and len(equations) != expected_equations:
+        raise ValueError(f'Expected {expected_equations} equations, found {len(equations)}')
     return title, story
 
 
 def render():
-    source = HERE / ('manuscript.zh.md' if CHINESE else 'manuscript.md')
+    interim = ARGS.paper == 'interim'
+    paper = HERE.parent / 'interim-paper' if interim else HERE
+    source = paper / ('manuscript.zh.md' if CHINESE else 'manuscript.md')
     file_suffix = '-zh' if CHINESE else ''
-    output = HERE / f'starlink-ku-downlink-stage-ii-stone{file_suffix}.pdf'
-    title, story = manuscript_flow(source.read_text(encoding='utf8'))
+    edition = 'interim' if interim else 'stage-ii'
+    output = paper / f'starlink-ku-downlink-{edition}-stone{file_suffix}.pdf'
+    title, story = manuscript_flow(source.read_text(encoding='utf8'), paper)
     mark, mark_aspect = logo()
     doc = BaseDocTemplate(str(output), pagesize=A4, invariant=1, title=title, author='stone',
-                          subject='Stage II research article on the Starlink Ku-band downlink')
+                          subject='Starlink Ku-band downlink physical-layer measurements')
     frame = Frame(MARGIN, 51, CONTENT_W, PAGE_H - 105, leftPadding=0, rightPadding=0,
                   topPadding=0, bottomPadding=0)
 
@@ -263,7 +312,7 @@ def render():
         canvas.setFillColor(MUTED)
         canvas.setFont(SANS, 8)
         canvas.drawString(MARGIN, PAGE_H - 30, 'STARLINK KU 波段下行' if CHINESE else 'STARLINK KU-BAND DOWNLINK')
-        canvas.drawString(MARGIN, 26, '第二阶段研究论文' if CHINESE else 'STAGE II RESEARCH ARTICLE')
+        canvas.drawString(MARGIN, 26, '星链下行物理层研究' if CHINESE else 'DOWNLINK PHYSICAL LAYER')
         canvas.drawRightString(PAGE_W - MARGIN, 26, str(doc.page))
         height = 94 / mark_aspect
         canvas.drawImage(mark, PAGE_W - MARGIN - 94, PAGE_H - 38, width=94, height=height, mask='auto')
