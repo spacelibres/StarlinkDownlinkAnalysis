@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.0.5] - 2026-11-23
+
+### Purpose
+- Align the bibliographic citation with the journal of record.
+
+### Changes
+- Correct the journal name, rebuild three PDFs and link the corrected release.
+
+### Scientific record
+- DOI 10.1038/s44459-026-00075-6 identifies npj Wireless Technology, volume 2, article 69.
+
+### Validation
+- Verified all three regenerated PDFs, 21 numbered formulas, selected CRC and parity vectors and the 1425-file public snapshot.
+
+### Limitations
+- Earlier publication tags are retained.
+
 ## [0.0.4] - 2026-11-23
 
 ### Purpose

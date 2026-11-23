@@ -164,7 +164,7 @@ GPS 秒的小数部分以纳秒记录，纳秒数为 0 至 999,999,999 的整数
 
 [2] W. Qin, A. M. Graff, Z. L. Clements, Z. M. Komodromos, and T. E. Humphreys, “Timing properties of the Starlink Ku-band downlink,” IEEE Trans. Aerosp. Electron. Syst. [DOI 10.1109/TAES.2025.3627180](https://doi.org/10.1109/TAES.2025.3627180)。
 
-[3] W. Qin, M. L. Psiaki, J. R. Bowman, and T. E. Humphreys, “Pilots and other predictable elements of the Starlink Ku-band downlink,” npj PNT, vol. 2, art. 69, 2026. [DOI 10.1038/s44459-026-00075-6](https://doi.org/10.1038/s44459-026-00075-6)。
+[3] W. Qin, M. L. Psiaki, J. R. Bowman, and T. E. Humphreys, “Pilots and other predictable elements of the Starlink Ku-band downlink,” npj Wireless Technology, vol. 2, art. 69, 2026. [DOI 10.1038/s44459-026-00075-6](https://doi.org/10.1038/s44459-026-00075-6)。
 
 [4] W. Qin 等，“Pilots and other predictable elements of the Starlink Ku-band downlink”补充数据与 MATLAB 代码，2026 年。[Zenodo DOI 10.5281/zenodo.21404931](https://doi.org/10.5281/zenodo.21404931)。
 

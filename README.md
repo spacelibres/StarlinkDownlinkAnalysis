@@ -7,7 +7,7 @@ An evidence-based study of recorded Starlink Ku-band downlink signals, from wave
 ## 第二阶段论文 · Stage II research article
 
 - [中文论文 PDF](reports/stage-2-paper/starlink-ku-downlink-stage-ii-stone-zh.pdf) · [English article PDF](reports/stage-2-paper/starlink-ku-downlink-stage-ii-stone.pdf)
-- [中英文源稿、证据与复现 / Sources, evidence and reproduction](reports/stage-2-paper/README.md) · [修订稿发布页 / Revised release](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/tag/paper-revision-2026-11-23)
+- [中英文源稿、证据与复现 / Sources, evidence and reproduction](reports/stage-2-paper/README.md) · [修订稿发布页 / Revised release](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/tag/paper-revision-2026-11-23-r2)
 
 ## 早期论文与档案 · Interim article and archive
 

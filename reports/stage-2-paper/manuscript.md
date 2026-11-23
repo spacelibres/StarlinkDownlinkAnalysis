@@ -210,7 +210,7 @@ The analysis uses previously collected measurements. The public inputs and their
 
 [2] T. E. Humphreys, P. A. Iannucci, Z. M. Komodromos, and A. M. Graff, “Signal Structure of the Starlink Ku-Band Downlink,” IEEE Trans. Aerosp. Electron. Syst., 59(5), 6016–6030, 2023. [Journal article](https://doi.org/10.1109/TAES.2023.3268610).
 
-[3] W. Qin, M. L. Psiaki, J. R. Bowman, and T. E. Humphreys, “Pilots and Other Predictable Elements of the Starlink Ku-Band Downlink,” npj PNT 2, 69, 2026. [Journal article](https://doi.org/10.1038/s44459-026-00075-6) · [arXiv v1](https://arxiv.org/abs/2602.02627v1) · [Author data and code](https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/).
+[3] W. Qin, M. L. Psiaki, J. R. Bowman, and T. E. Humphreys, “Pilots and Other Predictable Elements of the Starlink Ku-Band Downlink,” npj Wireless Technology 2, 69, 2026. [Journal article](https://doi.org/10.1038/s44459-026-00075-6) · [arXiv v1](https://arxiv.org/abs/2602.02627v1) · [Author data and code](https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/).
 
 [4] H. Liu, Y. Ma, H. Zhao, C. Li, and M. Yang, “Protocol Data Unit Header Decoding and Payload Coding Recovery in the Starlink Ku-Band Downlink,” arXiv:2610.29387v2, Oct. 2026. [Preprint v2](https://arxiv.org/abs/2610.29387v2) · [250 MS/s data release v2.0.0](https://github.com/misaka666/Starlink-Downlink-Analysis/releases/tag/v2.0.0).
 

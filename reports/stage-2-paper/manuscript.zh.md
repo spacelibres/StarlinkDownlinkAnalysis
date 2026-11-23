@@ -210,7 +210,7 @@ Code 5 仅使用可直接读取的 BPSK 符号。
 
 [2] T. E. Humphreys, P. A. Iannucci, Z. M. Komodromos, and A. M. Graff, “Signal Structure of the Starlink Ku-Band Downlink,” IEEE Trans. Aerosp. Electron. Syst., 59(5), 6016–6030, 2023. [期刊原文](https://doi.org/10.1109/TAES.2023.3268610)。
 
-[3] W. Qin, M. L. Psiaki, J. R. Bowman, and T. E. Humphreys, “Pilots and Other Predictable Elements of the Starlink Ku-Band Downlink,” npj PNT 2, 69, 2026. [期刊原文](https://doi.org/10.1038/s44459-026-00075-6) · [arXiv 第一版](https://arxiv.org/abs/2602.02627v1) · [作者数据及代码](https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/)。
+[3] W. Qin, M. L. Psiaki, J. R. Bowman, and T. E. Humphreys, “Pilots and Other Predictable Elements of the Starlink Ku-Band Downlink,” npj Wireless Technology 2, 69, 2026. [期刊原文](https://doi.org/10.1038/s44459-026-00075-6) · [arXiv 第一版](https://arxiv.org/abs/2602.02627v1) · [作者数据及代码](https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/)。
 
 [4] H. Liu, Y. Ma, H. Zhao, C. Li, and M. Yang, “Protocol Data Unit Header Decoding and Payload Coding Recovery in the Starlink Ku-Band Downlink,” arXiv:2610.29387v2, 2026 年 10 月。[预印本第二版](https://arxiv.org/abs/2610.29387v2) · [250 MS/s 数据发布 v2.0.0](https://github.com/misaka666/Starlink-Downlink-Analysis/releases/tag/v2.0.0)。
 

@@ -2,7 +2,7 @@
 
 **stone** · [vistone868@gmail.com](mailto:vistone868@gmail.com) · 2026-11-23
 
-[中文 PDF](starlink-ku-downlink-stage-ii-stone-zh.pdf) · [中文稿源文件](manuscript.zh.md) · [English PDF](starlink-ku-downlink-stage-ii-stone.pdf) · [English source](manuscript.md) · [修订稿发布页 / Revised release](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/tag/paper-revision-2026-11-23)
+[中文 PDF](starlink-ku-downlink-stage-ii-stone-zh.pdf) · [中文稿源文件](manuscript.zh.md) · [English PDF](starlink-ku-downlink-stage-ii-stone.pdf) · [English source](manuscript.md) · [修订稿发布页 / Revised release](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/tag/paper-revision-2026-11-23-r2)
 
 两份全文各包含九幅图、八张表、九个公式和两段算法。图内共用英文技术标签，中文正文逐图给出完整图注。 [中期论文中文 PDF](../interim-paper/starlink-ku-downlink-interim-stone-zh.pdf) · [中期中文源稿](../interim-paper/manuscript.zh.md) · [中期英文初版](https://github.com/spacelibres/StarlinkDownlinkAnalysis/releases/tag/paper-2026-11-22)
 
